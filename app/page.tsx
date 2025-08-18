@@ -36,7 +36,7 @@ export default function HomePage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/stal_9.jpeg?height=1080&width=1920"
             alt="Premium Stainless Steel Table"
             fill
             className="object-cover"
