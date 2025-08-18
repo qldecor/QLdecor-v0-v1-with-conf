@@ -44,7 +44,9 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="absolute bottom-32 left-0 right-0">
+        {/* gradient from bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="absolute bottom-32 left-0 right-0 z-10">
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
@@ -71,7 +73,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
           <ChevronDown className="h-6 w-6 text-white animate-bounce" />
         </div>
       </section>

@@ -37,7 +37,7 @@ export default function ProductsPage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/stal_14.jpeg?height=1080&width=1920"
             alt="Stainless Steel Tables"
             fill
             className="object-cover"
@@ -45,6 +45,8 @@ export default function ProductsPage() {
           />
         </div>
 
+        {/* gradient from bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute bottom-32 left-0 right-0">
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
