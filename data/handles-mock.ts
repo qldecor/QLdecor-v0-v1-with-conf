@@ -9,9 +9,10 @@ export const handlesMock = [
       {
         size: 320,
         images: {
-          gold: { primary: "/img/handles/or020-320-gold.jpg", secondary: "/img/handles/or020-320-gold-2.jpg" },
+          gold: { primary: "/img/handles/or-020/or-020.webp", secondary: "/img/handles/or-020/or-020-secondary.webp" },
           black: { primary: "/img/handles/or020-320-black.jpg", secondary: "/img/handles/or020-320-black-2.jpg" },
           silver: { primary: "/img/handles/or020-320-silver.jpg", secondary: "/img/handles/or020-320-silver-2.jpg" },
+
         },
       },
       {
@@ -28,14 +29,15 @@ export const handlesMock = [
     id: "or-021",
     name: "Handle OR-021",
     blurb: "Modern recessed handle with clean lines.",
-    finishes: ["black", "silver"],
+    finishes: ["black", "silver", "gold"],
     sizes: [160, 320],
     variants: [
       {
         size: 160,
         images: {
-          black: { primary: "/img/handles/or021-160-black.jpg", secondary: "/img/handles/or021-160-black-2.jpg" },
-          silver: { primary: "/img/handles/or021-160-silver.jpg", secondary: "/img/handles/or021-160-silver-2.jpg" },
+          black: { primary: "/img/handles/or-021/or-021.webp", secondary: "/img/handles/or-021/or-021-secondary.webp" },
+          silver: { primary: "/img/handles/or-021/or-021-silver.webp", secondary: "/img/handles/or021-160-silver-2.jpg" },
+          gold: { primary: "/img/handles/or-021/or-021-gold.webp", secondary: "/img/handles/or-021/or-021-gold-secondary.webp" },
         },
       },
     ],
@@ -76,7 +78,7 @@ export const handlesMock = [
     ],
   },
   {
-    id: "or-8042",
+    id: "or-8020",
     name: "Handle OR-8042",
     blurb: "Wide recessed profile for modern furniture.",
     finishes: ["black", "silver"],
@@ -85,7 +87,7 @@ export const handlesMock = [
       {
         size: 200,
         images: {
-          black: { primary: "/img/handles/or8042-200-black.jpg", secondary: "/img/handles/or8042-200-black-2.jpg" },
+          black: { primary: "/img/handles/or-020/or-020.webp", secondary: "/img/handles/or8042-200-black-2.jpg" },
           silver: { primary: "/img/handles/or8042-200-silver.jpg", secondary: "/img/handles/or8042-200-silver-2.jpg" },
         },
       },

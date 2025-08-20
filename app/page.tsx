@@ -120,6 +120,7 @@ export default function HomePage() {
             </div>
 
             <div className="group cursor-pointer">
+              <Link href="/products/handles">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
@@ -129,6 +130,7 @@ export default function HomePage() {
                 />
               </div>
               <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">FURNITURE HANDLES</h3>
+              </Link>
             </div>
 
             <div className="group cursor-pointer">
