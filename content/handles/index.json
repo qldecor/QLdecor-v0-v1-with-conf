@@ -1,0 +1,71 @@
+{
+  "collection": "handles",
+  "items": [
+    {
+      "id": "or-020",
+      "slug": "or-020",
+      "name": {
+        "en": "Handle OR-020",
+        "pl": "Uchwyt OR-020"
+      },
+      "blurb": {
+        "en": "Slim aluminum handle with a timeless profile.",
+        "pl": "Smukły aluminiowy uchwyt o ponadczasowej linii."
+      },
+      "defaultVariant": {
+        "finish": "black",
+        "size": "600"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-020/or-020-600-black.webp",
+        "hover": "/img/handles/or-020/or-020-600-black-2.webp"
+      },
+      "finishes": ["gold", "black", "silver"],
+      "sizes": ["320", "600", "1000"]
+    },
+    {
+      "id": "or-021",
+      "slug": "or-021",
+      "name": {
+        "en": "Handle OR-021",
+        "pl": "Uchwyt OR-021"
+      },
+      "blurb": {
+        "en": "Modern recessed handle with clean lines.",
+        "pl": "Nowoczesny uchwyt wpuszczany o czystej linii."
+      },
+      "defaultVariant": {
+        "finish": "black",
+        "size": "320"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-021/or-021-320-black.webp",
+        "hover": "/img/handles/or-021/or-021-320-black-2.webp"
+      },
+      "finishes": ["black", "silver"],
+      "sizes": ["160", "320"]
+    },
+    {
+      "id": "or-1119",
+      "slug": "or-1119",
+      "name": {
+        "en": "Knob OR-1119",
+        "pl": "Gałka OR-1119"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "30"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": ["gold", "black", "silver", "orange"],
+      "sizes": ["30", "40"]
+    }
+  ]
+}
