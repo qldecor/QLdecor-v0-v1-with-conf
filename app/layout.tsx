@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import {NextIntlClientProvider} from 'next-intl';
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -14,14 +15,19 @@ export const metadata: Metadata = {
     generator: 'v0.dev'
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+// export function generateStaticParams() {
+//   return [{ locale: 'pl' }, { locale: 'en' }];
+// }
+
+
+export default function RootLayout({ children, params }: { children: React.ReactNode, params: { locale: string } }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang={params.locale}>
+      <body className={inter.className}>
+        <NextIntlClientProvider>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   )
 }

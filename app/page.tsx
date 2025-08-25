@@ -1,9 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown } from "lucide-react";
+import {useTranslations} from 'next-intl';
 
 export default function HomePage() {
+  const t = useTranslations();
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -13,7 +16,7 @@ export default function HomePage() {
             <div className="text-xl font-light tracking-wider text-gray-900">LUXCRAFT</div>
             <div className="hidden md:flex items-center space-x-12 text-sm font-light">
               <Link href="/products" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                PRODUCTS
+                {t('Common.ok')}
               </Link>
               <Link href="/collections" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
                 COLLECTIONS
