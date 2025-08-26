@@ -2,10 +2,10 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/app/[locale]/components/ui/button"
+import { Card } from "@/app/[locale]/components/ui/card"
+import { Badge } from "@/app/[locale]/components/ui/badge"
+import { Input } from "@/app/[locale]/components/ui/input"
 import {
   MessageCircle,
   Users,

@@ -5,9 +5,9 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/app/[locale]/components/ui/button"
+import { Input } from "@/app/[locale]/components/ui/input"
+import { Card, CardContent } from "@/app/[locale]/components/ui/card"
 import { ArrowLeft, Eye, EyeOff } from "lucide-react"
 
 export default function LoginPage() {

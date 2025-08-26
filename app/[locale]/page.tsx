@@ -1,7 +1,8 @@
 import { use } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/[locale]/components/ui/button";
+import NavBar from "@/app/[locale]/components/navbar";
 import { ChevronDown } from "lucide-react"
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 
@@ -13,30 +14,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50">
-        <div className="container mx-auto px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="text-xl font-light tracking-wider text-gray-900">LUXCRAFT</div>
-            <div className="hidden md:flex items-center space-x-12 text-sm font-light">
-              <Link href="/products" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                {t('products').toUpperCase()}
-              </Link>
-              <Link href="/collections" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                COLLECTIONS
-              </Link>
-              <Link href="/projects" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                PROJECTS
-              </Link>
-              <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                ABOUT
-              </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                CONTACT
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <NavBar/>
 
       {/* Hero Section - Stainless Steel Table */}
       <section className="relative h-screen">

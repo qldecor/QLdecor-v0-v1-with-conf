@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/[locale]/components/ui/button"
 import type { HandleIndexItem, HandleFinish } from "@/types/handles"
 
 const finishColors = {
