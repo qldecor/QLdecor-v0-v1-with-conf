@@ -5,5 +5,8 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to our website!"
   }
 }
