@@ -46,7 +46,7 @@ export default function Navbar() {
               {/* Kliknięcie → /products */}
               <Link
                 href="/products"
-                className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide"
+                className="px-2 py-1 text-gray-700 transition duration-200 hover:text-gray-900 hover:drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]"
               >
                 {t('products').toUpperCase()}
               </Link>
