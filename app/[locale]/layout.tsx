@@ -1,10 +1,11 @@
-import type React from "react"
-import type { Metadata } from "next"
+import type React from "react";
+import type { Metadata } from "next";
 import {notFound} from 'next/navigation';
 import {setRequestLocale} from 'next-intl/server';
-import { Inter } from "next/font/google"
-import "../globals.css"
-import {NextIntlClientProvider, hasLocale, useMessages} from 'next-intl';
+import { Inter } from "next/font/google";
+import "../globals.css";
+import {NextIntlClientProvider, hasLocale} from 'next-intl';
+import Script from "next/script";
 import {routing} from '@/i18n/routing';
 
 const inter = Inter({ subsets: ["latin"] })
@@ -45,6 +46,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
           {children}
+          <Script id="chatway" src="https://cdn.chatway.app/widget.js?id=cuLwkn7RRZqW" strategy="afterInteractive" />
         </NextIntlClientProvider>
       </body>
     </html>
