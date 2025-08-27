@@ -1,14 +1,38 @@
 import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import { Input } from "@/app/[locale]/components/ui/input"
-import { Textarea } from "@/app/[locale]/components/ui/textarea"
-import Navbar from "@/app/[locale]/components/navbar"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
-      <Navbar />
+      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50">
+        <div className="container mx-auto px-8 py-6">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="text-xl font-light tracking-wider text-gray-900">
+              LUXCRAFT
+            </Link>
+            <div className="hidden md:flex items-center space-x-12 text-sm font-light">
+              <Link href="/products" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
+                PRODUCTS
+              </Link>
+              <Link href="/collections" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
+                COLLECTIONS
+              </Link>
+              <Link href="/projects" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
+                PROJECTS
+              </Link>
+              <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
+                ABOUT
+              </Link>
+              <Link href="/contact" className="text-gray-900 font-medium tracking-wide">
+                CONTACT
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       {/* Contact Form */}
       <section className="py-32">

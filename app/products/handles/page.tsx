@@ -1,10 +1,10 @@
 "use client"
 
-import { useState, useMemo, useEffect } from "react"
+import { useState, useMemo } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/app/[locale]/components/ui/button"
-import type { HandleIndexItem, HandleFinish } from "@/types/handles"
+import { Button } from "@/components/ui/button"
+import { handlesMock, type Handle, type HandleFinish } from "@/data/handles-mock"
 
 const finishColors = {
   gold: "#D4AF37",
@@ -20,14 +20,13 @@ const finishLabels = {
   orange: "Orange",
 }
 
-function ProductCard({ handle }: { handle: HandleIndexItem }) {
-  const [selectedFinish, setSelectedFinish] = useState<HandleFinish>(handle.defaultVariant.finish)
-  const [selectedSize, setSelectedSize] = useState(handle.defaultVariant.size)
+function ProductCard({ handle }: { handle: Handle }) {
+  const [selectedFinish, setSelectedFinish] = useState<HandleFinish>(handle.finishes[0] as HandleFinish)
+  const [selectedSize, setSelectedSize] = useState(handle.sizes[0])
   const [isHovered, setIsHovered] = useState(false)
 
-  // Use covers for images
-  const thumb = handle.covers.thumb
-  const hover = handle.covers.hover || thumb
+  const currentVariant = handle.variants.find((v) => v.size === selectedSize)
+  const currentImages = currentVariant?.images[selectedFinish]
 
   return (
     <div className="group">
@@ -36,19 +35,32 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Image
-          src={isHovered ? hover : thumb}
-          alt={`${handle.name.en} - ${selectedFinish} - ${selectedSize}mm`}
-          fill
-          className="object-cover transition-opacity duration-200"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        {currentImages && (
+          <>
+            <Image
+              src={currentImages.primary || "/placeholder.svg"}
+              alt={`${handle.name} - ${finishLabels[selectedFinish]} - ${selectedSize}mm`}
+              fill
+              className={`object-cover transition-opacity duration-200 ${isHovered ? "opacity-0" : "opacity-100"}`}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            <Image
+              src={currentImages.secondary || "/placeholder.svg"}
+              alt={`${handle.name} - ${finishLabels[selectedFinish]} - ${selectedSize}mm - Detail`}
+              fill
+              className={`object-cover transition-opacity duration-200 ${isHovered ? "opacity-100" : "opacity-0"}`}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </>
+        )}
       </div>
+
       <div className="space-y-4">
         <div>
-          <h3 className="text-lg font-light text-gray-900 tracking-wide">{handle.name.en}</h3>
-          <p className="text-sm text-gray-600 font-light mt-1">{handle.blurb.en}</p>
+          <h3 className="text-lg font-light text-gray-900 tracking-wide">{handle.name}</h3>
+          <p className="text-sm text-gray-600 font-light mt-1">{handle.blurb}</p>
         </div>
+
         {/* Finish Selector */}
         <div>
           <p className="text-xs text-gray-500 font-light tracking-wide mb-2">FINISH</p>
@@ -56,16 +68,17 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
             {handle.finishes.map((finish) => (
               <button
                 key={finish}
-                onClick={() => setSelectedFinish(finish)}
+                onClick={() => setSelectedFinish(finish as HandleFinish)}
                 className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${
                   selectedFinish === finish ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
                 }`}
-                style={{ backgroundColor: finishColors[finish] }}
-                aria-label={`Select ${finishLabels[finish]} finish`}
+                style={{ backgroundColor: finishColors[finish as HandleFinish] }}
+                aria-label={`Select ${finishLabels[finish as HandleFinish]} finish`}
               />
             ))}
           </div>
         </div>
+
         {/* Size Selector */}
         <div>
           <p className="text-xs text-gray-500 font-light tracking-wide mb-2">SIZE (MM)</p>
@@ -95,73 +108,86 @@ function FilterBar({
   onSizeChange,
   sortBy,
   onSortChange,
-  handles,
 }: {
   selectedFinishes: HandleFinish[]
   onFinishChange: (finishes: HandleFinish[]) => void
-  selectedSizes: string[]
-  onSizeChange: (sizes: string[]) => void
+  selectedSizes: number[]
+  onSizeChange: (sizes: number[]) => void
   sortBy: string
   onSortChange: (sort: string) => void
-  handles: HandleIndexItem[]
 }) {
   const allFinishes: HandleFinish[] = ["gold", "black", "silver", "orange"]
-  const allSizes = Array.from(new Set(handles.flatMap((h) => h.sizes))).sort((a, b) => Number(a) - Number(b))
+  const allSizes = Array.from(new Set(handlesMock.flatMap((h) => h.sizes))).sort((a, b) => a - b)
 
   return (
     <div className="border-b border-gray-200 pb-8 mb-12">
       <div className="flex flex-wrap gap-8 items-center">
-        {/* Finishes */}
+        {/* Finish Filters */}
         <div>
-          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">FINISH</span>
-          {allFinishes.map((finish) => (
-            <button
-              key={finish}
-              onClick={() =>
-                selectedFinishes.includes(finish)
-                  ? onFinishChange(selectedFinishes.filter((f) => f !== finish))
-                  : onFinishChange([...selectedFinishes, finish])
-              }
-              className={`w-6 h-6 rounded-full border-2 mx-1 ${
-                selectedFinishes.includes(finish) ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
-              }`}
-              style={{ backgroundColor: finishColors[finish] }}
-              aria-label={`Filter by ${finishLabels[finish]}`}
-            />
-          ))}
+          <p className="text-xs text-gray-500 font-light tracking-wide mb-3">FINISH</p>
+          <div className="flex gap-3">
+            {allFinishes.map((finish) => (
+              <button
+                key={finish}
+                onClick={() => {
+                  if (selectedFinishes.includes(finish)) {
+                    onFinishChange(selectedFinishes.filter((f) => f !== finish))
+                  } else {
+                    onFinishChange([...selectedFinishes, finish])
+                  }
+                }}
+                className={`flex items-center gap-2 px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${
+                  selectedFinishes.includes(finish)
+                    ? "bg-gray-900 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: finishColors[finish] }} />
+                {finishLabels[finish]}
+              </button>
+            ))}
+          </div>
         </div>
-        {/* Sizes */}
+
+        {/* Size Filters */}
         <div>
-          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">SIZE</span>
-          {allSizes.map((size) => (
-            <button
-              key={size}
-              onClick={() =>
-                selectedSizes.includes(size)
-                  ? onSizeChange(selectedSizes.filter((s) => s !== size))
-                  : onSizeChange([...selectedSizes, size])
-              }
-              className={`px-3 py-1 text-xs font-light tracking-wide mx-1 ${
-                selectedSizes.includes(size) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
-            >
-              {size}
-            </button>
-          ))}
+          <p className="text-xs text-gray-500 font-light tracking-wide mb-3">SIZE</p>
+          <div className="flex gap-2">
+            {allSizes.map((size) => (
+              <button
+                key={size}
+                onClick={() => {
+                  if (selectedSizes.includes(size)) {
+                    onSizeChange(selectedSizes.filter((s) => s !== size))
+                  } else {
+                    onSizeChange([...selectedSizes, size])
+                  }
+                }}
+                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${
+                  selectedSizes.includes(size)
+                    ? "bg-gray-900 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                {size}mm
+              </button>
+            ))}
+          </div>
         </div>
+
         {/* Sort */}
-        <div>
-          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">SORT</span>
+        <div className="ml-auto">
+          <p className="text-xs text-gray-500 font-light tracking-wide mb-3">SORT BY</p>
           <select
             value={sortBy}
             onChange={(e) => onSortChange(e.target.value)}
-            className="text-xs border rounded px-2 py-1"
+            className="bg-gray-100 text-gray-700 text-xs font-light tracking-wide px-3 py-1 border-0 focus:bg-gray-200 outline-none"
           >
             <option value="featured">Featured</option>
             <option value="name-asc">Name A-Z</option>
             <option value="name-desc">Name Z-A</option>
-            <option value="size-asc">Smallest Size</option>
-            <option value="size-desc">Largest Size</option>
+            <option value="size-asc">Size ↑</option>
+            <option value="size-desc">Size ↓</option>
           </select>
         </div>
       </div>
@@ -170,49 +196,38 @@ function FilterBar({
 }
 
 export default function HandlesPage() {
-  const [handles, setHandles] = useState<HandleIndexItem[]>([])
   const [selectedFinishes, setSelectedFinishes] = useState<HandleFinish[]>([])
-  const [selectedSizes, setSelectedSizes] = useState<string[]>([])
+  const [selectedSizes, setSelectedSizes] = useState<number[]>([])
   const [sortBy, setSortBy] = useState("featured")
 
-  useEffect(() => {
-    fetch("/api/handles")
-      .then((res) => res.json())
-      .then((data) => setHandles(data.items))
-  }, [])
-
   const filteredAndSortedHandles = useMemo(() => {
-    let filtered = handles
+    let filtered = handlesMock
 
+    // Apply filters
     if (selectedFinishes.length > 0) {
       filtered = filtered.filter((handle) =>
-        handle.finishes.some((finish) => selectedFinishes.includes(finish as HandleFinish))
+        handle.finishes.some((finish) => selectedFinishes.includes(finish as HandleFinish)),
       )
     }
 
     if (selectedSizes.length > 0) {
-      filtered = filtered.filter((handle) =>
-        handle.sizes.some((size) => selectedSizes.includes(size))
-      )
+      filtered = filtered.filter((handle) => handle.sizes.some((size) => selectedSizes.includes(size)))
     }
 
+    // Apply sorting
     switch (sortBy) {
       case "name-asc":
-        return [...filtered].sort((a, b) => a.name.en.localeCompare(b.name.en))
+        return [...filtered].sort((a, b) => a.name.localeCompare(b.name))
       case "name-desc":
-        return [...filtered].sort((a, b) => b.name.en.localeCompare(a.name.en))
+        return [...filtered].sort((a, b) => b.name.localeCompare(a.name))
       case "size-asc":
-        return [...filtered].sort(
-          (a, b) => Math.min(...a.sizes.map(Number)) - Math.min(...b.sizes.map(Number))
-        )
+        return [...filtered].sort((a, b) => Math.min(...a.sizes) - Math.min(...b.sizes))
       case "size-desc":
-        return [...filtered].sort(
-          (a, b) => Math.max(...b.sizes.map(Number)) - Math.max(...a.sizes.map(Number))
-        )
+        return [...filtered].sort((a, b) => Math.min(...b.sizes) - Math.min(...a.sizes))
       default:
         return filtered
     }
-  }, [handles, selectedFinishes, selectedSizes, sortBy])
+  }, [selectedFinishes, selectedSizes, sortBy])
 
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -348,7 +363,6 @@ export default function HandlesPage() {
             onSizeChange={setSelectedSizes}
             sortBy={sortBy}
             onSortChange={setSortBy}
-            handles={handles}
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16">

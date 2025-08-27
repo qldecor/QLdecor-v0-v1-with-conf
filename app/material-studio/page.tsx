@@ -5,10 +5,10 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import { Slider } from "@/app/[locale]/components/ui/slider"
-import { Card } from "@/app/[locale]/components/ui/card"
-import { Badge } from "@/app/[locale]/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Slider } from "@/components/ui/slider"
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import {
   ArrowLeft,
   Save,
@@ -27,7 +27,7 @@ import {
   Pin,
   UserPlus,
 } from "lucide-react"
-import { CollaborationPanel } from "@/app/[locale]/components/collaboration-panel"
+import { CollaborationPanel } from "@/components/collaboration-panel"
 
 interface MaterialConfig {
   category: "surfaces" | "fronts" | "handles" | "boards"

@@ -1,30 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-  @keyframes dropdown-in {
-    0% { opacity: 0; transform: translateY(-10px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes dropdown-out {
-    0% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-10px); }
-  }
-
-  .animate-dropdown-in {
-    animation: dropdown-in 0.25s ease-out forwards;
-  }
-
-  .animate-dropdown-out {
-    animation: dropdown-out 0.2s ease-in forwards;
-  }
-}
-
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -208,4 +184,3 @@ h6 {
   filter: grayscale(0%);
   transition: filter 0.3s ease;
 }
-

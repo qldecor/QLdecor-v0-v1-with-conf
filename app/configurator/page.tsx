@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import { Slider } from "@/app/[locale]/components/ui/slider"
-import { Card } from "@/app/[locale]/components/ui/card"
-import { Badge } from "@/app/[locale]/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Slider } from "@/components/ui/slider"
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Download, Share2, Save } from "lucide-react"
 
 interface ConfigState {
