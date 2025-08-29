@@ -237,23 +237,26 @@
         "silver"
       ],
       "sizes": [
-        "150", "300", "600", "1000"
+        "150",
+        "300",
+        "600",
+        "1000"
       ]
     },
-        {
-      "id": "or-8042",
-      "slug": "or-8042",
+    {
+      "id": "or-8046",
+      "slug": "or-8046",
       "name": {
-        "en": "Handle OR-8042",
-        "pl": "Uchwyt OR-8042"
+        "en": "Handle OR-8046",
+        "pl": "Uchwyt OR-8046"
       },
       "blurb": {
         "en": "Compact round knob with timeless appeal.",
         "pl": "Kompaktowa gałka o ponadczasowym charakterze."
       },
       "defaultVariant": {
-        "finish": "gold",
-        "size": "63"
+        "finish": "black",
+        "size": "70"
       },
       "covers": {
         "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
@@ -265,7 +268,36 @@
         "silver"
       ],
       "sizes": [
-        "63"
+        "70"
+      ]
+    },
+        {
+      "id": "or-8057",
+      "slug": "or-8057",
+      "name": {
+        "en": "Handle OR-8057",
+        "pl": "Uchwyt OR-8057"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "black",
+        "size": "200"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver",
+        "orange"
+      ],
+      "sizes": [
+        "200"
       ]
     }
   ]
