@@ -5,7 +5,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/app/[locale]/components/ui/button"
 import Navbar from "@/app/[locale]/components/navbar"
-import type { HandleIndexItem, HandleFinish } from "@/types/handles"
+import type { HandleIndexItem, HandleFinish } from "@/types/handles";
+import { useLocale } from "next-intl";
+import { motion, AnimatePresence } from "framer-motion";
 
 const finishColors = {
   gold: "#D4AF37",
@@ -22,13 +24,36 @@ const finishLabels = {
 }
 
 function ProductCard({ handle }: { handle: HandleIndexItem }) {
+  const locale = useLocale() as keyof typeof handle.name;
+
   const [selectedFinish, setSelectedFinish] = useState<HandleFinish>(handle.defaultVariant.finish)
   const [selectedSize, setSelectedSize] = useState(handle.defaultVariant.size)
   const [isHovered, setIsHovered] = useState(false)
 
+  function getVariantCovers(handle: HandleIndexItem, size: string, finish: string) {
+    const override = handle.overrides?.find(
+      (o) => o.size === size && o.finish === finish
+    )
+
+    // bazowe ścieżki z patternu
+    const baseThumb = `/img/handles/${handle.id}/${finish}/${size}/${finish}_${size}_1.webp`
+    const baseHover = `/img/handles/${handle.id}/${finish}/${size}/${finish}_${size}_2.webp`
+
+    // wybór końcowych ścieżek
+    const thumb = override?.covers?.thumb || baseThumb
+    const hover = override?.covers?.hover || override?.covers?.thumb || baseHover
+
+    return { thumb, hover }
+  }
   // Use covers for images
-  const thumb = handle.covers.thumb
-  const hover = handle.covers.hover || thumb
+  // const thumb = handle.covers.thumb
+  // const hover = handle.covers.hover || thumb
+  const { thumb, hover } = useMemo(
+    () => getVariantCovers(handle, selectedSize, selectedFinish),
+    [handle.id, selectedSize, selectedFinish]
+  )
+
+  console.log(thumb, hover)
 
   return (
     <div className="group">
@@ -37,18 +62,61 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Image
+        {/* <Image
           src={isHovered ? hover : thumb}
           alt={`${handle.name.en} - ${selectedFinish} - ${selectedSize}mm`}
           fill
           className="object-cover transition-opacity duration-200"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        /> */}
+
+        {/* <AnimatePresence mode="wait">
+          <motion.div
+            key={isHovered ? hover : thumb}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="absolute inset-0"
+          >
+            <Image src={isHovered ? hover : thumb} alt="" fill className="object-cover" />
+          </motion.div>
+        </AnimatePresence> */}
+
+        {/* <Image src={thumb}
+          alt=""
+          fill
+          className={`object-cover absolute transition-transform duration-700 ease-in-out ${isHovered ? "-translate-x-full" : "translate-x-0"
+            }`}
         />
+        <Image
+          src={hover}
+          alt=""
+          fill
+          className={`object-cover absolute transition-transform duration-700 ease-in-out ${isHovered ? "translate-x-0" : "translate-x-full"
+            }`}
+        /> */}
+
+        <Image
+          src={thumb}
+          alt={`${handle.name.en} - ${selectedFinish} - ${selectedSize}mm`}
+          fill
+          className={`object-cover transition-all duration-700 ease-in-out ${isHovered ? "opacity-0 scale-105" : "opacity-100 scale-100"
+            }`}
+        />
+        <Image
+          src={hover}
+          alt={`${handle.name.en} - ${selectedFinish} - ${selectedSize}mm`}
+          fill
+          className={`object-cover transition-all duration-700 ease-in-out ${isHovered ? "opacity-100 scale-100" : "opacity-0 scale-95"
+            }`}
+        />
+
       </div>
       <div className="space-y-4">
         <div>
-          <h3 className="text-lg font-light text-gray-900 tracking-wide">{handle.name.en}</h3>
-          <p className="text-sm text-gray-600 font-light mt-1">{handle.blurb.en}</p>
+          <h3 className="text-lg font-light text-gray-900 tracking-wide">{handle.name[locale]}</h3>
+          <p className="text-sm text-gray-600 font-light mt-1">{handle.blurb[locale]}</p>
         </div>
         {/* Finish Selector */}
         <div>
@@ -58,9 +126,8 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
               <button
                 key={finish}
                 onClick={() => setSelectedFinish(finish)}
-                className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${
-                  selectedFinish === finish ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
-                }`}
+                className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${selectedFinish === finish ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
+                  }`}
                 style={{ backgroundColor: finishColors[finish] }}
                 aria-label={`Select ${finishLabels[finish]} finish`}
               />
@@ -75,9 +142,8 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
               <button
                 key={size}
                 onClick={() => setSelectedSize(size)}
-                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${
-                  selectedSize === size ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSize === size ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }`}
               >
                 {size}
               </button>
@@ -123,9 +189,8 @@ function FilterBar({
                   ? onFinishChange(selectedFinishes.filter((f) => f !== finish))
                   : onFinishChange([...selectedFinishes, finish])
               }
-              className={`w-6 h-6 rounded-full border-2 mx-1 ${
-                selectedFinishes.includes(finish) ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
-              }`}
+              className={`w-6 h-6 rounded-full border-2 mx-1 ${selectedFinishes.includes(finish) ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
+                }`}
               style={{ backgroundColor: finishColors[finish] }}
               aria-label={`Filter by ${finishLabels[finish]}`}
             />
@@ -142,9 +207,8 @@ function FilterBar({
                   ? onSizeChange(selectedSizes.filter((s) => s !== size))
                   : onSizeChange([...selectedSizes, size])
               }
-              className={`px-3 py-1 text-xs font-light tracking-wide mx-1 ${
-                selectedSizes.includes(size) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
+              className={`px-3 py-1 text-xs font-light tracking-wide mx-1 ${selectedSizes.includes(size) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
             >
               {size}
             </button>
@@ -218,7 +282,7 @@ export default function HandlesPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
-      <Navbar/>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">

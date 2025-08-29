@@ -12,6 +12,11 @@ export type HandleIndexItem = {
   covers: { thumb: string; hover?: string };
   finishes: HandleFinish[];
   sizes: string[];
+  overrides?: {
+    finish: HandleFinish;
+    size: string;
+    covers: { thumb?: string; hover?: string };
+  }[];
 };
 
 export type HandlesIndex = {

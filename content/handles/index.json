@@ -14,14 +14,29 @@
       },
       "defaultVariant": {
         "finish": "black",
-        "size": "600"
+        "size": "150"
       },
-      "covers": {
-        "thumb": "/img/handles/or-020/or-020-600-black.webp",
-        "hover": "/img/handles/or-020/or-020-600-black-2.webp"
-      },
-      "finishes": ["gold", "black", "silver"],
-      "sizes": ["320", "600", "1000"]
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "150",
+        "300",
+        "600",
+        "1000"
+      ],
+      "overrides": [
+        {
+          "finish": "gold",
+          "size": "150",
+          "covers": {
+            "thumb": "/img/handles/or-020/gold/150/gold_150_1.webp",
+            "hover": "/img/handles/or-020/gold/150/gold_150_2.webp"
+          }
+        }
+      ]
     },
     {
       "id": "or-021",
@@ -36,21 +51,144 @@
       },
       "defaultVariant": {
         "finish": "black",
-        "size": "320"
+        "size": "145"
       },
       "covers": {
         "thumb": "/img/handles/or-021/or-021-320-black.webp",
         "hover": "/img/handles/or-021/or-021-320-black-2.webp"
       },
-      "finishes": ["black", "silver"],
-      "sizes": ["160", "320"]
+      "finishes": [
+        "black",
+        "silver",
+        "gold"
+      ],
+      "sizes": [
+        "145",
+        "195",
+        "300",
+        "600",
+        "1000"
+      ]
+    },
+    {
+      "id": "or-020a",
+      "slug": "or-020a",
+      "name": {
+        "en": "Knob OR-O20a",
+        "pl": "Gałka OR-020a"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "27"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "27"
+      ]
+    },
+    {
+      "id": "or-1003",
+      "slug": "or-1003",
+      "name": {
+        "en": "Handle OR-1003",
+        "pl": "Uchwyt OR-1003"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "150"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "150"
+      ]
+    },
+    {
+      "id": "or-029",
+      "slug": "or-029",
+      "name": {
+        "en": "Handle OR-029",
+        "pl": "Uchwyt OR-029"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "200"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "140",
+        "200"
+      ]
+    },
+    {
+      "id": "or-1108a",
+      "slug": "or-1108a",
+      "name": {
+        "en": "Handle OR-1108a",
+        "pl": "Uchwyt OR-1108a"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "300"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "300"
+      ]
     },
     {
       "id": "or-1119",
       "slug": "or-1119",
       "name": {
-        "en": "Knob OR-1119",
-        "pl": "Gałka OR-1119"
+        "en": "Handle OR-1119",
+        "pl": "Uchwyt OR-1119"
       },
       "blurb": {
         "en": "Compact round knob with timeless appeal.",
@@ -64,8 +202,71 @@
         "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
         "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
       },
-      "finishes": ["gold", "black", "silver", "orange"],
-      "sizes": ["30", "40"]
+      "finishes": [
+        "gold",
+        "black",
+        "silver",
+        "orange"
+      ],
+      "sizes": [
+        "30"
+      ]
+    },
+    {
+      "id": "or-8009",
+      "slug": "or-8009",
+      "name": {
+        "en": "Handle OR-8009",
+        "pl": "Uchwyt OR-8009"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "150"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "150", "300", "600", "1000"
+      ]
+    },
+        {
+      "id": "or-8042",
+      "slug": "or-8042",
+      "name": {
+        "en": "Handle OR-8042",
+        "pl": "Uchwyt OR-8042"
+      },
+      "blurb": {
+        "en": "Compact round knob with timeless appeal.",
+        "pl": "Kompaktowa gałka o ponadczasowym charakterze."
+      },
+      "defaultVariant": {
+        "finish": "gold",
+        "size": "63"
+      },
+      "covers": {
+        "thumb": "/img/handles/or-1119/or-1119-30-gold.webp",
+        "hover": "/img/handles/or-1119/or-1119-30-gold-2.webp"
+      },
+      "finishes": [
+        "gold",
+        "black",
+        "silver"
+      ],
+      "sizes": [
+        "63"
+      ]
     }
   ]
 }

@@ -17,7 +17,7 @@ export default function MetaluxPage() {
       {/* Navigation */}
       <Navbar />
 
-      {/* Breadcrumbs */}
+      {/* Breadcrumbs
       <div className="container mx-auto px-8 pt-8">
         <nav className="text-sm text-gray-500 font-light">
           <Link href="/" className="hover:text-gray-700">
@@ -34,7 +34,7 @@ export default function MetaluxPage() {
           <span className="mx-2">/</span>
           <span className="text-gray-900">MetaLux</span>
         </nav>
-      </div>
+      </div> */}
 
       {/* Hero Section */}
       <section className="relative h-screen">

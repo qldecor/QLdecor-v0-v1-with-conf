@@ -23,7 +23,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
             src="/stal_9.jpeg?height=1080&width=1920"
             alt="Premium Stainless Steel Table"
             fill
-            className="object-cover"
+            className="object-cover brightness-70"
             priority
           />
         </div>
