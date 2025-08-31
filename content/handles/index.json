@@ -373,8 +373,7 @@
       },
       "defaultVariant": {
         "finish": "black",
-        "size": "200",
-        "side": "left"
+        "size": "200"
       },
       "finishes": [
         "black",
@@ -384,10 +383,6 @@
       ],
       "sizes": [
         "200"
-      ],
-      "sides": [
-        "left",
-        "right"
       ]
     }
   ]
