@@ -9,16 +9,18 @@ import type { HandleIndexItem, HandleFinish } from "@/types/handles";
 import { useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
-const finishColors = {
+const finishColors: Record<HandleFinish, string> = {
   gold: "#D4AF37",
+  "shiny-gold": "#E6C07B",
   black: "#1A1A1A",
   silver: "#C0C0C0",
   orange: "#FF6B35",
 }
 
-const finishLabels = {
+const finishLabels : Record<HandleFinish, string>= {
   gold: "Gold",
   black: "Black",
+  "shiny-gold": "Gold",
   silver: "Silver",
   orange: "Orange",
 }
@@ -172,7 +174,7 @@ function FilterBar({
   onSortChange: (sort: string) => void
   handles: HandleIndexItem[]
 }) {
-  const allFinishes: HandleFinish[] = ["gold", "black", "silver", "orange"]
+  const allFinishes: HandleFinish[] = ["gold", "shiny-gold", "black", "silver", "orange"] satisfies HandleFinish[]
   const allSizes = Array.from(new Set(handles.flatMap((h) => h.sizes))).sort((a, b) => Number(a) - Number(b))
 
   return (

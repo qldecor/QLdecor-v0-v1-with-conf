@@ -1,5 +1,5 @@
 // types/handles.ts
-export type HandleFinish = "gold" | "black" | "silver" | "orange";
+export type HandleFinish = "gold" | "black" | "silver" | "orange" | "shiny-gold";
 
 export type I18nText = { en: string; pl: string };
 
