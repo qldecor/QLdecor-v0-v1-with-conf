@@ -43,8 +43,8 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
     const baseThumb = `/img/handles/${handle.id}/${finish}/${size}${side ? `/${side}` : ""}/${finish}_${size}${side ? `_${side}` : ""}_1.webp`
     const baseHover = `/img/handles/${handle.id}/${finish}/${size}${side ? `/${side}` : ""}/${finish}_${size}${side ? `_${side}` : ""}_2.webp`
 
-    const thumb = override?.covers?.thumb || baseThumb
-    const hover = override?.covers?.hover || override?.covers?.thumb || baseHover
+    const thumb = override?.covers?.thumb || baseThumb;
+    const hover = override?.covers?.hover || override?.covers?.thumb || baseHover;
 
     return { thumb, hover }
   }

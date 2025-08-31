@@ -348,11 +348,42 @@
       "finishes": [
         "black",
         "silver",
-        "gold"
+        "gold",
+        "orange"
       ],
       "sizes": [
         "200",
         "1100"
+      ],
+      "sides": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "id": "or-2007-2",
+      "slug": "or-2007-2",
+      "name": {
+        "en": "Handle OR-2007-2",
+        "pl": "Uchwyt OR-2007-2"
+      },
+      "blurb": {
+        "en": "Aluminum handle available in left and right versions.",
+        "pl": "Aluminiowy uchwyt dostępny w wersji lewej i prawej."
+      },
+      "defaultVariant": {
+        "finish": "black",
+        "size": "200",
+        "side": "left"
+      },
+      "finishes": [
+        "black",
+        "silver",
+        "gold",
+        "orange"
+      ],
+      "sizes": [
+        "200"
       ],
       "sides": [
         "left",
