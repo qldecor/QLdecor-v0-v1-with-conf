@@ -1,8 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import Navbar from "@/app/[locale]/components/navbar"
-import type { Metadata } from "next"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/app/[locale]/components/ui/button";
+import Navbar from "@/app/[locale]/components/navbar";
+import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "WoodSense Series - Natural Wood Furniture Boards | QLdecor",
@@ -59,12 +60,9 @@ export default function WoodsensePage() {
                 performance of advanced engineered materials. Experience the tactile warmth and visual richness of
                 premium timber without compromise.
               </p>
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
-              >
-                VIEW WOOD FINISHES
-              </Button>
+              <ScrollButton targetId="woodsense-finishes" variant="outline" className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide">
+                EXPLORE WOOD FINISHES
+              </ScrollButton>
             </div>
           </div>
         </div>
@@ -104,7 +102,7 @@ export default function WoodsensePage() {
       </section>
 
       {/* Finishes Palette */}
-      <section className="py-32">
+      <section className="py-32" id="woodsense-finishes">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">WOOD FINISHES</h2>
