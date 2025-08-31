@@ -3,20 +3,27 @@ export type HandleFinish = "gold" | "black" | "silver" | "orange" | "shiny-gold"
 
 export type I18nText = { en: string; pl: string };
 
+export type HandleSide = "left" | "right";
+
 export type HandleIndexItem = {
   id: string;
   slug: string;
   name: I18nText;
   blurb: I18nText;
-  defaultVariant: { finish: HandleFinish; size: string };
+  defaultVariant: { finish: HandleFinish; size: string; side?: HandleSide };
   covers: { thumb: string; hover?: string };
   finishes: HandleFinish[];
   sizes: string[];
+  sides?: HandleSide[];
   overrides?: {
     finish: HandleFinish;
     size: string;
-    covers: { thumb?: string; hover?: string };
-  }[];
+    side?: HandleSide;
+    covers: {
+      thumb: string;
+      hover?: string;
+    }
+  }[]
 };
 
 export type HandlesIndex = {

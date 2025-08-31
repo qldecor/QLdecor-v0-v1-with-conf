@@ -328,6 +328,36 @@
       "sizes": [
         "66"
       ]
+    },
+    {
+      "id": "or-2006-2",
+      "slug": "or-2006-2",
+      "name": {
+        "en": "Handle OR-2006-2",
+        "pl": "Uchwyt OR-2006-2"
+      },
+      "blurb": {
+        "en": "Aluminum handle available in left and right versions.",
+        "pl": "Aluminiowy uchwyt dostępny w wersji lewej i prawej."
+      },
+      "defaultVariant": {
+        "finish": "black",
+        "size": "200",
+        "side": "left"
+      },
+      "finishes": [
+        "black",
+        "silver",
+        "gold"
+      ],
+      "sizes": [
+        "200",
+        "1100"
+      ],
+      "sides": [
+        "left",
+        "right"
+      ]
     }
   ]
 }

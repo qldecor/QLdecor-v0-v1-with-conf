@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/app/[locale]/components/ui/button"
 import Navbar from "@/app/[locale]/components/navbar"
-import type { HandleIndexItem, HandleFinish } from "@/types/handles";
+import type { HandleIndexItem, HandleFinish, HandleSide } from "@/types/handles";
 import { useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -17,7 +17,7 @@ const finishColors: Record<HandleFinish, string> = {
   orange: "#FF6B35",
 }
 
-const finishLabels : Record<HandleFinish, string>= {
+const finishLabels: Record<HandleFinish, string> = {
   gold: "Gold",
   black: "Black",
   "shiny-gold": "Gold",
@@ -30,29 +30,27 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
 
   const [selectedFinish, setSelectedFinish] = useState<HandleFinish>(handle.defaultVariant.finish)
   const [selectedSize, setSelectedSize] = useState(handle.defaultVariant.size)
+  const [selectedSide, setSelectedSide] = useState<HandleSide | undefined>(
+    handle.defaultVariant.side || handle.sides?.[0]
+  )
   const [isHovered, setIsHovered] = useState(false)
 
-  function getVariantCovers(handle: HandleIndexItem, size: string, finish: string) {
+  function getVariantCovers(handle: HandleIndexItem, size: string, finish: string, side?: string) {
     const override = handle.overrides?.find(
-      (o) => o.size === size && o.finish === finish
+      (o) => o.size === size && o.finish === finish && (!o.side || o.side === side)
     )
 
-    // bazowe ścieżki z patternu
-    const baseThumb = `/img/handles/${handle.id}/${finish}/${size}/${finish}_${size}_1.webp`
-    const baseHover = `/img/handles/${handle.id}/${finish}/${size}/${finish}_${size}_2.webp`
+    const baseThumb = `/img/handles/${handle.id}/${finish}/${size}${side ? `/${side}` : ""}/${finish}_${size}${side ? `_${side}` : ""}_1.webp`
+    const baseHover = `/img/handles/${handle.id}/${finish}/${size}${side ? `/${side}` : ""}/${finish}_${size}${side ? `_${side}` : ""}_2.webp`
 
-    // wybór końcowych ścieżek
     const thumb = override?.covers?.thumb || baseThumb
     const hover = override?.covers?.hover || override?.covers?.thumb || baseHover
 
     return { thumb, hover }
   }
-  // Use covers for images
-  // const thumb = handle.covers.thumb
-  // const hover = handle.covers.hover || thumb
   const { thumb, hover } = useMemo(
-    () => getVariantCovers(handle, selectedSize, selectedFinish),
-    [handle.id, selectedSize, selectedFinish]
+    () => getVariantCovers(handle, selectedSize, selectedFinish, selectedSide),
+    [handle.id, selectedSize, selectedFinish, selectedSide]
   )
 
   console.log(thumb, hover)
@@ -128,7 +126,9 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
               <button
                 key={finish}
                 onClick={() => setSelectedFinish(finish)}
-                className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${selectedFinish === finish ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
+                className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${selectedFinish === finish
+                  ? "border-gray-900 scale-110" :
+                  "border-gray-300 hover:border-gray-500"
                   }`}
                 style={{ backgroundColor: finishColors[finish] }}
                 aria-label={`Select ${finishLabels[finish]} finish`}
@@ -144,7 +144,9 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
               <button
                 key={size}
                 onClick={() => setSelectedSize(size)}
-                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSize === size ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSize === size
+                  ? "bg-gray-900 text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
               >
                 {size}
@@ -152,6 +154,26 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
             ))}
           </div>
         </div>
+        {/* Side Selector */}
+        {handle.sides && handle.sides.length > 0 && (
+          <div>
+            <p className="text-xs text-gray-500 font-light tracking-wide mb-2">SIDE</p>
+            <div className="flex gap-2">
+              {handle.sides.map((side) => (
+                <button
+                  key={side}
+                  onClick={() => setSelectedSide(side)}
+                  className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSide === side
+                    ? "bg-gray-900 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                    }`}
+                >
+                  {side.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
