@@ -29,48 +29,48 @@ export default function ColorproPage() {
       id: "CPG13003L",
       i18nKey: "CPG13003L",
       image: {
-        thumb: "/img/boards/colorpro/CPG13003L/CPG13003L_1.webp",
-        hover: "/img/boards/colorpro/CPG13003L/CPG13003L_2.webp",
+        thumb: "/img/boards/colorpro/CPG13003L/CPG13003L_1.jpg",
+        hover: "/img/boards/colorpro/CPG13003L/CPG13003L_2.jpeg",
       },
     },
     {
       id: "CPG14004L",
       i18nKey: "CPG14004L",
       image: {
-        thumb: "/img/boards/colorpro/CPG14004L/CPG14004L_1.webp",
-        hover: "/img/boards/colorpro/CPG14004L/CPG14004L_2.webp",
+        thumb: "/img/boards/colorpro/CPG14004L/CPG14004L_1.jpg",
+        hover: "/img/boards/colorpro/CPG14004L/CPG14004L_2.jpeg",
       },
     },
     {
       id: "CPM14004L",
       i18nKey: "CPM14004L",
       image: {
-        thumb: "/img/boards/colorpro/CPM14004L/CPM14004L_1.webp",
-        hover: "/img/boards/colorpro/CPM14004L/CPM14004L_2.webp",
+        thumb: "/img/boards/colorpro/CPM14004L/CPM14004L_1.jpg",
+        hover: "/img/boards/colorpro/CPM14004L/CPM14004L_2.jpeg",
       },
     },
     {
       id: "CPG12002L",
       i18nKey: "CPG12002L",
       image: {
-        thumb: "/img/boards/colorpro/CPG12002L/CPG12002L_1.webp",
-        hover: "/img/boards/colorpro/CPG12002L/CPG12002L_2.webp",
+        thumb: "/img/boards/colorpro/CPG12002L/CPG12002L_1.jpg",
+        hover: "/img/boards/colorpro/CPG12002L/CPG12002L_2.jpeg",
       },
     },
     {
       id: "CPG11001L",
       i18nKey: "CPG11001L",
       image: {
-        thumb: "/img/boards/colorpro/CPG11001L/CPG11001L_1.webp",
-        hover: "/img/boards/colorpro/CPG11001L/CPG11001L_2.webp",
+        thumb: "/img/boards/colorpro/CPG11001L/CPG11001L_1.jpg",
+        hover: "/img/boards/colorpro/CPG11001L/CPG11001L_2.jpeg",
       },
     },
     {
       id: "CPM13003L",
       i18nKey: "CPM13003L",
       image: {
-        thumb: "/img/boards/colorpro/CPM13003L/CPM13003L_1.webp",
-        hover: "/img/boards/colorpro/CPM13003L/CPM13003L_2.webp",
+        thumb: "/img/boards/colorpro/CPM13003L/CPM13003L_1.jpeg",
+        hover: "/img/boards/colorpro/CPM13003L/CPM13003L_2.jpeg",
       },
     },
   ];
