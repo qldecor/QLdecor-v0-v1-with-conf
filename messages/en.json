@@ -8,5 +8,119 @@
   },
   "home": {
     "welcome": "Welcome to our website!"
+  },
+  "woodsense": {
+    "WS0001Z2M": {
+      "title": "Natural Oak",
+      "description": "Classic oak tones with timeless grain character"
+    },
+    "WS0074Z2M": {
+      "title": "Walnut",
+      "description": "Rich, chocolate-toned walnut with distinctive grain"
+    },
+    "WS090211L": {
+      "title": "Smoked Oak",
+      "description": "Dramatic oak surface with deep smoky undertones"
+    },
+    "WS004801M": {
+      "title": "Cherry",
+      "description": "Warm reddish hues with smooth, even texture"
+    },
+    "WS0001Z1M": {
+      "title": "Light Oak",
+      "description": "Bright, contemporary oak with subtle grain definition"
+    },
+    "WS005801M": {
+      "title": "Teak",
+      "description": "Exotic teak with golden undertones and natural oils"
+    },
+    "WS090053L": {
+      "title": "Dark Oak",
+      "description": "Refined, deep oak finish with bold presence"
+    },
+    "WS0065Z1M": {
+      "title": "Honey Maple",
+      "description": "Soft golden tones with smooth flowing grain"
+    },
+    "WS0024Z2M": {
+      "title": "Ash Grey",
+      "description": "Modern ash-inspired surface with cool neutral hues"
+    },
+    "WS090164L": {
+      "title": "Urban Walnut",
+      "description": "Contemporary walnut finish with subdued richness"
+    },
+    "WS001701M": {
+      "title": "Golden Oak",
+      "description": "Lustrous oak with warm golden highlights"
+    },
+    "WS0068Z3M": {
+      "title": "Midnight Ash",
+      "description": "Deep ash tones with refined, contemporary appeal"
+    },
+    "WS090193L": {
+      "title": "Rustic Pine",
+      "description": "Natural pine-inspired surface with rustic charm"
+    },
+    "WS000502M": {
+      "title": "Aged Oak",
+      "description": "Weathered oak tones with subtle patina effect"
+    },
+    "WS005001M": {
+      "title": "Silver Birch",
+      "description": "Soft pale tones with delicate linear grain"
+    },
+    "WS000101M": {
+      "title": "White Maple",
+      "description": "Clean and contemporary with fine, subtle texture"
+    },
+    "WS0068Z1M": {
+      "title": "Antique Walnut",
+      "description": "Dark walnut with rich vintage depth"
+    },
+    "WS004501M": {
+      "title": "Amber Oak",
+      "description": "Warm amber tones that highlight natural variation"
+    },
+    "WS090121L": {
+      "title": "Charcoal Ash",
+      "description": "Bold, dark finish with a modern industrial edge"
+    },
+    "WS090182L": {
+      "title": "Natural Beech",
+      "description": "Soft honeyed tones with smooth flowing grain"
+    },
+    "WS0008Z1M": {
+      "title": "Coffee Oak",
+      "description": "Deep espresso oak with subtle linear definition"
+    },
+    "WS0066Z1M": {
+      "title": "Sand Maple",
+      "description": "Light beige maple with refined minimal grain"
+    },
+    "WS0024Z3M": {
+      "title": "Ash Brown",
+      "description": "Neutral mid-brown ash with balanced appearance"
+    },
+    "WS090074L": {
+      "title": "Copper Oak",
+      "description": "Warm metallic undertone with glowing highlights"
+    },
+    "WS090012L": {
+      "title": "Ebony Wood",
+      "description": "Deep blackened surface with subtle matte finish"
+    },
+    "WS0003Z2M": {
+      "title": "Grained Walnut",
+      "description": "Distinct walnut structure with pronounced veins"
+    },
+    "WS0073Z1M": {
+      "title": "Pearl Oak",
+      "description": "Soft pearl-grey finish with subtle oak character"
+    },
+    "WS0021Z3M": {
+      "title": "Deep Mahogany",
+      "description": "Luxurious red-brown surface with timeless appeal"
+    }
   }
 }

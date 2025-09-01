@@ -3,21 +3,23 @@ import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
 import Navbar from "@/app/[locale]/components/navbar";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
+import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "WoodSense Series - Natural Wood Furniture Boards | QLdecor",
   description:
     "WoodSense natural wood furniture boards with authentic grain and engineered durability. Available in Light Oak, Walnut, Smoked, and more finishes.",
-  canonical: "/products/furniture-boards/woodsense",
+  canonical: "/products/boards/woodsense",
 }
 
 export default function WoodsensePage() {
+  const t = useTranslations("woodsense");
+
   const woodsenseBoards = [
     {
       id: "WS0001Z2M",
-      title: "NATURAL OAK",
-      description: "Classic oak tones with timeless grain character",
+      i18nKey: "WS0001Z2M",
       image: {
         thumb: "/img/boards/woodsense/WS0001Z2M/WS0001Z2M_1.webp",
         hover: "/img/boards/woodsense/WS0001Z2M/WS0001Z2M_2.webp",
@@ -25,8 +27,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0074Z2M",
-      title: "WALNUT",
-      description: "Rich, chocolate-toned walnut with distinctive grain",
+      i18nKey: "WS0074Z2M",
       image: {
         thumb: "/img/boards/woodsense/WS0074Z2M/WS0074Z2M_1.webp",
         hover: "/img/boards/woodsense/WS0074Z2M/WS0074Z2M_2.webp",
@@ -34,8 +35,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090211L",
-      title: "SMOKED OAK",
-      description: "Dramatic oak surface with deep smoky undertones",
+      i18nKey: "WS090211L",
       image: {
         thumb: "/img/boards/woodsense/WS090211L/WS090211L_1.webp",
         hover: "/img/boards/woodsense/WS090211L/WS090211L_2.webp",
@@ -43,8 +43,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS004801M",
-      title: "CHERRY",
-      description: "Warm reddish hues with smooth, even texture",
+      i18nKey: "WS004801M",
       image: {
         thumb: "/img/boards/woodsense/WS004801M/WS004801M_1.webp",
         hover: "/img/boards/woodsense/WS004801M/WS004801M_2.webp",
@@ -52,8 +51,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0001Z1M",
-      title: "LIGHT OAK",
-      description: "Bright, contemporary oak with subtle grain definition",
+      i18nKey: "WS0001Z1M",
       image: {
         thumb: "/img/boards/woodsense/WS0001Z1M/WS0001Z1M_1.webp",
         hover: "/img/boards/woodsense/WS0001Z1M/WS0001Z1M_2.webp",
@@ -61,8 +59,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS005801M",
-      title: "TEAK",
-      description: "Exotic teak with golden undertones and natural oils",
+      i18nKey: "WS005801M",
       image: {
         thumb: "/img/boards/woodsense/WS005801M/WS005801M_1.webp",
         hover: "/img/boards/woodsense/WS005801M/WS005801M_2.webp",
@@ -70,8 +67,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090053L",
-      title: "DARK OAK",
-      description: "Refined, deep oak finish with bold presence",
+      i18nKey: "WS090053L",
       image: {
         thumb: "/img/boards/woodsense/WS090053L/WS090053L_1.webp",
         hover: "/img/boards/woodsense/WS090053L/WS090053L_2.webp",
@@ -79,8 +75,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0065Z1M",
-      title: "HONEY MAPLE",
-      description: "Soft golden tones with smooth flowing grain",
+      i18nKey: "WS0065Z1M",
       image: {
         thumb: "/img/boards/woodsense/WS0065Z1M/WS0065Z1M_1.webp",
         hover: "/img/boards/woodsense/WS0065Z1M/WS0065Z1M_2.webp",
@@ -88,8 +83,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0024Z2M",
-      title: "ASH GREY",
-      description: "Modern ash-inspired surface with cool neutral hues",
+      i18nKey: "WS0024Z2M",
       image: {
         thumb: "/img/boards/woodsense/WS0024Z2M/WS0024Z2M_1.webp",
         hover: "/img/boards/woodsense/WS0024Z2M/WS0024Z2M_2.webp",
@@ -97,8 +91,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090164L",
-      title: "URBAN WALNUT",
-      description: "Contemporary walnut finish with subdued richness",
+      i18nKey: "WS090164L",
       image: {
         thumb: "/img/boards/woodsense/WS090164L/WS090164L_1.webp",
         hover: "/img/boards/woodsense/WS090164L/WS090164L_2.webp",
@@ -106,8 +99,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS001701M",
-      title: "GOLDEN OAK",
-      description: "Lustrous oak with warm golden highlights",
+      i18nKey: "WS001701M",
       image: {
         thumb: "/img/boards/woodsense/WS001701M/WS001701M_1.webp",
         hover: "/img/boards/woodsense/WS001701M/WS001701M_2.webp",
@@ -115,8 +107,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0068Z3M",
-      title: "MIDNIGHT ASH",
-      description: "Deep ash tones with refined, contemporary appeal",
+      i18nKey: "WS0068Z3M",
       image: {
         thumb: "/img/boards/woodsense/WS0068Z3M/WS0068Z3M_1.webp",
         hover: "/img/boards/woodsense/WS0068Z3M/WS0068Z3M_2.webp",
@@ -124,8 +115,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090193L",
-      title: "RUSTIC PINE",
-      description: "Natural pine-inspired surface with rustic charm",
+      i18nKey: "WS090193L",
       image: {
         thumb: "/img/boards/woodsense/WS090193L/WS090193L_1.webp",
         hover: "/img/boards/woodsense/WS090193L/WS090193L_2.webp",
@@ -133,8 +123,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS000502M",
-      title: "AGED OAK",
-      description: "Weathered oak tones with subtle patina effect",
+      i18nKey: "WS000502M",
       image: {
         thumb: "/img/boards/woodsense/WS000502M/WS000502M_1.webp",
         hover: "/img/boards/woodsense/WS000502M/WS000502M_2.webp",
@@ -142,8 +131,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS005001M",
-      title: "SILVER BIRCH",
-      description: "Soft pale tones with delicate linear grain",
+      i18nKey: "WS005001M",
       image: {
         thumb: "/img/boards/woodsense/WS005001M/WS005001M_1.webp",
         hover: "/img/boards/woodsense/WS005001M/WS005001M_2.webp",
@@ -151,8 +139,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS000101M",
-      title: "WHITE MAPLE",
-      description: "Clean and contemporary with fine, subtle texture",
+      i18nKey: "WS000101M",
       image: {
         thumb: "/img/boards/woodsense/WS000101M/WS000101M_1.webp",
         hover: "/img/boards/woodsense/WS000101M/WS000101M_2.webp",
@@ -160,8 +147,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0068Z1M",
-      title: "ANTIQUE WALNUT",
-      description: "Dark walnut with rich vintage depth",
+      i18nKey: "WS0068Z1M",
       image: {
         thumb: "/img/boards/woodsense/WS0068Z1M/WS0068Z1M_1.webp",
         hover: "/img/boards/woodsense/WS0068Z1M/WS0068Z1M_2.webp",
@@ -169,8 +155,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS004501M",
-      title: "AMBER OAK",
-      description: "Warm amber tones that highlight natural variation",
+      i18nKey: "WS004501M",
       image: {
         thumb: "/img/boards/woodsense/WS004501M/WS004501M_1.webp",
         hover: "/img/boards/woodsense/WS004501M/WS004501M_2.webp",
@@ -178,8 +163,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090121L",
-      title: "CHARCOAL ASH",
-      description: "Bold, dark finish with a modern industrial edge",
+      i18nKey: "WS090121L",
       image: {
         thumb: "/img/boards/woodsense/WS090121L/WS090121L_1.webp",
         hover: "/img/boards/woodsense/WS090121L/WS090121L_2.webp",
@@ -187,8 +171,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090182L",
-      title: "NATURAL BEECH",
-      description: "Soft honeyed tones with smooth flowing grain",
+      i18nKey: "WS090182L",
       image: {
         thumb: "/img/boards/woodsense/WS090182L/WS090182L_1.webp",
         hover: "/img/boards/woodsense/WS090182L/WS090182L_2.webp",
@@ -196,8 +179,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0008Z1M",
-      title: "COFFEE OAK",
-      description: "Deep espresso oak with subtle linear definition",
+      i18nKey: "WS0008Z1M",
       image: {
         thumb: "/img/boards/woodsense/WS0008Z1M/WS0008Z1M_1.webp",
         hover: "/img/boards/woodsense/WS0008Z1M/WS0008Z1M_2.webp",
@@ -205,8 +187,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0066Z1M",
-      title: "SAND MAPLE",
-      description: "Light beige maple with refined minimal grain",
+      i18nKey: "WS0066Z1M",
       image: {
         thumb: "/img/boards/woodsense/WS0066Z1M/WS0066Z1M_1.webp",
         hover: "/img/boards/woodsense/WS0066Z1M/WS0066Z1M_2.webp",
@@ -214,8 +195,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0024Z3M",
-      title: "ASH BROWN",
-      description: "Neutral mid-brown ash with balanced appearance",
+      i18nKey: "WS0024Z3M",
       image: {
         thumb: "/img/boards/woodsense/WS0024Z3M/WS0024Z3M_1.webp",
         hover: "/img/boards/woodsense/WS0024Z3M/WS0024Z3M_2.webp",
@@ -223,8 +203,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090074L",
-      title: "COPPER OAK",
-      description: "Warm metallic undertone with glowing highlights",
+      i18nKey: "WS090074L",
       image: {
         thumb: "/img/boards/woodsense/WS090074L/WS090074L_1.webp",
         hover: "/img/boards/woodsense/WS090074L/WS090074L_2.webp",
@@ -232,8 +211,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS090012L",
-      title: "EBONY WOOD",
-      description: "Deep blackened surface with subtle matte finish",
+      i18nKey: "WS090012L",
       image: {
         thumb: "/img/boards/woodsense/WS090012L/WS090012L_1.webp",
         hover: "/img/boards/woodsense/WS090012L/WS090012L_2.webp",
@@ -241,8 +219,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0003Z2M",
-      title: "GRAINED WALNUT",
-      description: "Distinct walnut structure with pronounced veins",
+      i18nKey: "WS0003Z2M",
       image: {
         thumb: "/img/boards/woodsense/WS0003Z2M/WS0003Z2M_1.webp",
         hover: "/img/boards/woodsense/WS0003Z2M/WS0003Z2M_2.webp",
@@ -250,8 +227,7 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0073Z1M",
-      title: "PEARL OAK",
-      description: "Soft pearl-grey finish with subtle oak character",
+      i18nKey: "WS0073Z1M",
       image: {
         thumb: "/img/boards/woodsense/WS0073Z1M/WS0073Z1M_1.webp",
         hover: "/img/boards/woodsense/WS0073Z1M/WS0073Z1M_2.webp",
@@ -259,14 +235,14 @@ export default function WoodsensePage() {
     },
     {
       id: "WS0021Z3M",
-      title: "DEEP MAHOGANY",
-      description: "Luxurious red-brown surface with timeless appeal",
+      i18nKey: "WS0021Z3M",
       image: {
         thumb: "/img/boards/woodsense/WS0021Z3M/WS0021Z3M_1.webp",
         hover: "/img/boards/woodsense/WS0021Z3M/WS0021Z3M_2.webp",
       },
     },
   ];
+
 
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -374,25 +350,29 @@ export default function WoodsensePage() {
                 <div className="relative aspect-[3/4] mb-6">
                   <Image
                     src={board.image.thumb}
-                    alt={board.title}
+                    alt={t(`${board.id}.title`)}
                     fill
                     className="object-contain rounded-lg transition-opacity duration-500 group-hover:opacity-0"
                     sizes="(max-width: 768px) 100vw,
-             (max-width: 1200px) 50vw,
-             33vw"
+                     (max-width: 1200px) 50vw,
+                     33vw"
                   />
                   <Image
                     src={board.image.hover}
-                    alt={board.title}
+                    alt={t(`${board.id}.title`)}
                     fill
                     className="object-contain rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     sizes="(max-width: 768px) 100vw,
-             (max-width: 1200px) 50vw,
-             33vw"
+                     (max-width: 1200px) 50vw,
+                     33vw"
                   />
                 </div>
-                <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">{board.title}</h3>
-                <p className="text-gray-600 font-light text-sm">{board.description}</p>
+                <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                  {t(`${board.id}.title`)}
+                </h3>
+                <p className="text-gray-600 font-light text-sm">
+                  {t(`${board.id}.description`)}
+                </p>
               </div>
             ))}
           </div>

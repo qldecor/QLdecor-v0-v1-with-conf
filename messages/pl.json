@@ -5,6 +5,119 @@
     "projects": "Projekty",
     "about": "O nas",
     "contact": "Kontakt"
-
+  },
+  "woodsense": {
+    "WS0001Z2M": {
+      "title": "Dąb Naturalny",
+      "description": "Klasyczne tony dębu z ponadczasowym usłojeniem"
+    },
+    "WS0074Z2M": {
+      "title": "Orzech",
+      "description": "Bogaty, czekoladowy odcień orzecha z wyrazistym rysunkiem"
+    },
+    "WS090211L": {
+      "title": "Dąb Wędzony",
+      "description": "Dramatyczny wygląd dębu z głębokimi, dymnymi tonami"
+    },
+    "WS004801M": {
+      "title": "Wiśnia",
+      "description": "Ciepłe, czerwone odcienie z gładką, równą fakturą"
+    },
+    "WS0001Z1M": {
+      "title": "Dąb Jasny",
+      "description": "Jasny, współczesny dąb z subtelnym rysunkiem słojów"
+    },
+    "WS005801M": {
+      "title": "Teak",
+      "description": "Egzotyczny teak ze złocistymi tonami i naturalnymi olejami"
+    },
+    "WS090053L": {
+      "title": "Dąb Ciemny",
+      "description": "Wytworne, głębokie wykończenie dębu o mocnym charakterze"
+    },
+    "WS0065Z1M": {
+      "title": "Klon Miodowy",
+      "description": "Miękkie złote tony z płynnym usłojeniem"
+    },
+    "WS0024Z2M": {
+      "title": "Jesion Szary",
+      "description": "Nowoczesna powierzchnia inspirowana jesionem w chłodnych odcieniach"
+    },
+    "WS090164L": {
+      "title": "Orzech Miejski",
+      "description": "Współczesne wykończenie orzecha o stonowanym charakterze"
+    },
+    "WS001701M": {
+      "title": "Dąb Złocisty",
+      "description": "Lśniący dąb z ciepłymi, złotymi akcentami"
+    },
+    "WS0068Z3M": {
+      "title": "Jesion Nocny",
+      "description": "Głębokie tony jesionu o nowoczesnym wyrazie"
+    },
+    "WS090193L": {
+      "title": "Sosna Rustykalna",
+      "description": "Naturalna powierzchnia inspirowana sosną o rustykalnym charakterze"
+    },
+    "WS000502M": {
+      "title": "Dąb Postarzany",
+      "description": "Wyblakłe tony dębu z subtelną patyną"
+    },
+    "WS005001M": {
+      "title": "Brzoza Srebrzysta",
+      "description": "Delikatne, jasne tony z subtelnym liniowym usłojeniem"
+    },
+    "WS000101M": {
+      "title": "Klon Biały",
+      "description": "Czysty i nowoczesny wygląd z delikatną fakturą"
+    },
+    "WS0068Z1M": {
+      "title": "Orzech Antyczny",
+      "description": "Ciemny orzech o głębokim, vintage’owym charakterze"
+    },
+    "WS004501M": {
+      "title": "Dąb Bursztynowy",
+      "description": "Ciepłe bursztynowe tony podkreślające naturalne różnice"
+    },
+    "WS090121L": {
+      "title": "Jesion Węglowy",
+      "description": "Odważne, ciemne wykończenie w industrialnym stylu"
+    },
+    "WS090182L": {
+      "title": "Buk Naturalny",
+      "description": "Miękkie, miodowe tony z płynnym rysunkiem słojów"
+    },
+    "WS0008Z1M": {
+      "title": "Dąb Kawowy",
+      "description": "Głęboki odcień espresso z subtelnym rysunkiem liniowym"
+    },
+    "WS0066Z1M": {
+      "title": "Klon Piaskowy",
+      "description": "Jasny, beżowy klon o minimalistycznym usłojeniu"
+    },
+    "WS0024Z3M": {
+      "title": "Jesion Brązowy",
+      "description": "Neutralny, średni brąz jesionu o zrównoważonym wyglądzie"
+    },
+    "WS090074L": {
+      "title": "Dąb Miedziany",
+      "description": "Ciepły, metaliczny odcień ze świetlistymi akcentami"
+    },
+    "WS090012L": {
+      "title": "Drewno Hebanowe",
+      "description": "Głęboka, czarna powierzchnia z delikatnym, matowym wykończeniem"
+    },
+    "WS0003Z2M": {
+      "title": "Orzech Usłojony",
+      "description": "Wyraźna struktura orzecha z mocnym rysunkiem"
+    },
+    "WS0073Z1M": {
+      "title": "Dąb Perłowy",
+      "description": "Delikatne perłowo-szare wykończenie z subtelnym charakterem dębu"
+    },
+    "WS0021Z3M": {
+      "title": "Mahoń Głęboki",
+      "description": "Szlachetna, czerwonobrązowa powierzchnia o ponadczasowym uroku"
+    }
   }
 }
