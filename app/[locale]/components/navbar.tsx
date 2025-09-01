@@ -57,7 +57,7 @@ export default function Navbar() {
                   <div className="mx-auto max-w-7xl px-12 py-10 grid grid-cols-4 gap-12 text-sm">
                     {/* Płyty meblowe */}
                     <div>
-                      <h3 className="font-semibold mb-4 uppercase">Płyty Meblowe</h3>
+                      <h3 className="font-semibold mb-4 uppercase">{t('boards')}</h3>
                       <ul className="space-y-2">
                         <li><Link href="/products/boards/metalux">MetaLux</Link></li>
                         <li><Link href="/products/boards/colorpro">ColorPro</Link></li>
@@ -67,26 +67,32 @@ export default function Navbar() {
 
                     {/* Uchwyty */}
                     <div>
-                      <h3 className="font-semibold mb-4 uppercase">Uchwyty Meblowe</h3>
-                      <ul className="space-y-2">
-                        <li><Link href="/products/handles">Wszystkie</Link></li>
-                      </ul>
+                      <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
+             transition-colors duration-300 hover:text-gray-900
+             after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
+             after:w-0 after:h-[1px] after:bg-black/70
+             after:transition-all after:duration-500 after:ease-in-out
+             hover:after:w-full uppercase" href="/products/handles">{t('handles')}</Link>
                     </div>
 
                     {/* Wieszaki */}
                     <div>
-                      <h3 className="font-semibold mb-4 uppercase">Wieszaki</h3>
-                      <ul className="space-y-2">
-                        <li><Link href="/products/hooks">Wszystkie</Link></li>
-                      </ul>
+                      <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
+             transition-colors duration-300 hover:text-gray-900
+             after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
+             after:w-0 after:h-[1px] after:bg-black/70
+             after:transition-all after:duration-500 after:ease-in-out
+             hover:after:w-full uppercase" href="/products/handles">{t('hooks')}</Link>
                     </div>
 
                     {/* Meble */}
                     <div>
-                      <h3 className="font-semibold mb-4 uppercase">Meble</h3>
-                      <ul className="space-y-2">
-                        <li><Link href="/products/furniture">Wszystkie</Link></li>
-                      </ul>
+                      <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
+             transition-colors duration-300 hover:text-gray-900
+             after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
+             after:w-0 after:h-[1px] after:bg-black/70
+             after:transition-all after:duration-500 after:ease-in-out
+             hover:after:w-full uppercase" href="/products/handles">{t('furniture')}</Link>
                     </div>
                   </div>
                 </div>

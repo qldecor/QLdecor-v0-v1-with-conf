@@ -4,7 +4,11 @@
     "collections": "Collections",
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "boards": "Boards",
+    "handles": "Handles",
+    "hooks": "Hooks",
+    "furniture": "Furniture"
   },
   "home": {
     "welcome": "Welcome to our website!"

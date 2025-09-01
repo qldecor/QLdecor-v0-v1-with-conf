@@ -4,7 +4,11 @@
     "collections": "Kolekcje",
     "projects": "Projekty",
     "about": "O nas",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "boards": "Płyty Meblowe",
+    "handles": "Uchwyty",
+    "hooks": "Wieszaki",
+    "furniture": "Meble"
   },
   "boards": {
     "woodsense": {
