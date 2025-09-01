@@ -119,5 +119,27 @@
       "title": "Mahoń Głęboki",
       "description": "Szlachetna, czerwonobrązowa powierzchnia o ponadczasowym uroku"
     }
+  },
+  "metalux": {
+    "MLG21001L": {
+      "title": "Stal Szczotkowana",
+      "description": "Subtelna metaliczna faktura o nowoczesnym, industrialnym charakterze"
+    },
+    "MLG22002L": {
+      "title": "Złoto Szampańskie",
+      "description": "Eleganckie złote tony z wyrafinowanym metalicznym połyskiem"
+    },
+    "MLG23003L": {
+      "title": "Grafitowy",
+      "description": "Głęboki grafit z gładką, metaliczną głębią"
+    },
+    "MLG24004L": {
+      "title": "Miedź Brązowa",
+      "description": "Ciepłe, miedziane odcienie o wyrafinowanym, metalicznym blasku"
+    },
+    "MLG25005L": {
+      "title": "Srebro Tytanowe",
+      "description": "Chłodna srebrna powierzchnia o nowoczesnym, minimalistycznym charakterze"
+    }
   }
 }

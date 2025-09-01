@@ -350,7 +350,7 @@ export default function WoodsensePage() {
                 <div className="relative aspect-[3/4] mb-6">
                   <Image
                     src={board.image.thumb}
-                    alt={t(`${board.id}.title`)}
+                    alt={t(`${board.i18nKey}.title`)}
                     fill
                     className="object-contain rounded-lg transition-opacity duration-500 group-hover:opacity-0"
                     sizes="(max-width: 768px) 100vw,
@@ -359,7 +359,7 @@ export default function WoodsensePage() {
                   />
                   <Image
                     src={board.image.hover}
-                    alt={t(`${board.id}.title`)}
+                    alt={t(`${board.i18nKey}.title`)}
                     fill
                     className="object-contain rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     sizes="(max-width: 768px) 100vw,
@@ -368,10 +368,13 @@ export default function WoodsensePage() {
                   />
                 </div>
                 <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
-                  {t(`${board.id}.title`)}
+                  {t(`${board.i18nKey}.title`)}
                 </h3>
                 <p className="text-gray-600 font-light text-sm">
-                  {t(`${board.id}.description`)}
+                  {t(`${board.i18nKey}.description`)}
+                </p>
+                <p className="text-xs text-gray-400 mt-2 tracking-widest">
+                  {board.id}
                 </p>
               </div>
             ))}

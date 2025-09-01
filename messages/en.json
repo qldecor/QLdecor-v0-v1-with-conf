@@ -122,5 +122,27 @@
       "title": "Deep Mahogany",
       "description": "Luxurious red-brown surface with timeless appeal"
     }
+  },
+  "metalux": {
+    "MLG21001L": {
+      "title": "Brushed Steel",
+      "description": "Subtle metallic texture with modern industrial character"
+    },
+    "MLG22002L": {
+      "title": "Champagne Gold",
+      "description": "Elegant golden tones with refined metallic shimmer"
+    },
+    "MLG23003L": {
+      "title": "Graphite Grey",
+      "description": "Deep graphite finish with smooth metallic depth"
+    },
+    "MLG24004L": {
+      "title": "Copper Bronze",
+      "description": "Warm copper hues with sophisticated metallic radiance"
+    },
+    "MLG25005L": {
+      "title": "Titanium Silver",
+      "description": "Cool silver surface with sleek contemporary appeal"
+    }
   }
 }

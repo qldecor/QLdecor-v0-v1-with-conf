@@ -1,17 +1,64 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import Navbar from "@/app/[locale]/components/navbar"
-import type { Metadata } from "next"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/app/[locale]/components/ui/button";
+import Navbar from "@/app/[locale]/components/navbar";
+import type { Metadata } from "next";
+import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "MetaLux Series - Metallic Furniture Boards | QLdecor",
   description:
     "MetaLux metallic furniture boards with futuristic sheen and architectural presence. Premium finishes including Titanium, Graphite, and Champagne.",
   canonical: "/products/furniture-boards/metalux",
-}
+};
 
 export default function MetaluxPage() {
+  const t = useTranslations("metalux");
+  const metaluxBoards = [
+    {
+      id: "MLG21001L",
+      i18nKey: "MLG21001L",
+      image: {
+        thumb: "/img/boards/metalux/MLG21001L/MLG21001L_1.webp",
+        hover: "/img/boards/metalux/MLG21001L/MLG21001L_2.webp",
+      },
+    },
+    {
+      id: "MLG22002L",
+      i18nKey: "MLG22002L",
+      image: {
+        thumb: "/img/boards/metalux/MLG22002L/MLG22002L_1.webp",
+        hover: "/img/boards/metalux/MLG22002L/MLG22002L_2.webp",
+      },
+    },
+    {
+      id: "MLG23003L",
+      i18nKey: "MLG23003L",
+      image: {
+        thumb: "/img/boards/metalux/MLG23003L/MLG23003L_1.webp",
+        hover: "/img/boards/metalux/MLG23003L/MLG23003L_2.webp",
+      },
+    },
+    {
+      id: "MLG24004L",
+      i18nKey: "MLG24004L",
+      image: {
+        thumb: "/img/boards/metalux/MLG24004L/MLG24004L_1.webp",
+        hover: "/img/boards/metalux/MLG24004L/MLG24004L_2.webp",
+      },
+    },
+    {
+      id: "MLG25005L",
+      i18nKey: "MLG25005L",
+      image: {
+        thumb: "/img/boards/metalux/MLG25005L/MLG25005L_1.webp",
+        hover: "/img/boards/metalux/MLG25005L/MLG25005L_2.webp",
+      },
+    },
+  ];
+
+
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
@@ -59,12 +106,9 @@ export default function MetaluxPage() {
                 statements. Advanced surface technology creates depth and luminosity while maintaining exceptional
                 scratch resistance and durability.
               </p>
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
-              >
+              <ScrollButton targetId="metalux-finishes" variant="outline" className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide">
                 VIEW FINISHES
-              </Button>
+              </ScrollButton>
             </div>
           </div>
         </div>
@@ -99,7 +143,7 @@ export default function MetaluxPage() {
       </section>
 
       {/* Finishes Palette */}
-      <section className="py-32">
+      <section id="metalux-finishes" className="py-32">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">METALLIC FINISHES</h2>
@@ -110,43 +154,39 @@ export default function MetaluxPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gradient-to-br from-gray-300 to-gray-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">TITANIUM</h3>
-              <p className="text-gray-600 font-light text-sm">
-                Cool, contemporary metallic with subtle blue undertones
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">GRAPHITE</h3>
-              <p className="text-gray-600 font-light text-sm">Deep, sophisticated metallic with charcoal depth</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gradient-to-br from-yellow-200 to-yellow-400 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">CHAMPAGNE</h3>
-              <p className="text-gray-600 font-light text-sm">Warm, luxurious metallic with golden highlights</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gradient-to-br from-red-300 to-red-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">COPPER</h3>
-              <p className="text-gray-600 font-light text-sm">Rich, organic metallic with natural warmth</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gradient-to-br from-gray-100 to-gray-300 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">PLATINUM</h3>
-              <p className="text-gray-600 font-light text-sm">Pure, refined metallic with mirror-like clarity</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gradient-to-br from-purple-300 to-purple-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">STEEL BLUE</h3>
-              <p className="text-gray-600 font-light text-sm">Industrial metallic with cool blue-gray tones</p>
-            </div>
+            {metaluxBoards.map((board) => (
+              <div key={board.id} className="relative text-center group">
+                <div className="relative aspect-[3/4] mb-6">
+                  <Image
+                    src={board.image.thumb}
+                    alt={t(`${board.i18nKey}.title`)}
+                    fill
+                    className="object-contain rounded-lg transition-opacity duration-500 group-hover:opacity-0"
+                    sizes="(max-width: 768px) 100vw,
+                                 (max-width: 1200px) 50vw,
+                                 33vw"
+                  />
+                  <Image
+                    src={board.image.hover}
+                    alt={t(`${board.i18nKey}.title`)}
+                    fill
+                    className="object-contain rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    sizes="(max-width: 768px) 100vw,
+                                 (max-width: 1200px) 50vw,
+                                 33vw"
+                  />
+                </div>
+                <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                  {t(`${board.i18nKey}.title`)}
+                </h3>
+                <p className="text-gray-600 font-light text-sm">
+                  {t(`${board.i18nKey}.description`)}
+                </p>
+                <p className="text-xs text-gray-400 mt-2 tracking-widest">
+                  {board.id}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
