@@ -208,3 +208,51 @@ h6 {
   filter: grayscale(0%);
   transition: filter 0.3s ease;
 }
+
+
+
+
+
+/* Navbar dropdown animation */
+.navbar-slide-link {
+  position: relative;
+  display: block;
+  height: 1.2em;
+  overflow: hidden;
+}
+
+/* .navbar-slide-link  */
+.main-text,
+/* .navbar-slide-link */
+.see-all {
+  display: block;
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+}
+
+/* .navbar-slide-link  */
+.main-text {
+  transform: translateY(-5px);
+}
+
+/* .navbar-slide-link */
+.see-all {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(0,0,0,0.7);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.linksss:hover .main-text {
+  transform: translateY(-100%);
+}
+
+.linksss:hover .see-all {
+  transform: translateY(0);
+}

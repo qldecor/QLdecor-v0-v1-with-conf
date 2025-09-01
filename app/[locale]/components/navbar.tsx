@@ -66,13 +66,16 @@ export default function Navbar() {
                     </div>
 
                     {/* Uchwyty */}
-                    <div>
-                      <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
-             transition-colors duration-300 hover:text-gray-900
-             after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
-             after:w-0 after:h-[1px] after:bg-black/70
-             after:transition-all after:duration-500 after:ease-in-out
-             hover:after:w-full uppercase" href="/products/handles">{t('handles')}</Link>
+                    <div className="navbar-slide-link">
+                      <Link
+                        href="/products/handles"
+                        className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
+                      >
+                        {/* <span className="navbar-slide-link"> */}
+                        <span className="main-text">Uchwyty Meblowe</span>
+                        <span className="see-all">SEE ALL</span>
+                        {/* </span> */}
+                      </Link>
                     </div>
 
                     {/* Wieszaki */}
