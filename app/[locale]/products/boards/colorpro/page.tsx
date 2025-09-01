@@ -1,17 +1,80 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import Navbar from "@/app/[locale]/components/navbar"
-import type { Metadata } from "next"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/app/[locale]/components/ui/button";
+import Navbar from "@/app/[locale]/components/navbar";
+import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
+import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 
 export const metadata: Metadata = {
   title: "ColorPro Series - Unlimited Color Furniture Boards | QLdecor",
   description:
     "ColorPro furniture boards with unlimited color possibilities and exceptional fade resistance. Bold chromatics and endless customization options.",
   canonical: "/products/furniture-boards/colorpro",
-}
+};
 
 export default function ColorproPage() {
+  const t = useTranslations("colorpro");
+
+  const colorproBoards = [
+    {
+      id: "CPM12002L",
+      i18nKey: "CPM12002L",
+      image: {
+        thumb: "/img/boards/colorpro/CPM12002L/CPM12002L_1.jpg",
+        hover: "/img/boards/colorpro/CPM12002L/CPM12002L_2.jpeg",
+      },
+    },
+    {
+      id: "CPG13003L",
+      i18nKey: "CPG13003L",
+      image: {
+        thumb: "/img/boards/colorpro/CPG13003L/CPG13003L_1.webp",
+        hover: "/img/boards/colorpro/CPG13003L/CPG13003L_2.webp",
+      },
+    },
+    {
+      id: "CPG14004L",
+      i18nKey: "CPG14004L",
+      image: {
+        thumb: "/img/boards/colorpro/CPG14004L/CPG14004L_1.webp",
+        hover: "/img/boards/colorpro/CPG14004L/CPG14004L_2.webp",
+      },
+    },
+    {
+      id: "CPM14004L",
+      i18nKey: "CPM14004L",
+      image: {
+        thumb: "/img/boards/colorpro/CPM14004L/CPM14004L_1.webp",
+        hover: "/img/boards/colorpro/CPM14004L/CPM14004L_2.webp",
+      },
+    },
+    {
+      id: "CPG12002L",
+      i18nKey: "CPG12002L",
+      image: {
+        thumb: "/img/boards/colorpro/CPG12002L/CPG12002L_1.webp",
+        hover: "/img/boards/colorpro/CPG12002L/CPG12002L_2.webp",
+      },
+    },
+    {
+      id: "CPG11001L",
+      i18nKey: "CPG11001L",
+      image: {
+        thumb: "/img/boards/colorpro/CPG11001L/CPG11001L_1.webp",
+        hover: "/img/boards/colorpro/CPG11001L/CPG11001L_2.webp",
+      },
+    },
+    {
+      id: "CPM13003L",
+      i18nKey: "CPM13003L",
+      image: {
+        thumb: "/img/boards/colorpro/CPM13003L/CPM13003L_1.webp",
+        hover: "/img/boards/colorpro/CPM13003L/CPM13003L_2.webp",
+      },
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
@@ -59,12 +122,11 @@ export default function ColorproPage() {
                 stability. Create furniture that makes bold statements while maintaining vibrant appearance for years to
                 come.
               </p>
-              <Button
+
+              <ScrollButton
+                targetId="colorpro-finishes"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
-              >
-                EXPLORE COLORS
-              </Button>
+                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide">EXPLORE COLORS</ScrollButton>
             </div>
           </div>
         </div>
@@ -104,7 +166,7 @@ export default function ColorproPage() {
       </section>
 
       {/* Finishes Palette */}
-      <section className="py-32">
+      <section id="colorpro-finishes" className="py-32">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">COLOR PALETTE</h2>
@@ -113,79 +175,40 @@ export default function ColorproPage() {
               specification.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-red-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">CRIMSON</h3>
-              <p className="text-gray-600 font-light text-sm">Bold, passionate red with deep saturation</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-blue-600 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">SAPPHIRE</h3>
-              <p className="text-gray-600 font-light text-sm">Rich, royal blue with sophisticated depth</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-green-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">EMERALD</h3>
-              <p className="text-gray-600 font-light text-sm">Vibrant green with natural energy</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-purple-600 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">AMETHYST</h3>
-              <p className="text-gray-600 font-light text-sm">Luxurious purple with regal presence</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-orange-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">TANGERINE</h3>
-              <p className="text-gray-600 font-light text-sm">Energetic orange with warm vitality</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-yellow-400 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">CITRINE</h3>
-              <p className="text-gray-600 font-light text-sm">Bright yellow with sunny optimism</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-pink-500 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">FUCHSIA</h3>
-              <p className="text-gray-600 font-light text-sm">Bold pink with contemporary edge</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-teal-600 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">TURQUOISE</h3>
-              <p className="text-gray-600 font-light text-sm">Calming blue-green with oceanic depth</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gray-800 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">CHARCOAL</h3>
-              <p className="text-gray-600 font-light text-sm">Deep, sophisticated neutral</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-gray-100 rounded-lg border"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">PEARL</h3>
-              <p className="text-gray-600 font-light text-sm">Pure, luminous white with subtle depth</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-indigo-600 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">MIDNIGHT</h3>
-              <p className="text-gray-600 font-light text-sm">Deep indigo with mysterious allure</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 mb-6 bg-rose-400 rounded-lg"></div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">BLUSH</h3>
-              <p className="text-gray-600 font-light text-sm">Soft rose with gentle warmth</p>
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {colorproBoards.map((board) => (
+              <div key={board.id} className="relative text-center group">
+                <div className="relative aspect-[3/4] mb-6">
+                  <Image
+                    src={board.image.thumb}
+                    alt={t(`${board.i18nKey}.title`)}
+                    fill
+                    className="object-contain rounded-lg transition-opacity duration-500 group-hover:opacity-0"
+                    sizes="(max-width: 768px) 100vw,
+                                 (max-width: 1200px) 50vw,
+                                 33vw"
+                  />
+                  <Image
+                    src={board.image.hover}
+                    alt={t(`${board.i18nKey}.title`)}
+                    fill
+                    className="object-contain rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    sizes="(max-width: 768px) 100vw,
+                                 (max-width: 1200px) 50vw,
+                                 33vw"
+                  />
+                </div>
+                <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                  {t(`${board.i18nKey}.title`)}
+                </h3>
+                <p className="text-gray-600 font-light text-sm">
+                  {t(`${board.i18nKey}.description`)}
+                </p>
+                <p className="text-xs text-gray-400 mt-2 tracking-widest">
+                  {board.id}
+                </p>
+              </div>
+            ))}
           </div>
 
           <div className="text-center mt-16">

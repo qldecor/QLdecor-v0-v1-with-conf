@@ -144,5 +144,35 @@
       "title": "Titanium Silver",
       "description": "Cool silver surface with sleek contemporary appeal"
     }
+  },
+  "colorpro": {
+    "CPM12002L": {
+      "title": "Crimson Red",
+      "description": "Bold and vibrant red with a smooth satin finish"
+    },
+    "CPG13003L": {
+      "title": "Emerald Green",
+      "description": "Deep green surface with refreshing clarity and elegance"
+    },
+    "CPG14004L": {
+      "title": "Ocean Blue",
+      "description": "Calming blue inspired by open waters and serene skies"
+    },
+    "CPM14004L": {
+      "title": "Midnight Blue",
+      "description": "Dark navy tone with subtle depth and sophistication"
+    },
+    "CPG12002L": {
+      "title": "Sunshine Yellow",
+      "description": "Radiant yellow with energetic and uplifting character"
+    },
+    "CPG11001L": {
+      "title": "Pure White",
+      "description": "Clean and timeless surface with pristine simplicity"
+    },
+    "CPM13003L": {
+      "title": "Charcoal Black",
+      "description": "Modern matte black with refined, dramatic impact"
+    }
   }
 }

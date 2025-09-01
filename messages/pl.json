@@ -141,5 +141,35 @@
       "title": "Srebro Tytanowe",
       "description": "Chłodna srebrna powierzchnia o nowoczesnym, minimalistycznym charakterze"
     }
+  },
+  "colorpro": {
+    "CPM12002L": {
+      "title": "Karminowa Czerwień",
+      "description": "Odważna i wyrazista czerwień o satynowym wykończeniu"
+    },
+    "CPG13003L": {
+      "title": "Szmaragdowa Zieleń",
+      "description": "Głęboka zieleń o świeżym i eleganckim charakterze"
+    },
+    "CPG14004L": {
+      "title": "Błękit Oceanu",
+      "description": "Uspokajający błękit inspirowany wodą i niebem"
+    },
+    "CPM14004L": {
+      "title": "Granat Nocny",
+      "description": "Ciemny odcień granatu o subtelnej głębi i elegancji"
+    },
+    "CPG12002L": {
+      "title": "Słoneczna Żółć",
+      "description": "Promienny żółty kolor o energetycznym charakterze"
+    },
+    "CPG11001L": {
+      "title": "Czysta Biel",
+      "description": "Klasyczna i ponadczasowa powierzchnia o nieskazitelnej prostocie"
+    },
+    "CPM13003L": {
+      "title": "Czarny Grafit",
+      "description": "Nowoczesna matowa czerń o wyrazistym, dramatycznym wyglądzie"
+    }
   }
 }
