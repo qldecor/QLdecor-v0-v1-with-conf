@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function MetaluxPage() {
-  const t = useTranslations("metalux");
+  const t = useTranslations("boards.metalux");
   const metaluxBoards = [
     {
       id: "MLG21001L",

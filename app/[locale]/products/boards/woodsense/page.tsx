@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function WoodsensePage() {
-  const t = useTranslations("woodsense");
+  const t = useTranslations("boards.woodsense");
 
   const woodsenseBoards = [
     {

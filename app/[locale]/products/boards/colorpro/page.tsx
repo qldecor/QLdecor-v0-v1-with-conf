@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function ColorproPage() {
-  const t = useTranslations("colorpro");
+  const t = useTranslations("boards.colorpro");
 
   const colorproBoards = [
     {
