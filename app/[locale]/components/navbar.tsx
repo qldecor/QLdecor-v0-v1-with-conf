@@ -67,15 +67,20 @@ export default function Navbar() {
 
                     {/* Uchwyty */}
                     <div className="navbar-slide-link">
-                      <Link
-                        href="/products/handles"
-                        className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
-                      >
-                        {/* <span className="navbar-slide-link"> */}
-                        <span className="main-text">Uchwyty Meblowe</span>
-                        <span className="see-all">SEE ALL</span>
-                        {/* </span> */}
-                      </Link>
+<Link
+  href="/products/handles"
+  className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
+>
+  {/* <span className="navbar-slide-link"> */}
+    <span className="main-text w-fit px-1 py-1 text-gray-700 font-light tracking-wide 
+             transition-colors duration-300 hover:text-gray-900
+             after:content-[''] after:absolute after:right-0 after:-bottom-0.5 
+             after:w-0 after:h-[1px] after:bg-black/30
+             after:transition-all after:duration-500 after:ease-in-out
+             hover:after:w-full uppercase">{t('handles')}</span>
+    <span className="see-all ">{t('see-all')}</span>
+  {/* </span> */}
+</Link>
                     </div>
 
                     {/* Wieszaki */}
@@ -83,7 +88,7 @@ export default function Navbar() {
                       <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
              transition-colors duration-300 hover:text-gray-900
              after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
-             after:w-0 after:h-[1px] after:bg-black/70
+             after:w-0 after:h-[1px] after:bg-black/30
              after:transition-all after:duration-500 after:ease-in-out
              hover:after:w-full uppercase" href="/products/handles">{t('hooks')}</Link>
                     </div>
@@ -93,7 +98,7 @@ export default function Navbar() {
                       <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
              transition-colors duration-300 hover:text-gray-900
              after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
-             after:w-0 after:h-[1px] after:bg-black/70
+             after:w-0 after:h-[1px] after:bg-black/30
              after:transition-all after:duration-500 after:ease-in-out
              hover:after:w-full uppercase" href="/products/handles">{t('furniture')}</Link>
                     </div>
