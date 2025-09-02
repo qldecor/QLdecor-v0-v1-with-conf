@@ -311,16 +311,19 @@ export default function HandlesPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/40"
+          className="object-cover brightness-70 absolute inset-0 bg-gradient-to-b from-black/20 to-black/40"
           style={{
             backgroundImage:
-              "url(/placeholder.svg?height=1080&width=1920&query=premium+aluminum+furniture+handles+macro+photography)",
+              "url(/etsy/img_0812.webp?height=1080&width=1920&query=premium+aluminum+furniture+handles+macro+photography)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-8">
-          <h1 className="text-5xl md:text-7xl font-light tracking-wider mb-8">PREMIUM FURNITURE HANDLES</h1>
+          <h1 className="text-5xl font-light text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
+  PREMIUM FURNITURE HANDLES
+</h1>
+
           <p className="text-xl md:text-2xl font-light tracking-wide mb-12 opacity-90">
             Precision-milled. Refined finishes. Built for daily use.
           </p>
