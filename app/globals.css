@@ -216,7 +216,7 @@ h6 {
 /* Navbar dropdown animation */
 .navbar-slide-link {
   position: relative;
-  display: block;
+  display: inline-block;
   height: 1.2em;
   overflow: hidden;
 }
@@ -225,9 +225,10 @@ h6 {
 .main-text,
 /* .navbar-slide-link */
 .see-all {
-  display: block;
+  display: inline-block;
   transition: transform 0.4s cubic-bezier(.4,0,.2,1);
   will-change: transform;
+  white-space: nowrap; /* żeby się nie łamało */
 }
 
 /* .navbar-slide-link  */
@@ -238,9 +239,8 @@ h6 {
 /* .navbar-slide-link */
 .see-all {
   position: absolute;
-  left: 0;
   top: 0;
-  width: 100%;
+  right: 4px;
   text-align: center;
   color: rgba(0,0,0,0.7);
   font-size: 0.8em;
@@ -256,3 +256,4 @@ h6 {
 .linksss:hover .see-all {
   transform: translateY(0);
 }
+

@@ -58,9 +58,9 @@
         "hover": "/img/handles/or-021/or-021-320-black-2.webp"
       },
       "finishes": [
+        "gold",
         "black",
-        "silver",
-        "gold"
+        "silver"
       ],
       "sizes": [
         "145",
@@ -346,9 +346,9 @@
         "side": "left"
       },
       "finishes": [
+        "gold",
         "black",
         "silver",
-        "gold",
         "orange"
       ],
       "sizes": [
@@ -376,9 +376,9 @@
         "size": "200"
       },
       "finishes": [
+        "gold",
         "black",
         "silver",
-        "gold",
         "orange"
       ],
       "sizes": [
