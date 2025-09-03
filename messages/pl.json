@@ -11,119 +11,125 @@
     "furniture": "Meble",
     "see-all": "Odkryj"
   },
+  "handles": {
+    "title": "Premium Furniture Handles",
+    "description": "Precision-milled. Refined finishes. Built for daily use.",
+    "explore-collection": "Explore Collection",
+    "download-specs": "Download Specs"
+  },
   "boards": {
     "woodsense": {
       "WS0001Z2M": {
-        "title": "Dąb Naturalny",
-        "description": "Klasyczne tony dębu z ponadczasowym usłojeniem"
+        "title": "Pietra Scura",
+        "description": "Jednolita powierzchnia ciemnego kamienia o eleganckim, gładkim wykończeniu"
       },
       "WS0074Z2M": {
-        "title": "Orzech",
-        "description": "Bogaty, czekoladowy odcień orzecha z wyrazistym rysunkiem"
+        "title": "Legno Classico",
+        "description": "Jasne drewno z delikatnym efektem postarzenia i eleganckimi słojami"
       },
       "WS090211L": {
-        "title": "Dąb Wędzony",
-        "description": "Dramatyczny wygląd dębu z głębokimi, dymnymi tonami"
+        "title": "Corteccia",
+        "description": "Orzechowa powierzchnia z delikatnym usłojeniem i płynnym przejściem tonów brązu"
       },
       "WS004801M": {
-        "title": "Wiśnia",
-        "description": "Ciepłe, czerwone odcienie z gładką, równą fakturą"
+        "title": "Stella",
+        "description": "Bielona powierzchnia o postarzonej strukturze z szarym usłojeniem"
       },
       "WS0001Z1M": {
-        "title": "Dąb Jasny",
-        "description": "Jasny, współczesny dąb z subtelnym rysunkiem słojów"
+        "title": "Luminosa",
+        "description": "Powierzchnia szarego kamienia o gładkim, nowoczesnym wykończeniu"
       },
       "WS005801M": {
-        "title": "Teak",
-        "description": "Egzotyczny teak ze złocistymi tonami i naturalnymi olejami"
+        "title": "Castagno",
+        "description": "Kasztanowa powierzchnia o postarzonej strukturze z szaro-brązowymi tonami"
       },
       "WS090053L": {
-        "title": "Dąb Ciemny",
-        "description": "Wytworne, głębokie wykończenie dębu o mocnym charakterze"
+        "title": "Notte Nero",
+        "description": "Dębowa powierzchnia w odcieniu ciemnego grafitu z naturalnym usłojeniem i charakterem klejonej płyty"
       },
       "WS0065Z1M": {
-        "title": "Klon Miodowy",
-        "description": "Miękkie złote tony z płynnym usłojeniem"
+        "title": "Eterno",
+        "description": "Palisandrowa powierzchnia o gęstym usłojeniu i delikatnej strukturze"
       },
       "WS0024Z2M": {
-        "title": "Jesion Szary",
-        "description": "Nowoczesna powierzchnia inspirowana jesionem w chłodnych odcieniach"
+        "title": "Quercia Dura",
+        "description": "Dębowa powierzchnia w brązowym odcieniu z wyraźnym usłojeniem i stylizacją na klejone drewno"
       },
       "WS090164L": {
-        "title": "Orzech Miejski",
-        "description": "Współczesne wykończenie orzecha o stonowanym charakterze"
+        "title": "Frassino",
+        "description": "Szara powierzchnia inspirowana polerowanym betonem o wyrazistym wzorze"
       },
       "WS001701M": {
-        "title": "Dąb Złocisty",
-        "description": "Lśniący dąb z ciepłymi, złotymi akcentami"
+        "title": "Intenso",
+        "description": "Dębowa powierzchnia z wyrazistym usłojeniem i ciemnobrązowymi akcentami"
       },
       "WS0068Z3M": {
-        "title": "Jesion Nocny",
-        "description": "Głębokie tony jesionu o nowoczesnym wyrazie"
+        "title": "Tartufo",
+        "description": "Dębowa powierzchnia o wyrazistym usłojeniu z naturalnymi brązowymi tonami"
       },
       "WS090193L": {
-        "title": "Sosna Rustykalna",
-        "description": "Naturalna powierzchnia inspirowana sosną o rustykalnym charakterze"
+        "title": "Ombra",
+        "description": "Dębowa powierzchnia w jasnym graficie z mocnym usłojeniem i wrażeniem drewnianych paneli"
       },
       "WS000502M": {
-        "title": "Dąb Postarzany",
-        "description": "Wyblakłe tony dębu z subtelną patyną"
+        "title": "Velluto",
+        "description": "Szara powierzchnia z delikatnym, wyraźnym wzorem o eleganckim charakterze"
       },
       "WS005001M": {
-        "title": "Brzoza Srebrzysta",
-        "description": "Delikatne, jasne tony z subtelnym liniowym usłojeniem"
+        "title": "Oro",
+        "description": "Jasny dąb z wyrazistym usłojeniem i efektem poziomych śladów po pile"
       },
       "WS000101M": {
-        "title": "Klon Biały",
-        "description": "Czysty i nowoczesny wygląd z delikatną fakturą"
+        "title": "Moka",
+        "description": "Jasna powierzchnia o subtelnej strukturze płótna z delikatnymi przebarwieniami"
       },
       "WS0068Z1M": {
-        "title": "Orzech Antyczny",
-        "description": "Ciemny orzech o głębokim, vintage’owym charakterze"
+        "title": "Ciliegio",
+        "description": "Jesionowa powierzchnia w jasnym brązie z ciemnym usłojeniem i subtelnym gradientem"
       },
       "WS004501M": {
-        "title": "Dąb Bursztynowy",
-        "description": "Ciepłe bursztynowe tony podkreślające naturalne różnice"
+        "title": "Perla Nera",
+        "description": "Grafitowe dębowe wykończenie z wyrazistym usłojeniem i subtelnymi rozjaśnieniami"
       },
       "WS090121L": {
-        "title": "Jesion Węglowy",
-        "description": "Odważne, ciemne wykończenie w industrialnym stylu"
+        "title": "Nocciola",
+        "description": "Light beech wood with natural grain and subtle texture"
       },
       "WS090182L": {
-        "title": "Buk Naturalny",
-        "description": "Miękkie, miodowe tony z płynnym rysunkiem słojów"
+        "title": "Ebano",
+        "description": "Dębowa powierzchnia w grafitowo-czarnym odcieniu o eleganckim charakterze"
       },
       "WS0008Z1M": {
-        "title": "Dąb Kawowy",
-        "description": "Głęboki odcień espresso z subtelnym rysunkiem liniowym"
+        "title": "Pino Dorato",
+        "description": "Olejowany dąb o naturalnej strukturze i eleganckim wykończeniu"
       },
       "WS0066Z1M": {
-        "title": "Klon Piaskowy",
-        "description": "Jasny, beżowy klon o minimalistycznym usłojeniu"
+        "title": "Foresta",
+        "description": "Kasztanowa powierzchnia w czekoladowym odcieniu z wyraźnym rysunkiem słojów"
       },
       "WS0024Z3M": {
-        "title": "Jesion Brązowy",
-        "description": "Neutralny, średni brąz jesionu o zrównoważonym wyglądzie"
+        "title": "Essenza",
+        "description": "Dębowa powierzchnia z wyrazistym usłojeniem i brązowymi przebarwieniami"
       },
       "WS090074L": {
-        "title": "Dąb Miedziany",
-        "description": "Ciepły, metaliczny odcień ze świetlistymi akcentami"
+        "title": "Rovere Antico",
+        "description": "Elegancka powierzchnia z ciemnego dębu o mocnym usłojeniu i głębokich, ciemnobrązowych tonach"
       },
       "WS090012L": {
-        "title": "Drewno Hebanowe",
-        "description": "Głęboka, czarna powierzchnia z delikatnym, matowym wykończeniem"
+        "title": "Regale Dura",
+        "description": "Dębowa powierzchnia w brązowym odcieniu z wyraźnym usłojeniem i efektem klejonych desek"
       },
       "WS0003Z2M": {
-        "title": "Orzech Usłojony",
-        "description": "Wyraźna struktura orzecha z mocnym rysunkiem"
+        "title": "Autunno",
+        "description": "Orzechowa powierzchnia z wyrazistym usłojeniem i naturalną strukturą"
       },
       "WS0073Z1M": {
-        "title": "Dąb Perłowy",
-        "description": "Delikatne perłowo-szare wykończenie z subtelnym charakterem dębu"
+        "title": "Olio Dorato",
+        "description": "Powierzchnia inspirowana bukiem z naturalnym usłojeniem i delikatną strukturą"
       },
       "WS0021Z3M": {
-        "title": "Mahoń Głęboki",
-        "description": "Szlachetna, czerwonobrązowa powierzchnia o ponadczasowym uroku"
+        "title": "Rovere",
+        "description": "Naturalny dąb o wyrazistym usłojeniu z ciepłymi brązowymi akcentami i autentyczną strukturą"
       }
     },
     "metalux": {

@@ -14,119 +14,125 @@
   "home": {
     "welcome": "Welcome to our website!"
   },
+  "handles": {
+    "title": "Premium Furniture Handles",
+    "description": "Precision-milled. Refined finishes. Built for daily use.",
+    "explore-collection": "Explore Collection",
+    "download-specs": "Download Specs"
+  },
   "boards": {
     "woodsense": {
       "WS0001Z2M": {
-        "title": "Natural Oak",
-        "description": "Classic oak tones with timeless grain character"
+        "title": "Pietra Scura",
+        "description": "Uniform dark stone surface with a smooth, elegant finish"
       },
       "WS0074Z2M": {
-        "title": "Walnut",
-        "description": "Rich, chocolate-toned walnut with distinctive grain"
+        "title": "Legno Classico",
+        "description": "Light wood with a subtle aged effect and elegant grain"
       },
       "WS090211L": {
-        "title": "Smoked Oak",
-        "description": "Dramatic oak surface with deep smoky undertones"
+        "title": "Corteccia",
+        "description": "Walnut surface with subtle grain and smooth brown tonal transitions"
       },
       "WS004801M": {
-        "title": "Cherry",
-        "description": "Warm reddish hues with smooth, even texture"
+        "title": "Stella",
+        "description": "Whitewashed surface with aged texture and grey grain"
       },
       "WS0001Z1M": {
-        "title": "Light Oak",
-        "description": "Bright, contemporary oak with subtle grain definition"
+        "title": "Luminosa",
+        "description": "Grey stone surface with sleek contemporary smoothness"
       },
       "WS005801M": {
-        "title": "Teak",
-        "description": "Exotic teak with golden undertones and natural oils"
+        "title": "Castagno",
+        "description": "Chestnut surface with aged texture and grey-brown tones"
       },
       "WS090053L": {
-        "title": "Dark Oak",
-        "description": "Refined, deep oak finish with bold presence"
+        "title": "Notte Nero",
+        "description": "Dark graphite oak surface with distinct grain and a crafted plank impression"
       },
       "WS0065Z1M": {
-        "title": "Honey Maple",
-        "description": "Soft golden tones with smooth flowing grain"
+        "title": "Eterno",
+        "description": "Rosewood-inspired surface with dense grain and subtle texture"
       },
       "WS0024Z2M": {
-        "title": "Ash Grey",
-        "description": "Modern ash-inspired surface with cool neutral hues"
+        "title": "Quercia Dura",
+        "description": "Oak surface in brown tones with pronounced grain and a plank-like effect"
       },
       "WS090164L": {
-        "title": "Urban Walnut",
-        "description": "Contemporary walnut finish with subdued richness"
+        "title": "Frassino",
+        "description": "Grey surface inspired by polished concrete with a distinct pattern"
       },
       "WS001701M": {
-        "title": "Golden Oak",
-        "description": "Lustrous oak with warm golden highlights"
+        "title": "Intenso",
+        "description": "Oak surface with pronounced grain and dark brown accents"
       },
       "WS0068Z3M": {
-        "title": "Midnight Ash",
-        "description": "Deep ash tones with refined, contemporary appeal"
+        "title": "Tartufo",
+        "description": "Oak surface with pronounced grain and natural brown tones"
       },
       "WS090193L": {
-        "title": "Rustic Pine",
-        "description": "Natural pine-inspired surface with rustic charm"
+        "title": "Ombra",
+        "description": "Light graphite oak surface with distinct grain and a structured plank detail"
       },
       "WS000502M": {
-        "title": "Aged Oak",
-        "description": "Weathered oak tones with subtle patina effect"
+        "title": "Velluto",
+        "description": "Grey surface with a subtle yet distinct pattern and elegant character"
       },
       "WS005001M": {
-        "title": "Silver Birch",
-        "description": "Soft pale tones with delicate linear grain"
+        "title": "Oro",
+        "description": "Light oak with pronounced grain and a horizontal saw-cut effect"
       },
       "WS000101M": {
-        "title": "White Maple",
-        "description": "Clean and contemporary with fine, subtle texture"
+        "title": "Moka",
+        "description": "Light surface with subtle fabric texture and gentle shading"
       },
       "WS0068Z1M": {
-        "title": "Antique Walnut",
-        "description": "Dark walnut with rich vintage depth"
+        "title": "Ciliegio",
+        "description": "Ash surface in light brown with dark grain and subtle gradient"
       },
       "WS004501M": {
-        "title": "Amber Oak",
-        "description": "Warm amber tones that highlight natural variation"
+        "title": "Perla Nera",
+        "description": "Graphite oak finish with pronounced grain and subtle highlights"
       },
       "WS090121L": {
-        "title": "Charcoal Ash",
-        "description": "Bold, dark finish with a modern industrial edge"
+        "title": "Nocciola",
+        "description": "Light beech wood with natural grain and subtle texture"
       },
       "WS090182L": {
-        "title": "Natural Beech",
-        "description": "Soft honeyed tones with smooth flowing grain"
+        "title": "Ebano",
+        "description": "Oak surface in graphite-black tone with an elegant character"
       },
       "WS0008Z1M": {
-        "title": "Coffee Oak",
-        "description": "Deep espresso oak with subtle linear definition"
+        "title": "Pino Dorato",
+        "description": "Oiled oak with natural texture and refined finish"
       },
       "WS0066Z1M": {
-        "title": "Sand Maple",
-        "description": "Light beige maple with refined minimal grain"
+        "title": "Foresta",
+        "description": "Chestnut surface in a rich chocolate tone with distinctive grain pattern"
       },
       "WS0024Z3M": {
-        "title": "Ash Brown",
-        "description": "Neutral mid-brown ash with balanced appearance"
+        "title": "Essenza",
+        "description": "Rich oak surface with bold grain and deep earthy tones"
       },
       "WS090074L": {
-        "title": "Copper Oak",
-        "description": "Warm metallic undertone with glowing highlights"
+        "title": "Rovere Antico",
+        "description": "Elegant dark oak surface with bold grain and deep brown tones"
       },
       "WS090012L": {
-        "title": "Ebony Wood",
-        "description": "Deep blackened surface with subtle matte finish"
+        "title": "Regale Dura",
+        "description": "Brown oak surface with distinct grain and a layered board character"
       },
       "WS0003Z2M": {
-        "title": "Grained Walnut",
-        "description": "Distinct walnut structure with pronounced veins"
+        "title": "Autunno",
+        "description": "Walnut surface with pronounced grain and natural texture"
       },
       "WS0073Z1M": {
-        "title": "Pearl Oak",
-        "description": "Soft pearl-grey finish with subtle oak character"
+        "title": "Olio Dorato",
+        "description": "Beech-inspired surface with natural grain and subtle texture"
       },
       "WS0021Z3M": {
-        "title": "Deep Mahogany",
-        "description": "Luxurious red-brown surface with timeless appeal"
+        "title": "Rovere",
+        "description": "Natural oak with pronounced grain, warm brown accents, and authentic texture"
       }
     },
     "metalux": {

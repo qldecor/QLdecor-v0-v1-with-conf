@@ -368,7 +368,7 @@ export default function WoodsensePage() {
                   />
                 </div>
                 <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
-                  {t(`${board.i18nKey}.title`)}
+                  {t(`${board.i18nKey}.title`).toUpperCase()}
                 </h3>
                 <p className="text-gray-600 font-light text-sm">
                   {t(`${board.i18nKey}.description`)}
