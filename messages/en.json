@@ -137,24 +137,24 @@
     },
     "metalux": {
       "MLG21001L": {
-        "title": "Brushed Steel",
-        "description": "Subtle metallic texture with modern industrial character"
+        "title": "Ambra",
+        "description": "Brushed gold with elegant sheen and a modern, luxurious expression"
       },
       "MLG22002L": {
-        "title": "Champagne Gold",
-        "description": "Elegant golden tones with refined metallic shimmer"
+        "title": "Rame Vivo",
+        "description": "Brushed copper with warm, noble shimmer and refined character"
       },
       "MLG23003L": {
-        "title": "Graphite Grey",
-        "description": "Deep graphite finish with smooth metallic depth"
+        "title": "Puro Platino",
+        "description": "Brushed steel with subtle industrial character and modern elegance"
       },
       "MLG24004L": {
-        "title": "Copper Bronze",
-        "description": "Warm copper hues with sophisticated metallic radiance"
+        "title": "Acciaio Rosa",
+        "description": "Brushed aluminium with a cool modern look and refined simplicity"
       },
       "MLG25005L": {
-        "title": "Titanium Silver",
-        "description": "Cool silver surface with sleek contemporary appeal"
+        "title": "Titanio Infinito",
+        "description": "Brushed dark aluminium with modern minimalist character and elegant depth"
       }
     },
     "colorpro": {

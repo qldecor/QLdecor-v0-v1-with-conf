@@ -134,24 +134,24 @@
     },
     "metalux": {
       "MLG21001L": {
-        "title": "Stal Szczotkowana",
-        "description": "Subtelna metaliczna faktura o nowoczesnym, industrialnym charakterze"
+        "title": "Ambra",
+        "description": "Szczotkowane złoto o eleganckim blasku i nowoczesnym, luksusowym wyrazie"
       },
       "MLG22002L": {
-        "title": "Złoto Szampańskie",
-        "description": "Eleganckie złote tony z wyrafinowanym metalicznym połyskiem"
+        "title": "Rame Vivo",
+        "description": "Szczotkowana miedź o ciepłym, szlachetnym połysku i wyrafinowanym charakterze"
       },
       "MLG23003L": {
-        "title": "Grafitowy",
-        "description": "Głęboki grafit z gładką, metaliczną głębią"
+        "title": "Puro Platino",
+        "description": "Szczotkowana stal o subtelnym, industrialnym charakterze i nowoczesnej elegancji"
       },
       "MLG24004L": {
-        "title": "Miedź Brązowa",
-        "description": "Ciepłe, miedziane odcienie o wyrafinowanym, metalicznym blasku"
+        "title": "Acciaio Rosa",
+        "description": "Szczotkowane aluminium o chłodnym, nowoczesnym wyrazie i wyrafinowanej prostocie"
       },
       "MLG25005L": {
-        "title": "Srebro Tytanowe",
-        "description": "Chłodna srebrna powierzchnia o nowoczesnym, minimalistycznym charakterze"
+        "title": "Titanio Infinito",
+        "description": "Szczotkowane ciemne aluminium o nowoczesnym, minimalistycznym charakterze i eleganckiej głębi"
       }
     },
     "colorpro": {
