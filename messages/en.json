@@ -22,6 +22,21 @@
   },
   "boards": {
     "woodsense": {
+      "hero": {
+        "title": "WARMTH OF WOOD. ENGINEERED DURABILITY.",
+        "description": "WoodSense series captures the authentic beauty of natural wood while delivering the consistency and performance of advanced engineered materials. Experience the tactile warmth and visual richness of premium timber without compromise.",
+        "button": "EXPLORE WOOD FINISHES"
+      },
+      "categoryDescription": {
+        "title": "NATURAL AUTHENTICITY",
+        "text1": "The WoodSense series represents our commitment to capturing the essence of natural wood through advanced surface technology. Each finish is meticulously crafted to reproduce the subtle variations, grain patterns, and tactile qualities that make wood such a beloved material.",
+        "text2": "Unlike natural wood, WoodSense boards offer superior dimensional stability, consistent quality, and resistance to moisture and temperature fluctuations. This makes them ideal for applications where the beauty of wood is desired but environmental challenges exist.",
+        "text3": "Perfect for residential kitchens, hospitality environments, and commercial spaces where the warmth and comfort of natural wood enhance the human experience while maintaining practical performance."
+      },
+      "palette": {
+        "title": "WOOD FINISHES",
+        "description": "A carefully curated selection of wood finishes, each capturing the unique character of premium timber species."
+      },
       "WS0001Z2M": {
         "title": "Pietra Scura",
         "description": "Uniform dark stone surface with a smooth, elegant finish"

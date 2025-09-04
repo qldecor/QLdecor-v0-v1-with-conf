@@ -284,15 +284,13 @@ export default function WoodsensePage() {
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
-                WARMTH OF WOOD. ENGINEERED DURABILITY.
+                {t('hero.title')}
               </h1>
               <p className="text-lg text-white/90 font-light leading-relaxed mb-8">
-                WoodSense series captures the authentic beauty of natural wood while delivering the consistency and
-                performance of advanced engineered materials. Experience the tactile warmth and visual richness of
-                premium timber without compromise.
+                {t('hero.description')}
               </p>
               <ScrollButton targetId="woodsense-finishes" variant="outline" className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide">
-                EXPLORE WOOD FINISHES
+                {t('hero.button')}
               </ScrollButton>
             </div>
           </div>
@@ -304,25 +302,20 @@ export default function WoodsensePage() {
         <div className="container mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">NATURAL AUTHENTICITY</h2>
+              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">{t('categoryDescription.title')}</h2>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                The WoodSense series represents our commitment to capturing the essence of natural wood through advanced
-                surface technology. Each finish is meticulously crafted to reproduce the subtle variations, grain
-                patterns, and tactile qualities that make wood such a beloved material.
+                {t('categoryDescription.text1')}
               </p>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Unlike natural wood, WoodSense boards offer superior dimensional stability, consistent quality, and
-                resistance to moisture and temperature fluctuations. This makes them ideal for applications where the
-                beauty of wood is desired but environmental challenges exist.
+                {t('categoryDescription.text2')}
               </p>
               <p className="text-gray-600 font-light leading-relaxed">
-                Perfect for residential kitchens, hospitality environments, and commercial spaces where the warmth and
-                comfort of natural wood enhance the human experience while maintaining practical performance.
+                {t('categoryDescription.text3')}
               </p>
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/boards/woodsense/drewno_3.webp?height=600&width=800"
                 alt="WoodSense Surface Detail"
                 fill
                 className="object-cover"
@@ -336,10 +329,9 @@ export default function WoodsensePage() {
       <section className="py-32" id="woodsense-finishes">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">WOOD FINISHES</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">{t('palette.title')}</h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              A carefully curated selection of wood finishes, each capturing the unique character of premium timber
-              species.
+              {t('palette.description')}
             </p>
           </div>
 

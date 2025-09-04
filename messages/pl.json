@@ -19,6 +19,21 @@
   },
   "boards": {
     "woodsense": {
+      "hero": {
+        "title": "CIEPŁO DREWNA. INŻYNIERSKA TRWAŁOŚĆ.",
+        "description": "Seria WoodSense oddaje autentyczne piękno naturalnego drewna, jednocześnie zapewniając spójność i wydajność nowoczesnych materiałów inżynieryjnych. Doświadcz dotykowego ciepła i wizualnego bogactwa szlachetnego drewna – bez kompromisów.",
+        "button": "ODKRYJ WYKOŃCZENIA DREWNA"
+      },
+      "categoryDescription": {
+        "title": "NATURALNA AUTENTYCZNOŚĆ",
+        "text1": "Seria WoodSense to wyraz naszego zaangażowania w uchwycenie istoty naturalnego drewna dzięki zaawansowanej technologii powierzchni. Każde wykończenie jest starannie opracowane, aby wiernie oddać subtelne różnice, usłojenie i właściwości dotykowe, które sprawiają, że drewno jest tak cenionym materiałem.",
+        "text2": "W przeciwieństwie do naturalnego drewna, płyty WoodSense oferują doskonałą stabilność wymiarową, powtarzalną jakość oraz odporność na wilgoć i wahania temperatury. Dzięki temu są idealnym rozwiązaniem tam, gdzie pożądane jest piękno drewna, ale istnieją wyzwania środowiskowe.",
+        "text3": "Doskonale sprawdzą się w domowych kuchniach, przestrzeniach hotelowych i obiektach komercyjnych, gdzie ciepło i komfort naturalnego drewna podnoszą jakość codziennych doświadczeń, przy zachowaniu praktycznej funkcjonalności."
+      },
+      "palette": {
+        "title": "WYKOŃCZENIA DREWNA",
+        "description": "Starannie dobrana kolekcja wykończeń drewnianych, z których każde oddaje unikalny charakter szlachetnych gatunków drewna."
+      },
       "WS0001Z2M": {
         "title": "Pietra Scura",
         "description": "Jednolita powierzchnia ciemnego kamienia o eleganckim, gładkim wykończeniu"
