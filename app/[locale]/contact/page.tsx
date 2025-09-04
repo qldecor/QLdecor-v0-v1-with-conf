@@ -1,10 +1,33 @@
-import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
-import { Input } from "@/app/[locale]/components/ui/input"
-import { Textarea } from "@/app/[locale]/components/ui/textarea"
-import Navbar from "@/app/[locale]/components/navbar"
+"use client";
+import { useState } from "react";
+import { Button } from "@/app/[locale]/components/ui/button";
+import { Input } from "@/app/[locale]/components/ui/input";
+import { Textarea } from "@/app/[locale]/components/ui/textarea";
+import Navbar from "@/app/[locale]/components/navbar";
+
 
 export default function ContactPage() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setStatus("loading");
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+    if (data.success) {
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } else {
+      setStatus("error");
+    }
+  }
+
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
@@ -22,17 +45,20 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <form className="space-y-8">
+            <form className="space-y-8" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <Input
                     placeholder="FIRST NAME"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
                     className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
                   />
                 </div>
                 <div>
                   <Input
                     placeholder="LAST NAME"
+                    // value={form.name}
                     className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
                   />
                 </div>
@@ -42,6 +68,8 @@ export default function ContactPage() {
                 <Input
                   placeholder="EMAIL ADDRESS"
                   type="email"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
                 />
               </div>
@@ -71,14 +99,24 @@ export default function ContactPage() {
                 <Textarea
                   placeholder="MESSAGE"
                   rows={6}
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900 resize-none"
                 />
               </div>
 
               <div className="pt-8">
-                <Button className="w-full font-light tracking-wider py-4">SEND MESSAGE</Button>
+                <Button type="submit" className="w-full font-light tracking-wider py-4">
+                  {status === 'loading' ? "Sending..." : "SEND MESSAGE"}
+                </Button>
               </div>
             </form>
+            {status === "success" && (
+              <p className="text-green-600 mt-4">✅ Wiadomość została wysłana!</p>
+            )}
+            {status === "error" && (
+              <p className="text-red-600 mt-4">❌ Coś poszło nie tak, spróbuj ponownie.</p>
+            )}
           </div>
         </div>
       </section>
