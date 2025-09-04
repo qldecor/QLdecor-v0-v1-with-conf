@@ -347,7 +347,7 @@ export default function WoodsensePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {woodsenseBoards.map((board) => (
               <div key={board.id} className="relative text-center group">
-                <div className="relative aspect-[3/4] mb-6">
+                <div className="relative aspect-[3/4]">
                   <Image
                     src={board.image.thumb}
                     alt={t(`${board.i18nKey}.title`)}

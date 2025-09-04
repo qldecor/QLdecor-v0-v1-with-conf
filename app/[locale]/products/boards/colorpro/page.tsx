@@ -178,7 +178,7 @@ export default function ColorproPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {colorproBoards.map((board) => (
               <div key={board.id} className="relative text-center group">
-                <div className="relative aspect-[3/4] mb-6">
+                <div className="relative aspect-[3/4]">
                   <Image
                     src={board.image.thumb}
                     alt={t(`${board.i18nKey}.title`)}
@@ -199,7 +199,7 @@ export default function ColorproPage() {
                   />
                 </div>
                 <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
-                  {t(`${board.i18nKey}.title`)}
+                  {t(`${board.i18nKey}.title`).toUpperCase()}
                 </h3>
                 <p className="text-gray-600 font-light text-sm">
                   {t(`${board.i18nKey}.description`)}

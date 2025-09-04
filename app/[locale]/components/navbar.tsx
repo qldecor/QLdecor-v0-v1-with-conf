@@ -59,7 +59,7 @@ export default function Navbar() {
                     <div>
                       <div className="navbar-slide-link w-fit">
                         <Link
-                          href="/products/handles"
+                          href="/products/boards"
                           className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
                         >
                           {/* <span className="navbar-slide-link"> */}
