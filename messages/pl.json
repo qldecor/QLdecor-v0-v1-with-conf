@@ -283,6 +283,72 @@
       }
     },
     "colorpro": {
+      "hero": {
+        "title": "ODWAŻNA KOLORYSTYKA. NIEOGRANICZONE MOŻLIWOŚCI.",
+        "description": "Seria ColorPro otwiera nieograniczone możliwości kolorystyczne przy zachowaniu wyjątkowej odporności na blaknięcie i stabilności UV. Twórz meble, które wyróżniają się śmiałym charakterem, zachowując intensywny wygląd przez wiele lat.",
+        "button": "POZNAJ KOLORY"
+      },
+      "categoryDescription": {
+        "title": "NIEOGRANICZONA EKSPRESJA",
+        "text1": "Seria ColorPro to synonim pełnej swobody kolorystycznej, gdzie zaawansowana technologia pigmentów spotyka się z kreatywną wizją. Dzięki praktycznie nieograniczonej gamie opcji projektanci mogą uzyskać dokładne dopasowanie barw, tworzyć własne palety lub eksperymentować z odważnymi kompozycjami, które definiują przestrzeń.",
+        "text2": "Nasz zaawansowany system powłok odpornych na promieniowanie UV gwarantuje, że kolory zachowują swoją intensywność i głębię nawet przy długotrwałej ekspozycji na światło. Dzięki temu ColorPro idealnie sprawdza się tam, gdzie kluczowa jest spójność i trwałość kolorystyki.",
+        "text3": "Doskonale nadaje się do przestrzeni handlowych, obiektów hotelowych i zastosowań mieszkaniowych, gdzie kolor odgrywa centralną rolę w budowaniu atmosfery, tożsamości marki lub osobistego charakteru wnętrza."
+      },
+      "palette": {
+        "title": "PALETA KOLORÓW",
+        "description": "Starannie dobrana selekcja prezentująca szeroki zakres możliwości. Dostępne kolory niestandardowe, dopasowane do każdej specyfikacji.",
+        "extra": "To tylko część dostępnych kolorów. Możliwe jest indywidualne dopasowanie koloru do każdej specyfikacji.",
+        "request": "ZAMÓW DOPASOWANIE KOLORU"
+      },
+      "applications": {
+        "title": "ZASTOSOWANIA",
+        "description": "Płyty ColorPro sprawdzają się w przestrzeniach, gdzie kolor buduje tożsamość, atmosferę i emocjonalne powiązanie."
+      },
+      "technicalSpecifications": {
+        "title": "SPECYFIKACJA TECHNICZNA",
+        "specs": [
+          {
+            "name": "SPECYFIKACJA",
+            "value": "SERIA COLORPRO"
+          },
+          {
+            "name": "Materiał rdzenia",
+            "value": "Wysokiej gęstości podłoże inżynieryjne"
+          },
+          {
+            "name": "Wykończenie powierzchni",
+            "value": "Powłoka kolorystyczna odporna na UV z warstwą ochronną"
+          },
+          {
+            "name": "Poziom połysku",
+            "value": "Opcje: mat, półpołysk, wysoki połysk"
+          },
+          {
+            "name": "Grubości",
+            "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
+          },
+          {
+            "name": "Formaty płyt",
+            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
+          },
+          {
+            "name": "Opcje obrzeży",
+            "value": "Dopasowane kolorystycznie, kontrastowe, ABS, PVC"
+          },
+          {
+            "name": "Konserwacja",
+            "value": "Standardowe środki czyszczące, formuły bezpieczne dla koloru"
+          }
+        ]
+      },
+      "configure": {
+        "title": "KONFIGURUJ COLORPRO",
+        "description": "Poznaj konfiguracje ColorPro w naszym Material Studio lub zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
+        "buttons": {
+          "studio": "KONFIGURUJ W MATERIAL STUDIO",
+          "quote": "ZAMÓW WYCENĘ"
+        }
+      },
       "CPM12002L": {
         "title": "Mistero",
         "description": "Matowa czerń o głębokim, szlachetnym charakterze, podkreślająca nowoczesny styl wnętrz"

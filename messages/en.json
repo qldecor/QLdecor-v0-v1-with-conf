@@ -286,6 +286,72 @@
       }
     },
     "colorpro": {
+      "hero": {
+        "title": "BOLD CHROMATICS. ENDLESS CUSTOMIZATION.",
+        "description": "The ColorPro series unleashes unlimited color possibilities with exceptional fade resistance and UV stability. Create furniture that makes bold statements while maintaining vibrant appearance for years to come.",
+        "button": "EXPLORE COLORS"
+      },
+      "categoryDescription": {
+        "title": "UNLIMITED EXPRESSION",
+        "text1": "The ColorPro series represents the ultimate in color freedom, where advanced pigment technology meets creative vision. With virtually unlimited color options, designers can achieve exact color matches, create custom palettes, or explore bold chromatic statements that define spaces.",
+        "text2": "Our advanced UV-stable coating system ensures that colors maintain their vibrancy and depth even under intensive light exposure. This makes ColorPro ideal for applications where color consistency and longevity are critical to the design's success.",
+        "text3": "Perfect for retail environments, hospitality spaces, and residential applications where color plays a central role in creating atmosphere, brand identity, or personal expression."
+      },
+      "palette": {
+        "title": "COLOR PALETTE",
+        "description": "A curated selection showcasing the range of possibilities. Custom colors available to match any specification.",
+        "extra": "These represent just a fraction of available colors. Custom color matching available for any specification.",
+        "request": "REQUEST CUSTOM COLOR"
+      },
+      "applications": {
+        "title": "APPLICATIONS",
+        "description": "ColorPro boards excel in environments where color creates identity, atmosphere, and emotional connection."
+      },
+      "technicalSpecifications": {
+        "title": "TECHNICAL SPECIFICATIONS",
+        "specs": [
+          {
+            "name": "SPECIFICATION",
+            "value": "COLORPRO SERIES"
+          },
+          {
+            "name": "Core Material",
+            "value": "High-density engineered substrate"
+          },
+          {
+            "name": "Surface Finish",
+            "value": "UV-stable color coating with protective layer"
+          },
+          {
+            "name": "Gloss Level",
+            "value": "Matte, semi-gloss, or high-gloss options"
+          },
+          {
+            "name": "Thicknesses",
+            "value": "12mm, 16mm, 19mm, 22mm, 25mm"
+          },
+          {
+            "name": "Sheet Sizes",
+            "value": "2800 x 2070mm (custom sizes available)"
+          },
+          {
+            "name": "Edge Options",
+            "value": "Matching color, contrasting, ABS, PVC"
+          },
+          {
+            "name": "Maintenance",
+            "value": "Standard cleaning agents, color-safe formulations"
+          }
+        ]
+      },
+      "configure": {
+        "title": "CONFIGURE COLORPRO",
+        "description": "Explore ColorPro configurations in our Material Studio or request custom color matching and samples to bring your color vision to life.",
+        "buttons": {
+          "studio": "CONFIGURE IN MATERIAL STUDIO",
+          "quote": "REQUEST QUOTE"
+        }
+      },
       "CPM12002L": {
         "title": "Mistero",
         "description": "Matte black with a deep, noble character, highlighting modern interior style"

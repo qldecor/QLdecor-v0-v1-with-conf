@@ -16,6 +16,9 @@ export const metadata: Metadata = {
 export default function ColorproPage() {
   const t = useTranslations("boards.colorpro");
 
+  const technicalSpecificationsArr: { name: string; value: string }[] =
+    t.raw("technicalSpecifications.specs");
+
   const colorproBoards = [
     {
       id: "CPM12002L",
@@ -115,18 +118,18 @@ export default function ColorproPage() {
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
-                BOLD CHROMATICS. ENDLESS CUSTOMIZATION.
+                {t("hero.title")}
               </h1>
               <p className="text-lg text-white/90 font-light leading-relaxed mb-8">
-                ColorPro series unleashes unlimited color possibilities with exceptional fade resistance and UV
-                stability. Create furniture that makes bold statements while maintaining vibrant appearance for years to
-                come.
+                {t("hero.description")}
               </p>
-
               <ScrollButton
                 targetId="colorpro-finishes"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide">EXPLORE COLORS</ScrollButton>
+                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
+              >
+                {t("hero.button")}
+              </ScrollButton>
             </div>
           </div>
         </div>
@@ -137,20 +140,17 @@ export default function ColorproPage() {
         <div className="container mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">UNLIMITED EXPRESSION</h2>
+              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("categoryDescription.title")}
+              </h2>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                The ColorPro series represents the ultimate in color freedom, where advanced pigment technology meets
-                creative vision. With virtually unlimited color options, designers can achieve exact color matches,
-                create custom palettes, or explore bold chromatic statements that define spaces.
+                {t("categoryDescription.text1")}
               </p>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Our advanced UV-stable coating system ensures that colors maintain their vibrancy and depth even under
-                intensive light exposure. This makes ColorPro ideal for applications where color consistency and
-                longevity are critical to the design's success.
+                {t("categoryDescription.text2")}
               </p>
               <p className="text-gray-600 font-light leading-relaxed">
-                Perfect for retail environments, hospitality spaces, and residential applications where color plays a
-                central role in creating atmosphere, brand identity, or personal expression.
+                {t("categoryDescription.text3")}
               </p>
             </div>
             <div className="relative h-[60vh]">
@@ -169,10 +169,11 @@ export default function ColorproPage() {
       <section id="colorpro-finishes" className="py-32">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">COLOR PALETTE</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("palette.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              A curated selection showcasing the range of possibilities. Custom colors available to match any
-              specification.
+              {t("palette.description")}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -185,8 +186,8 @@ export default function ColorproPage() {
                     fill
                     className="object-contain rounded-lg transition-opacity duration-500 group-hover:opacity-0"
                     sizes="(max-width: 768px) 100vw,
-                                 (max-width: 1200px) 50vw,
-                                 33vw"
+                           (max-width: 1200px) 50vw,
+                           33vw"
                   />
                   <Image
                     src={board.image.hover}
@@ -194,8 +195,8 @@ export default function ColorproPage() {
                     fill
                     className="object-contain rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     sizes="(max-width: 768px) 100vw,
-                                 (max-width: 1200px) 50vw,
-                                 33vw"
+                           (max-width: 1200px) 50vw,
+                           33vw"
                   />
                 </div>
                 <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
@@ -210,26 +211,29 @@ export default function ColorproPage() {
               </div>
             ))}
           </div>
-
           <div className="text-center mt-16">
             <p className="text-gray-600 font-light mb-6">
-              These represent just a fraction of available colors. Custom color matching available for any
-              specification.
+              {t("palette.extra")}
             </p>
-            <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              REQUEST CUSTOM COLOR
+            <Button
+              variant="outline"
+              className="font-light tracking-wide bg-transparent"
+            >
+              {t("palette.request")}
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Applications Gallery */}
+      {/* Applications */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">APPLICATIONS</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("applications.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              ColorPro boards excel in environments where color creates identity, atmosphere, and emotional connection.
+              {t("applications.description")}
             </p>
           </div>
 
@@ -307,52 +311,31 @@ export default function ColorproPage() {
         <div className="container mx-auto px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-light text-gray-900 mb-12 tracking-wider text-center">
-              TECHNICAL SPECIFICATIONS
+              {t("technicalSpecifications.title")}
             </h2>
-
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
               <table className="w-full">
                 <thead className="bg-gray-50">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-light text-gray-900 tracking-wide">
-                      SPECIFICATION
+                      {technicalSpecificationsArr[0].name}
                     </th>
                     <th className="px-6 py-4 text-left text-sm font-light text-gray-900 tracking-wide">
-                      COLORPRO SERIES
+                      {technicalSpecificationsArr[0].value}
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Core Material</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">High-density engineered substrate</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Surface Finish</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">UV-stable color coating with protective layer</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Gloss Level</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">Matte, semi-gloss, or high-gloss options</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Thicknesses</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">12mm, 16mm, 19mm, 22mm, 25mm</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Sheet Sizes</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">2800 x 2070mm (custom sizes available)</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Edge Options</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">Matching color, contrasting, ABS, PVC</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Maintenance</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">
-                      Standard cleaning agents, color-safe formulations
-                    </td>
-                  </tr>
+                  {technicalSpecificationsArr.slice(1).map((row, idx) => (
+                    <tr key={idx}>
+                      <td className="px-6 py-4 text-sm font-light text-gray-900">
+                        {row.name}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-600">
+                        {row.value}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -360,26 +343,32 @@ export default function ColorproPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Configure Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8 text-center">
-          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">CONFIGURE COLORPRO</h2>
+          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+            {t("configure.title")}
+          </h2>
           <p className="text-gray-600 font-light max-w-2xl mx-auto leading-relaxed mb-12">
-            Explore ColorPro configurations in our Material Studio or request custom color matching and samples to bring
-            your color vision to life.
+            {t("configure.description")}
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/studio?category=boards&series=colorpro">
-              <Button className="font-light tracking-wide">CONFIGURE IN MATERIAL STUDIO</Button>
+              <Button className="font-light tracking-wide">
+                {t("configure.buttons.studio")}
+              </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="font-light tracking-wide bg-transparent">
-                REQUEST QUOTE
+              <Button
+                variant="outline"
+                className="font-light tracking-wide bg-transparent"
+              >
+                {t("configure.buttons.quote")}
               </Button>
             </Link>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
