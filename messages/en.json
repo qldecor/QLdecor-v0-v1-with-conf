@@ -37,6 +37,55 @@
         "title": "WOOD FINISHES",
         "description": "A carefully curated selection of wood finishes, each capturing the unique character of premium timber species."
       },
+      "applications": {
+        "title": "APPLICATIONS",
+        "description": "WoodSense boards bring natural warmth to environments where comfort and authenticity are paramount."
+      },
+      "technicalSpecifications": {
+        "title": "TECHNICAL SPECIFICATIONS",
+        "specs": [
+          {
+            "name": "SPECIFICATION",
+            "value": "WOODSENSE SERIES"
+          },
+          {
+            "name": "Core Material",
+            "value": "High-density engineered substrate"
+          },
+          {
+            "name": "Surface Finish",
+            "value": "Advanced wood-grain reproduction with protective coating"
+          },
+          {
+            "name": "Gloss Level",
+            "value": "Matte to semi-matte (5-25 GU)"
+          },
+          {
+            "name": "Thicknesses",
+            "value": "12mm, 16mm, 19mm, 22mm, 25mm"
+          },
+          {
+            "name": "Sheet Sizes",
+            "value": "2800 x 2070mm (custom sizes available)"
+          },
+          {
+            "name": "Edge Options",
+            "value": "Matching wood-grain, solid wood veneer, ABS"
+          },
+          {
+            "name": "Maintenance",
+            "value": "Standard wood cleaners, avoid abrasive materials"
+          }
+        ]
+      },
+      "configure": {
+        "title": "CONFIGURE WOODSENSE",
+        "description": "Explore WoodSense configurations in our Material Studio or request detailed specifications and samples to experience the authentic wood feel firsthand.",
+        "buttons": {
+          "studio": "CONFIGURE IN MATERIAL STUDIO",
+          "quote": "REQUEST QUOTE"
+        }
+      },
       "WS0001Z2M": {
         "title": "Pietra Scura",
         "description": "Uniform dark stone surface with a smooth, elegant finish"

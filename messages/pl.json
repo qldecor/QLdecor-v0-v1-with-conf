@@ -34,6 +34,55 @@
         "title": "WYKOŃCZENIA DREWNA",
         "description": "Starannie dobrana kolekcja wykończeń drewnianych, z których każde oddaje unikalny charakter szlachetnych gatunków drewna."
       },
+      "applications": {
+        "title": "ZASTOSOWANIA",
+        "description": "Płyty WoodSense wnoszą naturalne ciepło do przestrzeni, w których komfort i autentyczność mają kluczowe znaczenie."
+      },
+      "technicalSpecifications": {
+        "title": "SPECYFIKACJA TECHNICZNA",
+        "specs": [
+          {
+            "name": "SPECYFIKACJA",
+            "value": "SERIA WOODSENSE"
+          },
+          {
+            "name": "Materiał rdzenia",
+            "value": "Wysokiej gęstości podłoże inżynieryjne"
+          },
+          {
+            "name": "Wykończenie powierzchni",
+            "value": "Zaawansowana reprodukcja usłojenia drewna z powłoką ochronną"
+          },
+          {
+            "name": "Poziom połysku",
+            "value": "Mat do półmatu (5–25 GU)"
+          },
+          {
+            "name": "Grubości",
+            "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
+          },
+          {
+            "name": "Formaty płyt",
+            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
+          },
+          {
+            "name": "Opcje obrzeży",
+            "value": "Dopasowane usłojenie, fornir z litego drewna, ABS"
+          },
+          {
+            "name": "Konserwacja",
+            "value": "Standardowe środki do czyszczenia drewna, unikać materiałów ściernych"
+          }
+        ]
+      },
+      "configure": {
+        "title": "KONFIGURUJ WOODSENSE",
+        "description": "Poznaj konfiguracje WoodSense w naszym Material Studio lub zamów szczegółowe specyfikacje i próbki, aby osobiście doświadczyć autentycznego charakteru drewna.",
+        "buttons": {
+          "studio": "KONFIGURUJ W MATERIAL STUDIO",
+          "quote": "ZAMÓW WYCENĘ"
+        }
+      },
       "WS0001Z2M": {
         "title": "Pietra Scura",
         "description": "Jednolita powierzchnia ciemnego kamienia o eleganckim, gładkim wykończeniu"
