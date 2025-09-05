@@ -16,6 +16,9 @@ export const metadata: Metadata = {
 export default function MetaluxPage() {
   const t = useTranslations("boards.metalux");
 
+  const technicalSpecificationsArr: { name: string; value: string }[] =
+    t.raw("technicalSpecifications.specs");
+
   const metaluxBoards = [
     {
       id: "MLG21001L",
@@ -59,30 +62,10 @@ export default function MetaluxPage() {
     },
   ];
 
-
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
       <Navbar />
-
-      {/* Breadcrumbs
-      <div className="container mx-auto px-8 pt-8">
-        <nav className="text-sm text-gray-500 font-light">
-          <Link href="/" className="hover:text-gray-700">
-            Home
-          </Link>
-          <span className="mx-2">/</span>
-          <Link href="/products" className="hover:text-gray-700">
-            Products
-          </Link>
-          <span className="mx-2">/</span>
-          <Link href="/products/furniture-boards" className="hover:text-gray-700">
-            Furniture Boards
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-900">MetaLux</span>
-        </nav>
-      </div> */}
 
       {/* Hero Section */}
       <section className="relative h-screen">
@@ -100,15 +83,17 @@ export default function MetaluxPage() {
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
-                FUTURISTIC SHEEN. ARCHITECTURAL PRESENCE.
+                {t("hero.title")}
               </h1>
               <p className="text-lg text-white/90 font-light leading-relaxed mb-8">
-                MetaLux series delivers sophisticated metallic finishes that transform furniture into architectural
-                statements. Advanced surface technology creates depth and luminosity while maintaining exceptional
-                scratch resistance and durability.
+                {t("hero.description")}
               </p>
-              <ScrollButton targetId="metalux-finishes" variant="outline" className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide">
-                VIEW FINISHES
+              <ScrollButton
+                targetId="metalux-finishes"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
+              >
+                {t("hero.button")}
               </ScrollButton>
             </div>
           </div>
@@ -120,24 +105,26 @@ export default function MetaluxPage() {
         <div className="container mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">METALLIC SOPHISTICATION</h2>
+              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("categoryDescription.title")}
+              </h2>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                The MetaLux series represents the pinnacle of metallic surface technology, where advanced materials
-                science meets contemporary design vision. Each finish captures and reflects light in unique ways,
-                creating dynamic visual experiences that change throughout the day.
+                {t("categoryDescription.text1")}
               </p>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Engineered for modern interiors that demand both aesthetic impact and functional performance, MetaLux
-                boards offer exceptional scratch resistance and maintain their lustrous appearance even under intensive
-                use.
+                {t("categoryDescription.text2")}
               </p>
               <p className="text-gray-600 font-light leading-relaxed">
-                Perfect for contemporary kitchens, luxury retail environments, and architectural installations where
-                metallic sophistication creates the desired atmosphere of innovation and refinement.
+                {t("categoryDescription.text3")}
               </p>
             </div>
             <div className="relative h-[60vh]">
-              <Image src="/metallic-surface-macro-detail-reflection.png" alt="MetaLux Surface Detail" fill className="object-cover" />
+              <Image
+                src="/metallic-surface-macro-detail-reflection.png"
+                alt="MetaLux Surface Detail"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -147,10 +134,11 @@ export default function MetaluxPage() {
       <section id="metalux-finishes" className="py-32">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">METALLIC FINISHES</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("palette.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              A curated selection of metallic finishes, each engineered to deliver consistent quality and distinctive
-              character.
+              {t("palette.description")}
             </p>
           </div>
 
@@ -164,8 +152,8 @@ export default function MetaluxPage() {
                     fill
                     className="object-contain rounded-lg transition-opacity duration-500 group-hover:opacity-0"
                     sizes="(max-width: 768px) 100vw,
-                                 (max-width: 1200px) 50vw,
-                                 33vw"
+                           (max-width: 1200px) 50vw,
+                           33vw"
                   />
                   <Image
                     src={board.image.hover}
@@ -173,8 +161,8 @@ export default function MetaluxPage() {
                     fill
                     className="object-contain rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     sizes="(max-width: 768px) 100vw,
-                                 (max-width: 1200px) 50vw,
-                                 33vw"
+                           (max-width: 1200px) 50vw,
+                           33vw"
                   />
                 </div>
                 <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
@@ -192,13 +180,15 @@ export default function MetaluxPage() {
         </div>
       </section>
 
-      {/* Applications Gallery */}
+      {/* Applications */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">APPLICATIONS</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("applications.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              MetaLux boards excel in environments where metallic sophistication enhances the overall design narrative.
+              {t("applications.description")}
             </p>
           </div>
 
@@ -276,52 +266,31 @@ export default function MetaluxPage() {
         <div className="container mx-auto px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-light text-gray-900 mb-12 tracking-wider text-center">
-              TECHNICAL SPECIFICATIONS
+              {t("technicalSpecifications.title")}
             </h2>
-
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
               <table className="w-full">
                 <thead className="bg-gray-50">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-light text-gray-900 tracking-wide">
-                      SPECIFICATION
+                      {technicalSpecificationsArr[0].name}
                     </th>
                     <th className="px-6 py-4 text-left text-sm font-light text-gray-900 tracking-wide">
-                      METALUX SERIES
+                      {technicalSpecificationsArr[0].value}
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Core Material</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">High-density engineered substrate</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Surface Finish</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">Advanced metallic coating with protective layer</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Gloss Level</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">Semi-gloss (40-60 GU)</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Thicknesses</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">16mm, 19mm, 22mm</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Sheet Sizes</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">2800 x 2070mm (custom sizes available)</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Edge Options</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">Matching metallic, contrasting, ABS</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-light text-gray-900">Maintenance</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">
-                      Standard cleaning agents, microfiber cloth recommended
-                    </td>
-                  </tr>
+                  {technicalSpecificationsArr.slice(1).map((row, idx) => (
+                    <tr key={idx}>
+                      <td className="px-6 py-4 text-sm font-light text-gray-900">
+                        {row.name}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-600">
+                        {row.value}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -329,26 +298,32 @@ export default function MetaluxPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Configure Section */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8 text-center">
-          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">CONFIGURE METALUX</h2>
+          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+            {t("configure.title")}
+          </h2>
           <p className="text-gray-600 font-light max-w-2xl mx-auto leading-relaxed mb-12">
-            Explore MetaLux configurations in our Material Studio or request detailed specifications and samples from
-            our technical specialists.
+            {t("configure.description")}
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/studio?category=boards&series=metalux">
-              <Button className="font-light tracking-wide">CONFIGURE IN MATERIAL STUDIO</Button>
+              <Button className="font-light tracking-wide">
+                {t("configure.buttons.studio")}
+              </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="font-light tracking-wide bg-transparent">
-                REQUEST QUOTE
+              <Button
+                variant="outline"
+                className="font-light tracking-wide bg-transparent"
+              >
+                {t("configure.buttons.quote")}
               </Button>
             </Link>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

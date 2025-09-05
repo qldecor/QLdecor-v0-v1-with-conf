@@ -200,6 +200,70 @@
       }
     },
     "metalux": {
+      "hero": {
+        "title": "FUTURISTIC SHEEN. ARCHITECTURAL PRESENCE.",
+        "description": "The MetaLux series delivers sophisticated metallic finishes that transform furniture into architectural statements. Advanced surface technology creates depth and luminosity while maintaining exceptional scratch resistance and durability.",
+        "button": "VIEW FINISHES"
+      },
+      "categoryDescription": {
+        "title": "METALLIC SOPHISTICATION",
+        "text1": "The MetaLux series represents the pinnacle of metallic surface technology, where advanced materials science meets contemporary design vision. Each finish captures and reflects light in unique ways, creating dynamic visual experiences that shift throughout the day.",
+        "text2": "Engineered for modern interiors that demand both aesthetic impact and functional performance, MetaLux boards offer outstanding scratch resistance and maintain their lustrous appearance even under intensive use.",
+        "text3": "Perfect for contemporary kitchens, luxury retail environments, and architectural installations where metallic sophistication creates an atmosphere of innovation and refinement."
+      },
+      "palette": {
+        "title": "METALLIC FINISHES",
+        "description": "A curated selection of metallic finishes, each engineered to deliver consistent quality and distinctive character."
+      },
+      "applications": {
+        "title": "APPLICATIONS",
+        "description": "MetaLux boards excel in environments where metallic sophistication enhances the overall design narrative."
+      },
+      "technicalSpecifications": {
+        "title": "TECHNICAL SPECIFICATIONS",
+        "specs": [
+          {
+            "name": "SPECIFICATION",
+            "value": "METALUX SERIES"
+          },
+          {
+            "name": "Core Material",
+            "value": "High-density engineered substrate"
+          },
+          {
+            "name": "Surface Finish",
+            "value": "Advanced metallic coating with protective layer"
+          },
+          {
+            "name": "Gloss Level",
+            "value": "Semi-gloss (40–60 GU)"
+          },
+          {
+            "name": "Thicknesses",
+            "value": "16mm, 19mm, 22mm"
+          },
+          {
+            "name": "Sheet Sizes",
+            "value": "2800 x 2070mm (custom sizes available)"
+          },
+          {
+            "name": "Edge Options",
+            "value": "Matching metallic, contrasting, ABS"
+          },
+          {
+            "name": "Maintenance",
+            "value": "Standard cleaning agents, microfiber cloth recommended"
+          }
+        ]
+      },
+      "configure": {
+        "title": "CONFIGURE METALUX",
+        "description": "Explore MetaLux configurations in our Material Studio or request detailed specifications and samples from our technical specialists.",
+        "buttons": {
+          "studio": "CONFIGURE IN MATERIAL STUDIO",
+          "quote": "REQUEST QUOTE"
+        }
+      },
       "MLG21001L": {
         "title": "Ambra",
         "description": "Brushed gold with elegant sheen and a modern, luxurious expression"

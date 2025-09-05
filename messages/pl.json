@@ -197,6 +197,70 @@
       }
     },
     "metalux": {
+      "hero": {
+        "title": "FUTURYSTYCZNY POŁYSK. ARCHITEKTONICZNA OBECNOŚĆ.",
+        "description": "Seria MetaLux oferuje wyrafinowane wykończenia metaliczne, które zmieniają meble w architektoniczne elementy wnętrza. Zaawansowana technologia powierzchni tworzy głębię i blask, zachowując jednocześnie wyjątkową odporność na zarysowania i trwałość.",
+        "button": "ZOBACZ WYKOŃCZENIA"
+      },
+      "categoryDescription": {
+        "title": "WYRAFINOWANA METALICZNOŚĆ",
+        "text1": "Seria MetaLux to szczyt możliwości technologii powierzchni metalicznych, gdzie zaawansowana inżynieria materiałowa spotyka się z nowoczesną wizją designu. Każde wykończenie odbija i rozprasza światło w unikalny sposób, tworząc dynamiczne wrażenia wizualne zmieniające się w ciągu dnia.",
+        "text2": "Stworzone z myślą o nowoczesnych wnętrzach, które wymagają zarówno efektu estetycznego, jak i funkcjonalnej wydajności, płyty MetaLux zapewniają wyjątkową odporność na zarysowania i zachowują swój blask nawet przy intensywnym użytkowaniu.",
+        "text3": "Idealne do współczesnych kuchni, luksusowych przestrzeni handlowych i instalacji architektonicznych, gdzie metaliczna elegancja buduje atmosferę innowacyjności i wyrafinowania."
+      },
+      "palette": {
+        "title": "WYKOŃCZENIA METALICZNE",
+        "description": "Starannie wyselekcjonowana kolekcja wykończeń metalicznych, zaprojektowanych tak, aby zapewniały spójną jakość i unikalny charakter."
+      },
+      "applications": {
+        "title": "ZASTOSOWANIA",
+        "description": "Płyty MetaLux sprawdzają się w przestrzeniach, gdzie metaliczna elegancja wzmacnia całą narrację projektową."
+      },
+      "technicalSpecifications": {
+        "title": "SPECYFIKACJA TECHNICZNA",
+        "specs": [
+          {
+            "name": "SPECYFIKACJA",
+            "value": "SERIA METALUX"
+          },
+          {
+            "name": "Materiał rdzenia",
+            "value": "Wysokiej gęstości podłoże inżynieryjne"
+          },
+          {
+            "name": "Wykończenie powierzchni",
+            "value": "Zaawansowana powłoka metaliczna z warstwą ochronną"
+          },
+          {
+            "name": "Poziom połysku",
+            "value": "Półpołysk (40–60 GU)"
+          },
+          {
+            "name": "Grubości",
+            "value": "16 mm, 19 mm, 22 mm"
+          },
+          {
+            "name": "Formaty płyt",
+            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
+          },
+          {
+            "name": "Opcje obrzeży",
+            "value": "Dopasowane metaliczne, kontrastowe, ABS"
+          },
+          {
+            "name": "Konserwacja",
+            "value": "Standardowe środki czyszczące, zalecana ściereczka z mikrofibry"
+          }
+        ]
+      },
+      "configure": {
+        "title": "KONFIGURUJ METALUX",
+        "description": "Poznaj konfiguracje MetaLux w naszym Material Studio lub zamów szczegółowe specyfikacje i próbki od naszych specjalistów technicznych.",
+        "buttons": {
+          "studio": "KONFIGURUJ W MATERIAL STUDIO",
+          "quote": "ZAMÓW WYCENĘ"
+        }
+      },
       "MLG21001L": {
         "title": "Ambra",
         "description": "Szczotkowane złoto o eleganckim blasku i nowoczesnym, luksusowym wyrazie"
