@@ -535,5 +535,59 @@
         "description": "Matte graphite with understated elegance, perfect for modern and sophisticated designs"
       }
     }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "CONTACT",
+      "description": "Ready to discuss your project? Our team of specialists is here to help you create the perfect materials for your furniture designs."
+    },
+    "form": {
+      "firstName": "FIRST NAME",
+      "lastName": "LAST NAME",
+      "email": "EMAIL ADDRESS",
+      "company": "COMPANY",
+      "phone": "PHONE NUMBER",
+      "projectType": "PROJECT TYPE",
+      "message": "MESSAGE",
+      "button": {
+        "send": "SEND MESSAGE",
+        "sending": "Sending..."
+      },
+      "status": {
+        "success": "✅ Message sent successfully!",
+        "error": "❌ Something went wrong, please try again."
+      }
+    },
+    "info": {
+      "headquarters": {
+        "title": "HEADQUARTERS",
+        "address": "1234 Industrial Boulevard\nManufacturing District\nNew York, NY 10001"
+      },
+      "contact": {
+        "title": "CONTACT",
+        "details": "+1 (555) 123-4567\ninfo@luxcraft.com\nsales@luxcraft.com"
+      },
+      "hours": {
+        "title": "HOURS",
+        "details": "Monday - Friday: 8:00 - 18:00\nSaturday - Sunday: Closed"
+      }
+    },
+    "quickActions": {
+      "samples": {
+        "title": "REQUEST SAMPLES",
+        "description": "Evaluate our materials with physical samples delivered to your location.",
+        "button": "REQUEST"
+      },
+      "consultation": {
+        "title": "PROJECT CONSULTATION",
+        "description": "Schedule a consultation with our technical specialists.",
+        "button": "SCHEDULE"
+      },
+      "visit": {
+        "title": "FACILITY VISIT",
+        "description": "Experience our manufacturing process and quality standards firsthand.",
+        "button": "ARRANGE"
+      }
+    }
   }
 }

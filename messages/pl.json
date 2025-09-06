@@ -532,5 +532,59 @@
         "description": "Matowy grafit o stonowanej elegancji, doskonały do nowoczesnych i wysmakowanych projektów"
       }
     }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "KONTAKT",
+      "description": "Gotowy, aby porozmawiać o swoim projekcie? Nasz zespół specjalistów pomoże Ci stworzyć idealne materiały do Twoich mebli."
+    },
+    "form": {
+      "firstName": "IMIĘ",
+      "lastName": "NAZWISKO",
+      "email": "ADRES E-MAIL",
+      "company": "FIRMA",
+      "phone": "NUMER TELEFONU",
+      "projectType": "TYP PROJEKTU",
+      "message": "WIADOMOŚĆ",
+      "button": {
+        "send": "WYŚLIJ WIADOMOŚĆ",
+        "sending": "Wysyłanie..."
+      },
+      "status": {
+        "success": "✅ Wiadomość została wysłana!",
+        "error": "❌ Coś poszło nie tak, spróbuj ponownie."
+      }
+    },
+    "info": {
+      "headquarters": {
+        "title": "SIEDZIBA GŁÓWNA",
+        "address": "1234 Industrial Boulevard\nManufacturing District\nNew York, NY 10001"
+      },
+      "contact": {
+        "title": "KONTAKT",
+        "details": "+1 (555) 123-4567\ninfo@luxcraft.com\nsales@luxcraft.com"
+      },
+      "hours": {
+        "title": "GODZINY PRACY",
+        "details": "Poniedziałek - Piątek: 8:00 - 16:00\nSobota - Niedziela: Zamknięte"
+      }
+    },
+    "quickActions": {
+      "samples": {
+        "title": "ZAMÓW PRÓBKI",
+        "description": "Sprawdź nasze materiały, zamawiając fizyczne próbki z dostawą do Twojej lokalizacji.",
+        "button": "ZAMÓW"
+      },
+      "consultation": {
+        "title": "KONSULTACJA PROJEKTOWA",
+        "description": "Umów się na konsultację z naszymi specjalistami technicznymi.",
+        "button": "UMÓW"
+      },
+      "visit": {
+        "title": "WIZYTA W ZAKŁADZIE",
+        "description": "Poznaj nasz proces produkcyjny i standardy jakości na własne oczy.",
+        "button": "UMÓW"
+      }
+    }
   }
 }

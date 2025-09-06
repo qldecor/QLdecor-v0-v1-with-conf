@@ -4,11 +4,14 @@ import { Button } from "@/app/[locale]/components/ui/button";
 import { Input } from "@/app/[locale]/components/ui/input";
 import { Textarea } from "@/app/[locale]/components/ui/textarea";
 import Navbar from "@/app/[locale]/components/navbar";
-
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+  const t = useTranslations("contactPage");
+
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("loading");
@@ -38,84 +41,73 @@ export default function ContactPage() {
         <div className="container mx-auto px-8">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-16">
-              <h1 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">CONTACT</h1>
+              <h1 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("hero.title")}
+              </h1>
               <p className="text-gray-600 font-light leading-relaxed">
-                Ready to discuss your project? Our team of specialists is here to help you create the perfect materials
-                for your furniture designs.
+                {t("hero.description")}
               </p>
             </div>
 
             <form className="space-y-8" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <Input
-                    placeholder="FIRST NAME"
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
-                  />
-                </div>
-                <div>
-                  <Input
-                    placeholder="LAST NAME"
-                    // value={form.name}
-                    className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
-                  />
-                </div>
-              </div>
-
-              <div>
                 <Input
-                  placeholder="EMAIL ADDRESS"
-                  type="email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  placeholder={t("form.firstName")}
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
+                />
+                <Input
+                  placeholder={t("form.lastName")}
                   className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
                 />
               </div>
 
-              <div>
-                <Input
-                  placeholder="COMPANY"
-                  className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
-                />
-              </div>
+              <Input
+                placeholder={t("form.email")}
+                type="email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
+              />
 
-              <div>
-                <Input
-                  placeholder="PHONE NUMBER"
-                  className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
-                />
-              </div>
+              <Input
+                placeholder={t("form.company")}
+                className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
+              />
 
-              <div>
-                <Input
-                  placeholder="PROJECT TYPE"
-                  className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
-                />
-              </div>
+              <Input
+                placeholder={t("form.phone")}
+                className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
+              />
 
-              <div>
-                <Textarea
-                  placeholder="MESSAGE"
-                  rows={6}
-                  value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900 resize-none"
-                />
-              </div>
+              <Input
+                placeholder={t("form.projectType")}
+                className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
+              />
+
+              <Textarea
+                placeholder={t("form.message")}
+                rows={6}
+                value={form.message}
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
+                className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900 resize-none"
+              />
 
               <div className="pt-8">
                 <Button type="submit" className="w-full font-light tracking-wider py-4">
-                  {status === 'loading' ? "Sending..." : "SEND MESSAGE"}
+                  {status === "loading"
+                    ? t("form.button.sending")
+                    : t("form.button.send")}
                 </Button>
               </div>
             </form>
+
             {status === "success" && (
-              <p className="text-green-600 mt-4">✅ Wiadomość została wysłana!</p>
+              <p className="text-green-600 mt-4">{t("form.status.success")}</p>
             )}
             {status === "error" && (
-              <p className="text-red-600 mt-4">❌ Coś poszło nie tak, spróbuj ponownie.</p>
+              <p className="text-red-600 mt-4">{t("form.status.error")}</p>
             )}
           </div>
         </div>
@@ -126,35 +118,29 @@ export default function ContactPage() {
         <div className="container mx-auto px-8">
           <div className="grid md:grid-cols-3 gap-16 text-center">
             <div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">HEADQUARTERS</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                1234 Industrial Boulevard
-                <br />
-                Manufacturing District
-                <br />
-                New York, NY 10001
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">
+                {t("info.headquarters.title")}
+              </h3>
+              <p className="text-gray-600 font-light text-sm leading-relaxed whitespace-pre-line">
+                {t("info.headquarters.address")}
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">CONTACT</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                +1 (555) 123-4567
-                <br />
-                info@luxcraft.com
-                <br />
-                sales@luxcraft.com
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">
+                {t("info.contact.title")}
+              </h3>
+              <p className="text-gray-600 font-light text-sm leading-relaxed whitespace-pre-line">
+                {t("info.contact.details")}
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">HOURS</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Monday - Friday: 8:00 - 18:00
-                <br />
-                Saturday: 9:00 - 16:00
-                <br />
-                Sunday: Closed
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">
+                {t("info.hours.title")}
+              </h3>
+              <p className="text-gray-600 font-light text-sm leading-relaxed whitespace-pre-line">
+                {t("info.hours.details")}
               </p>
             </div>
           </div>
@@ -166,37 +152,43 @@ export default function ContactPage() {
         <div className="container mx-auto px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 border border-gray-200">
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">REQUEST SAMPLES</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">
+                {t("quickActions.samples.title")}
+              </h3>
               <p className="text-gray-600 font-light text-sm mb-6 leading-relaxed">
-                Evaluate our materials with physical samples delivered to your location.
+                {t("quickActions.samples.description")}
               </p>
               <Button variant="outline" className="font-light tracking-wide bg-transparent">
-                REQUEST
+                {t("quickActions.samples.button")}
               </Button>
             </div>
 
             <div className="text-center p-8 border border-gray-200">
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">PROJECT CONSULTATION</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">
+                {t("quickActions.consultation.title")}
+              </h3>
               <p className="text-gray-600 font-light text-sm mb-6 leading-relaxed">
-                Schedule a consultation with our technical specialists.
+                {t("quickActions.consultation.description")}
               </p>
               <Button variant="outline" className="font-light tracking-wide bg-transparent">
-                SCHEDULE
+                {t("quickActions.consultation.button")}
               </Button>
             </div>
 
             <div className="text-center p-8 border border-gray-200">
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">FACILITY VISIT</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">
+                {t("quickActions.visit.title")}
+              </h3>
               <p className="text-gray-600 font-light text-sm mb-6 leading-relaxed">
-                Experience our manufacturing process and quality standards firsthand.
+                {t("quickActions.visit.description")}
               </p>
               <Button variant="outline" className="font-light tracking-wide bg-transparent">
-                ARRANGE
+                {t("quickActions.visit.button")}
               </Button>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
