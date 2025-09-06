@@ -1,37 +1,25 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/app/[locale]/components/ui/button"
+// "use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/app/[locale]/components/ui/button";
+import Navbar from "@/app/[locale]/components/navbar";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations("aboutPage");
+
+  function openChat() {
+    if (typeof window !== "undefined" && (window as any).Chatway) {
+      (window as any).Chatway("open");
+    } else {
+      console.warn("Chatway widget jeszcze się nie załadował");
+    }
+  }
+
   return (
     <div className="min-h-screen bg-white pt-20">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50">
-        <div className="container mx-auto px-8 py-6">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-xl font-light tracking-wider text-gray-900">
-              LUXCRAFT
-            </Link>
-            <div className="hidden md:flex items-center space-x-12 text-sm font-light">
-              <Link href="/products" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                PRODUCTS
-              </Link>
-              <Link href="/collections" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                COLLECTIONS
-              </Link>
-              <Link href="/projects" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                PROJECTS
-              </Link>
-              <Link href="/about" className="text-gray-900 font-medium tracking-wide">
-                ABOUT
-              </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide">
-                CONTACT
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Heritage Hero */}
       <section className="relative h-screen">
@@ -44,15 +32,14 @@ export default function AboutPage() {
             priority
           />
         </div>
-
         <div className="absolute bottom-32 left-0 right-0">
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">HERITAGE & INNOVATION</h1>
+              <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+                {t("hero.title")}
+              </h1>
               <p className="text-lg text-white/90 font-light leading-relaxed">
-                Since 1999, LUXCRAFT has been at the forefront of furniture material innovation, combining traditional
-                craftsmanship with cutting-edge technology to create components that define luxury furniture
-                manufacturing.
+                {t("hero.description")}
               </p>
             </div>
           </div>
@@ -61,16 +48,13 @@ export default function AboutPage() {
 
       {/* Philosophy */}
       <section className="py-32 bg-gray-50">
-        <div className="container mx-auto px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">OUR PHILOSOPHY</h2>
-            <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed">
-              We believe that exceptional furniture deserves exceptional materials. Every component we create embodies
-              our commitment to precision, innovation, and timeless design. Our approach combines the finest materials
-              with meticulous craftsmanship to deliver surfaces that not only meet but exceed the expectations of luxury
-              furniture manufacturers worldwide.
-            </p>
-          </div>
+        <div className="container mx-auto px-8 text-center">
+          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+            {t("philosophy.title")}
+          </h2>
+          <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed">
+            {t("philosophy.description")}
+          </p>
         </div>
       </section>
 
@@ -87,125 +71,134 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">MANUFACTURING EXCELLENCE</h2>
+              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("manufacturing.title")}
+              </h2>
               <p className="text-gray-600 font-light leading-relaxed mb-8">
-                Our state-of-the-art facility combines advanced CNC machinery with traditional craftsmanship techniques.
-                Every surface undergoes rigorous quality control processes, ensuring that each component meets our
-                exacting standards for precision, finish quality, and durability.
+                {t("manufacturing.description")}
               </p>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">PRECISION ENGINEERING</h3>
-                  <p className="text-gray-600 font-light text-sm">Tolerances within 0.1mm across all dimensions</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">QUALITY ASSURANCE</h3>
-                  <p className="text-gray-600 font-light text-sm">Multi-stage inspection process for every component</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">SUSTAINABLE PRACTICES</h3>
+                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                    {t("manufacturing.points.precision.title")}
+                  </h3>
                   <p className="text-gray-600 font-light text-sm">
-                    Eco-friendly processes and responsible material sourcing
+                    {t("manufacturing.points.precision.description")}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                    {t("manufacturing.points.quality.title")}
+                  </h3>
+                  <p className="text-gray-600 font-light text-sm">
+                    {t("manufacturing.points.quality.description")}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                    {t("manufacturing.points.sustainability.title")}
+                  </h3>
+                  <p className="text-gray-600 font-light text-sm">
+                    {t("manufacturing.points.sustainability.description")}
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* Global Reach */}
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">GLOBAL REACH</h2>
+              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("global.title")}
+              </h2>
               <p className="text-gray-600 font-light leading-relaxed mb-8">
-                From our headquarters, we serve luxury furniture manufacturers across 40 countries, delivering
-                components that meet the highest international standards. Our global network ensures consistent quality
-                and reliable delivery, regardless of project scale or location.
+                {t("global.description")}
               </p>
               <div className="grid grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-light text-gray-900 mb-2">25+</div>
-                  <div className="text-sm font-light text-gray-600 tracking-wide">YEARS</div>
+                  <div className="text-sm font-light text-gray-600 tracking-wide">
+                    {t("global.stats.years")}
+                  </div>
                 </div>
                 <div>
                   <div className="text-3xl font-light text-gray-900 mb-2">500+</div>
-                  <div className="text-sm font-light text-gray-600 tracking-wide">PARTNERS</div>
+                  <div className="text-sm font-light text-gray-600 tracking-wide">
+                    {t("global.stats.partners")}
+                  </div>
                 </div>
                 <div>
                   <div className="text-3xl font-light text-gray-900 mb-2">40+</div>
-                  <div className="text-sm font-light text-gray-600 tracking-wide">COUNTRIES</div>
+                  <div className="text-sm font-light text-gray-600 tracking-wide">
+                    {t("global.stats.countries")}
+                  </div>
                 </div>
               </div>
             </div>
             <div className="relative h-[60vh]">
-              <Image src="/placeholder.svg?height=600&width=800" alt="Global Presence" fill className="object-cover" />
+              <Image
+                src="/placeholder.svg?height=600&width=800"
+                alt="Global Presence"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-32 bg-gray-50">
+      {/* Leadership Team */}
+      {/* <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">LEADERSHIP TEAM</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("team.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Our leadership combines decades of experience in luxury manufacturing with a vision for the future of
-              furniture materials.
+              {t("team.description")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-16">
-            <div className="text-center">
-              <div className="relative h-[40vh] mb-8 grayscale">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Sarah Chen, CEO"
-                  fill
-                  className="object-cover"
-                />
+            {["ceo", "director", "manager"].map((member) => (
+              <div key={member} className="text-center">
+                <div className="relative h-[40vh] mb-8 grayscale">
+                  <Image
+                    src="/placeholder.svg?height=400&width=300"
+                    alt={t(`team.members.${member}.name`)}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                  {t(`team.members.${member}.name`)}
+                </h3>
+                <p className="text-sm font-light text-gray-600 tracking-wide">
+                  {t(`team.members.${member}.role`)}
+                </p>
               </div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">SARAH CHEN</h3>
-              <p className="text-sm font-light text-gray-600 tracking-wide">CHIEF EXECUTIVE OFFICER</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-[40vh] mb-8 grayscale">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Marcus Weber, Design Director"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">MARCUS WEBER</h3>
-              <p className="text-sm font-light text-gray-600 tracking-wide">DESIGN DIRECTOR</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-[40vh] mb-8 grayscale">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Elena Rodriguez, Operations Manager"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">ELENA RODRIGUEZ</h3>
-              <p className="text-sm font-light text-gray-600 tracking-wide">OPERATIONS MANAGER</p>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA */}
       <section className="py-32">
         <div className="container mx-auto px-8 text-center">
-          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">COLLABORATE WITH US</h2>
+          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+            {t("cta.title")}
+          </h2>
           <p className="text-gray-600 font-light max-w-2xl mx-auto leading-relaxed mb-12">
-            Discover how our expertise and premium materials can elevate your furniture designs.
+            {t("cta.description")}
           </p>
-          <Button className="font-light tracking-wide">START A CONVERSATION</Button>
+          <Button className="font-light tracking-wide">
+            <Link href="/contact">
+              {t("cta.button")}
+            </Link>
+          </Button>
         </div>
       </section>
     </div>
-  )
+  );
 }

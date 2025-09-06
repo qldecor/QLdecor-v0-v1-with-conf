@@ -734,5 +734,51 @@
         "button": "UMÓW"
       }
     }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "DZIEDZICTWO I INNOWACJA",
+      "description": "Od 1999 roku LUXCRAFT wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
+    },
+    "philosophy": {
+      "title": "NASZA FILOZOFIA",
+      "description": "Wierzymy, że wyjątkowe meble zasługują na wyjątkowe materiały. Każdy tworzony przez nas komponent odzwierciedla nasze zaangażowanie w precyzję, innowacyjność i ponadczasowy design. Łączymy najlepsze materiały z kunsztem wykonania, aby dostarczać powierzchnie, które nie tylko spełniają, ale i przewyższają oczekiwania producentów luksusowych mebli na całym świecie."
+    },
+    "manufacturing": {
+      "title": "DOSKONAŁOŚĆ PRODUKCJI",
+      "description": "Nasze nowoczesne zakłady łączą zaawansowane maszyny CNC z tradycyjnymi technikami rzemieślniczymi. Każda powierzchnia przechodzi rygorystyczną kontrolę jakości, aby mieć pewność, że każdy komponent spełnia nasze najwyższe standardy precyzji, jakości wykończenia i trwałości.",
+      "points": {
+        "precision": {
+          "title": "PRECYZYJNA INŻYNIERIA",
+          "description": "Tolerancje do 0,1 mm we wszystkich wymiarach"
+        },
+        "quality": {
+          "title": "GWARANCJA JAKOŚCI",
+          "description": "Wielostopniowy proces kontroli każdego komponentu"
+        },
+        "sustainability": {
+          "title": "ZRÓWNOWAŻONE PRAKTYKI",
+          "description": "Ekologiczne procesy i odpowiedzialne pozyskiwanie materiałów"
+        }
+      }
+    },
+    "global": {
+      "title": "GLOBALNY ZASIĘG",
+      "description": "Z naszej siedziby obsługujemy producentów luksusowych mebli w 40 krajach, dostarczając komponenty spełniające najwyższe międzynarodowe standardy. Nasza globalna sieć gwarantuje stałą jakość i niezawodną dostawę, niezależnie od skali projektu czy lokalizacji.",
+      "stats": {
+        "years": "LAT",
+        "partners": "PARTNERÓW",
+        "countries": "KRAJÓW"
+      }
+    },
+    "team": {
+      "title": "ZESPÓŁ LIDERÓW",
+      "description": "Nasz zespół łączy dekady doświadczenia w luksusowej produkcji z wizją przyszłości materiałów meblowych."
+    },
+    "cta": {
+      "title": "WSPÓŁPRACUJ Z NAMI",
+      "description": "Odkryj, jak nasza wiedza i materiały premium mogą wynieść Twoje projekty meblowe na wyższy poziom.",
+      "button": "ROZPOCZNIJ ROZMOWĘ"
+    }
   }
 }

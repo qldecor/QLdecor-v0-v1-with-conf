@@ -737,5 +737,51 @@
         "button": "ARRANGE"
       }
     }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "HERITAGE & INNOVATION",
+      "description": "Since 1999, LUXCRAFT has been at the forefront of furniture material innovation, combining traditional craftsmanship with cutting-edge technology to create components that define luxury furniture manufacturing."
+    },
+    "philosophy": {
+      "title": "OUR PHILOSOPHY",
+      "description": "We believe that exceptional furniture deserves exceptional materials. Every component we create embodies our commitment to precision, innovation, and timeless design. Our approach combines the finest materials with meticulous craftsmanship to deliver surfaces that not only meet but exceed the expectations of luxury furniture manufacturers worldwide."
+    },
+    "manufacturing": {
+      "title": "MANUFACTURING EXCELLENCE",
+      "description": "Our state-of-the-art facility combines advanced CNC machinery with traditional craftsmanship techniques. Every surface undergoes rigorous quality control processes, ensuring that each component meets our exacting standards for precision, finish quality, and durability.",
+      "points": {
+        "precision": {
+          "title": "PRECISION ENGINEERING",
+          "description": "Tolerances within 0.1mm across all dimensions"
+        },
+        "quality": {
+          "title": "QUALITY ASSURANCE",
+          "description": "Multi-stage inspection process for every component"
+        },
+        "sustainability": {
+          "title": "SUSTAINABLE PRACTICES",
+          "description": "Eco-friendly processes and responsible material sourcing"
+        }
+      }
+    },
+    "global": {
+      "title": "GLOBAL REACH",
+      "description": "From our headquarters, we serve luxury furniture manufacturers across 40 countries, delivering components that meet the highest international standards. Our global network ensures consistent quality and reliable delivery, regardless of project scale or location.",
+      "stats": {
+        "years": "YEARS",
+        "partners": "PARTNERS",
+        "countries": "COUNTRIES"
+      }
+    },
+    "team": {
+      "title": "LEADERSHIP TEAM",
+      "description": "Our leadership combines decades of experience in luxury manufacturing with a vision for the future of furniture materials."
+    },
+    "cta": {
+      "title": "COLLABORATE WITH US",
+      "description": "Discover how our expertise and premium materials can elevate your furniture designs.",
+      "button": "START A CONVERSATION"
+    }
   }
 }
