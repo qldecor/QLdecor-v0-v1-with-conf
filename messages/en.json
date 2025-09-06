@@ -148,7 +148,7 @@
         },
         {
           "name": "Edge Options",
-          "value": "Matching, contrasting, ABS, PVC, veneer"
+          "value": "Matching, contrasting, ABS, PVC"
         },
         {
           "name": "Fire Rating",
@@ -373,7 +373,7 @@
           },
           {
             "name": "Edge Options",
-            "value": "Matching wood-grain, solid wood veneer, ABS"
+            "value": "Matching wood-grain"
           },
           {
             "name": "Maintenance",
@@ -754,7 +754,7 @@
         },
         "materials": {
           "title": "MODERN MATERIALS",
-          "text": "We use aluminum, steel, veneers and advanced decorative boards. Combining durability with elegant design."
+          "text": "We use aluminum, steel and advanced decorative boards. Combining durability with elegant design."
         },
         "finishing": {
           "title": "LUXURIOUS FINISHES",

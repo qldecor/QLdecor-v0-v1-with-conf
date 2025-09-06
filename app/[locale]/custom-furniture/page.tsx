@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 import type { Metadata } from "next";
 import { Carousel } from "@/app/[locale]/components/carousel";
+import { ClipboardList, Hammer, Layers } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
@@ -111,7 +112,7 @@ export default function CustomFurniturePage() {
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/img/custom-furniture/detail.webp"
+                src="/img/custom-furniture/bathroom/209.jpg"
                 alt={t("whyCustom.title")}
                 fill
                 className="object-cover rounded-2xl shadow-lg"
@@ -210,6 +211,7 @@ export default function CustomFurniturePage() {
       </section>
 
       {/* Process */}
+
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8 text-center">
           <h2 className="text-3xl font-light text-gray-900 mb-12 tracking-wider">
@@ -217,6 +219,9 @@ export default function CustomFurniturePage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div>
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-gray-100">
+                <ClipboardList className="w-8 h-8 text-gray-700" />
+              </div>
               <h3 className="text-xl font-light text-gray-900 mb-4">
                 {t("process.steps.consulting.title")}
               </h3>
@@ -224,7 +229,11 @@ export default function CustomFurniturePage() {
                 {t("process.steps.consulting.text")}
               </p>
             </div>
+
             <div>
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-gray-100">
+                <Layers className="w-8 h-8 text-gray-700" />
+              </div>
               <h3 className="text-xl font-light text-gray-900 mb-4">
                 {t("process.steps.materials.title")}
               </h3>
@@ -232,7 +241,11 @@ export default function CustomFurniturePage() {
                 {t("process.steps.materials.text")}
               </p>
             </div>
+
             <div>
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-gray-100">
+                <Hammer className="w-8 h-8 text-gray-700" />
+              </div>
               <h3 className="text-xl font-light text-gray-900 mb-4">
                 {t("process.steps.production.title")}
               </h3>

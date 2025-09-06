@@ -59,7 +59,7 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
   return (
     <div className="group">
       <div
-        className="relative aspect-[4/3] bg-gray-50 mb-6 overflow-hidden"
+        className="relative aspect-[3/3] bg-gray-50 mb-6 overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

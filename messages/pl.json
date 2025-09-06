@@ -145,7 +145,7 @@
         },
         {
           "name": "Opcje krawędzi",
-          "value": "Dopasowane, kontrastowe, ABS, PVC, fornir"
+          "value": "Dopasowane i kontrastowe"
         },
         {
           "name": "Klasa odporności ogniowej",
@@ -370,7 +370,7 @@
           },
           {
             "name": "Opcje obrzeży",
-            "value": "Dopasowane usłojenie, fornir z litego drewna, ABS"
+            "value": "Dopasowane obrzeże z usłojeniem lub wzorem odpowiadającym płycie"
           },
           {
             "name": "Konserwacja",
@@ -751,7 +751,7 @@
         },
         "materials": {
           "title": "NOWOCZESNE MATERIAŁY",
-          "text": "Wykorzystujemy fronty z aluminium, stali, fornirów oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
+          "text": "Wykorzystujemy fronty z aluminium, stali oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
         },
         "finishing": {
           "title": "LUKSUSOWE WYKOŃCZENIA",

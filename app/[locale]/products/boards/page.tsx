@@ -195,9 +195,13 @@ export default function FurnitureBoardsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {/* Stabilność */}
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
-                <div className="w-8 h-8 bg-gray-400 rounded"></div>
+              <div className="w-16 h-16 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
+                <div className="relative w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                  <div className="absolute top-1 w-6 h-0.5 bg-white"></div>
+                  <div className="absolute bottom-1 w-6 h-0.5 bg-white"></div>
+                </div>
               </div>
               <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
                 {t("benefits.items.stability.title")}
@@ -207,9 +211,10 @@ export default function FurnitureBoardsPage() {
               </p>
             </div>
 
+            {/* Wykończenie */}
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
-                <div className="w-8 h-8 bg-gray-400 rounded"></div>
+              <div className="w-16 h-16 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 rounded bg-gradient-to-r from-gray-300 to-gray-600"></div>
               </div>
               <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
                 {t("benefits.items.finish.title")}
@@ -219,9 +224,12 @@ export default function FurnitureBoardsPage() {
               </p>
             </div>
 
+            {/* Krawędzie */}
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
-                <div className="w-8 h-8 bg-gray-400 rounded"></div>
+              <div className="w-16 h-16 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gray-400 rounded relative">
+                  <div className="absolute inset-0 border-2 border-white rounded"></div>
+                </div>
               </div>
               <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
                 {t("benefits.items.edges.title")}
@@ -231,9 +239,13 @@ export default function FurnitureBoardsPage() {
               </p>
             </div>
 
+            {/* Grubości */}
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
-                <div className="w-8 h-8 bg-gray-400 rounded"></div>
+              <div className="w-16 h-16 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
+                <div className="relative w-8 h-8 flex flex-col items-center justify-center">
+                  <div className="w-8 h-2 bg-gray-400 rounded mb-1"></div>
+                  <div className="w-6 h-2 bg-gray-300 rounded"></div>
+                </div>
               </div>
               <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
                 {t("benefits.items.thickness.title")}
