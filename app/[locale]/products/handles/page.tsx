@@ -114,8 +114,8 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
 
       <div className="space-y-4">
         <div>
-          <h3 className="text-lg font-light text-gray-900 tracking-wide">{handle.name[locale]}</h3>
-          <p className="text-sm text-gray-600 font-light mt-1">{handle.blurb[locale]}</p>
+          <h3 className="text-lg font-light text-gray-900 tracking-wide">{t(`handles.items.${handle.id}.title`)}</h3>
+          <p className="text-sm text-gray-600 font-light mt-1">{t(`handles.items.${handle.id}.blurb`)}</p>
         </div>
 
         {/* Finish */}
@@ -258,6 +258,7 @@ function FilterBar({
 }
 
 export default function HandlesPage() {
+  const locale = useLocale() as "en" | "pl";
   const t = useTranslations("handlesPage");
 
   const [handles, setHandles] = useState<HandleIndexItem[]>([])
@@ -288,9 +289,9 @@ export default function HandlesPage() {
 
     switch (sortBy) {
       case "name-asc":
-        return [...filtered].sort((a, b) => a.name.en.localeCompare(b.name.en))
+        return [...filtered].sort((a, b) => a.name[locale].localeCompare(b.name[locale]))
       case "name-desc":
-        return [...filtered].sort((a, b) => b.name.en.localeCompare(a.name.en))
+        return [...filtered].sort((a, b) => b.name[locale].localeCompare(a.name[locale]))
       case "size-asc":
         return [...filtered].sort(
           (a, b) => Math.min(...a.sizes.map(Number)) - Math.min(...b.sizes.map(Number))
@@ -334,13 +335,13 @@ export default function HandlesPage() {
             >
               {t("hero.buttons.explore")}
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               className="font-light tracking-wider px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
             >
               {t("hero.buttons.download")}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -469,11 +470,11 @@ export default function HandlesPage() {
               </table>
             </div>
 
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Button variant="outline" className="font-light tracking-wider px-8 bg-transparent">
                 {t("specifications.download")}
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

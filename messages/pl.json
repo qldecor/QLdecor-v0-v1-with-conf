@@ -166,6 +166,62 @@
     }
   },
   "handlesPage": {
+    "handles": {
+      "items": {
+        "or-020": {
+          "title": "Uchwyt OR-020",
+          "blurb": "Smukły uchwyt T-bar z ryflowaną powierzchnią i minimalistycznym charakterem."
+        },
+        "or-021": {
+          "title": "Uchwyt OR-021",
+          "blurb": "Nowoczesny uchwyt nakładany o czystym profilu i subtelnej fakturze karo."
+        },
+        "or-020a": {
+          "title": "Gałka OR-020a",
+          "blurb": "Kompaktowa kwadratowa gałka o geometrycznej formie i ryflowanej fakturze."
+        },
+        "or-1003": {
+          "title": "Uchwyt OR-1003",
+          "blurb": "Duży uchwyt wpuszczany z aluminium, idealny do drzwi przesuwnych i szaf."
+        },
+        "or-029": {
+          "title": "Uchwyt OR-029",
+          "blurb": "Prostokątny uchwyt wpuszczany z fakturą karo i maskowanymi krawędziami."
+        },
+        "or-1108a": {
+          "title": "Uchwyt OR-1108A",
+          "blurb": "Elegancki uchwyt wpuszczany z gładkim detalem w kształcie fali."
+        },
+        "or-1119": {
+          "title": "Uchwyt OR-1119",
+          "blurb": "Delikatna okrągła gałka aluminiowa o smukłym profilu i miękkich krawędziach."
+        },
+        "or-8009": {
+          "title": "Uchwyt OR-8009",
+          "blurb": "Uniwersalny uchwyt listwowy dostępny w wielu rozmiarach i wykończeniach."
+        },
+        "or-8046": {
+          "title": "Wieszak OR-8046",
+          "blurb": "Geometryczny wieszak o płaskim profilu i nowoczesnym wyglądzie."
+        },
+        "or-8057": {
+          "title": "Uchwyt OR-8057",
+          "blurb": "Solidny uchwyt wpuszczany z aluminium o minimalistycznym kształcie i szerokiej palecie kolorów."
+        },
+        "or-8042": {
+          "title": "Wieszak OR-8042",
+          "blurb": "Oryginalny wieszak o sylwetce przypominającej rogi jelenia."
+        },
+        "or-2006-2": {
+          "title": "Uchwyt OR-2006-2",
+          "blurb": "Aluminiowy uchwyt wpuszczany dostępny w wersji lewej i prawej."
+        },
+        "or-2007-2": {
+          "title": "Uchwyt OR-2007-2",
+          "blurb": "Wytrzymały uchwyt wpuszczany o uniwersalnym zastosowaniu."
+        }
+      }
+    },
     "hero": {
       "title": "PREMIUMOWE UCHWYTY MEBLOWE",
       "description": "Precyzyjnie frezowane. Wyrafinowane wykończenia. Zaprojektowane do codziennego użytku.",
@@ -228,7 +284,7 @@
         },
         {
           "label": "DOSTĘPNE ROZMIARY",
-          "value": "30mm – 1000mm (różne rozstawy C-C)"
+          "value": "27mm – 1100mm (różne rozstawy C-C)"
         },
         {
           "label": "MONTAŻ",

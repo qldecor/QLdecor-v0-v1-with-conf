@@ -169,6 +169,62 @@
     }
   },
   "handlesPage": {
+    "handles": {
+      "items": {
+        "or-020": {
+          "title": "Handle OR-020",
+          "blurb": "Slim T-bar handle with a knurled surface and minimalist character."
+        },
+        "or-021": {
+          "title": "Handle OR-021",
+          "blurb": "Modern surface-mounted handle with a clean profile and subtle diamond texture."
+        },
+        "or-020a": {
+          "title": "Knob OR-020a",
+          "blurb": "Compact square knob with a geometric form and knurled texture."
+        },
+        "or-1003": {
+          "title": "Handle OR-1003",
+          "blurb": "Large recessed aluminum handle, perfect for sliding doors and wardrobes."
+        },
+        "or-029": {
+          "title": "Handle OR-029",
+          "blurb": "Rectangular recessed handle with diamond knurled texture and concealed edges."
+        },
+        "or-1108a": {
+          "title": "Handle OR-1108A",
+          "blurb": "Elegant recessed handle with a smooth wave-shaped detail."
+        },
+        "or-1119": {
+          "title": "Handle OR-1119",
+          "blurb": "Delicate round aluminum knob with a slim profile and softened edges."
+        },
+        "or-8009": {
+          "title": "Handle OR-8009",
+          "blurb": "Universal bar handle available in multiple sizes and finishes."
+        },
+        "or-8046": {
+          "title": "Hook OR-8046",
+          "blurb": "Geometric hook with a flat profile and modern look."
+        },
+        "or-8057": {
+          "title": "Handle OR-8057",
+          "blurb": "Solid recessed aluminum handle with a minimalist shape and wide color palette."
+        },
+        "or-8042": {
+          "title": "Hook OR-8042",
+          "blurb": "Unique hook with a silhouette reminiscent of deer antlers."
+        },
+        "or-2006-2": {
+          "title": "Handle OR-2006-2",
+          "blurb": "Aluminum recessed handle available in left and right versions."
+        },
+        "or-2007-2": {
+          "title": "Handle OR-2007-2",
+          "blurb": "Durable recessed handle designed for universal use."
+        }
+      }
+    },
     "hero": {
       "title": "PREMIUM FURNITURE HANDLES",
       "description": "Precision-milled. Refined finishes. Built for daily use.",
@@ -180,7 +236,7 @@
     "keyPoints": {
       "solid": {
         "title": "SOLID ALUMINUM",
-        "description": "Milled from solid 6061-T6 aluminum billets for outstanding durability and feel."
+        "description": "Precision-milled from a solid block of 6061-T6 aluminum, ensuring exceptional strength and refined finish."
       },
       "finishes": {
         "title": "REFINED FINISHES",
@@ -231,7 +287,7 @@
         },
         {
           "label": "SIZES AVAILABLE",
-          "value": "30mm - 1000mm (various C-C options)"
+          "value": "27mm - 1100mm (various C-C options)"
         },
         {
           "label": "MOUNTING",
