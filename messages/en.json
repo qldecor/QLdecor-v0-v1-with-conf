@@ -14,6 +14,67 @@
   "home": {
     "welcome": "Welcome to our website!"
   },
+  "productsPage": {
+    "hero": {
+      "title": "STAINLESS STEEL TABLES",
+      "description": "Engineered for perfection, crafted for eternity. Our stainless steel surfaces represent the ultimate fusion of industrial strength and refined aesthetics, designed to withstand the demands of professional use while maintaining their pristine appearance.",
+      "button": "SPECIFICATIONS"
+    },
+    "technicalExcellence": {
+      "title": "TECHNICAL EXCELLENCE",
+      "points": {
+        "grade": {
+          "title": "GRADE 304 STAINLESS STEEL",
+          "text": "Premium austenitic stainless steel with superior corrosion resistance and exceptional durability."
+        },
+        "finishing": {
+          "title": "PRECISION FINISHING",
+          "text": "Multiple surface treatments available: brushed, mirror polish, satin, and custom textured patterns."
+        },
+        "dimensions": {
+          "title": "CUSTOM DIMENSIONS",
+          "text": "Manufactured to exact specifications up to 3000mm length with precision edge finishing."
+        }
+      }
+    },
+    "steelFronts": {
+      "title": "STEEL FURNITURE FRONTS",
+      "description": "Authentic industrial aesthetics meet contemporary sophistication. Each steel front panel embodies the raw beauty of industrial materials while maintaining the refinement expected in luxury furniture applications.",
+      "button": "VIEW APPLICATIONS"
+    },
+    "handles": {
+      "title": "FURNITURE HANDLES",
+      "description": "Contemporary handle designs that combine ergonomic excellence with aesthetic sophistication. Each handle is precision-engineered for durability and comfort, available in five premium finishes to complement any furniture design vision.",
+      "button": "EXPLORE HANDLES"
+    },
+    "boardsOverview": {
+      "title": "FURNITURE BOARDS",
+      "description": "Four distinctive product lines, each representing a unique approach to surface design and material innovation, complemented by our premium furniture handles collection.",
+      "metalux": {
+        "title": "METALUX SERIES",
+        "description": "Advanced metallic finishes that create stunning visual depth and contemporary appeal.",
+        "button": "DISCOVER"
+      },
+      "woodsense": {
+        "title": "WOODSENSE SERIES",
+        "description": "Authentic wood aesthetics with the durability of engineered materials.",
+        "button": "DISCOVER"
+      },
+      "colorpro": {
+        "title": "COLORPRO SERIES",
+        "description": "Unlimited color possibilities with exceptional fade resistance and durability.",
+        "button": "DISCOVER"
+      }
+    },
+    "cta": {
+      "title": "CONFIGURE YOUR PROJECT",
+      "description": "Work with our specialists to create the perfect materials for your furniture designs.",
+      "buttons": {
+        "configurator": "START CONFIGURATION",
+        "catalog": "VIEW CATALOG"
+      }
+    }
+  },
   "handles": {
     "title": "Premium Furniture Handles",
     "description": "Precision-milled. Refined finishes. Built for daily use.",

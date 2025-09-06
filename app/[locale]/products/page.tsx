@@ -2,8 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
 import Navbar from "@/app/[locale]/components/navbar";
+import { useTranslations } from "next-intl";
 
 export default function ProductsPage() {
+  const t = useTranslations("productsPage");
+
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Navigation */}
@@ -14,7 +17,7 @@ export default function ProductsPage() {
         <div className="absolute inset-0">
           <Image
             src="/stal_14.jpeg?height=1080&width=1920"
-            alt="Stainless Steel Tables"
+            alt={t("hero.title")}
             fill
             className="object-cover"
             priority
@@ -26,17 +29,17 @@ export default function ProductsPage() {
         <div className="absolute bottom-32 left-0 right-0">
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">STAINLESS STEEL TABLES</h1>
+              <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+                {t("hero.title")}
+              </h1>
               <p className="text-lg text-white/90 font-light leading-relaxed mb-8">
-                Engineered for perfection, crafted for eternity. Our stainless steel surfaces represent the ultimate
-                fusion of industrial strength and refined aesthetics, designed to withstand the demands of professional
-                use while maintaining their pristine appearance.
+                {t("hero.description")}
               </p>
               <Button
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
               >
-                SPECIFICATIONS
+                {t("hero.button")}
               </Button>
             </div>
           </div>
@@ -48,24 +51,32 @@ export default function ProductsPage() {
         <div className="container mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">TECHNICAL EXCELLENCE</h2>
+              <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("technicalExcellence.title")}
+              </h2>
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">GRADE 304 STAINLESS STEEL</h3>
+                  <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
+                    {t("technicalExcellence.points.grade.title")}
+                  </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
-                    Premium austenitic stainless steel with superior corrosion resistance and exceptional durability.
+                    {t("technicalExcellence.points.grade.text")}
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">PRECISION FINISHING</h3>
+                  <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
+                    {t("technicalExcellence.points.finishing.title")}
+                  </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
-                    Multiple surface treatments available: brushed, mirror polish, satin, and custom textured patterns.
+                    {t("technicalExcellence.points.finishing.text")}
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">CUSTOM DIMENSIONS</h3>
+                  <h3 className="text-lg font-light text-gray-900 mb-3 tracking-wide">
+                    {t("technicalExcellence.points.dimensions.title")}
+                  </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
-                    Manufactured to exact specifications up to 3000mm length with precision edge finishing.
+                    {t("technicalExcellence.points.dimensions.text")}
                   </p>
                 </div>
               </div>
@@ -86,17 +97,22 @@ export default function ProductsPage() {
       <section className="py-32">
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
-            <Image src="/placeholder.svg?height=800&width=1600" alt="Steel Fronts" fill className="object-cover" />
+            <Image
+              src="/placeholder.svg?height=800&width=1600"
+              alt={t("steelFronts.title")}
+              fill
+              className="object-cover"
+            />
           </div>
-
           <div className="text-center">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">STEEL FURNITURE FRONTS</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("steelFronts.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
-              Authentic industrial aesthetics meet contemporary sophistication. Each steel front panel embodies the raw
-              beauty of industrial materials while maintaining the refinement expected in luxury furniture applications.
+              {t("steelFronts.description")}
             </p>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              VIEW APPLICATIONS
+              {t("steelFronts.button")}
             </Button>
           </div>
         </div>
@@ -106,18 +122,22 @@ export default function ProductsPage() {
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
-            <Image src="/placeholder.svg?height=800&width=1600" alt="Furniture Handles" fill className="object-cover" />
+            <Image
+              src="/placeholder.svg?height=800&width=1600"
+              alt={t("handles.title")}
+              fill
+              className="object-cover"
+            />
           </div>
-
           <div className="text-center">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">FURNITURE HANDLES</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("handles.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
-              Contemporary handle designs that combine ergonomic excellence with aesthetic sophistication. Each handle
-              is precision-engineered for durability and comfort, available in five premium finishes to complement any
-              furniture design vision.
+              {t("handles.description")}
             </p>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              EXPLORE HANDLES
+              {t("handles.button")}
             </Button>
           </div>
         </div>
@@ -127,10 +147,11 @@ export default function ProductsPage() {
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">FURNITURE BOARDS</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("boardsOverview.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed">
-              Four distinctive product lines, each representing a unique approach to surface design and material
-              innovation, complemented by our premium furniture handles collection.
+              {t("boardsOverview.description")}
             </p>
           </div>
 
@@ -138,14 +159,21 @@ export default function ProductsPage() {
             {/* Metalux */}
             <div className="text-center">
               <div className="relative h-[50vh] mb-8">
-                <Image src="/placeholder.svg?height=600&width=400" alt="Metalux Series" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=600&width=400"
+                  alt={t("boardsOverview.metalux.title")}
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">METALUX SERIES</h3>
+              <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
+                {t("boardsOverview.metalux.title")}
+              </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Advanced metallic finishes that create stunning visual depth and contemporary appeal.
+                {t("boardsOverview.metalux.description")}
               </p>
               <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                DISCOVER
+                {t("boardsOverview.metalux.button")}
               </Button>
             </div>
 
@@ -154,17 +182,19 @@ export default function ProductsPage() {
               <div className="relative h-[50vh] mb-8">
                 <Image
                   src="/placeholder.svg?height=600&width=400"
-                  alt="Woodsense Series"
+                  alt={t("boardsOverview.woodsense.title")}
                   fill
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">WOODSENSE SERIES</h3>
+              <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
+                {t("boardsOverview.woodsense.title")}
+              </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Authentic wood aesthetics with the durability of engineered materials.
+                {t("boardsOverview.woodsense.description")}
               </p>
               <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                DISCOVER
+                {t("boardsOverview.woodsense.button")}
               </Button>
             </div>
 
@@ -173,17 +203,19 @@ export default function ProductsPage() {
               <div className="relative h-[50vh] mb-8">
                 <Image
                   src="/placeholder.svg?height=600&width=400"
-                  alt="Colorpro Series"
+                  alt={t("boardsOverview.colorpro.title")}
                   fill
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">COLORPRO SERIES</h3>
+              <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
+                {t("boardsOverview.colorpro.title")}
+              </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Unlimited color possibilities with exceptional fade resistance and durability.
+                {t("boardsOverview.colorpro.description")}
               </p>
               <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                DISCOVER
+                {t("boardsOverview.colorpro.button")}
               </Button>
             </div>
           </div>
@@ -193,20 +225,24 @@ export default function ProductsPage() {
       {/* Contact CTA */}
       <section className="py-32">
         <div className="container mx-auto px-8 text-center">
-          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">CONFIGURE YOUR PROJECT</h2>
+          <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+            {t("cta.title")}
+          </h2>
           <p className="text-gray-600 font-light max-w-2xl mx-auto leading-relaxed mb-12">
-            Work with our specialists to create the perfect materials for your furniture designs.
+            {t("cta.description")}
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/configurator">
-              <Button className="font-light tracking-wide">START CONFIGURATION</Button>
+              <Button className="font-light tracking-wide">
+                {t("cta.buttons.configurator")}
+              </Button>
             </Link>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              VIEW CATALOG
+              {t("cta.buttons.catalog")}
             </Button>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

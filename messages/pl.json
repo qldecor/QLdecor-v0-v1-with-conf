@@ -11,6 +11,67 @@
     "furniture": "Meble",
     "see-all": "Odkryj"
   },
+  "productsPage": {
+    "hero": {
+      "title": "STOŁY ZE STALI NIERDZEWNEJ",
+      "description": "Projektowane z myślą o perfekcji, stworzone na wieczność. Nasze powierzchnie ze stali nierdzewnej to połączenie przemysłowej wytrzymałości i wyrafinowanej estetyki, zaprojektowane, aby sprostać wymaganiom profesjonalnego użytku, zachowując nienaganny wygląd.",
+      "button": "SPECYFIKACJA"
+    },
+    "technicalExcellence": {
+      "title": "DOSKONAŁOŚĆ TECHNICZNA",
+      "points": {
+        "grade": {
+          "title": "STAL NIERDZEWNA GATUNKU 304",
+          "text": "Stal austenityczna najwyższej jakości o doskonałej odporności na korozję i wyjątkowej trwałości."
+        },
+        "finishing": {
+          "title": "PRECYZYJNE WYKOŃCZENIE",
+          "text": "Dostępne różne wykończenia powierzchni: szczotkowane, polerowane na wysoki połysk, satynowe oraz niestandardowe faktury."
+        },
+        "dimensions": {
+          "title": "WYMIARY NA ZAMÓWIENIE",
+          "text": "Produkcja zgodnie z dokładną specyfikacją, do długości 3000 mm, z precyzyjnym wykończeniem krawędzi."
+        }
+      }
+    },
+    "steelFronts": {
+      "title": "FRONTY MEBLOWE ZE STALI",
+      "description": "Autentyczna industrialna estetyka spotyka się z nowoczesną elegancją. Każdy front stalowy oddaje surowe piękno materiałów przemysłowych, zachowując jednocześnie wyrafinowanie wymagane w luksusowych meblach.",
+      "button": "ZOBACZ ZASTOSOWANIA"
+    },
+    "handles": {
+      "title": "UCHWYTY MEBLOWE",
+      "description": "Nowoczesne projekty uchwytów łączące ergonomię z estetyką. Każdy uchwyt został zaprojektowany z myślą o trwałości i komforcie, dostępny w pięciu ekskluzywnych wykończeniach, które uzupełnią każdy projekt meblowy.",
+      "button": "POZNAJ UCHWYTY"
+    },
+    "boardsOverview": {
+      "title": "PŁYTY MEBLOWE",
+      "description": "Cztery unikalne linie produktowe, z których każda reprezentuje odmienne podejście do projektowania powierzchni i innowacji materiałowych, uzupełnione kolekcją uchwytów premium.",
+      "metalux": {
+        "title": "SERIA METALUX",
+        "description": "Zaawansowane wykończenia metaliczne tworzące imponującą głębię wizualną i nowoczesny charakter.",
+        "button": "ODKRYJ"
+      },
+      "woodsense": {
+        "title": "SERIA WOODSENSE",
+        "description": "Autentyczna estetyka drewna połączona z trwałością materiałów inżynieryjnych.",
+        "button": "ODKRYJ"
+      },
+      "colorpro": {
+        "title": "SERIA COLORPRO",
+        "description": "Nieograniczone możliwości kolorystyczne z wyjątkową odpornością na blaknięcie i trwałością.",
+        "button": "ODKRYJ"
+      }
+    },
+    "cta": {
+      "title": "SKONFIGURUJ SWÓJ PROJEKT",
+      "description": "Współpracuj z naszymi specjalistami, aby stworzyć idealne materiały do swoich projektów meblowych.",
+      "buttons": {
+        "configurator": "ROZPOCZNIJ KONFIGURACJĘ",
+        "catalog": "ZOBACZ KATALOG"
+      }
+    }
+  },
   "handles": {
     "title": "Premium Furniture Handles",
     "description": "Precision-milled. Refined finishes. Built for daily use.",
