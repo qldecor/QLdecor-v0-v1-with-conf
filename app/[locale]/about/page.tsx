@@ -25,10 +25,10 @@ export default function AboutPage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/img/boards/visuals/MLG25005L.webp?height=1080&width=1920"
             alt="LUXCRAFT Heritage"
             fill
-            className="object-cover grayscale"
+            className="object-cover"
             priority
           />
         </div>
@@ -64,10 +64,10 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-20 items-center mb-32">
             <div className="relative h-[60vh]">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/boards/visuals/or-2007-gold-furniture.webp?placeholder.svg?height=600&width=800"
                 alt="Manufacturing Process"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div>
@@ -138,10 +138,10 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/boards/visuals/or-022a-furniture.webp?height=600&width=800"
                 alt="Global Presence"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
