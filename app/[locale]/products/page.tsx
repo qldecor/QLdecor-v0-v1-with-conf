@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
 import Navbar from "@/app/[locale]/components/navbar";
 import { useTranslations } from "next-intl";
+import { ScrollButton } from "../components/ui/scroll-button";
 
 export default function ProductsPage() {
   const t = useTranslations("productsPage");
@@ -35,19 +36,20 @@ export default function ProductsPage() {
               <p className="text-lg text-white/90 font-light leading-relaxed mb-8">
                 {t("hero.description")}
               </p>
-              <Button
+              <ScrollButton
+                targetId="technical-excellence"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
               >
                 {t("hero.button")}
-              </Button>
+              </ScrollButton>
             </div>
           </div>
         </div>
       </section>
 
       {/* Technical Excellence */}
-      <section className="py-32 bg-gray-50">
+      <section id="technical-excellence" className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
@@ -137,7 +139,7 @@ export default function ProductsPage() {
               {t("handles.description")}
             </p>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              {t("handles.button")}
+              <Link href="/products/handles">{t("handles.button")}</Link>
             </Button>
           </div>
         </div>
@@ -173,7 +175,7 @@ export default function ProductsPage() {
                 {t("boardsOverview.metalux.description")}
               </p>
               <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                {t("boardsOverview.metalux.button")}
+                <Link href="products/boards/metalux">{t("boardsOverview.metalux.button")}</Link>
               </Button>
             </div>
 
@@ -194,7 +196,7 @@ export default function ProductsPage() {
                 {t("boardsOverview.woodsense.description")}
               </p>
               <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                {t("boardsOverview.woodsense.button")}
+                <Link href="products/boards/woodsense">{t("boardsOverview.woodsense.button")}</Link>
               </Button>
             </div>
 
@@ -215,7 +217,7 @@ export default function ProductsPage() {
                 {t("boardsOverview.colorpro.description")}
               </p>
               <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                {t("boardsOverview.colorpro.button")}
+                <Link href="products/boards/colorpro">{t("boardsOverview.colorpro.button")}</Link>
               </Button>
             </div>
           </div>
