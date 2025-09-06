@@ -85,10 +85,10 @@ export default function ProductsPage() {
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/steel/table/stal-8-scaled.webp?height=600&width=800"
                 alt="Steel Surface Detail"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function ProductsPage() {
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/etsy/img_0889.webp?height=800&width=1600"
               alt={t("handles.title")}
               fill
               className="object-cover"
@@ -160,12 +160,12 @@ export default function ProductsPage() {
           <div className="grid lg:grid-cols-3 gap-16">
             {/* Metalux */}
             <div className="text-center">
-              <div className="relative h-[50vh] mb-8">
+              <div className="relative h-[50vh] mb-8 bg-white">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
+                  src="/img/boards/metalux/MLG21001L/MLG21001L_1.webp?height=600&width=400"
                   alt={t("boardsOverview.metalux.title")}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
@@ -181,12 +181,12 @@ export default function ProductsPage() {
 
             {/* Woodsense */}
             <div className="text-center">
-              <div className="relative h-[50vh] mb-8">
+              <div className="relative h-[50vh] mb-8 bg-white">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
+                  src="/img/boards/woodsense/WS004501M/WS004501M_1.webp?height=600&width=400"
                   alt={t("boardsOverview.woodsense.title")}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
@@ -202,12 +202,12 @@ export default function ProductsPage() {
 
             {/* Colorpro */}
             <div className="text-center">
-              <div className="relative h-[50vh] mb-8">
+              <div className="relative h-[50vh] mb-8 bg-white">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
+                  src="/img/boards/colorpro/CPG11001L/CPG11001L_1.jpg?height=600&width=400"
                   alt={t("boardsOverview.colorpro.title")}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
