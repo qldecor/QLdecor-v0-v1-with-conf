@@ -4,28 +4,30 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const { name, email, message } = await req.json();
+  const { firstName, lastName, email, company, phone, projectType, message } = await req.json();
 
   try {
     const response = await resend.emails.send({
-      // from: "no-reply@qldecor.com", // najlepiej własna domena z DKIM/SPF
-      from: "onboarding@resend.dev",// najlepiej własna domena z DKIM/SPF
-      to: "seyco.eu@gmail.com", // na razie testuj na mail przypisany do Resend
-      subject: `Nowa wiadomość z formularza od ${name}`,
+      from: "no-reply@qldecor.com",
+      to: "damianjankowski111@gmail.com",
+      subject: `📩 Nowa wiadomość od ${firstName} ${lastName}`,
       html: `
         <h2>Nowa wiadomość z formularza</h2>
-        <p><strong>Imię i nazwisko:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Imię:</strong> ${firstName}</p>
+        <p><strong>Nazwisko:</strong> ${lastName}</p>
+        <p><strong>Email nadawcy:</strong> ${email}</p>
+        <p><strong>Firma:</strong> ${company || "-"}</p>
+        <p><strong>Telefon:</strong> ${phone || "-"}</p>
+        <p><strong>Typ projektu:</strong> ${projectType || "-"}</p>
         <p><strong>Wiadomość:</strong></p>
         <p>${message}</p>
       `,
+      replyTo: email,
     });
 
-    console.log("Resend response:", response);
-
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, response });
   } catch (error) {
-    console.error(error);
+    console.error("Resend error:", error);
     return NextResponse.json({ success: false, error }, { status: 500 });
   }
 }

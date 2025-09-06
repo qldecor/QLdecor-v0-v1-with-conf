@@ -9,7 +9,15 @@ import { useTranslations } from "next-intl";
 export default function ContactPage() {
   const t = useTranslations("contactPage");
 
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    company: "",
+    phone: "",
+    projectType: "",
+    message: "",
+  });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent) {
@@ -53,12 +61,15 @@ export default function ContactPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <Input
                   placeholder={t("form.firstName")}
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  value={form.firstName}
+                  onChange={(e) => setForm({ ...form, firstName: e.target.value })}
+                  required
                   className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
                 />
                 <Input
                   placeholder={t("form.lastName")}
+                  value={form.lastName}
+                  onChange={(e) => setForm({ ...form, lastName: e.target.value })}
                   className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
                 />
               </div>
@@ -68,21 +79,28 @@ export default function ContactPage() {
                 type="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
+                required
                 className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
               />
 
               <Input
                 placeholder={t("form.company")}
+                value={form.company}
+                onChange={(e) => setForm({ ...form, company: e.target.value })}
                 className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
               />
 
               <Input
                 placeholder={t("form.phone")}
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
               />
 
               <Input
                 placeholder={t("form.projectType")}
+                value={form.projectType}
+                onChange={(e) => setForm({ ...form, projectType: e.target.value })}
                 className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
               />
 
@@ -91,6 +109,7 @@ export default function ContactPage() {
                 rows={6}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
+                required
                 className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900 resize-none"
               />
 
@@ -148,7 +167,7 @@ export default function ContactPage() {
       </section>
 
       {/* Quick Actions */}
-      <section className="py-32">
+      {/* <section className="py-32">
         <div className="container mx-auto px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 border border-gray-200">
@@ -188,7 +207,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
