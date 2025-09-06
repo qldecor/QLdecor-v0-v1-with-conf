@@ -3,8 +3,9 @@ import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
 import Navbar from "@/app/[locale]/components/navbar";
 import { useTranslations } from "next-intl";
-import { ScrollButton } from "../components/ui/scroll-button";
+import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 import type { Metadata } from "next";
+import { Carousel } from "@/app/[locale]/components/carousel";
 
 export const metadata: Metadata = {
   title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
@@ -123,12 +124,21 @@ export default function CustomFurniturePage() {
       {/* Kitchens */}
       <section className="py-32">
         <div className="container mx-auto px-8">
-          <div className="relative h-[70vh] mb-16">
+          {/* <div className="relative h-[70vh] mb-16">
             <Image
               src="/img/custom-furniture/kitchen.webp"
               alt={t("kitchens.title")}
               fill
               className="object-cover rounded-2xl shadow-md"
+            />
+          </div> */}
+          <div className="mb-16">
+            <Carousel
+              images={[
+                { src: "/img/custom-furniture/kitchen/43.jpg", alt: t("kitchens.title") },
+                { src: "/img/custom-furniture/kitchen/101.jpg", alt: t("kitchens.title") },
+                { src: "/img/custom-furniture/kitchen/328.jpg", alt: t("kitchens.title") }
+              ]}
             />
           </div>
           <div className="text-center">
