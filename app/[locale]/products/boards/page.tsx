@@ -42,7 +42,7 @@ export default function FurnitureBoardsPage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/premium-furniture-boards-engineered-surfaces.png"
+            src="/img/boards/or-2007-2.webp"
             alt={t("hero.title")}
             fill
             className="object-cover"

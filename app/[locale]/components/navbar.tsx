@@ -71,7 +71,7 @@ export default function Navbar() {
                       <ul className="space-y-2 px-1 py-2">
                         <li><Link className="relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-black/30 after:transition-all after:duration-500 after:ease-in-out hover:after:w-full" href="/products/boards/metalux">MetaLux</Link></li>
                         <li><Link className="relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-black/30 after:transition-all after:duration-500 after:ease-in-out hover:after:w-full" href="/products/boards/colorpro">ColorPro</Link></li>
-                        <li><Link  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-black/30 after:transition-all after:duration-500 after:ease-in-out hover:after:w-full" href="/products/boards/woodsense">WoodSense</Link></li>
+                        <li><Link className="relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-black/30 after:transition-all after:duration-500 after:ease-in-out hover:after:w-full" href="/products/boards/woodsense">WoodSense</Link></li>
                       </ul>
                     </div>
 
@@ -151,27 +151,84 @@ export default function Navbar() {
         </div>
       </div>
       {/* Mobile menu */}
+
       {mobileOpen && (
         <div className="md:hidden bg-white border-t shadow-md">
           <div className="flex flex-col px-8 py-6 space-y-4 text-sm font-light">
-            <Link href="/products" onClick={() => setMobileOpen(false)}>
-              {t("products").toUpperCase()}
+
+            {/* Products – rozwijane */}
+            <details className="group">
+              <summary className="flex justify-between items-center cursor-pointer text-gray-700 hover:text-gray-900 uppercase py-2">
+                {t("products")}
+                <span className="ml-2 text-gray-500 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="mt-4 pl-4 space-y-4 text-gray-700">
+                <Link
+                  href="/products/boards"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-medium block"
+                >
+                  {t("boards")}
+                </Link>
+
+                <ul className="pl-4 space-y-3 border-l border-gray-200">
+                  <li>
+                    <Link
+                      href="/products/boards/metalux"
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-gray-600 hover:text-gray-900"
+                    >
+                      MetaLux
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/products/boards/colorpro"
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-gray-600 hover:text-gray-900"
+                    >
+                      ColorPro
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/products/boards/woodsense"
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-gray-600 hover:text-gray-900"
+                    >
+                      WoodSense
+                    </Link>
+                  </li>
+                </ul>
+
+                <Link
+                  href="/products/handles"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-medium block"
+                >
+                  {t("handles")}
+                </Link>
+              </div>
+            </details>
+
+            <Link href="/custom-furniture" onClick={() => setMobileOpen(false)}
+              className="flex justify-between items-center text-gray-700 hover:text-gray-900 uppercase  tracking-wide py-3">
+              {t("custom-furniture")}
             </Link>
-            <Link href="/collections" onClick={() => setMobileOpen(false)}>
-              {t("collections").toUpperCase()}
+
+            <Link href="/about" onClick={() => setMobileOpen(false)}
+              className="flex justify-between items-center text-gray-700 hover:text-gray-900 uppercase tracking-wide py-3">
+              {t("about")}
             </Link>
-            <Link href="/projects" onClick={() => setMobileOpen(false)}>
-              {t("projects").toUpperCase()}
-            </Link>
-            <Link href="/about" onClick={() => setMobileOpen(false)}>
-              {t("about").toUpperCase()}
-            </Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>
-              {t("contact").toUpperCase()}
+
+            <Link href="/contact" onClick={() => setMobileOpen(false)}
+              className="flex justify-between items-center text-gray-700 hover:text-gray-900 uppercase tracking-wide py-3">
+              {t("contact")}
             </Link>
           </div>
         </div>
       )}
+
     </nav>
   );
 }
