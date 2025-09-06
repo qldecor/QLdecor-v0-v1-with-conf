@@ -168,11 +168,103 @@
       }
     }
   },
-  "handles": {
-    "title": "Premium Furniture Handles",
-    "description": "Precision-milled. Refined finishes. Built for daily use.",
-    "explore-collection": "Explore Collection",
-    "download-specs": "Download Specs"
+  "handlesPage": {
+    "hero": {
+      "title": "PREMIUM FURNITURE HANDLES",
+      "description": "Precision-milled. Refined finishes. Built for daily use.",
+      "buttons": {
+        "explore": "EXPLORE COLLECTION",
+        "download": "DOWNLOAD SPECS"
+      }
+    },
+    "keyPoints": {
+      "solid": {
+        "title": "SOLID ALUMINUM",
+        "description": "Milled from solid 6061-T6 aluminum billets for outstanding durability and feel."
+      },
+      "finishes": {
+        "title": "REFINED FINISHES",
+        "description": "Premium anodized and powder-coated surfaces that resist wear and maintain their beauty."
+      },
+      "sizes": {
+        "title": "MULTIPLE SIZES",
+        "description": "Comprehensive range of lengths and center-to-center options for every application."
+      },
+      "leadTimes": {
+        "title": "FAST LEAD TIMES",
+        "description": "Stock availability and efficient manufacturing for quick turnaround."
+      }
+    },
+    "collection": {
+      "title": "HANDLE COLLECTION",
+      "description": "Each handle is engineered for both form and function, available in multiple finishes and sizes."
+    },
+    "filters": {
+      "finish": "FINISH",
+      "size": "SIZE",
+      "sort": "SORT",
+      "sortOptions": {
+        "featured": "Featured",
+        "nameAsc": "Name A-Z",
+        "nameDesc": "Name Z-A",
+        "sizeAsc": "Smallest Size",
+        "sizeDesc": "Largest Size"
+      },
+      "noResults": "No handles match your current filters.",
+      "clear": "CLEAR FILTERS"
+    },
+    "specifications": {
+      "title": "TECHNICAL SPECIFICATIONS",
+      "download": "DOWNLOAD ALL SPECS (PDF)",
+      "table": [
+        {
+          "label": "MATERIAL",
+          "value": "6061-T6 Aluminum Alloy"
+        },
+        {
+          "label": "FINISHES",
+          "value": "Anodized Gold, Matte Black, Brushed Silver, Orange Powder Coat"
+        },
+        {
+          "label": "COATING",
+          "value": "Class II Anodizing (20-25 microns) / Powder Coating (60-80 microns)"
+        },
+        {
+          "label": "SIZES AVAILABLE",
+          "value": "30mm - 1000mm (various C-C options)"
+        },
+        {
+          "label": "MOUNTING",
+          "value": "M4 stainless steel screws included"
+        },
+        {
+          "label": "CARE",
+          "value": "Clean with mild soap and water, avoid abrasive cleaners"
+        }
+      ]
+    },
+    "applications": {
+      "title": "APPLICATIONS",
+      "description": "Our handles enhance both residential and commercial projects, from luxury kitchens to modern offices.",
+      "items": {
+        "kitchen": "Modern Kitchen",
+        "office": "Executive Office",
+        "wardrobe": "Luxury Wardrobe",
+        "retail": "Retail Display",
+        "hotel": "Hotel Suite",
+        "conference": "Conference Room",
+        "bath": "Residential Bath",
+        "commercial": "Commercial Space"
+      }
+    },
+    "cta": {
+      "title": "NEED SAMPLES OR A QUOTE?",
+      "description": "Our team is ready to help you select the perfect handles. Request physical samples or a detailed quote.",
+      "buttons": {
+        "contact": "CONTACT US",
+        "catalog": "VIEW FULL CATALOG"
+      }
+    }
   },
   "boards": {
     "woodsense": {

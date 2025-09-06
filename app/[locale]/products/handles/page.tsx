@@ -1,12 +1,12 @@
 "use client"
 
-import { useState, useMemo, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/app/[locale]/components/ui/button"
-import Navbar from "@/app/[locale]/components/navbar"
+import { useState, useMemo, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/app/[locale]/components/ui/button";
+import Navbar from "@/app/[locale]/components/navbar";
 import type { HandleIndexItem, HandleFinish, HandleSide } from "@/types/handles";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
 const finishColors: Record<HandleFinish, string> = {
@@ -27,6 +27,7 @@ const finishLabels: Record<HandleFinish, string> = {
 
 function ProductCard({ handle }: { handle: HandleIndexItem }) {
   const locale = useLocale() as keyof typeof handle.name;
+  const t = useTranslations('handlesPage');
 
   const [selectedFinish, setSelectedFinish] = useState<HandleFinish>(handle.defaultVariant.finish)
   const [selectedSize, setSelectedSize] = useState(handle.defaultVariant.size)
@@ -99,36 +100,33 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
 
         <Image
           src={thumb}
-          alt={`${handle.name.en} - ${selectedFinish} - ${selectedSize}mm`}
+          alt={`${handle.name[locale]} - ${selectedFinish} - ${selectedSize}mm`}
           fill
-          className={`object-cover transition-all duration-700 ease-in-out ${isHovered ? "opacity-0 scale-105" : "opacity-100 scale-100"
-            }`}
+          className={`object-cover transition-all duration-700 ease-in-out ${isHovered ? "opacity-0 scale-105" : "opacity-100 scale-100"}`}
         />
         <Image
           src={hover}
-          alt={`${handle.name.en} - ${selectedFinish} - ${selectedSize}mm`}
+          alt={`${handle.name[locale]} - ${selectedFinish} - ${selectedSize}mm`}
           fill
-          className={`object-cover transition-all duration-700 ease-in-out ${isHovered ? "opacity-100 scale-100" : "opacity-0 scale-95"
-            }`}
+          className={`object-cover transition-all duration-700 ease-in-out ${isHovered ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         />
-
       </div>
+
       <div className="space-y-4">
         <div>
           <h3 className="text-lg font-light text-gray-900 tracking-wide">{handle.name[locale]}</h3>
           <p className="text-sm text-gray-600 font-light mt-1">{handle.blurb[locale]}</p>
         </div>
-        {/* Finish Selector */}
+
+        {/* Finish */}
         <div>
-          <p className="text-xs text-gray-500 font-light tracking-wide mb-2">FINISH</p>
+          <p className="text-xs text-gray-500 font-light tracking-wide mb-2">{t("filters.finish")}</p>
           <div className="flex gap-2">
             {handle.finishes.map((finish) => (
               <button
                 key={finish}
                 onClick={() => setSelectedFinish(finish)}
-                className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${selectedFinish === finish
-                  ? "border-gray-900 scale-110" :
-                  "border-gray-300 hover:border-gray-500"
+                className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${selectedFinish === finish ? "border-gray-900 scale-110" : "border-gray-300 hover:border-gray-500"
                   }`}
                 style={{ backgroundColor: finishColors[finish] }}
                 aria-label={`Select ${finishLabels[finish]} finish`}
@@ -136,17 +134,16 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
             ))}
           </div>
         </div>
-        {/* Size Selector */}
+
+        {/* Size */}
         <div>
-          <p className="text-xs text-gray-500 font-light tracking-wide mb-2">SIZE (MM)</p>
+          <p className="text-xs text-gray-500 font-light tracking-wide mb-2">{t("filters.size")}</p>
           <div className="flex gap-1">
             {handle.sizes.map((size) => (
               <button
                 key={size}
                 onClick={() => setSelectedSize(size)}
-                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSize === size
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSize === size ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
               >
                 {size}
@@ -154,7 +151,8 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
             ))}
           </div>
         </div>
-        {/* Side Selector */}
+
+        {/* Side */}
         {handle.sides && handle.sides.length > 0 && (
           <div>
             <p className="text-xs text-gray-500 font-light tracking-wide mb-2">SIDE</p>
@@ -163,9 +161,7 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
                 <button
                   key={side}
                   onClick={() => setSelectedSide(side)}
-                  className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSide === side
-                    ? "bg-gray-900 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  className={`px-3 py-1 text-xs font-light tracking-wide transition-all duration-200 ${selectedSide === side ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                     }`}
                 >
                   {side.toUpperCase()}
@@ -176,7 +172,7 @@ function ProductCard({ handle }: { handle: HandleIndexItem }) {
         )}
       </div>
     </div>
-  )
+  );
 }
 
 function FilterBar({
@@ -196,6 +192,7 @@ function FilterBar({
   onSortChange: (sort: string) => void
   handles: HandleIndexItem[]
 }) {
+  const t = useTranslations("handlesPage.filters");
   const allFinishes: HandleFinish[] = ["gold", "shiny-gold", "black", "silver", "orange"] satisfies HandleFinish[]
   const allSizes = Array.from(new Set(handles.flatMap((h) => h.sizes))).sort((a, b) => Number(a) - Number(b))
 
@@ -204,7 +201,7 @@ function FilterBar({
       <div className="flex flex-wrap gap-8 items-center">
         {/* Finishes */}
         <div>
-          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">FINISH</span>
+          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">{t("finish")}</span>
           {allFinishes.map((finish) => (
             <button
               key={finish}
@@ -220,9 +217,10 @@ function FilterBar({
             />
           ))}
         </div>
+
         {/* Sizes */}
         <div>
-          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">SIZE</span>
+          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">{t("size")}</span>
           {allSizes.map((size) => (
             <button
               key={size}
@@ -238,27 +236,30 @@ function FilterBar({
             </button>
           ))}
         </div>
+
         {/* Sort */}
         <div>
-          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">SORT</span>
+          <span className="text-xs text-gray-500 font-light tracking-wide mr-2">{t("sort")}</span>
           <select
             value={sortBy}
             onChange={(e) => onSortChange(e.target.value)}
             className="text-xs border rounded px-2 py-1"
           >
-            <option value="featured">Featured</option>
-            <option value="name-asc">Name A-Z</option>
-            <option value="name-desc">Name Z-A</option>
-            <option value="size-asc">Smallest Size</option>
-            <option value="size-desc">Largest Size</option>
+            <option value="featured">{t("sortOptions.featured")}</option>
+            <option value="name-asc">{t("sortOptions.nameAsc")}</option>
+            <option value="name-desc">{t("sortOptions.nameDesc")}</option>
+            <option value="size-asc">{t("sortOptions.sizeAsc")}</option>
+            <option value="size-desc">{t("sortOptions.sizeDesc")}</option>
           </select>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default function HandlesPage() {
+  const t = useTranslations("handlesPage");
+
   const [handles, setHandles] = useState<HandleIndexItem[]>([])
   const [selectedFinishes, setSelectedFinishes] = useState<HandleFinish[]>([])
   const [selectedSizes, setSelectedSizes] = useState<string[]>([])
@@ -305,10 +306,9 @@ export default function HandlesPage() {
 
   return (
     <div className="min-h-screen bg-white pt-20">
-      {/* Navigation */}
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="object-cover brightness-70 absolute inset-0 bg-gradient-to-b from-black/20 to-black/40"
@@ -321,11 +321,10 @@ export default function HandlesPage() {
         />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-8">
           <h1 className="text-5xl font-light text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
-  PREMIUM FURNITURE HANDLES
-</h1>
-
+            {t("hero.title")}
+          </h1>
           <p className="text-xl md:text-2xl font-light tracking-wide mb-12 opacity-90">
-            Precision-milled. Refined finishes. Built for daily use.
+            {t("hero.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
@@ -333,14 +332,14 @@ export default function HandlesPage() {
               className="font-light tracking-wider px-8 py-4"
               onClick={() => document.getElementById("collection")?.scrollIntoView({ behavior: "smooth" })}
             >
-              EXPLORE COLLECTION
+              {t("hero.buttons.explore")}
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="font-light tracking-wider px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
             >
-              DOWNLOAD SPECS
+              {t("hero.buttons.download")}
             </Button>
           </div>
         </div>
@@ -354,9 +353,9 @@ export default function HandlesPage() {
               <div className="w-16 h-16 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
                 <div className="w-8 h-8 bg-gray-400 rounded"></div>
               </div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">SOLID ALUMINUM</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">{t("keyPoints.solid.title")}</h3>
               <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Precision-milled from solid aluminum billets for exceptional durability and feel.
+                {t("keyPoints.solid.description")}
               </p>
             </div>
 
@@ -364,9 +363,9 @@ export default function HandlesPage() {
               <div className="w-16 h-16 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
                 <div className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-gray-400 rounded"></div>
               </div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">REFINED FINISHES</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">{t("keyPoints.finishes.title")}</h3>
               <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Premium anodized and powder-coated finishes that resist wear and maintain their beauty.
+                {t("keyPoints.finishes.description")}
               </p>
             </div>
 
@@ -376,9 +375,9 @@ export default function HandlesPage() {
                   <div className="w-4 h-1 bg-white rounded"></div>
                 </div>
               </div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">MULTIPLE SIZES</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">{t("keyPoints.sizes.title")}</h3>
               <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Comprehensive range of sizes and center-to-center options for any application.
+                {t("keyPoints.sizes.description")}
               </p>
             </div>
 
@@ -388,9 +387,9 @@ export default function HandlesPage() {
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
               </div>
-              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">FAST LEAD TIMES</h3>
+              <h3 className="text-lg font-light text-gray-900 mb-4 tracking-wider">{t("keyPoints.leadTimes.title")}</h3>
               <p className="text-gray-600 font-light text-sm leading-relaxed">
-                In-stock inventory and efficient manufacturing for quick project turnaround.
+                {t("keyPoints.leadTimes.description")}
               </p>
             </div>
           </div>
@@ -401,10 +400,9 @@ export default function HandlesPage() {
       <section id="collection" className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">HANDLE COLLECTION</h2>
+            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">{t("collection.title")}</h2>
             <p className="text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
-              Each handle is precision-engineered for both form and function, available in multiple finishes and sizes
-              to complement any design aesthetic.
+              {t("collection.description")}
             </p>
           </div>
 
@@ -426,16 +424,16 @@ export default function HandlesPage() {
 
           {filteredAndSortedHandles.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-gray-500 font-light">No handles match your current filters.</p>
+              <p className="text-gray-500 font-light">{t("filters.noResults")}</p>
               <Button
                 variant="outline"
                 className="mt-4 font-light tracking-wide bg-transparent"
                 onClick={() => {
-                  setSelectedFinishes([])
-                  setSelectedSizes([])
+                  setSelectedFinishes([]);
+                  setSelectedSizes([]);
                 }}
               >
-                CLEAR FILTERS
+                {t("filters.clear")}
               </Button>
             </div>
           )}
@@ -447,49 +445,33 @@ export default function HandlesPage() {
         <div className="container mx-auto px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">TECHNICAL SPECIFICATIONS</h2>
+              <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">
+                {t("specifications.title")}
+              </h2>
             </div>
 
             <div className="bg-white border border-gray-200 overflow-hidden">
               <table className="w-full">
                 <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">MATERIAL</td>
-                    <td className="px-8 py-6 text-sm font-light text-gray-600">6061-T6 Aluminum Alloy</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">FINISHES</td>
-                    <td className="px-8 py-6 text-sm font-light text-gray-600">
-                      Anodized Gold, Matte Black, Brushed Silver, Orange Powder Coat
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">COATING</td>
-                    <td className="px-8 py-6 text-sm font-light text-gray-600">
-                      Class II Anodizing (20-25 microns) / Powder Coating (60-80 microns)
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">SIZES AVAILABLE</td>
-                    <td className="px-8 py-6 text-sm font-light text-gray-600">30mm - 1000mm (various C-C options)</td>
-                  </tr>
-                  <tr>
-                    <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">MOUNTING</td>
-                    <td className="px-8 py-6 text-sm font-light text-gray-600">M4 stainless steel screws included</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">CARE</td>
-                    <td className="px-8 py-6 text-sm font-light text-gray-600">
-                      Clean with mild soap and water, avoid abrasive cleaners
-                    </td>
-                  </tr>
+                  {t.raw("specifications.table").map(
+                    (row: { label: string; value: string }, index: number) => (
+                      <tr key={index} className={index % 2 === 1 ? "bg-gray-50" : ""}>
+                        <td className="px-8 py-6 text-sm font-light text-gray-900 tracking-wide">
+                          {row.label}
+                        </td>
+                        <td className="px-8 py-6 text-sm font-light text-gray-600">
+                          {row.value}
+                        </td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </table>
             </div>
 
             <div className="text-center mt-12">
               <Button variant="outline" className="font-light tracking-wider px-8 bg-transparent">
-                DOWNLOAD ALL SPECS (PDF)
+                {t("specifications.download")}
               </Button>
             </div>
           </div>
@@ -500,28 +482,27 @@ export default function HandlesPage() {
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">APPLICATIONS</h2>
+            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">{t("applications.title")}</h2>
             <p className="text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
-              Our handles enhance both residential and commercial projects, from luxury kitchens to modern office
-              environments.
+              {t("applications.description")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Modern Kitchen", image: "/placeholder-c6vyi.png" },
-              { title: "Executive Office", image: "/executive-office-handles.png" },
-              { title: "Luxury Wardrobe", image: "/luxury-wardrobe.png" },
-              { title: "Retail Display", image: "/retail-display-cabinet-handles.png" },
-              { title: "Hotel Suite", image: "/hotel-suite-furniture-handles.png" },
-              { title: "Conference Room", image: "/conference-room-cabinet-handles.png" },
-              { title: "Residential Bath", image: "/bathroom-vanity-handles.png" },
-              { title: "Commercial Space", image: "/commercial-office-storage-handles.png" },
+              { title: t("applications.items.kitchen"), image: "/placeholder-c6vyi.png" },
+              { title: t("applications.items.office"), image: "/executive-office-handles.png" },
+              { title: t("applications.items.wardrobe"), image: "/luxury-wardrobe.png" },
+              { title: t("applications.items.retail"), image: "/retail-display-cabinet-handles.png" },
+              { title: t("applications.items.hotel"), image: "/hotel-suite-furniture-handles.png" },
+              { title: t("applications.items.conference"), image: "/conference-room-cabinet-handles.png" },
+              { title: t("applications.items.bath"), image: "/bathroom-vanity-handles.png" },
+              { title: t("applications.items.commercial"), image: "/commercial-office-storage-handles.png" },
             ].map((app, index) => (
               <div key={index} className="group">
                 <div className="relative aspect-square bg-white mb-4 overflow-hidden">
                   <Image
-                    src={app.image || "/placeholder.svg"}
+                    src={app.image}
                     alt={app.title}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -535,26 +516,23 @@ export default function HandlesPage() {
         </div>
       </section>
 
-      {/* CTA Banner */}
+      {/* CTA */}
       <section className="py-32">
         <div className="container mx-auto px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">NEED SAMPLES OR A QUOTE?</h2>
-            <p className="text-gray-600 font-light leading-relaxed mb-12">
-              Our team is ready to help you select the perfect handles for your project. Request physical samples or get
-              a detailed quote for your specifications.
-            </p>
+            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">{t("cta.title")}</h2>
+            <p className="text-gray-600 font-light leading-relaxed mb-12">{t("cta.description")}</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button asChild size="lg" className="font-light tracking-wider px-8">
-                <Link href="/contact">CONTACT US</Link>
+                <Link href="/contact">{t("cta.buttons.contact")}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="font-light tracking-wider px-8 bg-transparent">
-                <Link href="/products">VIEW FULL CATALOG</Link>
+                <Link href="/products">{t("cta.buttons.catalog")}</Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -165,11 +165,103 @@
       }
     }
   },
-  "handles": {
-    "title": "Premium Furniture Handles",
-    "description": "Precision-milled. Refined finishes. Built for daily use.",
-    "explore-collection": "Explore Collection",
-    "download-specs": "Download Specs"
+  "handlesPage": {
+    "hero": {
+      "title": "PREMIUMOWE UCHWYTY MEBLOWE",
+      "description": "Precyzyjnie frezowane. Wyrafinowane wykończenia. Zaprojektowane do codziennego użytku.",
+      "buttons": {
+        "explore": "POZNAJ KOLEKCJĘ",
+        "download": "POBIERZ SPECYFIKACJE"
+      }
+    },
+    "keyPoints": {
+      "solid": {
+        "title": "LITE ALUMINIUM",
+        "description": "Frezowane z litego aluminium 6061-T6 dla wyjątkowej trwałości i jakości."
+      },
+      "finishes": {
+        "title": "WYKWINTNE WYKOŃCZENIA",
+        "description": "Anodowane i malowane proszkowo powierzchnie odporne na ścieranie i utratę koloru."
+      },
+      "sizes": {
+        "title": "WIELE ROZMIARÓW",
+        "description": "Szeroki zakres długości i rozstawów śrub dla każdej aplikacji."
+      },
+      "leadTimes": {
+        "title": "SZYBKA DOSTĘPNOŚĆ",
+        "description": "Magazynowe stany i wydajna produkcja gwarantują krótkie terminy realizacji."
+      }
+    },
+    "collection": {
+      "title": "KOLEKCJA UCHWYTÓW",
+      "description": "Każdy uchwyt został zaprojektowany z myślą o ergonomii i estetyce. Dostępne w wielu rozmiarach i wykończeniach."
+    },
+    "filters": {
+      "finish": "WYKOŃCZENIE",
+      "size": "ROZMIAR",
+      "sort": "SORTUJ",
+      "sortOptions": {
+        "featured": "Polecane",
+        "nameAsc": "Nazwa A-Z",
+        "nameDesc": "Nazwa Z-A",
+        "sizeAsc": "Najmniejszy rozmiar",
+        "sizeDesc": "Największy rozmiar"
+      },
+      "noResults": "Brak uchwytów spełniających wybrane kryteria.",
+      "clear": "WYCZYŚĆ FILTRY"
+    },
+    "specifications": {
+      "title": "SPECYFIKACJA TECHNICZNA",
+      "download": "POBIERZ SPECYFIKACJĘ (PDF)",
+      "table": [
+        {
+          "label": "MATERIAŁ",
+          "value": "Stop aluminium 6061-T6"
+        },
+        {
+          "label": "WYKOŃCZENIA",
+          "value": "Anodowane złoto, matowa czerń, szczotkowane srebro, pomarańczowa powłoka proszkowa"
+        },
+        {
+          "label": "POWŁOKA",
+          "value": "Anodowanie klasy II (20–25 mikronów) / Malowanie proszkowe (60–80 mikronów)"
+        },
+        {
+          "label": "DOSTĘPNE ROZMIARY",
+          "value": "30mm – 1000mm (różne rozstawy C-C)"
+        },
+        {
+          "label": "MONTAŻ",
+          "value": "Śruby nierdzewne M4 w zestawie"
+        },
+        {
+          "label": "PIELĘGNACJA",
+          "value": "Czyścić łagodnym mydłem i wodą, unikać środków ściernych"
+        }
+      ]
+    },
+    "applications": {
+      "title": "ZASTOSOWANIA",
+      "description": "Nasze uchwyty sprawdzają się zarówno w przestrzeniach mieszkalnych, jak i komercyjnych – od luksusowych kuchni po nowoczesne biura.",
+      "items": {
+        "kitchen": "Nowoczesna kuchnia",
+        "office": "Biuro zarządu",
+        "wardrobe": "Luksusowa garderoba",
+        "retail": "Ekspozycja sklepowa",
+        "hotel": "Pokój hotelowy",
+        "conference": "Sala konferencyjna",
+        "bath": "Łazienka prywatna",
+        "commercial": "Powierzchnia komercyjna"
+      }
+    },
+    "cta": {
+      "title": "POTRZEBUJESZ PRÓBEK LUB WYCENY?",
+      "description": "Nasz zespół pomoże Ci dobrać idealne uchwyty do Twojego projektu. Zamów próbki lub poproś o wycenę.",
+      "buttons": {
+        "contact": "SKONTAKTUJ SIĘ Z NAMI",
+        "catalog": "ZOBACZ CAŁY KATALOG"
+      }
+    }
   },
   "boards": {
     "woodsense": {
