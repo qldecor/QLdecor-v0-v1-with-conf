@@ -75,6 +75,99 @@
       }
     }
   },
+  "boardsPage": {
+    "hero": {
+      "title": "ENGINEERED BOARDS FOR PREMIUM INTERIORS",
+      "description": "Three distinctive series combining advanced materials technology with exceptional aesthetic appeal. Each board delivers superior performance while maintaining the refined elegance expected in luxury furniture applications.",
+      "button": "EXPLORE SERIES"
+    },
+    "introduction": {
+      "title": "ENGINEERED EXCELLENCE",
+      "text1": "Our furniture board collection represents the pinnacle of material engineering, where cutting-edge technology meets sophisticated design. Each series offers unique aesthetic possibilities while maintaining exceptional durability and performance standards.",
+      "text2": "From metallic sophistication to natural warmth and unlimited color expression, our boards provide the foundation for creating furniture that stands the test of time while making a lasting visual impact."
+    },
+    "series": {
+      "title": "THREE DISTINCTIVE SERIES",
+      "description": "Each series represents a unique approach to surface design, offering distinct aesthetic and functional benefits for different design visions and applications.",
+      "metalux": {
+        "title": "METALUX SERIES",
+        "description": "Futuristic metallic finishes that create stunning visual depth and contemporary architectural presence. Perfect for modern interiors seeking sophisticated industrial aesthetics.",
+        "button": "EXPLORE METALUX"
+      },
+      "woodsense": {
+        "title": "WOODSENSE SERIES",
+        "description": "Authentic wood aesthetics with engineered durability. Captures the natural warmth and tactile appeal of premium timber while offering superior stability and consistency.",
+        "button": "EXPLORE WOODSENSE"
+      },
+      "colorpro": {
+        "title": "COLORPRO SERIES",
+        "description": "Unlimited color possibilities with exceptional fade resistance. Bold chromatics and endless customization options for creating truly unique furniture pieces that make a statement.",
+        "button": "EXPLORE COLORPRO"
+      }
+    },
+    "benefits": {
+      "title": "KEY BENEFITS",
+      "items": {
+        "stability": {
+          "title": "DIMENSIONAL STABILITY",
+          "text": "Superior resistance to warping, swelling, and dimensional changes across all environmental conditions."
+        },
+        "finish": {
+          "title": "PREMIUM FINISH QUALITY",
+          "text": "Consistent surface quality with exceptional depth, clarity, and tactile appeal across all series."
+        },
+        "edges": {
+          "title": "EDGE OPTIONS",
+          "text": "Multiple edge finishing options including matching, contrasting, and specialty treatments."
+        },
+        "thickness": {
+          "title": "THICKNESS RANGE",
+          "text": "Available in multiple thicknesses from 12mm to 25mm to suit various application requirements."
+        }
+      }
+    },
+    "technicalSpecifications": {
+      "title": "TECHNICAL SPECIFICATIONS",
+      "specs": [
+        {
+          "name": "SPECIFICATION",
+          "value": "DETAILS"
+        },
+        {
+          "name": "Core Material",
+          "value": "High-density engineered substrate"
+        },
+        {
+          "name": "Thickness Range",
+          "value": "12mm, 16mm, 19mm, 22mm, 25mm"
+        },
+        {
+          "name": "Standard Sheet Size",
+          "value": "2800 x 2070mm (custom sizes available)"
+        },
+        {
+          "name": "Edge Options",
+          "value": "Matching, contrasting, ABS, PVC, veneer"
+        },
+        {
+          "name": "Fire Rating",
+          "value": "Class B-s2,d0 (EN 13501-1)"
+        },
+        {
+          "name": "Formaldehyde Emission",
+          "value": "E1 compliant (≤ 0.1 ppm)"
+        }
+      ]
+    },
+    "cta": {
+      "title": "EXPLORE SPECIFICATIONS",
+      "description": "Discover detailed specifications and configuration options for each series in our Material Studio, or contact our specialists for personalized guidance.",
+      "buttons": {
+        "studio": "OPEN MATERIAL STUDIO",
+        "contact": "CONTACT SPECIALISTS"
+      }
+    }
+  },
   "handles": {
     "title": "Premium Furniture Handles",
     "description": "Precision-milled. Refined finishes. Built for daily use.",

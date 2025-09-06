@@ -72,6 +72,99 @@
       }
     }
   },
+  "boardsPage": {
+    "hero": {
+      "title": "PŁYTY INŻYNIERSKIE DO WNĘTRZ PREMIUM",
+      "description": "Trzy unikalne serie łączące zaawansowaną technologię materiałową z wyjątkową estetyką. Każda płyta zapewnia najwyższą wydajność, zachowując elegancję wymaganą w luksusowych wnętrzach.",
+      "button": "POZNAJ SERIE"
+    },
+    "introduction": {
+      "title": "DOSKONAŁOŚĆ INŻYNIERSKA",
+      "text1": "Nasza kolekcja płyt meblowych to szczyt inżynierii materiałowej, gdzie nowoczesna technologia spotyka się z wyrafinowanym designem. Każda seria oferuje unikalne możliwości estetyczne, zachowując wyjątkową trwałość i wysokie standardy użytkowe.",
+      "text2": "Od metalicznej elegancji, przez naturalne ciepło drewna, po nieograniczoną ekspresję kolorów – nasze płyty stanowią fundament do tworzenia mebli ponadczasowych i wyjątkowych wizualnie."
+    },
+    "series": {
+      "title": "TRZY UNIKALNE SERIE",
+      "description": "Każda seria reprezentuje inne podejście do projektowania powierzchni, oferując odmienne walory estetyczne i funkcjonalne dla różnych wizji i zastosowań.",
+      "metalux": {
+        "title": "SERIA METALUX",
+        "description": "Futurystyczne wykończenia metaliczne tworzące imponującą głębię wizualną i współczesny charakter architektoniczny. Idealne do nowoczesnych wnętrz poszukujących industrialnej elegancji.",
+        "button": "POZNAJ METALUX"
+      },
+      "woodsense": {
+        "title": "SERIA WOODSENSE",
+        "description": "Autentyczna estetyka drewna z trwałością materiałów inżynieryjnych. Oddaje naturalne ciepło i dotykowy charakter szlachetnego drewna, oferując jednocześnie doskonałą stabilność i powtarzalność.",
+        "button": "POZNAJ WOODSENSE"
+      },
+      "colorpro": {
+        "title": "SERIA COLORPRO",
+        "description": "Nieograniczone możliwości kolorystyczne z wyjątkową odpornością na blaknięcie. Odważne barwy i nieskończone opcje personalizacji dla tworzenia unikalnych mebli, które robią wrażenie.",
+        "button": "POZNAJ COLORPRO"
+      }
+    },
+    "benefits": {
+      "title": "KLUCZOWE ZALETY",
+      "items": {
+        "stability": {
+          "title": "STABILNOŚĆ WYMIAROWA",
+          "text": "Wysoka odporność na paczenie, pęcznienie i zmiany wymiarów w różnych warunkach środowiskowych."
+        },
+        "finish": {
+          "title": "JAKOŚĆ WYKOŃCZENIA PREMIUM",
+          "text": "Powierzchnia o wyjątkowej głębi, przejrzystości i walorach dotykowych, zachowana na każdej serii."
+        },
+        "edges": {
+          "title": "OPCJE WYKOŃCZENIA KRAWĘDZI",
+          "text": "Różnorodne opcje wykończeń krawędzi: dopasowane, kontrastowe, specjalne."
+        },
+        "thickness": {
+          "title": "ZAKRES GRUBOŚCI",
+          "text": "Dostępne w wielu wariantach grubości od 12 mm do 25 mm, dopasowanych do różnych zastosowań."
+        }
+      }
+    },
+    "technicalSpecifications": {
+      "title": "SPECYFIKACJA TECHNICZNA",
+      "specs": [
+        {
+          "name": "SPECYFIKACJA",
+          "value": "SZCZEGÓŁY"
+        },
+        {
+          "name": "Rdzeń",
+          "value": "Wysokiej gęstości podłoże inżynieryjne"
+        },
+        {
+          "name": "Zakres grubości",
+          "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
+        },
+        {
+          "name": "Standardowy format",
+          "value": "2800 x 2070 mm (dostępne formaty na zamówienie)"
+        },
+        {
+          "name": "Opcje krawędzi",
+          "value": "Dopasowane, kontrastowe, ABS, PVC, fornir"
+        },
+        {
+          "name": "Klasa odporności ogniowej",
+          "value": "Klasa B-s2,d0 (EN 13501-1)"
+        },
+        {
+          "name": "Emisja formaldehydu",
+          "value": "Zgodne z E1 (≤ 0,1 ppm)"
+        }
+      ]
+    },
+    "cta": {
+      "title": "POZNAJ SPECYFIKACJE",
+      "description": "Poznaj szczegółowe specyfikacje i opcje konfiguracji każdej serii w naszym Material Studio lub skontaktuj się ze specjalistami po indywidualne doradztwo.",
+      "buttons": {
+        "studio": "OTWÓRZ MATERIAL STUDIO",
+        "contact": "SKONTAKTUJ SIĘ ZE SPECJALISTAMI"
+      }
+    }
+  },
   "handles": {
     "title": "Premium Furniture Handles",
     "description": "Precision-milled. Refined finishes. Built for daily use.",
