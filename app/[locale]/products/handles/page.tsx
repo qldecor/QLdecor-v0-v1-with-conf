@@ -321,7 +321,7 @@ export default function HandlesPage() {
           }}
         />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-8">
-          <h1 className="text-5xl font-light text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
+          <h1 className="text-5xl font-light mb-6 text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
             {t("hero.title")}
           </h1>
           <p className="text-xl md:text-2xl font-light tracking-wide mb-12 opacity-90">

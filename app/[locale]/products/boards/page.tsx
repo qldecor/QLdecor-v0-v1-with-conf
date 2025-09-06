@@ -103,12 +103,12 @@ export default function FurnitureBoardsPage() {
           <div className="grid lg:grid-cols-3 gap-16">
             {/* MetaLux */}
             <div className="text-center group">
-              <div className="relative h-[60vh] mb-8 overflow-hidden">
+              <div className="relative h-[45vh] mb-8 overflow-hidden">
                 <Image
-                  src="/metallic-surface-futuristic-sheen-architectural.png"
+                  src="/img/boards/metalux/MLG21001L/MLG21001L_1.webp"
                   alt={t("series.metalux.title")}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
@@ -130,12 +130,12 @@ export default function FurnitureBoardsPage() {
 
             {/* WoodSense */}
             <div className="text-center group">
-              <div className="relative h-[60vh] mb-8 overflow-hidden">
+              <div className="relative h-[45vh] mb-8 overflow-hidden">
                 <Image
-                  src="/natural-wood-grain-warm-texture-organic.png"
+                  src="/img/boards/woodsense/WS090193L/WS090193L_1.webp"
                   alt={t("series.woodsense.title")}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-contain group-hover:scale-105 transition-transform duration-500 group-hover:skew-y-2"
                 />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">
@@ -157,12 +157,12 @@ export default function FurnitureBoardsPage() {
 
             {/* ColorPro */}
             <div className="text-center group">
-              <div className="relative h-[60vh] mb-8 overflow-hidden">
+              <div className="relative h-[45vh] mb-8 overflow-hidden">
                 <Image
-                  src="/bold-colors-vibrant-chromatic-customization.png"
+                  src="/img/boards/colorpro/CPM14004L/CPM14004L_1.jpg"
                   alt={t("series.colorpro.title")}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wider">

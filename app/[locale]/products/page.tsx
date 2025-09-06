@@ -100,7 +100,7 @@ export default function ProductsPage() {
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/img/steel/fronts/stal-kuchania.webp?height=800&width=1600"
               alt={t("steelFronts.title")}
               fill
               className="object-cover"

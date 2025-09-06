@@ -46,7 +46,7 @@ export default function CustomFurniturePage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/img/custom-furniture/hero-kitchen.webp"
+            src="/img/custom-furniture/bedroom/13.webp"
             alt={t("hero.title")}
             fill
             className="object-cover"
@@ -200,10 +200,10 @@ export default function CustomFurniturePage() {
             </div>
             <div className="relative h-[60vh] order-1 lg:order-2">
               <Image
-                src="/img/custom-furniture/bathroom.webp"
+                src="/img/custom-furniture/bathroom/223.jpg"
                 alt={t("bathrooms.title")}
                 fill
-                className="object-cover rounded-2xl shadow-md"
+                className="object-cover object-left rounded-2xl shadow-md"
               />
             </div>
           </div>
