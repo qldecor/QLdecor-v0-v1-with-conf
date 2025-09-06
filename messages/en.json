@@ -9,6 +9,7 @@
     "handles": "Handles",
     "hooks": "Hooks",
     "furniture": "Furniture",
+    "custom-furniture": "Custom Furniture",
     "see-all": "SEE ALL"
   },
   "home": {
@@ -735,6 +736,70 @@
         "title": "FACILITY VISIT",
         "description": "Experience our manufacturing process and quality standards firsthand.",
         "button": "ARRANGE"
+      }
+    }
+  },
+  "customFurniturePage": {
+    "hero": {
+      "title": "CUSTOM FURNITURE – KITCHENS, LIVING ROOMS AND WARDROBES CREATED FOR YOU",
+      "description": "Modern custom furniture in Wrocław and across Poland. We design kitchens, living rooms, wardrobes and bathrooms tailored to your lifestyle.",
+      "button": "DISCOVER OUR OFFER"
+    },
+    "whyCustom": {
+      "title": "WHY CHOOSE CUSTOM FURNITURE?",
+      "points": {
+        "fit": {
+          "title": "PERFECT FIT",
+          "text": "Custom furniture fits perfectly into any space – from small apartments to spacious houses. We make the most of your available space."
+        },
+        "materials": {
+          "title": "MODERN MATERIALS",
+          "text": "We use aluminum, steel, veneers and advanced decorative boards. Combining durability with elegant design."
+        },
+        "finishing": {
+          "title": "LUXURIOUS FINISHES",
+          "text": "Every detail matters – we offer premium handles, soft-close systems and tailor-made solutions that highlight your interior’s character."
+        }
+      }
+    },
+    "kitchens": {
+      "title": "CUSTOM KITCHENS – WROCŁAW AND BEYOND",
+      "description": "We design custom kitchens in classic, minimalist and industrial styles. Full personalization of fronts, countertops and cabinet layouts.",
+      "button": "SEE PROJECTS"
+    },
+    "livingRooms": {
+      "title": "CUSTOM LIVING ROOM AND WARDROBE FURNITURE",
+      "description": "We create elegant TV units, shelves and wardrobes – from compact solutions to spacious, luxurious walk-ins.",
+      "button": "BOOK A CONSULTATION"
+    },
+    "bathrooms": {
+      "title": "CUSTOM BATHROOM FURNITURE",
+      "description": "Moisture-resistant, durable and elegant bathroom furniture. Tailored cabinets, units and storage solutions for your space.",
+      "button": "CONTACT US"
+    },
+    "process": {
+      "title": "HOW DOES THE CUSTOM FURNITURE ORDER PROCESS LOOK?",
+      "steps": {
+        "consulting": {
+          "title": "1. CONSULTATION & DESIGN",
+          "text": "We meet to understand your needs and prepare a design concept."
+        },
+        "materials": {
+          "title": "2. MATERIAL SELECTION",
+          "text": "Together we choose fronts, countertops, handles and finishing systems."
+        },
+        "production": {
+          "title": "3. PRODUCTION & INSTALLATION",
+          "text": "We craft the furniture in our workshop and install it in your home."
+        }
+      }
+    },
+    "cta": {
+      "title": "DESIGN YOUR CUSTOM FURNITURE WITH US",
+      "description": "We provide full service – from design to installation. Contact us and create interiors tailored to your needs.",
+      "buttons": {
+        "contact": "CONTACT US",
+        "catalog": "DOWNLOAD CATALOG"
       }
     }
   },

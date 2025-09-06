@@ -89,40 +89,46 @@ export default function Navbar() {
                     </div>
 
                     {/* Wieszaki */}
-                    <div>
+                    {/* <div>
                       <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
              transition-colors duration-300 hover:text-gray-900
              after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
              after:w-0 after:h-[1px] after:bg-black/70
              after:transition-all after:duration-500 after:ease-in-out
              hover:after:w-full uppercase" href="/products/handles">{t('hooks')}</Link>
-                    </div>
+                    </div> */}
 
                     {/* Meble */}
-                    <div>
+                    {/* <div>
                       <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
              transition-colors duration-300 hover:text-gray-900
              after:content-[''] after:absolute after:left-0 after:-bottom-0.5 
              after:w-0 after:h-[1px] after:bg-black/70
              after:transition-all after:duration-500 after:ease-in-out
              hover:after:w-full uppercase" href="/products/handles">{t('furniture')}</Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               )}
             </div>
             <Link
+              href="/custom-furniture"
+              className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide"
+            >
+              {t("custom-furniture").toUpperCase()}
+            </Link>
+            {/* <Link
               href="/collections"
               className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide"
             >
               {t("collections").toUpperCase()}
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href="/projects"
               className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide"
             >
               {t("projects").toUpperCase()}
-            </Link>
+            </Link> */}
             <Link
               href="/about"
               className="text-gray-700 hover:text-gray-900 transition-colors tracking-wide"

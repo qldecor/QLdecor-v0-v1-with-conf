@@ -9,6 +9,7 @@
     "handles": "Uchwyty Meblowe",
     "hooks": "Wieszaki",
     "furniture": "Meble",
+    "custom-furniture": "Meble na wymiar",
     "see-all": "Odkryj"
   },
   "productsPage": {
@@ -732,6 +733,70 @@
         "title": "WIZYTA W ZAKŁADZIE",
         "description": "Poznaj nasz proces produkcyjny i standardy jakości na własne oczy.",
         "button": "UMÓW"
+      }
+    }
+  },
+  "customFurniturePage": {
+    "hero": {
+      "title": "MEBLE NA WYMIAR – KUCHNIE, SALONY I GARDEROBY STWORZONE DLA CIEBIE",
+      "description": "Nowoczesne meble na wymiar Wrocław i cała Polska. Projektujemy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia.",
+      "button": "POZNAJ NASZĄ OFERTĘ"
+    },
+    "whyCustom": {
+      "title": "DLACZEGO WARTO WYBRAĆ MEBLE NA WYMIAR?",
+      "points": {
+        "fit": {
+          "title": "PERFEKCYJNE DOPASOWANIE",
+          "text": "Meble na wymiar idealnie wpisują się w każde wnętrze – od małych kawalerek po przestronne domy. Maksymalnie wykorzystujemy dostępną przestrzeń."
+        },
+        "materials": {
+          "title": "NOWOCZESNE MATERIAŁY",
+          "text": "Wykorzystujemy fronty z aluminium, stali, fornirów oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
+        },
+        "finishing": {
+          "title": "LUKSUSOWE WYKOŃCZENIA",
+          "text": "Każdy detal ma znaczenie – oferujemy uchwyty premium, systemy cichego domyku i indywidualne rozwiązania, które podkreślą charakter Twojego wnętrza."
+        }
+      }
+    },
+    "kitchens": {
+      "title": "KUCHNIE NA WYMIAR WROCŁAW I CAŁA POLSKA",
+      "description": "Projektujemy kuchnie na wymiar w stylu klasycznym, minimalistycznym i industrialnym. Oferujemy pełną personalizację frontów, blatów i układu szafek.",
+      "button": "ZOBACZ REALIZACJE"
+    },
+    "livingRooms": {
+      "title": "MEBLE DO SALONU I GARDEROBY NA WYMIAR",
+      "description": "Tworzymy eleganckie zabudowy TV, regały i szafy do salonu, a także garderoby na wymiar – od kompaktowych po przestronne, luksusowe rozwiązania.",
+      "button": "UMÓW KONSULTACJĘ"
+    },
+    "bathrooms": {
+      "title": "ŁAZIENKI NA WYMIAR",
+      "description": "Oferujemy meble łazienkowe na wymiar – odporne na wilgoć, trwałe i eleganckie. Tworzymy szafki, zabudowy i rozwiązania dopasowane do Twojej przestrzeni.",
+      "button": "SKONTAKTUJ SIĘ"
+    },
+    "process": {
+      "title": "JAK WYGLĄDA PROCES ZAMÓWIENIA MEBLI NA WYMIAR?",
+      "steps": {
+        "consulting": {
+          "title": "1. KONSULTACJA I PROJEKT",
+          "text": "Spotykamy się, aby poznać Twoje potrzeby i przygotowujemy projekt wnętrza."
+        },
+        "materials": {
+          "title": "2. DOBÓR MATERIAŁÓW",
+          "text": "Wspólnie wybieramy fronty, blaty, uchwyty i systemy wykończenia."
+        },
+        "production": {
+          "title": "3. PRODUKCJA I MONTAŻ",
+          "text": "Realizujemy projekt w naszej pracowni i montujemy meble w Twoim domu."
+        }
+      }
+    },
+    "cta": {
+      "title": "ZAPROJEKTUJ Z NAMI SWOJE MEBLE NA WYMIAR",
+      "description": "Oferujemy kompleksową obsługę – od projektu po montaż. Skontaktuj się z nami i stwórz wnętrze dopasowane do Twoich potrzeb.",
+      "buttons": {
+        "contact": "SKONTAKTUJ SIĘ",
+        "catalog": "POBIERZ KATALOG"
       }
     }
   },
