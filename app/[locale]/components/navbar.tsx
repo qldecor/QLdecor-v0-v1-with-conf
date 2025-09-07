@@ -99,6 +99,16 @@ export default function Navbar() {
                         <span className="see-all">{t("see-all")}</span>
                       </Link>
                     </div>
+                    {/* Meble */}
+                    <div className="navbar-slide-link w-fit">
+                      <Link
+                        href="/furniture"
+                        className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
+                      >
+                        <span className="main-text">{t("furniture")}</span>
+                        <span className="see-all">{t("see-all")}</span>
+                      </Link>
+                    </div>
 
                     {/* Wieszaki */}
                     {/* <div>
@@ -229,6 +239,13 @@ export default function Navbar() {
                   className="font-medium block"
                 >
                   {t("steel-tables")}
+                </Link>
+                <Link
+                  href="/furniture"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-medium block"
+                >
+                  {t("furniture")}
                 </Link>
               </div>
             </details>
