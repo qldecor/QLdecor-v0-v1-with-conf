@@ -333,6 +333,27 @@
         "text2": "W przeciwieństwie do naturalnego drewna, płyty WoodSense oferują doskonałą stabilność wymiarową, powtarzalną jakość oraz odporność na wilgoć i wahania temperatury. Dzięki temu są idealnym rozwiązaniem tam, gdzie pożądane jest piękno drewna, ale istnieją wyzwania środowiskowe.",
         "text3": "Doskonale sprawdzą się w domowych kuchniach, przestrzeniach hotelowych i obiektach komercyjnych, gdzie ciepło i komfort naturalnego drewna podnoszą jakość codziennych doświadczeń, przy zachowaniu praktycznej funkcjonalności."
       },
+      "seriesInfo": {
+        "id": "woodsense",
+        "title": "WoodSense",
+        "description": [
+          "Seria WoodSense to klasyczne i naturalne dekory inspirowane strukturą drewna. W zależności od wariantu, płyty mogą być wykonane z płyty MDF lub LSB.",
+          "Typ rdzenia rozpoznasz po ostatniej literze w oznaczeniu modelu:"
+        ],
+        "exampleLabel": "Przykład",
+        "coreTypes": [
+          {
+            "id": "M",
+            "name": "płyta MDF",
+            "example": "LEGNO CLASSICO WS0074Z2M"
+          },
+          {
+            "id": "L",
+            "name": "płyta LSB",
+            "example": "REGALE DURA WS090012L"
+          }
+        ]
+      },
       "palette": {
         "title": "WYKOŃCZENIA DREWNA",
         "description": "Starannie dobrana kolekcja wykończeń drewnianych, z których każde oddaje unikalny charakter szlachetnych gatunków drewna."
@@ -349,38 +370,30 @@
             "value": "SERIA WOODSENSE"
           },
           {
-            "name": "Materiał rdzenia",
-            "value": "Wysokiej gęstości podłoże inżynieryjne"
+            "name": "Opcje rdzenia",
+            "value": "płyta MDF lub LSB"
           },
           {
-            "name": "Wykończenie powierzchni",
-            "value": "Zaawansowana reprodukcja usłojenia drewna z powłoką ochronną"
+            "name": "Płyta MDF",
+            "value": "Waga: 41,8–42,5 kg/arkusz | Grubość (surowa): 18 mm | Gęstość: ~730 kg/m³"
           },
           {
-            "name": "Poziom połysku",
-            "value": "Mat do półmatu (5–25 GU)"
+            "name": "Płyta LSB",
+            "value": "Waga: 41,8 kg/arkusz | Grubość: 18 mm | Gęstość: ~700 kg/m³"
           },
           {
-            "name": "Grubości",
-            "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
+            "name": "Powłoka laminatu (melamina)",
+            "value": "Grubość: 0,18 mm | Papier dekoracyjny: 90–110 g/m²"
           },
           {
-            "name": "Formaty płyt",
-            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
-          },
-          {
-            "name": "Opcje obrzeży",
-            "value": "Dopasowane obrzeże z usłojeniem lub wzorem odpowiadającym płycie"
-          },
-          {
-            "name": "Konserwacja",
-            "value": "Standardowe środki do czyszczenia drewna, unikać materiałów ściernych"
+            "name": "Powłoka laminatu (PET)",
+            "value": "Grubość: 0,45 mm (standard) | 0,35 mm (połysk)"
           }
         ]
       },
       "configure": {
         "title": "KONFIGURUJ WOODSENSE",
-        "description": "Poznaj konfiguracje WoodSense w naszym Material Studio lub zamów szczegółowe specyfikacje i próbki, aby osobiście doświadczyć autentycznego charakteru drewna.",
+        "description": "Zamów szczegółowe specyfikacje i próbki, aby osobiście doświadczyć autentycznego charakteru drewna.",
         "buttons": {
           "studio": "KONFIGURUJ W MATERIAL STUDIO",
           "quote": "ZAMÓW WYCENĘ"
@@ -639,7 +652,7 @@
         },
         "configure": {
           "title": "KONFIGURUJ COLORPRO",
-          "description": "Poznaj konfiguracje ColorPro w naszym Material Studio lub zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
+          "description": "Zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
           "buttons": {
             "studio": "KONFIGURUJ W MATERIAL STUDIO",
             "quote": "ZAMÓW WYCENĘ"
@@ -674,170 +687,170 @@
           "description": "Matowy grafit o stonowanej elegancji, doskonały do nowoczesnych i wysmakowanych projektów"
         }
       }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "KONTAKT",
+      "description": "Gotowy, aby porozmawiać o swoim projekcie? Nasz zespół specjalistów pomoże Ci stworzyć idealne materiały do Twoich mebli."
     },
-    "contactPage": {
-      "hero": {
+    "form": {
+      "firstName": "IMIĘ",
+      "lastName": "NAZWISKO",
+      "email": "ADRES E-MAIL",
+      "company": "FIRMA",
+      "phone": "NUMER TELEFONU",
+      "projectType": "TYP PROJEKTU",
+      "message": "WIADOMOŚĆ",
+      "button": {
+        "send": "WYŚLIJ WIADOMOŚĆ",
+        "sending": "Wysyłanie..."
+      },
+      "status": {
+        "success": "✅ Wiadomość została wysłana!",
+        "error": "❌ Coś poszło nie tak, spróbuj ponownie."
+      }
+    },
+    "info": {
+      "headquarters": {
+        "title": "SIEDZIBA GŁÓWNA",
+        "address": "Kobierzycka 18\n52-315 Wrocław\nPolska"
+      },
+      "contact": {
         "title": "KONTAKT",
-        "description": "Gotowy, aby porozmawiać o swoim projekcie? Nasz zespół specjalistów pomoże Ci stworzyć idealne materiały do Twoich mebli."
+        "details": "+48 572 008 079\ndesign@qldecor.com"
       },
-      "form": {
-        "firstName": "IMIĘ",
-        "lastName": "NAZWISKO",
-        "email": "ADRES E-MAIL",
-        "company": "FIRMA",
-        "phone": "NUMER TELEFONU",
-        "projectType": "TYP PROJEKTU",
-        "message": "WIADOMOŚĆ",
-        "button": {
-          "send": "WYŚLIJ WIADOMOŚĆ",
-          "sending": "Wysyłanie..."
-        },
-        "status": {
-          "success": "✅ Wiadomość została wysłana!",
-          "error": "❌ Coś poszło nie tak, spróbuj ponownie."
-        }
+      "hours": {
+        "title": "GODZINY PRACY",
+        "details": "Poniedziałek - Piątek: 8:00 - 16:00\nSobota - Niedziela: Zamknięte"
+      }
+    },
+    "quickActions": {
+      "samples": {
+        "title": "ZAMÓW PRÓBKI",
+        "description": "Sprawdź nasze materiały, zamawiając fizyczne próbki z dostawą do Twojej lokalizacji.",
+        "button": "ZAMÓW"
       },
-      "info": {
-        "headquarters": {
-          "title": "SIEDZIBA GŁÓWNA",
-          "address": "Kobierzycka 18\n52-315 Wrocław\nPolska"
-        },
-        "contact": {
-          "title": "KONTAKT",
-          "details": "+48 572 008 079\ndesign@qldecor.com"
-        },
-        "hours": {
-          "title": "GODZINY PRACY",
-          "details": "Poniedziałek - Piątek: 8:00 - 16:00\nSobota - Niedziela: Zamknięte"
-        }
+      "consultation": {
+        "title": "KONSULTACJA PROJEKTOWA",
+        "description": "Umów się na konsultację z naszymi specjalistami technicznymi.",
+        "button": "UMÓW"
       },
-      "quickActions": {
-        "samples": {
-          "title": "ZAMÓW PRÓBKI",
-          "description": "Sprawdź nasze materiały, zamawiając fizyczne próbki z dostawą do Twojej lokalizacji.",
-          "button": "ZAMÓW"
+      "visit": {
+        "title": "WIZYTA W ZAKŁADZIE",
+        "description": "Poznaj nasz proces produkcyjny i standardy jakości na własne oczy.",
+        "button": "UMÓW"
+      }
+    }
+  },
+  "customFurniturePage": {
+    "hero": {
+      "title": "MEBLE NA WYMIAR – KUCHNIE, SALONY I GARDEROBY STWORZONE DLA CIEBIE",
+      "description": "Nowoczesne meble na wymiar Wrocław i cała Polska. Projektujemy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia.",
+      "button": "POZNAJ NASZĄ OFERTĘ"
+    },
+    "whyCustom": {
+      "title": "DLACZEGO WARTO WYBRAĆ MEBLE NA WYMIAR?",
+      "points": {
+        "fit": {
+          "title": "PERFEKCYJNE DOPASOWANIE",
+          "text": "Meble na wymiar idealnie wpisują się w każde wnętrze – od małych kawalerek po przestronne domy. Maksymalnie wykorzystujemy dostępną przestrzeń."
         },
-        "consultation": {
-          "title": "KONSULTACJA PROJEKTOWA",
-          "description": "Umów się na konsultację z naszymi specjalistami technicznymi.",
-          "button": "UMÓW"
+        "materials": {
+          "title": "NOWOCZESNE MATERIAŁY",
+          "text": "Wykorzystujemy fronty z aluminium, stali oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
         },
-        "visit": {
-          "title": "WIZYTA W ZAKŁADZIE",
-          "description": "Poznaj nasz proces produkcyjny i standardy jakości na własne oczy.",
-          "button": "UMÓW"
+        "finishing": {
+          "title": "LUKSUSOWE WYKOŃCZENIA",
+          "text": "Każdy detal ma znaczenie – oferujemy uchwyty premium, systemy cichego domyku i indywidualne rozwiązania, które podkreślą charakter Twojego wnętrza."
         }
       }
     },
-    "customFurniturePage": {
-      "hero": {
-        "title": "MEBLE NA WYMIAR – KUCHNIE, SALONY I GARDEROBY STWORZONE DLA CIEBIE",
-        "description": "Nowoczesne meble na wymiar Wrocław i cała Polska. Projektujemy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia.",
-        "button": "POZNAJ NASZĄ OFERTĘ"
-      },
-      "whyCustom": {
-        "title": "DLACZEGO WARTO WYBRAĆ MEBLE NA WYMIAR?",
-        "points": {
-          "fit": {
-            "title": "PERFEKCYJNE DOPASOWANIE",
-            "text": "Meble na wymiar idealnie wpisują się w każde wnętrze – od małych kawalerek po przestronne domy. Maksymalnie wykorzystujemy dostępną przestrzeń."
-          },
-          "materials": {
-            "title": "NOWOCZESNE MATERIAŁY",
-            "text": "Wykorzystujemy fronty z aluminium, stali oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
-          },
-          "finishing": {
-            "title": "LUKSUSOWE WYKOŃCZENIA",
-            "text": "Każdy detal ma znaczenie – oferujemy uchwyty premium, systemy cichego domyku i indywidualne rozwiązania, które podkreślą charakter Twojego wnętrza."
-          }
-        }
-      },
-      "kitchens": {
-        "title": "KUCHNIE NA WYMIAR WROCŁAW I CAŁA POLSKA",
-        "description": "Projektujemy kuchnie na wymiar w stylu klasycznym, minimalistycznym i industrialnym. Oferujemy pełną personalizację frontów, blatów i układu szafek.",
-        "button": "ZOBACZ REALIZACJE"
-      },
-      "livingRooms": {
-        "title": "MEBLE DO SALONU I GARDEROBY NA WYMIAR",
-        "description": "Tworzymy eleganckie zabudowy TV, regały i szafy do salonu, a także garderoby na wymiar – od kompaktowych po przestronne, luksusowe rozwiązania.",
-        "button": "UMÓW KONSULTACJĘ"
-      },
-      "bathrooms": {
-        "title": "ŁAZIENKI NA WYMIAR",
-        "description": "Oferujemy meble łazienkowe na wymiar – odporne na wilgoć, trwałe i eleganckie. Tworzymy szafki, zabudowy i rozwiązania dopasowane do Twojej przestrzeni.",
-        "button": "SKONTAKTUJ SIĘ"
-      },
-      "process": {
-        "title": "JAK WYGLĄDA PROCES ZAMÓWIENIA MEBLI NA WYMIAR?",
-        "steps": {
-          "consulting": {
-            "title": "1. KONSULTACJA I PROJEKT",
-            "text": "Spotykamy się, aby poznać Twoje potrzeby i przygotowujemy projekt wnętrza."
-          },
-          "materials": {
-            "title": "2. DOBÓR MATERIAŁÓW",
-            "text": "Wspólnie wybieramy fronty, blaty, uchwyty i systemy wykończenia."
-          },
-          "production": {
-            "title": "3. PRODUKCJA I MONTAŻ",
-            "text": "Realizujemy projekt w naszej pracowni i montujemy meble w Twoim domu."
-          }
-        }
-      },
-      "cta": {
-        "title": "ZAPROJEKTUJ Z NAMI SWOJE MEBLE NA WYMIAR",
-        "description": "Oferujemy kompleksową obsługę – od projektu po montaż. Skontaktuj się z nami i stwórz wnętrze dopasowane do Twoich potrzeb.",
-        "buttons": {
-          "contact": "SKONTAKTUJ SIĘ",
-          "catalog": "POBIERZ KATALOG"
+    "kitchens": {
+      "title": "KUCHNIE NA WYMIAR WROCŁAW I CAŁA POLSKA",
+      "description": "Projektujemy kuchnie na wymiar w stylu klasycznym, minimalistycznym i industrialnym. Oferujemy pełną personalizację frontów, blatów i układu szafek.",
+      "button": "ZOBACZ REALIZACJE"
+    },
+    "livingRooms": {
+      "title": "MEBLE DO SALONU I GARDEROBY NA WYMIAR",
+      "description": "Tworzymy eleganckie zabudowy TV, regały i szafy do salonu, a także garderoby na wymiar – od kompaktowych po przestronne, luksusowe rozwiązania.",
+      "button": "UMÓW KONSULTACJĘ"
+    },
+    "bathrooms": {
+      "title": "ŁAZIENKI NA WYMIAR",
+      "description": "Oferujemy meble łazienkowe na wymiar – odporne na wilgoć, trwałe i eleganckie. Tworzymy szafki, zabudowy i rozwiązania dopasowane do Twojej przestrzeni.",
+      "button": "SKONTAKTUJ SIĘ"
+    },
+    "process": {
+      "title": "JAK WYGLĄDA PROCES ZAMÓWIENIA MEBLI NA WYMIAR?",
+      "steps": {
+        "consulting": {
+          "title": "1. KONSULTACJA I PROJEKT",
+          "text": "Spotykamy się, aby poznać Twoje potrzeby i przygotowujemy projekt wnętrza."
+        },
+        "materials": {
+          "title": "2. DOBÓR MATERIAŁÓW",
+          "text": "Wspólnie wybieramy fronty, blaty, uchwyty i systemy wykończenia."
+        },
+        "production": {
+          "title": "3. PRODUKCJA I MONTAŻ",
+          "text": "Realizujemy projekt w naszej pracowni i montujemy meble w Twoim domu."
         }
       }
     },
-    "aboutPage": {
-      "hero": {
-        "title": "DZIEDZICTWO I INNOWACJA",
-        "description": "Od 1999 roku LUXCRAFT wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
-      },
-      "philosophy": {
-        "title": "NASZA FILOZOFIA",
-        "description": "Wierzymy, że wyjątkowe meble zasługują na wyjątkowe materiały. Każdy tworzony przez nas komponent odzwierciedla nasze zaangażowanie w precyzję, innowacyjność i ponadczasowy design. Łączymy najlepsze materiały z kunsztem wykonania, aby dostarczać powierzchnie, które nie tylko spełniają, ale i przewyższają oczekiwania producentów luksusowych mebli na całym świecie."
-      },
-      "manufacturing": {
-        "title": "DOSKONAŁOŚĆ PRODUKCJI",
-        "description": "Nasze nowoczesne zakłady łączą zaawansowane maszyny CNC z tradycyjnymi technikami rzemieślniczymi. Każda powierzchnia przechodzi rygorystyczną kontrolę jakości, aby mieć pewność, że każdy komponent spełnia nasze najwyższe standardy precyzji, jakości wykończenia i trwałości.",
-        "points": {
-          "precision": {
-            "title": "PRECYZYJNA INŻYNIERIA",
-            "description": "Tolerancje do 0,1 mm we wszystkich wymiarach"
-          },
-          "quality": {
-            "title": "GWARANCJA JAKOŚCI",
-            "description": "Wielostopniowy proces kontroli każdego komponentu"
-          },
-          "sustainability": {
-            "title": "ZRÓWNOWAŻONE PRAKTYKI",
-            "description": "Ekologiczne procesy i odpowiedzialne pozyskiwanie materiałów"
-          }
-        }
-      },
-      "global": {
-        "title": "GLOBALNY ZASIĘG",
-        "description": "Z naszej siedziby obsługujemy producentów luksusowych mebli w 40 krajach, dostarczając komponenty spełniające najwyższe międzynarodowe standardy. Nasza globalna sieć gwarantuje stałą jakość i niezawodną dostawę, niezależnie od skali projektu czy lokalizacji.",
-        "stats": {
-          "years": "LAT",
-          "partners": "PARTNERÓW",
-          "countries": "KRAJÓW"
-        }
-      },
-      "team": {
-        "title": "ZESPÓŁ LIDERÓW",
-        "description": "Nasz zespół łączy dekady doświadczenia w luksusowej produkcji z wizją przyszłości materiałów meblowych."
-      },
-      "cta": {
-        "title": "WSPÓŁPRACUJ Z NAMI",
-        "description": "Odkryj, jak nasza wiedza i materiały premium mogą wynieść Twoje projekty meblowe na wyższy poziom.",
-        "button": "ROZPOCZNIJ ROZMOWĘ"
+    "cta": {
+      "title": "ZAPROJEKTUJ Z NAMI SWOJE MEBLE NA WYMIAR",
+      "description": "Oferujemy kompleksową obsługę – od projektu po montaż. Skontaktuj się z nami i stwórz wnętrze dopasowane do Twoich potrzeb.",
+      "buttons": {
+        "contact": "SKONTAKTUJ SIĘ",
+        "catalog": "POBIERZ KATALOG"
       }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "DZIEDZICTWO I INNOWACJA",
+      "description": "Od 1999 roku LUXCRAFT wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
+    },
+    "philosophy": {
+      "title": "NASZA FILOZOFIA",
+      "description": "Wierzymy, że wyjątkowe meble zasługują na wyjątkowe materiały. Każdy tworzony przez nas komponent odzwierciedla nasze zaangażowanie w precyzję, innowacyjność i ponadczasowy design. Łączymy najlepsze materiały z kunsztem wykonania, aby dostarczać powierzchnie, które nie tylko spełniają, ale i przewyższają oczekiwania producentów luksusowych mebli na całym świecie."
+    },
+    "manufacturing": {
+      "title": "DOSKONAŁOŚĆ PRODUKCJI",
+      "description": "Nasze nowoczesne zakłady łączą zaawansowane maszyny CNC z tradycyjnymi technikami rzemieślniczymi. Każda powierzchnia przechodzi rygorystyczną kontrolę jakości, aby mieć pewność, że każdy komponent spełnia nasze najwyższe standardy precyzji, jakości wykończenia i trwałości.",
+      "points": {
+        "precision": {
+          "title": "PRECYZYJNA INŻYNIERIA",
+          "description": "Tolerancje do 0,1 mm we wszystkich wymiarach"
+        },
+        "quality": {
+          "title": "GWARANCJA JAKOŚCI",
+          "description": "Wielostopniowy proces kontroli każdego komponentu"
+        },
+        "sustainability": {
+          "title": "ZRÓWNOWAŻONE PRAKTYKI",
+          "description": "Ekologiczne procesy i odpowiedzialne pozyskiwanie materiałów"
+        }
+      }
+    },
+    "global": {
+      "title": "GLOBALNY ZASIĘG",
+      "description": "Z naszej siedziby obsługujemy producentów luksusowych mebli w 40 krajach, dostarczając komponenty spełniające najwyższe międzynarodowe standardy. Nasza globalna sieć gwarantuje stałą jakość i niezawodną dostawę, niezależnie od skali projektu czy lokalizacji.",
+      "stats": {
+        "years": "LAT",
+        "partners": "PARTNERÓW",
+        "countries": "KRAJÓW"
+      }
+    },
+    "team": {
+      "title": "ZESPÓŁ LIDERÓW",
+      "description": "Nasz zespół łączy dekady doświadczenia w luksusowej produkcji z wizją przyszłości materiałów meblowych."
+    },
+    "cta": {
+      "title": "WSPÓŁPRACUJ Z NAMI",
+      "description": "Odkryj, jak nasza wiedza i materiały premium mogą wynieść Twoje projekty meblowe na wyższy poziom.",
+      "button": "ROZPOCZNIJ ROZMOWĘ"
     }
   }
 }

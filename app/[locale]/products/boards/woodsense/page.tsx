@@ -16,7 +16,14 @@ export const metadata: Metadata = {
 export default function WoodsensePage() {
   const t = useTranslations("boards.woodsense");
 
+  const coreTypes = t.raw("seriesInfo.coreTypes") as {
+    id: string;
+    name: string;
+    example: string;
+  }[];
+
   const technicalSpecificationsArr: { name: string; value: string }[] = t.raw("technicalSpecifications.specs");
+
 
   const woodsenseBoards = [
     {
@@ -327,6 +334,46 @@ export default function WoodsensePage() {
         </div>
       </section>
 
+      {/* Series Info */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("seriesInfo.title")}
+            </h2>
+
+            {t.raw("seriesInfo.description").map((paragraph: string, idx: number) => (
+              <p
+                key={idx}
+                className={`text-gray-600 font-light leading-relaxed ${idx < (t.raw("seriesInfo.description") as string[]).length - 1 ? "mb-6" : ""
+                  }`}
+              >
+                {paragraph}
+              </p>
+            ))}
+
+            <div className="mt-8 grid md:grid-cols-2 gap-6 text-left">
+              {coreTypes.map((core) => (
+                <div
+                  key={core.id}
+                  className="bg-gray-50 rounded-lg p-6 border border-gray-200"
+                >
+                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                    <span className="font-bold">{core.id}</span> – {core.name}
+                  </h3>
+                  <p className="text-gray-600 font-light text-sm leading-relaxed">
+                    {t("seriesInfo.exampleLabel")}:{" "}
+                    <span className="text-gray-900">{core.example}</span>
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* Finishes Palette */}
       <section className="py-32" id="woodsense-finishes">
         <div className="container mx-auto px-8">
@@ -502,11 +549,11 @@ export default function WoodsensePage() {
             {t("configure.description")}
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/studio?category=boards&series=woodsense">
+            {/* <Link href="/studio?category=boards&series=woodsense">
               <Button className="font-light tracking-wide">
                 {t("configure.buttons.studio")}
               </Button>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <Button
                 variant="outline"
@@ -518,7 +565,6 @@ export default function WoodsensePage() {
           </div>
         </div>
       </section>
-
     </div>
   )
 }

@@ -336,6 +336,27 @@
         "text2": "Unlike natural wood, WoodSense boards offer superior dimensional stability, consistent quality, and resistance to moisture and temperature fluctuations. This makes them ideal for applications where the beauty of wood is desired but environmental challenges exist.",
         "text3": "Perfect for residential kitchens, hospitality environments, and commercial spaces where the warmth and comfort of natural wood enhance the human experience while maintaining practical performance."
       },
+      "seriesInfo": {
+        "id": "woodsense",
+        "title": "WoodSense",
+        "description": [
+          "The WoodSense series offers classic and natural decors inspired by the structure of wood. Depending on the variant, the boards can be made of MDF or LSB core.",
+          "You can recognize the core type by the last letter in the model designation:"
+        ],
+        "exampleLabel": "Example",
+        "coreTypes": [
+          {
+            "id": "M",
+            "name": "MDF board",
+            "example": "LEGNO CLASSICO WS0074Z2M"
+          },
+          {
+            "id": "L",
+            "name": "LSB board",
+            "example": "REGALE DURA WS090012L"
+          }
+        ]
+      },
       "palette": {
         "title": "WOOD FINISHES",
         "description": "A carefully curated selection of wood finishes, each capturing the unique character of premium timber species."
@@ -352,38 +373,30 @@
             "value": "WOODSENSE SERIES"
           },
           {
-            "name": "Core Material",
-            "value": "High-density engineered substrate"
+            "name": "Core Options",
+            "value": "MDF or LSB board"
           },
           {
-            "name": "Surface Finish",
-            "value": "Advanced wood-grain reproduction with protective coating"
+            "name": "MDF Board",
+            "value": "Weight: 41.8–42.5 kg/sheet | Thickness (raw): 18 mm | Density: ~730 kg/m³"
           },
           {
-            "name": "Gloss Level",
-            "value": "Matte to semi-matte (5-25 GU)"
+            "name": "LSB Board",
+            "value": "Weight: 41.8 kg/sheet | Thickness: 18 mm | Density: ~700 kg/m³"
           },
           {
-            "name": "Thicknesses",
-            "value": "12mm, 16mm, 19mm, 22mm, 25mm"
+            "name": "Surface Laminate (Melamine)",
+            "value": "Thickness: 0.18 mm | Decorative paper: 90–110 g/m²"
           },
           {
-            "name": "Sheet Sizes",
-            "value": "2800 x 2070mm (custom sizes available)"
-          },
-          {
-            "name": "Edge Options",
-            "value": "Matching wood-grain"
-          },
-          {
-            "name": "Maintenance",
-            "value": "Standard wood cleaners, avoid abrasive materials"
+            "name": "Surface Laminate (PET)",
+            "value": "Thickness: 0.45 mm (standard) | 0.35 mm (gloss)"
           }
         ]
       },
       "configure": {
         "title": "CONFIGURE WOODSENSE",
-        "description": "Explore WoodSense configurations in our Material Studio or request detailed specifications and samples to experience the authentic wood feel firsthand.",
+        "description": "Request detailed specifications and samples to experience the authentic wood feel firsthand.",
         "buttons": {
           "studio": "CONFIGURE IN MATERIAL STUDIO",
           "quote": "REQUEST QUOTE"
@@ -643,7 +656,7 @@
       },
       "configure": {
         "title": "CONFIGURE COLORPRO",
-        "description": "Explore ColorPro configurations in our Material Studio or request custom color matching and samples to bring your color vision to life.",
+        "description": "Request custom color matching and samples to bring your color vision to life.",
         "buttons": {
           "studio": "CONFIGURE IN MATERIAL STUDIO",
           "quote": "REQUEST QUOTE"
