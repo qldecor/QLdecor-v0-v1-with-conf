@@ -157,17 +157,17 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
             <div className="group cursor-pointer">
               <Link href="/products/boards/colorpro">
-              <div className="relative aspect-square mb-6 overflow-hidden">
-                <Image
-                  src="/img/boards/colorpro/CPG11001L/CPG11001L_1.jpg?height=400&width=400"
-                  alt={t("products.colorpro")}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
-                {t("products.colorpro")}
-              </h3>
+                <div className="relative aspect-square mb-6 overflow-hidden">
+                  <Image
+                    src="/img/boards/colorpro/CPG11001L/CPG11001L_1.jpg?height=400&width=400"
+                    alt={t("products.colorpro")}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                  {t("products.colorpro")}
+                </h3>
               </Link>
             </div>
           </div>
@@ -219,9 +219,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
               {t("collections.metalux.text")}
             </p>
+            <Link href="/products/boards/metalux">
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
               {t("collections.metalux.button")}
             </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -245,9 +247,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
               {t("craftsmanship.text")}
             </p>
-            <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              {t("craftsmanship.button")}
-            </Button>
+            <Link href="/custom-furniture">
+              <Button variant="outline" className="font-light tracking-wide bg-transparent">
+                {t("craftsmanship.button")}
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -269,10 +273,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {t("footer.products")}
               </h4>
               <ul className="space-y-3 text-sm font-light text-gray-600">
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("products.steelTables")}</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("products.steelFronts")}</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("products.handles")}</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">Furniture Boards</Link></li>
+                <li><Link href="/products/steel-tables" className="hover:text-gray-900 transition-colors">{t("footer.links.steel-tables")}</Link></li>
+                <li><Link href="/products/steel-fronts" className="hover:text-gray-900 transition-colors">{t("footer.links.steel-fronts")}</Link></li>
+                <li><Link href="/products/handles" className="hover:text-gray-900 transition-colors">{t("footer.links.furniture-handles")}</Link></li>
+                <li><Link href="/products/boards" className="hover:text-gray-900 transition-colors">{t("footer.links.furniture-boards")}</Link></li>
               </ul>
             </div>
             <div>
@@ -280,9 +284,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {t("footer.collections")}
               </h4>
               <ul className="space-y-3 text-sm font-light text-gray-600">
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("collections.metalux.title")}</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">Woodsense Series</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">Colorpro Series</Link></li>
+                <li><Link href="/products/boards/metalux" className="hover:text-gray-900 transition-colors">{t("footer.links.metalux")}</Link></li>
+                <li><Link href="/products/boards/woodsense" className="hover:text-gray-900 transition-colors">{t("footer.links.woodsense")}</Link></li>
+                <li><Link href="/products/boards/colopro" className="hover:text-gray-900 transition-colors">{t("footer.links.colorpro")}</Link></li>
               </ul>
             </div>
             <div>
@@ -290,9 +294,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {t("footer.connect")}
               </h4>
               <ul className="space-y-3 text-sm font-light text-gray-600">
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">About</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">Contact</Link></li>
-                <li><Link href="#" className="hover:text-gray-900 transition-colors">Projects</Link></li>
+                <li><Link href="/custom-furniture" className="hover:text-gray-900 transition-colors">{t("footer.links.custom-furniture")}</Link></li>
+                <li><Link href="/about" className="hover:text-gray-900 transition-colors">{(t('footer.links.about'))}</Link></li>
+                <li><Link href="/contact" className="hover:text-gray-900 transition-colors">{t('footer.links.contact')}</Link></li>
               </ul>
             </div>
           </div>

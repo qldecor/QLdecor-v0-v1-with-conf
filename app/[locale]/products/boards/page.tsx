@@ -259,7 +259,7 @@ export default function FurnitureBoardsPage() {
       </section>
 
       {/* Technical Specifications */}
-      <section className="py-32">
+      {/* <section className="py-32">
         <div className="container mx-auto px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-light text-gray-900 mb-12 tracking-wider text-center">
@@ -293,7 +293,7 @@ export default function FurnitureBoardsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-32 bg-gray-50">
@@ -305,11 +305,11 @@ export default function FurnitureBoardsPage() {
             {t("cta.description")}
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/studio?category=boards">
+            {/* <Link href="/studio?category=boards">
               <Button className="font-light tracking-wide">
                 {t("cta.buttons.studio")}
               </Button>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <Button
                 variant="outline"

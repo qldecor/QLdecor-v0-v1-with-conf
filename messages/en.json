@@ -46,7 +46,7 @@
     "craftsmanship": {
       "title": "CRAFTSMANSHIP",
       "text": "Every component is born from the perfect synthesis of traditional craftsmanship and innovative technology. Our artisans bring decades of expertise to each surface, ensuring that every detail meets the highest standards of luxury manufacturing.",
-      "button": "OUR PROCESS"
+      "button": "CREATE CUSTOM FURNITURE"
     },
     "footer": {
       "brand": "QLDECOR",
@@ -54,7 +54,19 @@
       "products": "PRODUCTS",
       "collections": "COLLECTIONS",
       "connect": "CONNECT",
-      "copyright": "© 2025 QLdecor. All rights reserved."
+      "copyright": "© 2025 QLdecor. All rights reserved.",
+      "links": {
+        "metalux": "Metalux Series",
+        "woodsense": "WoodSense Series",
+        "colorpro": "ColoPro Series",
+        "furniture-boards": "Furniture boards",
+        "furniture-handles": "Furniture handles",
+        "steel-fronts": "Steel Fronts",
+        "steel-tables": "Steel Tables",
+        "custom-furniture": "Custom Furniture",
+        "about": "About",
+        "contact": "Contakt"
+      }
     }
   },
   "productsPage": {
