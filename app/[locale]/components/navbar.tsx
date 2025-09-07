@@ -89,6 +89,17 @@ export default function Navbar() {
                       </Link>
                     </div>
 
+                    {/* Blaty stalowe */}
+                    <div className="navbar-slide-link w-fit">
+                      <Link
+                        href="/products/steel-tables"
+                        className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
+                      >
+                        <span className="main-text">{t("steel-tables")}</span>
+                        <span className="see-all">{t("see-all")}</span>
+                      </Link>
+                    </div>
+
                     {/* Wieszaki */}
                     {/* <div>
                       <Link className="relative px-1 py-1 text-gray-700 font-light tracking-wide 
@@ -211,6 +222,13 @@ export default function Navbar() {
                   className="font-medium block"
                 >
                   {t("handles")}
+                </Link>
+                <Link
+                  href="/products/steel-tables"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-medium block"
+                >
+                  {t("steel-tables")}
                 </Link>
               </div>
             </details>
