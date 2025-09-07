@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import Image from "next/image"
-import Link from "next/link"
+import {Link} from '@/i18n/navigation';
 import { Button } from "@/app/[locale]/components/ui/button"
 import { Input } from "@/app/[locale]/components/ui/input"
 import { Card } from "@/app/[locale]/components/ui/card"

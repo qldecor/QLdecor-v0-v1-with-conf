@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import Link from "next/link"
+import {Link} from '@/i18n/navigation';
 import { Button } from "@/app/[locale]/components/ui/button"
 import { Slider } from "@/app/[locale]/components/ui/slider"
 import { Card } from "@/app/[locale]/components/ui/card"
