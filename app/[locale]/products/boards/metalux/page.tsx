@@ -71,10 +71,10 @@ export default function MetaluxPage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/close-up-metallic-surface-futuristic-sheen-archite.png"
+            src="/img/boards/metalux/111.webp"
             alt="MetaLux Series - Metallic Surface Detail"
             fill
-            className="object-cover"
+            className="object-cover brightness-70"
             priority
           />
         </div>
@@ -120,10 +120,10 @@ export default function MetaluxPage() {
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/metallic-surface-macro-detail-reflection.png"
+                src="/img/boards/metalux/b.webp"
                 alt="MetaLux Surface Detail"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
