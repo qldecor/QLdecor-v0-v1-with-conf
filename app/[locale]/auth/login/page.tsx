@@ -31,7 +31,7 @@ export default function LoginPage() {
         <div className="container mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-xl font-light tracking-wider text-gray-900">
-              LUXCRAFT
+              QLdecor
             </Link>
             <Link href="/auth/register" className="text-sm font-light tracking-wide text-gray-700 hover:text-gray-900">
               CREATE ACCOUNT

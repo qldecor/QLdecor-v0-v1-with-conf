@@ -293,7 +293,7 @@ export default function MaterialStudioPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-8">
               <Link href="/" className="text-xl font-light tracking-wider">
-                LUXCRAFT
+                QLdecor
               </Link>
               <div className="text-sm font-light text-gray-400 tracking-wide">MATERIAL STUDIO</div>
             </div>

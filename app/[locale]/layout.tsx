@@ -11,13 +11,23 @@ import {routing} from '@/i18n/routing';
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "LUXCRAFT - Premium Furniture Components & Materials",
+  title: "QLdecor – Ekskluzywne komponenty meblowe i meble na wymiar",
   description:
-    "Crafting excellence in furniture materials. Premium stainless steel table tops, steel furniture fronts, and furniture boards for luxury furniture manufacturing.",
-  keywords:
-    "luxury furniture, stainless steel table tops, furniture components, premium materials, furniture manufacturing",
-    generator: 'v0.dev'
-}
+    "QLdecor łączy innowacyjne materiały z ekskluzywnym designem. Oferujemy aluminiowe uchwyty meblowe, płyty dekoracyjne MetaLux i WoodSense, blaty stalowe oraz meble na wymiar – tworząc rozwiązania do nowoczesnych i luksusowych wnętrz.",
+  keywords: [
+    "QLdecor",
+    "komponenty meblowe",
+    "uchwyty aluminiowe",
+    "uchwyty meblowe",
+    "blaty stalowe",
+    "płyty meblowe",
+    "MetaLux",
+    "WoodSense",
+    "ColorPro",
+    "meble na wymiar",
+    "luksusowe wnętrza"
+  ]
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));

@@ -185,7 +185,7 @@ export default function ConfiguratorPage() {
         <div className="container mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-xl font-light tracking-wider text-gray-900">
-              LUXCRAFT
+              QLdecor
             </Link>
             <div className="flex items-center gap-8">
               <Link

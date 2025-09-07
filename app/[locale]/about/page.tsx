@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="/img/boards/woodsense/_vis/111_22.webp?height=1080&width=1920"
-            alt="LUXCRAFT Heritage"
+            alt="QLdecor Heritage"
             fill
             className="object-cover brightness-75"
             priority
