@@ -302,9 +302,9 @@
       "description": "Nasze uchwyty sprawdzają się zarówno w przestrzeniach mieszkalnych, jak i komercyjnych – od luksusowych kuchni po nowoczesne biura.",
       "items": {
         "kitchen": "Nowoczesna kuchnia",
-        "office": "Biuro zarządu",
-        "wardrobe": "Luksusowa garderoba",
-        "retail": "Ekspozycja sklepowa",
+        "bedroom": "Przytulna sypialnia",
+        "hall": "Ekskluzywny Hol",
+        "living-room": "Luksusowy Pokój Dzienny",
         "hotel": "Pokój hotelowy",
         "conference": "Sala konferencyjna",
         "bath": "Łazienka prywatna",

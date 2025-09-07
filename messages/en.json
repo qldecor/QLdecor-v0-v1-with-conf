@@ -305,9 +305,9 @@
       "description": "Our handles enhance both residential and commercial projects, from luxury kitchens to modern offices.",
       "items": {
         "kitchen": "Modern Kitchen",
-        "office": "Executive Office",
-        "wardrobe": "Luxury Wardrobe",
-        "retail": "Retail Display",
+        "bedroom": "Warm Bedroom",
+        "hall": "Exclusive Modern Hall",
+        "living-room": "Elegant Contemporary Lounge",
         "hotel": "Hotel Suite",
         "conference": "Conference Room",
         "bath": "Residential Bath",

@@ -8,6 +8,7 @@ import Navbar from "@/app/[locale]/components/navbar";
 import type { HandleIndexItem, HandleFinish, HandleSide } from "@/types/handles";
 import { useLocale, useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
+import { GalleryGrid, Lightbox } from "@/app/[locale]/components/applications-carousel";
 
 const finishColors: Record<HandleFinish, string> = {
   gold: "#D4AF37",
@@ -303,7 +304,26 @@ export default function HandlesPage() {
       default:
         return filtered
     }
-  }, [handles, selectedFinishes, selectedSizes, sortBy])
+  }, [handles, selectedFinishes, selectedSizes, sortBy]);
+
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+
+  const openModal = (index: number) => setCurrentIndex(index);
+  const closeModal = () => setCurrentIndex(null);
+  const prevImage = () =>
+    setCurrentIndex((prev) =>
+      prev !== null ? (prev - 1 + applications.length) % applications.length : prev
+    );
+  const nextImage = () =>
+    setCurrentIndex((prev) =>
+      prev !== null ? (prev + 1) % applications.length : prev
+    );
+  const applications = [
+    { title: t("applications.items.kitchen"), image: "/img/handles/or-2007-gold-furniture.webp" },
+    { title: t("applications.items.bedroom"), image: "/img/handles/or-029-furniture-3-scaled.webp" },
+    { title: t("applications.items.hall"), image: "/img/handles/or-21212.webp" },
+    { title: t("applications.items.living-room"), image: "/img/handles/2007-2.jpeg" },
+  ];
 
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -489,11 +509,24 @@ export default function HandlesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <GalleryGrid
+            apps={applications}
+            onSelect={openModal}
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8" // <- możesz tu zmieniać layout
+          />
+          <Lightbox
+            apps={applications}
+            currentIndex={currentIndex}
+            onClose={closeModal}
+            onPrev={prevImage}
+            onNext={nextImage}
+          />
+
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: t("applications.items.kitchen"), image: "/placeholder-c6vyi.png" },
+              { title: t("applications.items.kitchen"), image: "/img/handles/or-2007-gold-furniture.webp" },
               { title: t("applications.items.office"), image: "/executive-office-handles.png" },
-              { title: t("applications.items.wardrobe"), image: "/luxury-wardrobe.png" },
+              { title: t("applications.items.wardrobe"), image: "/public/img/handles/2252.webp" },
               { title: t("applications.items.retail"), image: "/retail-display-cabinet-handles.png" },
               { title: t("applications.items.hotel"), image: "/hotel-suite-furniture-handles.png" },
               { title: t("applications.items.conference"), image: "/conference-room-cabinet-handles.png" },
@@ -513,7 +546,7 @@ export default function HandlesPage() {
                 <p className="text-sm font-light text-gray-700 tracking-wide">{app.title}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
