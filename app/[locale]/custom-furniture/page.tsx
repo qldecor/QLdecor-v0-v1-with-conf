@@ -115,7 +115,7 @@ export default function CustomFurniturePage() {
                 src="/img/custom-furniture/bathroom/209.jpg"
                 alt={t("whyCustom.title")}
                 fill
-                className="object-cover rounded-2xl shadow-lg"
+                className="object-cover shadow-lg"
               />
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function CustomFurniturePage() {
               src="/img/custom-furniture/kitchen.webp"
               alt={t("kitchens.title")}
               fill
-              className="object-cover rounded-2xl shadow-md"
+              className="object-cover shadow-md"
             />
           </div> */}
           <div className="mb-16">
@@ -165,7 +165,7 @@ export default function CustomFurniturePage() {
                 src="/img/custom-furniture/living-room.webp"
                 alt={t("livingRooms.title")}
                 fill
-                className="object-cover rounded-2xl shadow-md"
+                className="object-cover shadow-md"
               />
             </div>
             <div>
@@ -203,7 +203,7 @@ export default function CustomFurniturePage() {
                 src="/img/custom-furniture/bathroom/223.jpg"
                 alt={t("bathrooms.title")}
                 fill
-                className="object-cover object-left rounded-2xl shadow-md"
+                className="object-cover object-left shadow-md"
               />
             </div>
           </div>

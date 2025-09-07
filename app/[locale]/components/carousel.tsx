@@ -31,7 +31,7 @@ export function Carousel({ images }: { images: { src: string; alt: string }[] })
 
   return (
     <div className="relative">
-      <div className="overflow-hidden rounded-2xl shadow-md" ref={emblaRef}>
+      <div className="overflow-hidden shadow-md" ref={emblaRef}>
         <div className="flex">
           {images.map((img, index) => (
             <div key={index} className="flex-[0_0_100%] relative h-[70vh]">
@@ -57,7 +57,7 @@ export function Carousel({ images }: { images: { src: string; alt: string }[] })
         ›
       </Button>
       {/* Wskaźnik slajdu */}
-      <div className="absolute bottom-4 right-4 bg-black/50 text-white text-sm px-2 py-1 rounded">
+      <div className="absolute bottom-4 right-4 bg-black/50 text-white text-sm px-2 py-1">
         {current} / {count}
       </div>
     </div>
