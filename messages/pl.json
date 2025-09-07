@@ -675,32 +675,20 @@
             "value": "SERIA COLORPRO"
           },
           {
-            "name": "Materiał rdzenia",
-            "value": "Wysokiej gęstości podłoże inżynieryjne"
+            "name": "Waga płyty",
+            "value": "42,5 kg"
           },
           {
-            "name": "Wykończenie powierzchni",
-            "value": "Powłoka kolorystyczna odporna na UV z warstwą ochronną"
+            "name": "Grubość płyty LSB",
+            "value": "18 mm"
           },
           {
-            "name": "Poziom połysku",
-            "value": "Opcje: mat, półpołysk, wysoki połysk"
+            "name": "Grubość laminatu PET",
+            "value": "0,45 mm (kolor błyszczący 0,35 mm)"
           },
           {
-            "name": "Grubości",
-            "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
-          },
-          {
-            "name": "Formaty płyt",
-            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
-          },
-          {
-            "name": "Opcje obrzeży",
-            "value": "Dopasowane kolorystycznie, kontrastowe, ABS, PVC"
-          },
-          {
-            "name": "Konserwacja",
-            "value": "Standardowe środki czyszczące, formuły bezpieczne dla koloru"
+            "name": "Gęstość płyty LSB",
+            "value": "700 kg/m³"
           }
         ]
       },

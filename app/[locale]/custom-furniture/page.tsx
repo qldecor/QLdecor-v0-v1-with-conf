@@ -162,7 +162,7 @@ export default function CustomFurniturePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[60vh]">
               <Image
-                src="/img/custom-furniture/living-room.webp"
+                src="/img/boards/woodsense/_vis/222_4.webp"
                 alt={t("livingRooms.title")}
                 fill
                 className="object-cover shadow-md"

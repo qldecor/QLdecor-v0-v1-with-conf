@@ -675,32 +675,20 @@
             "value": "COLORPRO SERIES"
           },
           {
-            "name": "Core Material",
-            "value": "High-density engineered substrate"
+            "name": "Board Weight",
+            "value": "42.5 kg"
           },
           {
-            "name": "Surface Finish",
-            "value": "UV-stable color coating with protective layer"
+            "name": "LSB Core Thickness",
+            "value": "18 mm"
           },
           {
-            "name": "Gloss Level",
-            "value": "Matte, semi-gloss, or high-gloss options"
+            "name": "PET Laminate Thickness",
+            "value": "0.45 mm (0.35 mm for glossy colors)"
           },
           {
-            "name": "Thicknesses",
-            "value": "12mm, 16mm, 19mm, 22mm, 25mm"
-          },
-          {
-            "name": "Sheet Sizes",
-            "value": "2800 x 2070mm (custom sizes available)"
-          },
-          {
-            "name": "Edge Options",
-            "value": "Matching color, contrasting, ABS, PVC"
-          },
-          {
-            "name": "Maintenance",
-            "value": "Standard cleaning agents, color-safe formulations"
+            "name": "LSB Density",
+            "value": "700 kg/m³"
           }
         ]
       },

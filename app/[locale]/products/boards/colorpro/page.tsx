@@ -106,7 +106,7 @@ export default function ColorproPage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/img/boards/colorpro/2252.jpg?height=1080&width=1920"
             alt="ColorPro Series - Bold Color Composition"
             fill
             className="object-cover"
@@ -155,10 +155,10 @@ export default function ColorproPage() {
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/boards/colorpro/222N.jpg?height=600&width=800"
                 alt="ColorPro Surface Detail"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function ColorproPage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-16">
+          {/* <div className="text-center mt-16">
             <p className="text-gray-600 font-light mb-6">
               {t("palette.extra")}
             </p>
@@ -221,12 +221,12 @@ export default function ColorproPage() {
             >
               {t("palette.request")}
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Applications */}
-      <section className="py-32 bg-gray-50">
+      {/* <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
@@ -304,7 +304,7 @@ export default function ColorproPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
       <section className="py-32">
@@ -353,11 +353,11 @@ export default function ColorproPage() {
             {t("configure.description")}
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/studio?category=boards&series=colorpro">
+            {/* <Link href="/studio?category=boards&series=colorpro">
               <Button className="font-light tracking-wide">
                 {t("configure.buttons.studio")}
               </Button>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <Button
                 variant="outline"
