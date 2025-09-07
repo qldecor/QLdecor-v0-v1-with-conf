@@ -79,7 +79,7 @@ export default function LanguageSwitcher({ mobile = false }: { mobile?: boolean 
           {/* hover bridge */}
           <div className="absolute top-full left-0 w-full h-4 bg-transparent"></div>
 
-          <div className="absolute right-0 top-full mt-4 w-20 bg-white border shadow-md z-50">
+          <div className="absolute right-0 top-full mt-4 bg-white shadow-sm z-50">
             {LANGS.map((lang) => (
               <button
                 key={lang.code}

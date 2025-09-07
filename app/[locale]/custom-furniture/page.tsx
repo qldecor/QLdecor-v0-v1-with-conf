@@ -149,9 +149,9 @@ export default function CustomFurniturePage() {
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
               {t("kitchens.description")}
             </p>
-            <Button variant="outline" className="font-light tracking-wide bg-transparent">
+            {/* <Button variant="outline" className="font-light tracking-wide bg-transparent">
               {t("kitchens.button")}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -175,9 +175,9 @@ export default function CustomFurniturePage() {
               <p className="text-gray-600 font-light leading-relaxed mb-6">
                 {t("livingRooms.description")}
               </p>
-              <Button variant="outline" className="font-light tracking-wide bg-transparent">
+              {/* <Button variant="outline" className="font-light tracking-wide bg-transparent">
                 {t("livingRooms.button")}
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function CustomFurniturePage() {
                 {t("bathrooms.description")}
               </p>
               <Button variant="outline" className="font-light tracking-wide bg-transparent">
-                {t("bathrooms.button")}
+                <Link href="/contact">{t("bathrooms.button")}</Link>
               </Button>
             </div>
             <div className="relative h-[60vh] order-1 lg:order-2">
