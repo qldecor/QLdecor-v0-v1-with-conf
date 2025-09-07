@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
+import LanguageSwitcher from "@/app/[locale]/components/ui/language-switcher";
 
 export default function Navbar() {
   const t = useTranslations("common"); // expects Common.products, Common.collections, etc.
@@ -141,7 +142,10 @@ export default function Navbar() {
             >
               {t("contact").toUpperCase()}
             </Link>
+            {/* Language selector */}
+            <LanguageSwitcher />
           </div>
+
           <button
             className="md:hidden text-gray-700"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -225,6 +229,7 @@ export default function Navbar() {
               className="flex justify-between items-center text-gray-700 hover:text-gray-900 uppercase tracking-wide py-3">
               {t("contact")}
             </Link>
+            <LanguageSwitcher mobile />
           </div>
         </div>
       )}

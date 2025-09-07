@@ -272,9 +272,9 @@ export default function CustomFurniturePage() {
                 {t("cta.buttons.contact")}
               </Button>
             </Link>
-            <Button variant="outline" className="font-light tracking-wide bg-transparent">
+            {/* <Button variant="outline" className="font-light tracking-wide bg-transparent">
               {t("cta.buttons.catalog")}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
