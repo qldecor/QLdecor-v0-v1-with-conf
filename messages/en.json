@@ -363,7 +363,15 @@
       },
       "applications": {
         "title": "APPLICATIONS",
-        "description": "WoodSense boards bring natural warmth to environments where comfort and authenticity are paramount."
+        "description": "WoodSense boards bring natural warmth to environments where comfort and authenticity are paramount.",
+        "items": {
+          "wardrobe": "Spacious Wardrobe",
+          "kitchen": "Modern Kitchen",
+          "office": "Stylish Office",
+          "closet": "Functional Closet",
+          "bathroom": "Elegant Bathroom",
+          "bedroom": "Cozy Bedroom"
+        }
       },
       "technicalSpecifications": {
         "title": "TECHNICAL SPECIFICATIONS",

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
@@ -5,13 +6,15 @@ import Navbar from "@/app/[locale]/components/navbar";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
+import { GalleryGrid, Lightbox } from "@/app/[locale]/components/applications-carousel";
+import { useState } from "react";
 
-export const metadata: Metadata = {
-  title: "WoodSense Series - Natural Wood Furniture Boards | QLdecor",
-  description:
-    "WoodSense natural wood furniture boards with authentic grain and engineered durability. Available in Light Oak, Walnut, Smoked, and more finishes.",
-  canonical: "/products/boards/woodsense",
-}
+// export const metadata: Metadata = {
+//   title: "WoodSense Series - Natural Wood Furniture Boards | QLdecor",
+//   description:
+//     "WoodSense natural wood furniture boards with authentic grain and engineered durability. Available in Light Oak, Walnut, Smoked, and more finishes.",
+//   canonical: "/products/boards/woodsense",
+// }
 
 export default function WoodsensePage() {
   const t = useTranslations("boards.woodsense");
@@ -23,6 +26,30 @@ export default function WoodsensePage() {
   }[];
 
   const technicalSpecificationsArr: { name: string; value: string }[] = t.raw("technicalSpecifications.specs");
+
+
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+
+  const openModal = (index: number) => setCurrentIndex(index);
+  const closeModal = () => setCurrentIndex(null);
+  const prevImage = () =>
+    setCurrentIndex((prev) =>
+      prev !== null ? (prev - 1 + applications.length) % applications.length : prev
+    );
+  const nextImage = () =>
+    setCurrentIndex((prev) =>
+      prev !== null ? (prev + 1) % applications.length : prev
+    );
+
+  const applications = [
+    { title: t("applications.items.wardrobe"), image: "/img/boards/woodsense/_vis/111_2_2.webp" },
+    { title: t("applications.items.kitchen"), image: "/img/boards/woodsense/_vis/111_4.webp" },
+    { title: t("applications.items.office"), image: "/img/boards/woodsense/_vis/111_6.webp" },
+    { title: t("applications.items.closet"), image: "/img/boards/woodsense/_vis/222_4.webp" },
+    { title: t("applications.items.bathroom"), image: "/img/boards/woodsense/_vis/333_2.webp" },
+    { title: t("applications.items.bedroom"), image: "/img/boards/woodsense/_vis/333_3.webp" },
+  ];
+
 
 
   const woodsenseBoards = [
@@ -281,7 +308,7 @@ export default function WoodsensePage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/warm-wood-like-texture-natural-grain-organic.png"
+            src="/img/boards/woodsense/_vis/1161.webp"
             alt="WoodSense Series - Natural Wood Texture"
             fill
             className="object-cover"
@@ -324,7 +351,7 @@ export default function WoodsensePage() {
             </div>
             <div className="relative h-[60vh]">
               <Image
-                src="/img/boards/woodsense/drewno_3.webp?height=600&width=800"
+                src="/img/boards/woodsense/_vis/2242.webp?height=600&width=800"
                 alt="WoodSense Surface Detail"
                 fill
                 className="object-cover"
@@ -427,78 +454,26 @@ export default function WoodsensePage() {
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">{t('applications.title')}</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("applications.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              {t('applications.description')}
+              {t("applications.description")}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Residential Kitchen Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Hotel Lobby Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Conference Room Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Bedroom Wardrobe Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Restaurant Interior Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Library Shelving Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Entertainment Center Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Retail Display Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-          </div>
+          <GalleryGrid
+            apps={applications}
+            onSelect={openModal}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          />
+          <Lightbox
+            apps={applications}
+            currentIndex={currentIndex}
+            onClose={closeModal}
+            onPrev={prevImage}
+            onNext={nextImage}
+          />
         </div>
       </section>
 

@@ -360,7 +360,15 @@
       },
       "applications": {
         "title": "ZASTOSOWANIA",
-        "description": "Płyty WoodSense wnoszą naturalne ciepło do przestrzeni, w których komfort i autentyczność mają kluczowe znaczenie."
+        "description": "Płyty WoodSense wnoszą naturalne ciepło do przestrzeni, w których komfort i autentyczność mają kluczowe znaczenie.",
+        "items": {
+          "wardrobe": "Przestronna garderoba",
+          "kitchen": "Nowoczesna kuchnia",
+          "office": "Stylowe biuro",
+          "closet": "Funkcjonalna szafa",
+          "bathroom": "Elegancka łazienka",
+          "bedroom": "Przytulna sypialnia"
+        }
       },
       "technicalSpecifications": {
         "title": "SPECYFIKACJA TECHNICZNA",
@@ -561,131 +569,131 @@
             "name": "Gęstość płyty LSB",
             "value": "700 kg/m³"
           }
-        ],
-        "configure": {
-          "title": "KONFIGURUJ METALUX",
-          "description": "Zamów szczegółowe specyfikacje i próbki od naszych specjalistów technicznych.",
-          "buttons": {
-            "studio": "KONFIGURUJ W MATERIAL STUDIO",
-            "quote": "ZAMÓW WYCENĘ"
-          }
-        },
-        "MLG21001L": {
-          "title": "Ambra",
-          "description": "Szczotkowane złoto o eleganckim blasku i nowoczesnym, luksusowym wyrazie"
-        },
-        "MLG22002L": {
-          "title": "Rame Vivo",
-          "description": "Szczotkowana miedź o ciepłym, szlachetnym połysku i wyrafinowanym charakterze"
-        },
-        "MLG23003L": {
-          "title": "Puro Platino",
-          "description": "Szczotkowana stal o subtelnym, industrialnym charakterze i nowoczesnej elegancji"
-        },
-        "MLG24004L": {
-          "title": "Acciaio Rosa",
-          "description": "Szczotkowane aluminium o chłodnym, nowoczesnym wyrazie i wyrafinowanej prostocie"
-        },
-        "MLG25005L": {
-          "title": "Titanio Infinito",
-          "description": "Szczotkowane ciemne aluminium o nowoczesnym, minimalistycznym charakterze i eleganckiej głębi"
+        ]
+      },
+      "configure": {
+        "title": "KONFIGURUJ METALUX",
+        "description": "Zamów szczegółowe specyfikacje i próbki od naszych specjalistów technicznych.",
+        "buttons": {
+          "studio": "KONFIGURUJ W MATERIAL STUDIO",
+          "quote": "ZAMÓW WYCENĘ"
         }
       },
-      "colorpro": {
-        "hero": {
-          "title": "ODWAŻNA KOLORYSTYKA. NIEOGRANICZONE MOŻLIWOŚCI.",
-          "description": "Seria ColorPro otwiera nieograniczone możliwości kolorystyczne przy zachowaniu wyjątkowej odporności na blaknięcie i stabilności UV. Twórz meble, które wyróżniają się śmiałym charakterem, zachowując intensywny wygląd przez wiele lat.",
-          "button": "POZNAJ KOLORY"
-        },
-        "categoryDescription": {
-          "title": "NIEOGRANICZONA EKSPRESJA",
-          "text1": "Seria ColorPro to synonim pełnej swobody kolorystycznej, gdzie zaawansowana technologia pigmentów spotyka się z kreatywną wizją. Dzięki praktycznie nieograniczonej gamie opcji projektanci mogą uzyskać dokładne dopasowanie barw, tworzyć własne palety lub eksperymentować z odważnymi kompozycjami, które definiują przestrzeń.",
-          "text2": "Nasz zaawansowany system powłok odpornych na promieniowanie UV gwarantuje, że kolory zachowują swoją intensywność i głębię nawet przy długotrwałej ekspozycji na światło. Dzięki temu ColorPro idealnie sprawdza się tam, gdzie kluczowa jest spójność i trwałość kolorystyki.",
-          "text3": "Doskonale nadaje się do przestrzeni handlowych, obiektów hotelowych i zastosowań mieszkaniowych, gdzie kolor odgrywa centralną rolę w budowaniu atmosfery, tożsamości marki lub osobistego charakteru wnętrza."
-        },
-        "palette": {
-          "title": "PALETA KOLORÓW",
-          "description": "Starannie dobrana selekcja prezentująca szeroki zakres możliwości. Dostępne kolory niestandardowe, dopasowane do każdej specyfikacji.",
-          "extra": "To tylko część dostępnych kolorów. Możliwe jest indywidualne dopasowanie koloru do każdej specyfikacji.",
-          "request": "ZAMÓW DOPASOWANIE KOLORU"
-        },
-        "applications": {
-          "title": "ZASTOSOWANIA",
-          "description": "Płyty ColorPro sprawdzają się w przestrzeniach, gdzie kolor buduje tożsamość, atmosferę i emocjonalne powiązanie."
-        },
-        "technicalSpecifications": {
-          "title": "SPECYFIKACJA TECHNICZNA",
-          "specs": [
-            {
-              "name": "SPECYFIKACJA",
-              "value": "SERIA COLORPRO"
-            },
-            {
-              "name": "Materiał rdzenia",
-              "value": "Wysokiej gęstości podłoże inżynieryjne"
-            },
-            {
-              "name": "Wykończenie powierzchni",
-              "value": "Powłoka kolorystyczna odporna na UV z warstwą ochronną"
-            },
-            {
-              "name": "Poziom połysku",
-              "value": "Opcje: mat, półpołysk, wysoki połysk"
-            },
-            {
-              "name": "Grubości",
-              "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
-            },
-            {
-              "name": "Formaty płyt",
-              "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
-            },
-            {
-              "name": "Opcje obrzeży",
-              "value": "Dopasowane kolorystycznie, kontrastowe, ABS, PVC"
-            },
-            {
-              "name": "Konserwacja",
-              "value": "Standardowe środki czyszczące, formuły bezpieczne dla koloru"
-            }
-          ]
-        },
-        "configure": {
-          "title": "KONFIGURUJ COLORPRO",
-          "description": "Zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
-          "buttons": {
-            "studio": "KONFIGURUJ W MATERIAL STUDIO",
-            "quote": "ZAMÓW WYCENĘ"
+      "MLG21001L": {
+        "title": "Ambra",
+        "description": "Szczotkowane złoto o eleganckim blasku i nowoczesnym, luksusowym wyrazie"
+      },
+      "MLG22002L": {
+        "title": "Rame Vivo",
+        "description": "Szczotkowana miedź o ciepłym, szlachetnym połysku i wyrafinowanym charakterze"
+      },
+      "MLG23003L": {
+        "title": "Puro Platino",
+        "description": "Szczotkowana stal o subtelnym, industrialnym charakterze i nowoczesnej elegancji"
+      },
+      "MLG24004L": {
+        "title": "Acciaio Rosa",
+        "description": "Szczotkowane aluminium o chłodnym, nowoczesnym wyrazie i wyrafinowanej prostocie"
+      },
+      "MLG25005L": {
+        "title": "Titanio Infinito",
+        "description": "Szczotkowane ciemne aluminium o nowoczesnym, minimalistycznym charakterze i eleganckiej głębi"
+      }
+    },
+    "colorpro": {
+      "hero": {
+        "title": "ODWAŻNA KOLORYSTYKA. NIEOGRANICZONE MOŻLIWOŚCI.",
+        "description": "Seria ColorPro otwiera nieograniczone możliwości kolorystyczne przy zachowaniu wyjątkowej odporności na blaknięcie i stabilności UV. Twórz meble, które wyróżniają się śmiałym charakterem, zachowując intensywny wygląd przez wiele lat.",
+        "button": "POZNAJ KOLORY"
+      },
+      "categoryDescription": {
+        "title": "NIEOGRANICZONA EKSPRESJA",
+        "text1": "Seria ColorPro to synonim pełnej swobody kolorystycznej, gdzie zaawansowana technologia pigmentów spotyka się z kreatywną wizją. Dzięki praktycznie nieograniczonej gamie opcji projektanci mogą uzyskać dokładne dopasowanie barw, tworzyć własne palety lub eksperymentować z odważnymi kompozycjami, które definiują przestrzeń.",
+        "text2": "Nasz zaawansowany system powłok odpornych na promieniowanie UV gwarantuje, że kolory zachowują swoją intensywność i głębię nawet przy długotrwałej ekspozycji na światło. Dzięki temu ColorPro idealnie sprawdza się tam, gdzie kluczowa jest spójność i trwałość kolorystyki.",
+        "text3": "Doskonale nadaje się do przestrzeni handlowych, obiektów hotelowych i zastosowań mieszkaniowych, gdzie kolor odgrywa centralną rolę w budowaniu atmosfery, tożsamości marki lub osobistego charakteru wnętrza."
+      },
+      "palette": {
+        "title": "PALETA KOLORÓW",
+        "description": "Starannie dobrana selekcja prezentująca szeroki zakres możliwości. Dostępne kolory niestandardowe, dopasowane do każdej specyfikacji.",
+        "extra": "To tylko część dostępnych kolorów. Możliwe jest indywidualne dopasowanie koloru do każdej specyfikacji.",
+        "request": "ZAMÓW DOPASOWANIE KOLORU"
+      },
+      "applications": {
+        "title": "ZASTOSOWANIA",
+        "description": "Płyty ColorPro sprawdzają się w przestrzeniach, gdzie kolor buduje tożsamość, atmosferę i emocjonalne powiązanie."
+      },
+      "technicalSpecifications": {
+        "title": "SPECYFIKACJA TECHNICZNA",
+        "specs": [
+          {
+            "name": "SPECYFIKACJA",
+            "value": "SERIA COLORPRO"
+          },
+          {
+            "name": "Materiał rdzenia",
+            "value": "Wysokiej gęstości podłoże inżynieryjne"
+          },
+          {
+            "name": "Wykończenie powierzchni",
+            "value": "Powłoka kolorystyczna odporna na UV z warstwą ochronną"
+          },
+          {
+            "name": "Poziom połysku",
+            "value": "Opcje: mat, półpołysk, wysoki połysk"
+          },
+          {
+            "name": "Grubości",
+            "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
+          },
+          {
+            "name": "Formaty płyt",
+            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
+          },
+          {
+            "name": "Opcje obrzeży",
+            "value": "Dopasowane kolorystycznie, kontrastowe, ABS, PVC"
+          },
+          {
+            "name": "Konserwacja",
+            "value": "Standardowe środki czyszczące, formuły bezpieczne dla koloru"
           }
-        },
-        "CPM12002L": {
-          "title": "Mistero",
-          "description": "Matowa czerń o głębokim, szlachetnym charakterze, podkreślająca nowoczesny styl wnętrz"
-        },
-        "CPG13003L": {
-          "title": "Bronzo Lucente",
-          "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
-        },
-        "CPG14004L": {
-          "title": "Quarzo Nocciola",
-          "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
-        },
-        "CPM14004L": {
-          "title": "Macchiaton",
-          "description": "Delikatny odcień cappuccino w stylowym, gładkim wykończeniu o ciepłym, eleganckim charakterze"
-        },
-        "CPG12002L": {
-          "title": "Ossidiana",
-          "description": "Głęboka czerń w lśniącym wykończeniu, nadająca wnętrzom wyrafinowany i ekskluzywny charakter"
-        },
-        "CPG11001L": {
-          "title": "Cristallo Blanco",
-          "description": "Jednolity biały laminat w wysokim połysku, o nowoczesnym i wyrafinowanym charakterze"
-        },
-        "CPM13003L": {
-          "title": "Dalia Nera",
-          "description": "Matowy grafit o stonowanej elegancji, doskonały do nowoczesnych i wysmakowanych projektów"
+        ]
+      },
+      "configure": {
+        "title": "KONFIGURUJ COLORPRO",
+        "description": "Zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
+        "buttons": {
+          "studio": "KONFIGURUJ W MATERIAL STUDIO",
+          "quote": "ZAMÓW WYCENĘ"
         }
+      },
+      "CPM12002L": {
+        "title": "Mistero",
+        "description": "Matowa czerń o głębokim, szlachetnym charakterze, podkreślająca nowoczesny styl wnętrz"
+      },
+      "CPG13003L": {
+        "title": "Bronzo Lucente",
+        "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
+      },
+      "CPG14004L": {
+        "title": "Quarzo Nocciola",
+        "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
+      },
+      "CPM14004L": {
+        "title": "Macchiaton",
+        "description": "Delikatny odcień cappuccino w stylowym, gładkim wykończeniu o ciepłym, eleganckim charakterze"
+      },
+      "CPG12002L": {
+        "title": "Ossidiana",
+        "description": "Głęboka czerń w lśniącym wykończeniu, nadająca wnętrzom wyrafinowany i ekskluzywny charakter"
+      },
+      "CPG11001L": {
+        "title": "Cristallo Blanco",
+        "description": "Jednolity biały laminat w wysokim połysku, o nowoczesnym i wyrafinowanym charakterze"
+      },
+      "CPM13003L": {
+        "title": "Dalia Nera",
+        "description": "Matowy grafit o stonowanej elegancji, doskonały do nowoczesnych i wysmakowanych projektów"
       }
     }
   },
