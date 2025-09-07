@@ -20,7 +20,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/stal_9.jpeg?height=1080&width=1920"
+            src="/img/steel/table/stal_9_res.jpeg?height=1080&width=1920"
             alt={t("hero.title")}
             fill
             className="object-cover brightness-70"

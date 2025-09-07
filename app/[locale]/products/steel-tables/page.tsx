@@ -143,36 +143,36 @@ export default function SteelTablesPage() {
       </section>
 
       {/* Patterns */}
-<section className="py-32">
-  <div className="container mx-auto px-8 text-center">
-    <h2 className="text-3xl font-light text-gray-900 mb-16 tracking-wider">
-      {t("patterns.title")}
-    </h2>
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-      {patterns.map((p) => (
-        <div
-          key={p.id}
-          className="group transition-transform duration-500"
-        >
-          <div className="relative h-64 mb-6 overflow-hidden ">
-            <Image
-              src={p.img}
-              alt={p.id}
-              fill
-              className="object-cover group-hover:scale-110 transition-transform duration-700"
-            />
+      <section className="py-32">
+        <div className="container mx-auto px-8 text-center">
+          <h2 className="text-3xl font-light text-gray-900 mb-16 tracking-wider">
+            {t("patterns.title")}
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {patterns.map((p) => (
+              <div
+                key={p.id}
+                className="group transition-transform duration-500"
+              >
+                <div className="relative h-64 mb-6 overflow-hidden ">
+                  <Image
+                    src={p.img}
+                    alt={p.id}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-xl font-light text-gray-900 tracking-wide mb-3">
+                  {t(`patterns.details.${p.id}.title`)}
+                </h3>
+                <p className="text-sm text-gray-500 font-light leading-relaxed">
+                  {t(`patterns.details.${p.id}.text`)}
+                </p>
+              </div>
+            ))}
           </div>
-          <h3 className="text-xl font-light text-gray-900 tracking-wide mb-3">
-            {t(`patterns.details.${p.id}.title`)}
-          </h3>
-          <p className="text-sm text-gray-500 font-light leading-relaxed">
-            {t(`patterns.details.${p.id}.text`)}
-          </p>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
       {/* Showroom */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
