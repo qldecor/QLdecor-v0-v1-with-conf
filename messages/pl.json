@@ -93,7 +93,13 @@
       "description": "Nowoczesne biblioteki, które łączą naturalne piękno drewna z subtelną strukturą metalu. Wnętrze półek wykonane z płyt WoodSense wprowadzają do wnętrza ciepło i harmonię, natomiast fronty wykończone płytami MetaLux dodają całości wyrazistości i nowoczesnego charakteru."
     },
     "visualization": {
-      "title": "Wizualizacja bibliotek"
+      "title": "Wizualizacja bibliotek",
+      "captions": {
+        "type1": "Biblioteka – Wariant 1",
+        "type2": "Biblioteka – wariant 2",
+        "type3": "Biblioteka - wariant 3",
+        "type4": "Biblioteka - wariant 4"
+      }
     },
     "showroom": {
       "title": "Biblioteki w naszym salonie",

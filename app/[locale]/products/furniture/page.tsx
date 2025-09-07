@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import {Link} from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import Navbar from "@/app/[locale]/components/navbar";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 import { Button } from "@/app/[locale]/components/ui/button";
@@ -50,11 +50,11 @@ export default function FurniturePage() {
   const t = useTranslations("furniturePage");
 
   const images = [
-    { title: "Type 1", image: "/img/furniture/library/vis/g1-scaled.webp" },
-    { title: "Type 2", image: "/img/furniture/library/vis/g2-scaled.webp" },
-    { title: "Type 2", image: "/img/furniture/library/vis/t1-scaled.webp" },
-    { title: "Type 3", image: "/img/furniture/library/vis/t2-scaled.webp" },
-    { title: "Type 4", image: "/img/furniture/library/vis/t3-scaled.webp" }
+    { title: t("visualization.captions.type1"), image: "/img/furniture/library/vis/g1-scaled.webp" },
+    { title: t("visualization.captions.type2"), image: "/img/furniture/library/vis/g2-scaled.webp" },
+    { title: t("visualization.captions.type2"), image: "/img/furniture/library/vis/t1-scaled.webp" },
+    { title: t("visualization.captions.type3"), image: "/img/furniture/library/vis/t2-scaled.webp" },
+    { title: t("visualization.captions.type4"), image: "/img/furniture/library/vis/t3-scaled.webp" }
   ];
 
 

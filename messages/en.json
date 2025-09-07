@@ -92,7 +92,13 @@
       "description": "Contemporary libraries that unite the natural beauty of wood with the subtle elegance of metal. Interiors crafted with WoodSense boards bring warmth and harmony, while MetaLux fronts add boldness and a modern edge."
     },
     "visualization": {
-      "title": "Library visualization"
+      "title": "Library visualization",
+      "captions": {
+        "type1": "Library – type 1",
+        "type2": "Library – type 2",
+        "type3": "Library - type 3",
+        "type4": "Library - type 4"
+      }
     },
     "showroom": {
       "title": "Libraries in our showroom",
