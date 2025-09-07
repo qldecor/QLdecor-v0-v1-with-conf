@@ -102,7 +102,7 @@ export default function Navbar() {
                     {/* Meble */}
                     <div className="navbar-slide-link w-fit">
                       <Link
-                        href="/furniture"
+                        href="/products/furniture"
                         className="linksss group relative z-10 block px-1 py-1 text-gray-700 font-light tracking-wide transition-colors duration-300 hover:text-gray-900 uppercase"
                       >
                         <span className="main-text">{t("furniture")}</span>
@@ -241,7 +241,7 @@ export default function Navbar() {
                   {t("steel-tables")}
                 </Link>
                 <Link
-                  href="/furniture"
+                  href="/products/furniture"
                   onClick={() => setMobileOpen(false)}
                   className="font-medium block"
                 >

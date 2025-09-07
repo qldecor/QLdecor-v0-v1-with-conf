@@ -30,12 +30,18 @@
       "handles": "FURNITURE HANDLES",
       "metalux": "METALUX",
       "woodsense": "WOODSENSE",
-      "colorpro": "COLORPRO"
+      "colorpro": "COLORPRO",
+      "furniture": "FURNITURE"
     },
     "collections": {
       "steelFronts": {
         "title": "STEEL FRONTS COLLECTION",
         "text": "The Steel Fronts Collection is inspired by the finest industrial design traditions, where form and function unite in perfect harmony. Each surface embodies uncompromising elegance, bringing authentic steel character to contemporary interiors.",
+        "button": "EXPLORE COLLECTION"
+      },
+      "furniture": {
+        "title": "QLDECOR FURNITURE COLLECTION",
+        "text": "The QLdecor Furniture Collection brings together the natural beauty of WoodSense wood and the refined elegance of MetaLux finishes. We design libraries, sideboards and bespoke pieces that combine functionality with exclusive design – perfect for timeless, contemporary interiors.",
         "button": "EXPLORE COLLECTION"
       },
       "metalux": {

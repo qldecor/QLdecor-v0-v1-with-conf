@@ -8,7 +8,7 @@ import { ClipboardList, Hammer, Layers } from "lucide-react";
 import { useTranslations } from "next-intl";
 // import type { Metadata } from "next";
 import { Carousel } from "@/app/[locale]/components/carousel";
-import { GalleryGrid, Lightbox } from "../components/applications-carousel";
+import { GalleryGrid, Lightbox } from "@/app/[locale]/components/applications-carousel";
 import { useState } from "react";
 
 // export const metadata: Metadata = {

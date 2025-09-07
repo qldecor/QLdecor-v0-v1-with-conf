@@ -96,7 +96,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               </Link>
             </div>
 
-            <div className="group cursor-pointer">
+            {/* <div className="group cursor-pointer">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
@@ -108,6 +108,22 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
                 {t("products.steelFronts")}
               </h3>
+            </div> */}
+
+            <div className="group cursor-pointer">
+              <Link href="/products/furniture">
+                <div className="relative aspect-square mb-6 overflow-hidden">
+                  <Image
+                    src="/img/furniture/t5-scaled.webp" // podmień na swoje główne zdjęcie mebli
+                    alt={t("products.furniture")}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                  {t("products.furniture")}
+                </h3>
+              </Link>
             </div>
 
             <div className="group cursor-pointer">
@@ -179,7 +195,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Steel Fronts Collection */}
-      <section className="py-32">
+      {/* <section className="py-32">
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
@@ -200,6 +216,34 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
               {t("collections.steelFronts.button")}
             </Button>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Furniture Collection */}
+      <section className="py-32">
+        <div className="container mx-auto px-8">
+          <div className="relative h-[70vh] mb-16">
+            <Image
+              src="/img/furniture/library/vis/g1-scaled.webp"
+              alt={t("collections.furniture.title")}
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <div className="text-center">
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("collections.furniture.title")}
+            </h2>
+            <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
+              {t("collections.furniture.text")}
+            </p>
+            <Link href="/products/furniture">
+              <Button variant="outline" className="font-light tracking-wide bg-transparent">
+                {t("collections.furniture.button")}
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

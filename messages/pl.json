@@ -30,13 +30,19 @@
       "handles": "UCHWYTY MEBLOWE",
       "metalux": "METALUX",
       "woodsense": "WOODSENSE",
-      "colorpro": "COLORPRO"
+      "colorpro": "COLORPRO",
+      "furniture": "MEBLE"
     },
     "collections": {
       "steelFronts": {
         "title": "KOLEKCJA FRONTÓW STALOWYCH",
         "text": "Kolekcja Frontów Stalowych inspirowana jest najlepszymi tradycjami wzornictwa przemysłowego, gdzie forma i funkcja łączą się w doskonałej harmonii. Każda powierzchnia ucieleśnia bezkompromisową elegancję, wnosząc autentyczny charakter stali do nowoczesnych wnętrz.",
         "button": "ODKRYJ KOLEKCJĘ"
+      },
+      "furniture": {
+        "title": "KOLEKCJA MEBLI QLDECOR",
+        "text": "Kolekcja mebli QLdecor łączy w sobie naturalne piękno drewna WoodSense i wyrafinowaną elegancję powierzchni MetaLux. Tworzymy biblioteki, komody i indywidualne realizacje, które harmonijnie łączą funkcjonalność z ekskluzywnym designem – dla wnętrz o ponadczasowym charakterze.",
+        "button": "POZNAJ KOLEKCJĘ"
       },
       "metalux": {
         "title": "KOLEKCJA METALUX",
