@@ -1,55 +1,53 @@
-import { use } from "react"
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
 import NavBar from "@/app/[locale]/components/navbar";
-import { ChevronDown } from "lucide-react"
-import {setRequestLocale, getTranslations} from 'next-intl/server';
+import { ChevronDown } from "lucide-react";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
-export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
-  const {locale} = await params;
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations('common');
+  const t = await getTranslations('homePage');
 
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <NavBar/>
+      <NavBar />
 
-      {/* Hero Section - Stainless Steel Table */}
+      {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
             src="/stal_9.jpeg?height=1080&width=1920"
-            alt="Premium Stainless Steel Table"
+            alt={t("hero.title")}
             fill
             className="object-cover brightness-70"
             priority
           />
         </div>
 
-        {/* gradient from bottom */}
+        {/* gradient */}
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute bottom-32 left-0 right-0 z-10">
           <div className="container mx-auto px-8">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
-                STAINLESS STEEL COLLECTION
+                {t("hero.title")}
               </h1>
               <p className="text-lg text-white/90 font-light leading-relaxed mb-8">
-                Uncompromising precision meets timeless elegance. Each surface crafted with meticulous attention to
-                detail, delivering exceptional durability without sacrificing aesthetic refinement.
+                {t("hero.description")}
               </p>
               <div className="flex gap-4">
                 <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
                 >
-                  DISCOVER MORE
+                  {t("hero.discoverMore")}
                 </Button>
                 <Link href="/configurator">
                   <Button className="bg-white text-black hover:bg-gray-100 font-light tracking-wide">
-                    CONFIGURE MATERIALS
+                    {t("hero.configureMaterials")}
                   </Button>
                 </Link>
               </div>
@@ -66,10 +64,11 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-2xl font-light text-gray-900 mb-8 tracking-wider">NEWS 2024</h2>
+            <h2 className="text-2xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("news.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              At the forefront of material innovation, LUXCRAFT presents a new generation of premium components that
-              redefine luxury furniture manufacturing, combining cutting-edge technology with artisanal craftsmanship.
+              {t("news.text")}
             </p>
           </div>
         </div>
@@ -83,37 +82,43 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Steel Tables"
+                  alt={t("products.steelTables")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">STEEL TABLES</h3>
+              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                {t("products.steelTables")}
+              </h3>
             </div>
 
             <div className="group cursor-pointer">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Steel Fronts"
+                  alt={t("products.steelFronts")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">STEEL FRONTS</h3>
+              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                {t("products.steelFronts")}
+              </h3>
             </div>
 
             <div className="group cursor-pointer">
               <Link href="/products/handles">
-              <div className="relative aspect-square mb-6 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Furniture Handles"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">FURNITURE HANDLES</h3>
+                <div className="relative aspect-square mb-6 overflow-hidden">
+                  <Image
+                    src="/placeholder.svg?height=400&width=400"
+                    alt={t("products.handles")}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                  {t("products.handles")}
+                </h3>
               </Link>
             </div>
 
@@ -121,36 +126,42 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Metalux"
+                  alt={t("products.metalux")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">METALUX</h3>
+              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                {t("products.metalux")}
+              </h3>
             </div>
 
             <div className="group cursor-pointer">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Woodsense"
+                  alt={t("products.woodsense")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">WOODSENSE</h3>
+              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                {t("products.woodsense")}
+              </h3>
             </div>
 
             <div className="group cursor-pointer">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Colorpro"
+                  alt={t("products.colorpro")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">COLORPRO</h3>
+              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                {t("products.colorpro")}
+              </h3>
             </div>
           </div>
         </div>
@@ -162,21 +173,21 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
           <div className="relative h-[70vh] mb-16">
             <Image
               src="/placeholder.svg?height=800&width=1600"
-              alt="Steel Fronts Collection"
+              alt={t("collections.steelFronts.title")}
               fill
               className="object-cover"
             />
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">STEEL FRONTS COLLECTION</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("collections.steelFronts.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
-              The Steel Fronts Collection is inspired by the finest industrial design traditions, where form and
-              function unite in perfect harmony. Each surface embodies uncompromising elegance, bringing authentic steel
-              character to contemporary interiors.
+              {t("collections.steelFronts.text")}
             </p>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              EXPLORE COLLECTION
+              {t("collections.steelFronts.button")}
             </Button>
           </div>
         </div>
@@ -186,18 +197,23 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
-            <Image src="/placeholder.svg?height=800&width=1600" alt="Metalux Series" fill className="object-cover" />
+            <Image
+              src="/placeholder.svg?height=800&width=1600"
+              alt={t("collections.metalux.title")}
+              fill
+              className="object-cover"
+            />
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">METALUX SERIES</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("collections.metalux.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
-              Born from a dialogue between Poliform and LUXCRAFT, the Metalux Series redefines the modern furniture
-              landscape, offering one of the most sophisticated metallic finishes ever created by designers, with
-              unparalleled depth and luminosity for contemporary living.
+              {t("collections.metalux.text")}
             </p>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              DISCOVER METALUX
+              {t("collections.metalux.button")}
             </Button>
           </div>
         </div>
@@ -209,21 +225,21 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
           <div className="relative h-[70vh] mb-16">
             <Image
               src="/placeholder.svg?height=800&width=1600"
-              alt="Craftsmanship"
+              alt={t("craftsmanship.title")}
               fill
               className="object-cover grayscale"
             />
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">CRAFTSMANSHIP</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
+              {t("craftsmanship.title")}
+            </h2>
             <p className="text-gray-600 font-light max-w-4xl mx-auto leading-relaxed mb-12">
-              Every component is born from the perfect synthesis of traditional craftsmanship and innovative technology.
-              Our artisans bring decades of expertise to each surface, ensuring that every detail meets the highest
-              standards of luxury manufacturing.
+              {t("craftsmanship.text")}
             </p>
             <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              OUR PROCESS
+              {t("craftsmanship.button")}
             </Button>
           </div>
         </div>
@@ -234,82 +250,52 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
         <div className="container mx-auto px-8">
           <div className="grid md:grid-cols-4 gap-12">
             <div>
-              <div className="text-xl font-light tracking-wider text-gray-900 mb-8">LUXCRAFT</div>
+              <div className="text-xl font-light tracking-wider text-gray-900 mb-8">
+                {t("footer.brand")}
+              </div>
               <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Crafting excellence in furniture materials since 1999.
+                {t("footer.slogan")}
               </p>
             </div>
             <div>
-              <h4 className="font-light text-gray-900 mb-6 tracking-wide">PRODUCTS</h4>
+              <h4 className="font-light text-gray-900 mb-6 tracking-wide">
+                {t("footer.products")}
+              </h4>
               <ul className="space-y-3 text-sm font-light text-gray-600">
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Steel Tables
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Steel Fronts
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Furniture Handles
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Furniture Boards
-                  </Link>
-                </li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("products.steelTables")}</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("products.steelFronts")}</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("products.handles")}</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">Furniture Boards</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-light text-gray-900 mb-6 tracking-wide">COLLECTIONS</h4>
+              <h4 className="font-light text-gray-900 mb-6 tracking-wide">
+                {t("footer.collections")}
+              </h4>
               <ul className="space-y-3 text-sm font-light text-gray-600">
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Metalux Series
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Woodsense Series
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Colorpro Series
-                  </Link>
-                </li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">{t("collections.metalux.title")}</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">Woodsense Series</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">Colorpro Series</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-light text-gray-900 mb-6 tracking-wide">CONNECT</h4>
+              <h4 className="font-light text-gray-900 mb-6 tracking-wide">
+                {t("footer.connect")}
+              </h4>
               <ul className="space-y-3 text-sm font-light text-gray-600">
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900 transition-colors">
-                    Projects
-                  </Link>
-                </li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">About</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">Contact</Link></li>
+                <li><Link href="#" className="hover:text-gray-900 transition-colors">Projects</Link></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-100 mt-12 pt-8 text-center">
-            <p className="text-gray-600 font-light text-sm">&copy; 2024 LUXCRAFT. All rights reserved.</p>
+            <p className="text-gray-600 font-light text-sm">
+              {t("footer.copyright")}
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }

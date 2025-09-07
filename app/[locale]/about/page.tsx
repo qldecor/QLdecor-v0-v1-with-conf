@@ -25,10 +25,10 @@ export default function AboutPage() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/img/boards/visuals/MLG25005L.webp?height=1080&width=1920"
+            src="/img/boards/woodsense/_vis/111_22.webp?height=1080&width=1920"
             alt="LUXCRAFT Heritage"
             fill
-            className="object-cover"
+            className="object-cover brightness-75"
             priority
           />
         </div>

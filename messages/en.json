@@ -12,8 +12,50 @@
     "custom-furniture": "Custom Furniture",
     "see-all": "SEE ALL"
   },
-  "home": {
-    "welcome": "Welcome to our website!"
+  "homePage": {
+    "hero": {
+      "title": "STAINLESS STEEL COLLECTION",
+      "description": "Uncompromising precision meets timeless elegance. Each surface crafted with meticulous attention to detail, delivering exceptional durability without sacrificing aesthetic refinement.",
+      "discoverMore": "DISCOVER MORE",
+      "configureMaterials": "CONFIGURE MATERIALS"
+    },
+    "news": {
+      "title": "NEWS 2024",
+      "text": "At the forefront of material innovation, QLdecor presents a new generation of premium components that redefine luxury furniture manufacturing, combining cutting-edge technology with artisanal craftsmanship."
+    },
+    "products": {
+      "steelTables": "STEEL TABLES",
+      "steelFronts": "STEEL FRONTS",
+      "handles": "FURNITURE HANDLES",
+      "metalux": "METALUX",
+      "woodsense": "WOODSENSE",
+      "colorpro": "COLORPRO"
+    },
+    "collections": {
+      "steelFronts": {
+        "title": "STEEL FRONTS COLLECTION",
+        "text": "The Steel Fronts Collection is inspired by the finest industrial design traditions, where form and function unite in perfect harmony. Each surface embodies uncompromising elegance, bringing authentic steel character to contemporary interiors.",
+        "button": "EXPLORE COLLECTION"
+      },
+      "metalux": {
+        "title": "METALUX SERIES",
+        "text": "Born from a dialogue between Poliform and QLdecor, the Metalux Series redefines the modern furniture landscape, offering one of the most sophisticated metallic finishes ever created by designers, with unparalleled depth and luminosity for contemporary living.",
+        "button": "DISCOVER METALUX"
+      }
+    },
+    "craftsmanship": {
+      "title": "CRAFTSMANSHIP",
+      "text": "Every component is born from the perfect synthesis of traditional craftsmanship and innovative technology. Our artisans bring decades of expertise to each surface, ensuring that every detail meets the highest standards of luxury manufacturing.",
+      "button": "OUR PROCESS"
+    },
+    "footer": {
+      "brand": "QLDECOR",
+      "slogan": "Crafting excellence in furniture materials since 1999.",
+      "products": "PRODUCTS",
+      "collections": "COLLECTIONS",
+      "connect": "CONNECT",
+      "copyright": "© 2025 QLdecor. All rights reserved."
+    }
   },
   "productsPage": {
     "hero": {
@@ -821,7 +863,7 @@
   "aboutPage": {
     "hero": {
       "title": "HERITAGE & INNOVATION",
-      "description": "Since 1999, LUXCRAFT has been at the forefront of furniture material innovation, combining traditional craftsmanship with cutting-edge technology to create components that define luxury furniture manufacturing."
+      "description": "Since 1999, QLdecor has been at the forefront of furniture material innovation, combining traditional craftsmanship with cutting-edge technology to create components that define luxury furniture manufacturing."
     },
     "philosophy": {
       "title": "OUR PHILOSOPHY",

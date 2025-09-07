@@ -12,6 +12,51 @@
     "custom-furniture": "Meble na wymiar",
     "see-all": "Odkryj"
   },
+  "homePage": {
+    "hero": {
+      "title": "KOLEKCJA ZE STALI NIERDZEWNEJ",
+      "description": "Bezkompromisowa precyzja spotyka się z ponadczasową elegancją. Każda powierzchnia tworzona jest z dbałością o najmniejszy detal, oferując wyjątkową trwałość bez rezygnacji z estetycznego wyrafinowania.",
+      "discoverMore": "POZNAJ WIĘCEJ",
+      "configureMaterials": "KONFIGURUJ MATERIAŁY"
+    },
+    "news": {
+      "title": "AKTUALNOŚCI 2024",
+      "text": "Na czele innowacji materiałowych QLdecor prezentuje nową generację ekskluzywnych komponentów, które redefiniują luksusowe meblarstwo, łącząc najnowocześniejsze technologie z rzemiosłem artystycznym."
+    },
+    "products": {
+      "steelTables": "STOŁY STALOWE",
+      "steelFronts": "FRONTY STALOWE",
+      "handles": "UCHWYTY MEBLOWE",
+      "metalux": "METALUX",
+      "woodsense": "WOODSENSE",
+      "colorpro": "COLORPRO"
+    },
+    "collections": {
+      "steelFronts": {
+        "title": "KOLEKCJA FRONTÓW STALOWYCH",
+        "text": "Kolekcja Frontów Stalowych inspirowana jest najlepszymi tradycjami wzornictwa przemysłowego, gdzie forma i funkcja łączą się w doskonałej harmonii. Każda powierzchnia ucieleśnia bezkompromisową elegancję, wnosząc autentyczny charakter stali do nowoczesnych wnętrz.",
+        "button": "ODKRYJ KOLEKCJĘ"
+      },
+      "metalux": {
+        "title": "KOLEKCJA METALUX",
+        "text": "Powstała z dialogu między Poliform a QLdecor, seria Metalux redefiniuje współczesne wzornictwo meblowe, oferując jedno z najbardziej wyrafinowanych metalicznych wykończeń stworzonych przez projektantów – o niezrównanej głębi i świetlistości dla nowoczesnych przestrzeni.",
+        "button": "POZNAJ METALUX"
+      }
+    },
+    "craftsmanship": {
+      "title": "RZEMIOSŁO",
+      "text": "Każdy komponent powstaje z doskonałej syntezy tradycyjnego rzemiosła i innowacyjnych technologii. Nasi rzemieślnicy wnoszą dekady doświadczenia do każdej powierzchni, zapewniając, że każdy detal spełnia najwyższe standardy luksusowej produkcji.",
+      "button": "NASZ PROCES"
+    },
+    "footer": {
+      "brand": "QLdecor",
+      "slogan": "Tworzymy doskonałość w materiałach meblowych od 1999 roku.",
+      "products": "PRODUKTY",
+      "collections": "KOLEKCJE",
+      "connect": "KONTAKT",
+      "copyright": "© 2025 QLdecor. Wszelkie prawa zastrzeżone."
+    }
+  },
   "productsPage": {
     "hero": {
       "title": "STOŁY ZE STALI NIERDZEWNEJ",
@@ -818,7 +863,7 @@
   "aboutPage": {
     "hero": {
       "title": "DZIEDZICTWO I INNOWACJA",
-      "description": "Od 1999 roku LUXCRAFT wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
+      "description": "Od 1999 roku QLdecor wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
     },
     "philosophy": {
       "title": "NASZA FILOZOFIA",
