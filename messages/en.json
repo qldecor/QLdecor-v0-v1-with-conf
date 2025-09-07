@@ -11,7 +11,7 @@
     "furniture": "Furniture",
     "custom-furniture": "Custom Furniture",
     "see-all": "SEE ALL",
-    "steel-tables":"Steel Tables"
+    "steel-tables": "Steel Tables"
   },
   "homePage": {
     "hero": {
@@ -67,6 +67,54 @@
         "custom-furniture": "Custom Furniture",
         "about": "About",
         "contact": "Contakt"
+      }
+    }
+  },
+  "furniturePage": {
+    "hero": {
+      "title": "QLdecor Furniture",
+      "description": "Form and function in perfect balance. Libraries, sideboards and bespoke projects crafted from premium WoodSense and MetaLux materials.",
+      "button": "Learn more"
+    },
+    "whyFurniture": {
+      "title": "Why choose QLdecor furniture?",
+      "text1": "Our furniture blends timeless aesthetics with modern functionality. We create libraries, sideboards and custom units that combine the warmth of WoodSense wood with the refined elegance of MetaLux metallic finishes.",
+      "text2": "Every project is tailored individually – from understanding your needs, through material selection, to flawless execution. QLdecor furniture stands out with quality and distinctive character."
+    },
+    "libraries": {
+      "title": "Libraries made of WoodSense and MetaLux",
+      "description": "Contemporary libraries that unite the natural beauty of wood with the subtle elegance of metal. Interiors crafted with WoodSense boards bring warmth and harmony, while MetaLux fronts add boldness and a modern edge."
+    },
+    "visualization": {
+      "title": "Library visualization"
+    },
+    "showroom": {
+      "title": "Libraries in our showroom",
+      "text": "Our libraries are available in two carefully designed arrangements – tailored to different needs. Visit the QLdecor showroom to experience how WoodSense and MetaLux materials create a unique composition.",
+      "button": "Book a visit"
+    },
+    "process": {
+      "title": "Our process",
+      "steps": {
+        "consulting": {
+          "title": "Consulting",
+          "text": "We discuss your needs and recommend the best solutions."
+        },
+        "design": {
+          "title": "Design",
+          "text": "We create a tailored concept that matches your space and style."
+        },
+        "production": {
+          "title": "Production",
+          "text": "We craft and install the furniture with attention to every detail."
+        }
+      }
+    },
+    "cta": {
+      "title": "Let’s design your dream furniture",
+      "description": "Get in touch to create furniture tailored to your lifestyle. QLdecor means quality, design and an individual approach.",
+      "buttons": {
+        "contact": "CONTACT"
       }
     }
   },

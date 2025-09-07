@@ -11,7 +11,7 @@
     "furniture": "Meble",
     "custom-furniture": "Meble na wymiar",
     "see-all": "Odkryj",
-    "steel-tables":"Stoły stalowe"
+    "steel-tables": "Blaty stalowe"
   },
   "homePage": {
     "hero": {
@@ -25,7 +25,7 @@
       "text": "Na czele innowacji materiałowych QLdecor prezentuje nową generację ekskluzywnych komponentów, które redefiniują luksusowe meblarstwo, łącząc najnowocześniejsze technologie z rzemiosłem artystycznym."
     },
     "products": {
-      "steelTables": "STOŁY STALOWE",
+      "steelTables": "BLATY STALOWE",
       "steelFronts": "FRONTY STALOWE",
       "handles": "UCHWYTY MEBLOWE",
       "metalux": "METALUX",
@@ -64,16 +64,64 @@
         "furniture-boards": "Płyty meblowe",
         "furniture-handles": "Uchwyty meblowe",
         "steel-fronts": "Fronty stalowe",
-        "steel-tables": "Stoły stalowe",
+        "steel-tables": "Blaty stalowe",
         "custom-furniture": "Meble na wymiar",
         "about": "O nas",
         "contact": "Kontakt"
       }
     }
   },
+  "furniturePage": {
+    "hero": {
+      "title": "Meble QLdecor",
+      "description": "Forma i funkcja w perfekcyjnej równowadze. Biblioteki, komody i indywidualne realizacje wykonane z materiałów premium – WoodSense i MetaLux.",
+      "button": "Dowiedz się więcej"
+    },
+    "whyFurniture": {
+      "title": "Dlaczego meble QLdecor?",
+      "text1": "Nasze meble łączą ponadczasową estetykę z nowoczesną funkcjonalnością. Tworzymy biblioteki, komody i zabudowy, które harmonijnie łączą piękno drewna WoodSense z wyrafinowaną elegancją płyt MetaLux.",
+      "text2": "Każdy projekt to indywidualne podejście – od analizy potrzeb, przez dobór materiałów, aż po perfekcyjne wykonanie. Dzięki temu meble QLdecor to rozwiązania, które wyróżniają się jakością i charakterem."
+    },
+    "libraries": {
+      "title": "Biblioteki z płyt WoodSense i MetaLux",
+      "description": "Nowoczesne biblioteki, które łączą naturalne piękno drewna z subtelną strukturą metalu. Wnętrze półek wykonane z płyt WoodSense wprowadzają do wnętrza ciepło i harmonię, natomiast fronty wykończone płytami MetaLux dodają całości wyrazistości i nowoczesnego charakteru."
+    },
+    "visualization": {
+      "title": "Wizualizacja bibliotek"
+    },
+    "showroom": {
+      "title": "Biblioteki w naszym salonie",
+      "text": "Nasze biblioteki dostępne są w dwóch układach aranżacyjnych – idealnie dopasowanych do różnych potrzeb. Możesz je obejrzeć na żywo w showroomie QLdecor i przekonać się, jak materiały WoodSense i MetaLux tworzą unikalną całość.",
+      "button": "Umów wizytę"
+    },
+    "process": {
+      "title": "Proces realizacji",
+      "steps": {
+        "consulting": {
+          "title": "Konsultacja",
+          "text": "Omawiamy Twoje potrzeby i doradzamy najlepsze rozwiązania."
+        },
+        "design": {
+          "title": "Projekt",
+          "text": "Tworzymy koncepcję mebla w oparciu o Twoją przestrzeń i styl."
+        },
+        "production": {
+          "title": "Realizacja",
+          "text": "Wykonujemy i montujemy meble z dbałością o każdy detal."
+        }
+      }
+    },
+    "cta": {
+      "title": "Zaprojektujmy Twoje wymarzone meble",
+      "description": "Skontaktuj się z nami, aby stworzyć meble dopasowane do Twojego stylu życia. QLdecor to jakość, design i indywidualne podejście.",
+      "buttons": {
+        "contact": "KONTAKT"
+      }
+    }
+  },
   "productsPage": {
     "hero": {
-      "title": "STOŁY ZE STALI NIERDZEWNEJ",
+      "title": "BLATY ZE STALI NIERDZEWNEJ",
       "description": "Projektowane z myślą o perfekcji, stworzone na wieczność. Nasze powierzchnie ze stali nierdzewnej to połączenie przemysłowej wytrzymałości i wyrafinowanej estetyki, zaprojektowane, aby sprostać wymaganiom profesjonalnego użytku, zachowując nienaganny wygląd.",
       "button": "SPECYFIKACJA"
     },

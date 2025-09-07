@@ -81,17 +81,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
             <div className="group cursor-pointer">
-              <div className="relative aspect-square mb-6 overflow-hidden">
-                <Image
-                  src="/img/steel/table/stal_9_res.jpeg?height=400&width=400"
-                  alt={t("products.steelTables")}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
-                {t("products.steelTables")}
-              </h3>
+              <Link href="/products/steel-tables">
+                <div className="relative aspect-square mb-6 overflow-hidden">
+                  <Image
+                    src="/img/steel/table/stal_9_res.jpeg?height=400&width=400"
+                    alt={t("products.steelTables")}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                  {t("products.steelTables")}
+                </h3>
+              </Link>
             </div>
 
             <div className="group cursor-pointer">
