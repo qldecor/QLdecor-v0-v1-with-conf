@@ -11,28 +11,37 @@ import { ClipboardList, Hammer, Layers } from "lucide-react";
 export const metadata: Metadata = {
   title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
   description:
-    "QLdecor – producent mebli na wymiar z Wrocławia. Tworzymy nowoczesne kuchnie, salony, garderoby i meble łazienkowe na wymiar. Elegancki design, perfekcyjne dopasowanie i luksusowe wykończenia.",
+    "QLdecor projektuje i wykonuje meble na wymiar we Wrocławiu i całej Polsce. Tworzymy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia. Nowoczesne rozwiązania, wysoka jakość i indywidualne podejście.",
+  keywords: [
+    "meble na wymiar",
+    "kuchnie na wymiar",
+    "garderoby na wymiar",
+    "łazienki na wymiar",
+    "meble Wrocław",
+    "QLdecor"
+  ],
   alternates: {
-    canonical: "/products/custom-furniture",
+    canonical: "/custom-furniture"
   },
   openGraph: {
-    title: "Meble na wymiar – kuchnie, salony i garderoby | QLdecor",
+    title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
     description:
-      "Projektujemy i wykonujemy meble na wymiar – kuchnie, salony, garderoby i łazienki. Nowoczesny design i najwyższa jakość wykonania.",
-    url: "https://qldecor.shop/products/custom-furniture",
+      "Projektujemy i wykonujemy nowoczesne meble na wymiar. Kuchnie, salony, garderoby i łazienki – idealnie dopasowane do Twojego stylu życia.",
+    url: "https://qldecor.shop/custom-furniture",
     siteName: "QLdecor",
+    locale: "pl_PL",
+    type: "website",
     images: [
       {
-        url: "https://qldecor.shop/img/custom-furniture/hero-kitchen.webp",
+        url: "https://qldecor.shop/img/custom-furniture/hero.webp",
         width: 1200,
         height: 630,
-        alt: "Meble na wymiar – kuchnie i salony QLdecor"
+        alt: "Meble na wymiar QLdecor – kuchnie, salony, garderoby"
       }
-    ],
-    locale: "pl_PL",
-    type: "website"
+    ]
   }
 };
+
 
 export default function CustomFurniturePage() {
   const t = useTranslations("customFurniturePage");

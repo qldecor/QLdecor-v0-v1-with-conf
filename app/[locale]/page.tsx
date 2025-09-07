@@ -110,7 +110,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <Link href="/products/handles">
                 <div className="relative aspect-square mb-6 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/img/handles/020_600_etsy.webp?height=400&width=400"
                     alt={t("products.handles")}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -123,37 +123,43 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </div>
 
             <div className="group cursor-pointer">
-              <div className="relative aspect-square mb-6 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt={t("products.metalux")}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
-                {t("products.metalux")}
-              </h3>
+              <Link href="/products/boards/metalux">
+                <div className="relative aspect-square mb-6 overflow-hidden">
+
+                  <Image
+                    src="/img/boards/metalux/MLG21001L/MLG21001L_1.webp?height=400&width=400"
+                    alt={t("products.metalux")}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                  {t("products.metalux")}
+                </h3>
+              </Link>
             </div>
 
             <div className="group cursor-pointer">
-              <div className="relative aspect-square mb-6 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt={t("products.woodsense")}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
-                {t("products.woodsense")}
-              </h3>
+              <Link href="/products/boards/woodsense">
+                <div className="relative aspect-square mb-6 overflow-hidden">
+                  <Image
+                    src="/img/boards/woodsense/WS0003Z2M/WS0003Z2M_1.webp?height=400&width=400"
+                    alt={t("products.woodsense")}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
+                  {t("products.woodsense")}
+                </h3>
+              </Link>
             </div>
 
             <div className="group cursor-pointer">
+              <Link href="/products/boards/colorpro">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/img/boards/colorpro/CPG11001L/CPG11001L_1.jpg?height=400&width=400"
                   alt={t("products.colorpro")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -162,6 +168,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <h3 className="text-sm font-light tracking-wider text-gray-900 text-center">
                 {t("products.colorpro")}
               </h3>
+              </Link>
             </div>
           </div>
         </div>
@@ -172,7 +179,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/modern-kitchen-metallic-cabinets.png?height=800&width=1600"
               alt={t("collections.steelFronts.title")}
               fill
               className="object-cover"
@@ -224,10 +231,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/img/boards/woodsense/or-8042-black-scaled.webp?height=800&width=1600"
               alt={t("craftsmanship.title")}
               fill
-              className="object-cover grayscale"
+              className="object-cover"
             />
           </div>
 
