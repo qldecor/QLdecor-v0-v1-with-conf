@@ -207,10 +207,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/img/boards/metalux/MLG22002L/MLG22002L_1.webp?height=800&width=1600"
               alt={t("collections.metalux.title")}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
@@ -222,9 +222,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {t("collections.metalux.text")}
             </p>
             <Link href="/products/boards/metalux">
-            <Button variant="outline" className="font-light tracking-wide bg-transparent">
-              {t("collections.metalux.button")}
-            </Button>
+              <Button variant="outline" className="cursor-pointer font-light tracking-wide bg-transparent">
+                {t("collections.metalux.button")}
+              </Button>
             </Link>
           </div>
         </div>
