@@ -1,7 +1,5 @@
-// "use client";
-
 import Image from "next/image";
-import {Link} from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import Navbar from "@/app/[locale]/components/navbar";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 import { Button } from "@/app/[locale]/components/ui/button";
@@ -144,22 +142,22 @@ export default function SteelTablesPage() {
 
       {/* Patterns */}
       <section className="py-32">
-        <div className="container mx-auto px-8 text-center">
+        <div className="container mx-auto px-2 text-center">
           <h2 className="text-3xl font-light text-gray-900 mb-16 tracking-wider">
             {t("patterns.title")}
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {patterns.map((p) => (
               <div
                 key={p.id}
                 className="group transition-transform duration-500"
               >
-                <div className="relative h-64 mb-6 overflow-hidden ">
+                <div className="relative aspect-[4/3] mb-6 overflow-hidden">
                   <Image
                     src={p.img}
                     alt={p.id}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <h3 className="text-xl font-light text-gray-900 tracking-wide mb-3">
@@ -173,6 +171,7 @@ export default function SteelTablesPage() {
           </div>
         </div>
       </section>
+
       {/* Showroom */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
