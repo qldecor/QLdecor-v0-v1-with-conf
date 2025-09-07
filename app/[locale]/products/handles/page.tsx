@@ -521,32 +521,6 @@ export default function HandlesPage() {
             onPrev={prevImage}
             onNext={nextImage}
           />
-
-          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: t("applications.items.kitchen"), image: "/img/handles/or-2007-gold-furniture.webp" },
-              { title: t("applications.items.office"), image: "/executive-office-handles.png" },
-              { title: t("applications.items.wardrobe"), image: "/public/img/handles/2252.webp" },
-              { title: t("applications.items.retail"), image: "/retail-display-cabinet-handles.png" },
-              { title: t("applications.items.hotel"), image: "/hotel-suite-furniture-handles.png" },
-              { title: t("applications.items.conference"), image: "/conference-room-cabinet-handles.png" },
-              { title: t("applications.items.bath"), image: "/bathroom-vanity-handles.png" },
-              { title: t("applications.items.commercial"), image: "/commercial-office-storage-handles.png" },
-            ].map((app, index) => (
-              <div key={index} className="group">
-                <div className="relative aspect-square bg-white mb-4 overflow-hidden">
-                  <Image
-                    src={app.image}
-                    alt={app.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  />
-                </div>
-                <p className="text-sm font-light text-gray-700 tracking-wide">{app.title}</p>
-              </div>
-            ))}
-          </div> */}
         </div>
       </section>
 

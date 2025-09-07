@@ -520,7 +520,13 @@
       },
       "applications": {
         "title": "APPLICATIONS",
-        "description": "MetaLux boards excel in environments where metallic sophistication enhances the overall design narrative."
+        "description": "MetaLux boards excel in environments where metallic sophistication enhances the overall design narrative.",
+        "items": {
+          "kitchen_island": "Contemporary Kitchen Island",
+          "kitchen_fronts": "Modern Kitchen Fronts",
+          "bathroom": "Exclusive Bathroom",
+          "kitchen-full": "Elegant Kitchen"
+        }
       },
       "technicalSpecifications": {
         "title": "TECHNICAL SPECIFICATIONS",
@@ -530,38 +536,26 @@
             "value": "METALUX SERIES"
           },
           {
-            "name": "Core Material",
-            "value": "High-density engineered substrate"
+            "name": "Panel Weight",
+            "value": "42.5 kg"
           },
           {
-            "name": "Surface Finish",
-            "value": "Advanced metallic coating with protective layer"
+            "name": "LSB Core Thickness",
+            "value": "18 mm"
           },
           {
-            "name": "Gloss Level",
-            "value": "Semi-gloss (40–60 GU)"
+            "name": "Metal + PET Coating Thickness",
+            "value": "0.45 mm (for glossy colors and rose gold – 0.35 mm)"
           },
           {
-            "name": "Thicknesses",
-            "value": "16mm, 19mm, 22mm"
-          },
-          {
-            "name": "Sheet Sizes",
-            "value": "2800 x 2070mm (custom sizes available)"
-          },
-          {
-            "name": "Edge Options",
-            "value": "Matching metallic, contrasting, ABS"
-          },
-          {
-            "name": "Maintenance",
-            "value": "Standard cleaning agents, microfiber cloth recommended"
+            "name": "LSB Density",
+            "value": "700 kg/m³"
           }
         ]
       },
       "configure": {
         "title": "CONFIGURE METALUX",
-        "description": "Explore MetaLux configurations in our Material Studio or request detailed specifications and samples from our technical specialists.",
+        "description": "Request detailed specifications and samples from our technical specialists.",
         "buttons": {
           "studio": "CONFIGURE IN MATERIAL STUDIO",
           "quote": "REQUEST QUOTE"

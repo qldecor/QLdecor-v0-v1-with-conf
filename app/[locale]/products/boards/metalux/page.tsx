@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/app/[locale]/components/ui/button";
@@ -5,13 +7,15 @@ import Navbar from "@/app/[locale]/components/navbar";
 import type { Metadata } from "next";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 import { useTranslations } from "next-intl";
+import { GalleryGrid, Lightbox } from "@/app/[locale]/components/applications-carousel";
+import { useState } from "react";
 
-export const metadata: Metadata = {
-  title: "MetaLux Series - Metallic Furniture Boards | QLdecor",
-  description:
-    "MetaLux metallic furniture boards with futuristic sheen and architectural presence. Premium finishes including Titanium, Graphite, and Champagne.",
-  canonical: "/products/furniture-boards/metalux",
-};
+// export const metadata: Metadata = {
+//   title: "MetaLux Series - Metallic Furniture Boards | QLdecor",
+//   description:
+//     "MetaLux metallic furniture boards with futuristic sheen and architectural presence. Premium finishes including Titanium, Graphite, and Champagne.",
+//   canonical: "/products/furniture-boards/metalux",
+// };
 
 export default function MetaluxPage() {
   const t = useTranslations("boards.metalux");
@@ -61,6 +65,25 @@ export default function MetaluxPage() {
       },
     },
   ];
+
+    const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  
+    const openModal = (index: number) => setCurrentIndex(index);
+    const closeModal = () => setCurrentIndex(null);
+    const prevImage = () =>
+      setCurrentIndex((prev) =>
+        prev !== null ? (prev - 1 + applications.length) % applications.length : prev
+      );
+    const nextImage = () =>
+      setCurrentIndex((prev) =>
+        prev !== null ? (prev + 1) % applications.length : prev
+      );
+    const applications = [
+      { title: t("applications.items.kitchen_island"), image: "/img/boards/metalux/111_2.webp" },
+      { title: t("applications.items.kitchen_fronts"), image: "/img/boards/metalux/MLG23003LandWS090121L.webp" },
+      { title: t("applications.items.bathroom"), image: "/img/boards/metalux/1b11.webp" },
+      { title: t("applications.items.kitchen-full"), image: "/img/boards/metalux/111_1.webp" },
+    ];
 
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -183,81 +206,26 @@ export default function MetaluxPage() {
       {/* Applications */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900 mb-8 tracking-wider">
-              {t("applications.title")}
-            </h2>
-            <p className="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-light text-gray-900 mb-8 tracking-wider">{t("applications.title")}</h2>
+            <p className="text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
               {t("applications.description")}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="relative h-64">
-              <Image
-                src="/modern-kitchen-metallic-cabinets.png"
-                alt="Modern Kitchen Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/luxury-retail-metallic-display.png"
-                alt="Retail Display Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/office-furniture-metallic-finish.png"
-                alt="Office Furniture Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/architectural-wall-panels-metallic.png"
-                alt="Architectural Panels Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/bathroom-vanity-metallic-surface.png"
-                alt="Bathroom Vanity Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/reception-desk-metallic-finish.png"
-                alt="Reception Desk Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/wardrobe-doors-metallic.png"
-                alt="Wardrobe Doors Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-64">
-              <Image
-                src="/conference-table-metallic-surface.png"
-                alt="Conference Table Application"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-          </div>
+          <GalleryGrid
+            apps={applications}
+            onSelect={openModal}
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8" // <- możesz tu zmieniać layout
+          />
+          <Lightbox
+            apps={applications}
+            currentIndex={currentIndex}
+            onClose={closeModal}
+            onPrev={prevImage}
+            onNext={nextImage}
+          />
+
         </div>
       </section>
 
@@ -308,11 +276,11 @@ export default function MetaluxPage() {
             {t("configure.description")}
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/studio?category=boards&series=metalux">
+            {/* <Link href="/studio?category=boards&series=metalux">
               <Button className="font-light tracking-wide">
                 {t("configure.buttons.studio")}
               </Button>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <Button
                 variant="outline"

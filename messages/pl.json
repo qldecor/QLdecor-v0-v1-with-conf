@@ -517,7 +517,13 @@
       },
       "applications": {
         "title": "ZASTOSOWANIA",
-        "description": "Płyty MetaLux sprawdzają się w przestrzeniach, gdzie metaliczna elegancja wzmacnia całą narrację projektową."
+        "description": "Płyty MetaLux sprawdzają się w przestrzeniach, gdzie metaliczna elegancja wzmacnia całą narrację projektową.",
+        "items": {
+          "kitchen_island": "Nowoczesna wyspa kuchenna",
+          "kitchen_fronts": "Nowoczesne fronty kuchenne",
+          "bathroom": "Ekskluzywna łazienka",
+          "kitchen-full": "Elegancka kuchnia"
+        }
       },
       "technicalSpecifications": {
         "title": "SPECYFIKACJA TECHNICZNA",
@@ -527,323 +533,311 @@
             "value": "SERIA METALUX"
           },
           {
-            "name": "Materiał rdzenia",
-            "value": "Wysokiej gęstości podłoże inżynieryjne"
+            "name": "Waga płyty",
+            "value": "42,5 kg"
           },
           {
-            "name": "Wykończenie powierzchni",
-            "value": "Zaawansowana powłoka metaliczna z warstwą ochronną"
+            "name": "Grubość płyty LSB",
+            "value": "18 mm"
           },
           {
-            "name": "Poziom połysku",
-            "value": "Półpołysk (40–60 GU)"
+            "name": "Grubość powłoki metalu i PET",
+            "value": "0,45 mm (dla kolorów błyszczących i różowego złota – 0,35 mm)"
           },
           {
-            "name": "Grubości",
-            "value": "16 mm, 19 mm, 22 mm"
-          },
-          {
-            "name": "Formaty płyt",
-            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
-          },
-          {
-            "name": "Opcje obrzeży",
-            "value": "Dopasowane metaliczne, kontrastowe, ABS"
-          },
-          {
-            "name": "Konserwacja",
-            "value": "Standardowe środki czyszczące, zalecana ściereczka z mikrofibry"
+            "name": "Gęstość płyty LSB",
+            "value": "700 kg/m³"
           }
-        ]
-      },
-      "configure": {
-        "title": "KONFIGURUJ METALUX",
-        "description": "Poznaj konfiguracje MetaLux w naszym Material Studio lub zamów szczegółowe specyfikacje i próbki od naszych specjalistów technicznych.",
-        "buttons": {
-          "studio": "KONFIGURUJ W MATERIAL STUDIO",
-          "quote": "ZAMÓW WYCENĘ"
+        ],
+        "configure": {
+          "title": "KONFIGURUJ METALUX",
+          "description": "Zamów szczegółowe specyfikacje i próbki od naszych specjalistów technicznych.",
+          "buttons": {
+            "studio": "KONFIGURUJ W MATERIAL STUDIO",
+            "quote": "ZAMÓW WYCENĘ"
+          }
+        },
+        "MLG21001L": {
+          "title": "Ambra",
+          "description": "Szczotkowane złoto o eleganckim blasku i nowoczesnym, luksusowym wyrazie"
+        },
+        "MLG22002L": {
+          "title": "Rame Vivo",
+          "description": "Szczotkowana miedź o ciepłym, szlachetnym połysku i wyrafinowanym charakterze"
+        },
+        "MLG23003L": {
+          "title": "Puro Platino",
+          "description": "Szczotkowana stal o subtelnym, industrialnym charakterze i nowoczesnej elegancji"
+        },
+        "MLG24004L": {
+          "title": "Acciaio Rosa",
+          "description": "Szczotkowane aluminium o chłodnym, nowoczesnym wyrazie i wyrafinowanej prostocie"
+        },
+        "MLG25005L": {
+          "title": "Titanio Infinito",
+          "description": "Szczotkowane ciemne aluminium o nowoczesnym, minimalistycznym charakterze i eleganckiej głębi"
         }
       },
-      "MLG21001L": {
-        "title": "Ambra",
-        "description": "Szczotkowane złoto o eleganckim blasku i nowoczesnym, luksusowym wyrazie"
-      },
-      "MLG22002L": {
-        "title": "Rame Vivo",
-        "description": "Szczotkowana miedź o ciepłym, szlachetnym połysku i wyrafinowanym charakterze"
-      },
-      "MLG23003L": {
-        "title": "Puro Platino",
-        "description": "Szczotkowana stal o subtelnym, industrialnym charakterze i nowoczesnej elegancji"
-      },
-      "MLG24004L": {
-        "title": "Acciaio Rosa",
-        "description": "Szczotkowane aluminium o chłodnym, nowoczesnym wyrazie i wyrafinowanej prostocie"
-      },
-      "MLG25005L": {
-        "title": "Titanio Infinito",
-        "description": "Szczotkowane ciemne aluminium o nowoczesnym, minimalistycznym charakterze i eleganckiej głębi"
+      "colorpro": {
+        "hero": {
+          "title": "ODWAŻNA KOLORYSTYKA. NIEOGRANICZONE MOŻLIWOŚCI.",
+          "description": "Seria ColorPro otwiera nieograniczone możliwości kolorystyczne przy zachowaniu wyjątkowej odporności na blaknięcie i stabilności UV. Twórz meble, które wyróżniają się śmiałym charakterem, zachowując intensywny wygląd przez wiele lat.",
+          "button": "POZNAJ KOLORY"
+        },
+        "categoryDescription": {
+          "title": "NIEOGRANICZONA EKSPRESJA",
+          "text1": "Seria ColorPro to synonim pełnej swobody kolorystycznej, gdzie zaawansowana technologia pigmentów spotyka się z kreatywną wizją. Dzięki praktycznie nieograniczonej gamie opcji projektanci mogą uzyskać dokładne dopasowanie barw, tworzyć własne palety lub eksperymentować z odważnymi kompozycjami, które definiują przestrzeń.",
+          "text2": "Nasz zaawansowany system powłok odpornych na promieniowanie UV gwarantuje, że kolory zachowują swoją intensywność i głębię nawet przy długotrwałej ekspozycji na światło. Dzięki temu ColorPro idealnie sprawdza się tam, gdzie kluczowa jest spójność i trwałość kolorystyki.",
+          "text3": "Doskonale nadaje się do przestrzeni handlowych, obiektów hotelowych i zastosowań mieszkaniowych, gdzie kolor odgrywa centralną rolę w budowaniu atmosfery, tożsamości marki lub osobistego charakteru wnętrza."
+        },
+        "palette": {
+          "title": "PALETA KOLORÓW",
+          "description": "Starannie dobrana selekcja prezentująca szeroki zakres możliwości. Dostępne kolory niestandardowe, dopasowane do każdej specyfikacji.",
+          "extra": "To tylko część dostępnych kolorów. Możliwe jest indywidualne dopasowanie koloru do każdej specyfikacji.",
+          "request": "ZAMÓW DOPASOWANIE KOLORU"
+        },
+        "applications": {
+          "title": "ZASTOSOWANIA",
+          "description": "Płyty ColorPro sprawdzają się w przestrzeniach, gdzie kolor buduje tożsamość, atmosferę i emocjonalne powiązanie."
+        },
+        "technicalSpecifications": {
+          "title": "SPECYFIKACJA TECHNICZNA",
+          "specs": [
+            {
+              "name": "SPECYFIKACJA",
+              "value": "SERIA COLORPRO"
+            },
+            {
+              "name": "Materiał rdzenia",
+              "value": "Wysokiej gęstości podłoże inżynieryjne"
+            },
+            {
+              "name": "Wykończenie powierzchni",
+              "value": "Powłoka kolorystyczna odporna na UV z warstwą ochronną"
+            },
+            {
+              "name": "Poziom połysku",
+              "value": "Opcje: mat, półpołysk, wysoki połysk"
+            },
+            {
+              "name": "Grubości",
+              "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
+            },
+            {
+              "name": "Formaty płyt",
+              "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
+            },
+            {
+              "name": "Opcje obrzeży",
+              "value": "Dopasowane kolorystycznie, kontrastowe, ABS, PVC"
+            },
+            {
+              "name": "Konserwacja",
+              "value": "Standardowe środki czyszczące, formuły bezpieczne dla koloru"
+            }
+          ]
+        },
+        "configure": {
+          "title": "KONFIGURUJ COLORPRO",
+          "description": "Poznaj konfiguracje ColorPro w naszym Material Studio lub zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
+          "buttons": {
+            "studio": "KONFIGURUJ W MATERIAL STUDIO",
+            "quote": "ZAMÓW WYCENĘ"
+          }
+        },
+        "CPM12002L": {
+          "title": "Mistero",
+          "description": "Matowa czerń o głębokim, szlachetnym charakterze, podkreślająca nowoczesny styl wnętrz"
+        },
+        "CPG13003L": {
+          "title": "Bronzo Lucente",
+          "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
+        },
+        "CPG14004L": {
+          "title": "Quarzo Nocciola",
+          "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
+        },
+        "CPM14004L": {
+          "title": "Macchiaton",
+          "description": "Delikatny odcień cappuccino w stylowym, gładkim wykończeniu o ciepłym, eleganckim charakterze"
+        },
+        "CPG12002L": {
+          "title": "Ossidiana",
+          "description": "Głęboka czerń w lśniącym wykończeniu, nadająca wnętrzom wyrafinowany i ekskluzywny charakter"
+        },
+        "CPG11001L": {
+          "title": "Cristallo Blanco",
+          "description": "Jednolity biały laminat w wysokim połysku, o nowoczesnym i wyrafinowanym charakterze"
+        },
+        "CPM13003L": {
+          "title": "Dalia Nera",
+          "description": "Matowy grafit o stonowanej elegancji, doskonały do nowoczesnych i wysmakowanych projektów"
+        }
       }
     },
-    "colorpro": {
+    "contactPage": {
       "hero": {
-        "title": "ODWAŻNA KOLORYSTYKA. NIEOGRANICZONE MOŻLIWOŚCI.",
-        "description": "Seria ColorPro otwiera nieograniczone możliwości kolorystyczne przy zachowaniu wyjątkowej odporności na blaknięcie i stabilności UV. Twórz meble, które wyróżniają się śmiałym charakterem, zachowując intensywny wygląd przez wiele lat.",
-        "button": "POZNAJ KOLORY"
-      },
-      "categoryDescription": {
-        "title": "NIEOGRANICZONA EKSPRESJA",
-        "text1": "Seria ColorPro to synonim pełnej swobody kolorystycznej, gdzie zaawansowana technologia pigmentów spotyka się z kreatywną wizją. Dzięki praktycznie nieograniczonej gamie opcji projektanci mogą uzyskać dokładne dopasowanie barw, tworzyć własne palety lub eksperymentować z odważnymi kompozycjami, które definiują przestrzeń.",
-        "text2": "Nasz zaawansowany system powłok odpornych na promieniowanie UV gwarantuje, że kolory zachowują swoją intensywność i głębię nawet przy długotrwałej ekspozycji na światło. Dzięki temu ColorPro idealnie sprawdza się tam, gdzie kluczowa jest spójność i trwałość kolorystyki.",
-        "text3": "Doskonale nadaje się do przestrzeni handlowych, obiektów hotelowych i zastosowań mieszkaniowych, gdzie kolor odgrywa centralną rolę w budowaniu atmosfery, tożsamości marki lub osobistego charakteru wnętrza."
-      },
-      "palette": {
-        "title": "PALETA KOLORÓW",
-        "description": "Starannie dobrana selekcja prezentująca szeroki zakres możliwości. Dostępne kolory niestandardowe, dopasowane do każdej specyfikacji.",
-        "extra": "To tylko część dostępnych kolorów. Możliwe jest indywidualne dopasowanie koloru do każdej specyfikacji.",
-        "request": "ZAMÓW DOPASOWANIE KOLORU"
-      },
-      "applications": {
-        "title": "ZASTOSOWANIA",
-        "description": "Płyty ColorPro sprawdzają się w przestrzeniach, gdzie kolor buduje tożsamość, atmosferę i emocjonalne powiązanie."
-      },
-      "technicalSpecifications": {
-        "title": "SPECYFIKACJA TECHNICZNA",
-        "specs": [
-          {
-            "name": "SPECYFIKACJA",
-            "value": "SERIA COLORPRO"
-          },
-          {
-            "name": "Materiał rdzenia",
-            "value": "Wysokiej gęstości podłoże inżynieryjne"
-          },
-          {
-            "name": "Wykończenie powierzchni",
-            "value": "Powłoka kolorystyczna odporna na UV z warstwą ochronną"
-          },
-          {
-            "name": "Poziom połysku",
-            "value": "Opcje: mat, półpołysk, wysoki połysk"
-          },
-          {
-            "name": "Grubości",
-            "value": "12 mm, 16 mm, 19 mm, 22 mm, 25 mm"
-          },
-          {
-            "name": "Formaty płyt",
-            "value": "2800 x 2070 mm (dostępne rozmiary niestandardowe)"
-          },
-          {
-            "name": "Opcje obrzeży",
-            "value": "Dopasowane kolorystycznie, kontrastowe, ABS, PVC"
-          },
-          {
-            "name": "Konserwacja",
-            "value": "Standardowe środki czyszczące, formuły bezpieczne dla koloru"
-          }
-        ]
-      },
-      "configure": {
-        "title": "KONFIGURUJ COLORPRO",
-        "description": "Poznaj konfiguracje ColorPro w naszym Material Studio lub zamów dopasowanie koloru i próbki, aby urzeczywistnić swoją wizję barw.",
-        "buttons": {
-          "studio": "KONFIGURUJ W MATERIAL STUDIO",
-          "quote": "ZAMÓW WYCENĘ"
-        }
-      },
-      "CPM12002L": {
-        "title": "Mistero",
-        "description": "Matowa czerń o głębokim, szlachetnym charakterze, podkreślająca nowoczesny styl wnętrz"
-      },
-      "CPG13003L": {
-        "title": "Bronzo Lucente",
-        "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
-      },
-      "CPG14004L": {
-        "title": "Quarzo Nocciola",
-        "description": "Grafitowy połysk o nowoczesnym i wyrafinowanym charakterze, idealny do eleganckich aranżacji"
-      },
-      "CPM14004L": {
-        "title": "Macchiaton",
-        "description": "Delikatny odcień cappuccino w stylowym, gładkim wykończeniu o ciepłym, eleganckim charakterze"
-      },
-      "CPG12002L": {
-        "title": "Ossidiana",
-        "description": "Głęboka czerń w lśniącym wykończeniu, nadająca wnętrzom wyrafinowany i ekskluzywny charakter"
-      },
-      "CPG11001L": {
-        "title": "Cristallo Blanco",
-        "description": "Jednolity biały laminat w wysokim połysku, o nowoczesnym i wyrafinowanym charakterze"
-      },
-      "CPM13003L": {
-        "title": "Dalia Nera",
-        "description": "Matowy grafit o stonowanej elegancji, doskonały do nowoczesnych i wysmakowanych projektów"
-      }
-    }
-  },
-  "contactPage": {
-    "hero": {
-      "title": "KONTAKT",
-      "description": "Gotowy, aby porozmawiać o swoim projekcie? Nasz zespół specjalistów pomoże Ci stworzyć idealne materiały do Twoich mebli."
-    },
-    "form": {
-      "firstName": "IMIĘ",
-      "lastName": "NAZWISKO",
-      "email": "ADRES E-MAIL",
-      "company": "FIRMA",
-      "phone": "NUMER TELEFONU",
-      "projectType": "TYP PROJEKTU",
-      "message": "WIADOMOŚĆ",
-      "button": {
-        "send": "WYŚLIJ WIADOMOŚĆ",
-        "sending": "Wysyłanie..."
-      },
-      "status": {
-        "success": "✅ Wiadomość została wysłana!",
-        "error": "❌ Coś poszło nie tak, spróbuj ponownie."
-      }
-    },
-    "info": {
-      "headquarters": {
-        "title": "SIEDZIBA GŁÓWNA",
-        "address": "Kobierzycka 18\n52-315 Wrocław\nPolska"
-      },
-      "contact": {
         "title": "KONTAKT",
-        "details": "+48 572 008 079\ndesign@qldecor.com"
+        "description": "Gotowy, aby porozmawiać o swoim projekcie? Nasz zespół specjalistów pomoże Ci stworzyć idealne materiały do Twoich mebli."
       },
-      "hours": {
-        "title": "GODZINY PRACY",
-        "details": "Poniedziałek - Piątek: 8:00 - 16:00\nSobota - Niedziela: Zamknięte"
-      }
-    },
-    "quickActions": {
-      "samples": {
-        "title": "ZAMÓW PRÓBKI",
-        "description": "Sprawdź nasze materiały, zamawiając fizyczne próbki z dostawą do Twojej lokalizacji.",
-        "button": "ZAMÓW"
-      },
-      "consultation": {
-        "title": "KONSULTACJA PROJEKTOWA",
-        "description": "Umów się na konsultację z naszymi specjalistami technicznymi.",
-        "button": "UMÓW"
-      },
-      "visit": {
-        "title": "WIZYTA W ZAKŁADZIE",
-        "description": "Poznaj nasz proces produkcyjny i standardy jakości na własne oczy.",
-        "button": "UMÓW"
-      }
-    }
-  },
-  "customFurniturePage": {
-    "hero": {
-      "title": "MEBLE NA WYMIAR – KUCHNIE, SALONY I GARDEROBY STWORZONE DLA CIEBIE",
-      "description": "Nowoczesne meble na wymiar Wrocław i cała Polska. Projektujemy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia.",
-      "button": "POZNAJ NASZĄ OFERTĘ"
-    },
-    "whyCustom": {
-      "title": "DLACZEGO WARTO WYBRAĆ MEBLE NA WYMIAR?",
-      "points": {
-        "fit": {
-          "title": "PERFEKCYJNE DOPASOWANIE",
-          "text": "Meble na wymiar idealnie wpisują się w każde wnętrze – od małych kawalerek po przestronne domy. Maksymalnie wykorzystujemy dostępną przestrzeń."
+      "form": {
+        "firstName": "IMIĘ",
+        "lastName": "NAZWISKO",
+        "email": "ADRES E-MAIL",
+        "company": "FIRMA",
+        "phone": "NUMER TELEFONU",
+        "projectType": "TYP PROJEKTU",
+        "message": "WIADOMOŚĆ",
+        "button": {
+          "send": "WYŚLIJ WIADOMOŚĆ",
+          "sending": "Wysyłanie..."
         },
-        "materials": {
-          "title": "NOWOCZESNE MATERIAŁY",
-          "text": "Wykorzystujemy fronty z aluminium, stali oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
+        "status": {
+          "success": "✅ Wiadomość została wysłana!",
+          "error": "❌ Coś poszło nie tak, spróbuj ponownie."
+        }
+      },
+      "info": {
+        "headquarters": {
+          "title": "SIEDZIBA GŁÓWNA",
+          "address": "Kobierzycka 18\n52-315 Wrocław\nPolska"
         },
-        "finishing": {
-          "title": "LUKSUSOWE WYKOŃCZENIA",
-          "text": "Każdy detal ma znaczenie – oferujemy uchwyty premium, systemy cichego domyku i indywidualne rozwiązania, które podkreślą charakter Twojego wnętrza."
+        "contact": {
+          "title": "KONTAKT",
+          "details": "+48 572 008 079\ndesign@qldecor.com"
+        },
+        "hours": {
+          "title": "GODZINY PRACY",
+          "details": "Poniedziałek - Piątek: 8:00 - 16:00\nSobota - Niedziela: Zamknięte"
+        }
+      },
+      "quickActions": {
+        "samples": {
+          "title": "ZAMÓW PRÓBKI",
+          "description": "Sprawdź nasze materiały, zamawiając fizyczne próbki z dostawą do Twojej lokalizacji.",
+          "button": "ZAMÓW"
+        },
+        "consultation": {
+          "title": "KONSULTACJA PROJEKTOWA",
+          "description": "Umów się na konsultację z naszymi specjalistami technicznymi.",
+          "button": "UMÓW"
+        },
+        "visit": {
+          "title": "WIZYTA W ZAKŁADZIE",
+          "description": "Poznaj nasz proces produkcyjny i standardy jakości na własne oczy.",
+          "button": "UMÓW"
         }
       }
     },
-    "kitchens": {
-      "title": "KUCHNIE NA WYMIAR WROCŁAW I CAŁA POLSKA",
-      "description": "Projektujemy kuchnie na wymiar w stylu klasycznym, minimalistycznym i industrialnym. Oferujemy pełną personalizację frontów, blatów i układu szafek.",
-      "button": "ZOBACZ REALIZACJE"
-    },
-    "livingRooms": {
-      "title": "MEBLE DO SALONU I GARDEROBY NA WYMIAR",
-      "description": "Tworzymy eleganckie zabudowy TV, regały i szafy do salonu, a także garderoby na wymiar – od kompaktowych po przestronne, luksusowe rozwiązania.",
-      "button": "UMÓW KONSULTACJĘ"
-    },
-    "bathrooms": {
-      "title": "ŁAZIENKI NA WYMIAR",
-      "description": "Oferujemy meble łazienkowe na wymiar – odporne na wilgoć, trwałe i eleganckie. Tworzymy szafki, zabudowy i rozwiązania dopasowane do Twojej przestrzeni.",
-      "button": "SKONTAKTUJ SIĘ"
-    },
-    "process": {
-      "title": "JAK WYGLĄDA PROCES ZAMÓWIENIA MEBLI NA WYMIAR?",
-      "steps": {
-        "consulting": {
-          "title": "1. KONSULTACJA I PROJEKT",
-          "text": "Spotykamy się, aby poznać Twoje potrzeby i przygotowujemy projekt wnętrza."
-        },
-        "materials": {
-          "title": "2. DOBÓR MATERIAŁÓW",
-          "text": "Wspólnie wybieramy fronty, blaty, uchwyty i systemy wykończenia."
-        },
-        "production": {
-          "title": "3. PRODUKCJA I MONTAŻ",
-          "text": "Realizujemy projekt w naszej pracowni i montujemy meble w Twoim domu."
+    "customFurniturePage": {
+      "hero": {
+        "title": "MEBLE NA WYMIAR – KUCHNIE, SALONY I GARDEROBY STWORZONE DLA CIEBIE",
+        "description": "Nowoczesne meble na wymiar Wrocław i cała Polska. Projektujemy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia.",
+        "button": "POZNAJ NASZĄ OFERTĘ"
+      },
+      "whyCustom": {
+        "title": "DLACZEGO WARTO WYBRAĆ MEBLE NA WYMIAR?",
+        "points": {
+          "fit": {
+            "title": "PERFEKCYJNE DOPASOWANIE",
+            "text": "Meble na wymiar idealnie wpisują się w każde wnętrze – od małych kawalerek po przestronne domy. Maksymalnie wykorzystujemy dostępną przestrzeń."
+          },
+          "materials": {
+            "title": "NOWOCZESNE MATERIAŁY",
+            "text": "Wykorzystujemy fronty z aluminium, stali oraz nowoczesnych płyt dekoracyjnych. Łączymy trwałość z eleganckim designem."
+          },
+          "finishing": {
+            "title": "LUKSUSOWE WYKOŃCZENIA",
+            "text": "Każdy detal ma znaczenie – oferujemy uchwyty premium, systemy cichego domyku i indywidualne rozwiązania, które podkreślą charakter Twojego wnętrza."
+          }
+        }
+      },
+      "kitchens": {
+        "title": "KUCHNIE NA WYMIAR WROCŁAW I CAŁA POLSKA",
+        "description": "Projektujemy kuchnie na wymiar w stylu klasycznym, minimalistycznym i industrialnym. Oferujemy pełną personalizację frontów, blatów i układu szafek.",
+        "button": "ZOBACZ REALIZACJE"
+      },
+      "livingRooms": {
+        "title": "MEBLE DO SALONU I GARDEROBY NA WYMIAR",
+        "description": "Tworzymy eleganckie zabudowy TV, regały i szafy do salonu, a także garderoby na wymiar – od kompaktowych po przestronne, luksusowe rozwiązania.",
+        "button": "UMÓW KONSULTACJĘ"
+      },
+      "bathrooms": {
+        "title": "ŁAZIENKI NA WYMIAR",
+        "description": "Oferujemy meble łazienkowe na wymiar – odporne na wilgoć, trwałe i eleganckie. Tworzymy szafki, zabudowy i rozwiązania dopasowane do Twojej przestrzeni.",
+        "button": "SKONTAKTUJ SIĘ"
+      },
+      "process": {
+        "title": "JAK WYGLĄDA PROCES ZAMÓWIENIA MEBLI NA WYMIAR?",
+        "steps": {
+          "consulting": {
+            "title": "1. KONSULTACJA I PROJEKT",
+            "text": "Spotykamy się, aby poznać Twoje potrzeby i przygotowujemy projekt wnętrza."
+          },
+          "materials": {
+            "title": "2. DOBÓR MATERIAŁÓW",
+            "text": "Wspólnie wybieramy fronty, blaty, uchwyty i systemy wykończenia."
+          },
+          "production": {
+            "title": "3. PRODUKCJA I MONTAŻ",
+            "text": "Realizujemy projekt w naszej pracowni i montujemy meble w Twoim domu."
+          }
+        }
+      },
+      "cta": {
+        "title": "ZAPROJEKTUJ Z NAMI SWOJE MEBLE NA WYMIAR",
+        "description": "Oferujemy kompleksową obsługę – od projektu po montaż. Skontaktuj się z nami i stwórz wnętrze dopasowane do Twoich potrzeb.",
+        "buttons": {
+          "contact": "SKONTAKTUJ SIĘ",
+          "catalog": "POBIERZ KATALOG"
         }
       }
     },
-    "cta": {
-      "title": "ZAPROJEKTUJ Z NAMI SWOJE MEBLE NA WYMIAR",
-      "description": "Oferujemy kompleksową obsługę – od projektu po montaż. Skontaktuj się z nami i stwórz wnętrze dopasowane do Twoich potrzeb.",
-      "buttons": {
-        "contact": "SKONTAKTUJ SIĘ",
-        "catalog": "POBIERZ KATALOG"
-      }
-    }
-  },
-  "aboutPage": {
-    "hero": {
-      "title": "DZIEDZICTWO I INNOWACJA",
-      "description": "Od 1999 roku LUXCRAFT wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
-    },
-    "philosophy": {
-      "title": "NASZA FILOZOFIA",
-      "description": "Wierzymy, że wyjątkowe meble zasługują na wyjątkowe materiały. Każdy tworzony przez nas komponent odzwierciedla nasze zaangażowanie w precyzję, innowacyjność i ponadczasowy design. Łączymy najlepsze materiały z kunsztem wykonania, aby dostarczać powierzchnie, które nie tylko spełniają, ale i przewyższają oczekiwania producentów luksusowych mebli na całym świecie."
-    },
-    "manufacturing": {
-      "title": "DOSKONAŁOŚĆ PRODUKCJI",
-      "description": "Nasze nowoczesne zakłady łączą zaawansowane maszyny CNC z tradycyjnymi technikami rzemieślniczymi. Każda powierzchnia przechodzi rygorystyczną kontrolę jakości, aby mieć pewność, że każdy komponent spełnia nasze najwyższe standardy precyzji, jakości wykończenia i trwałości.",
-      "points": {
-        "precision": {
-          "title": "PRECYZYJNA INŻYNIERIA",
-          "description": "Tolerancje do 0,1 mm we wszystkich wymiarach"
-        },
-        "quality": {
-          "title": "GWARANCJA JAKOŚCI",
-          "description": "Wielostopniowy proces kontroli każdego komponentu"
-        },
-        "sustainability": {
-          "title": "ZRÓWNOWAŻONE PRAKTYKI",
-          "description": "Ekologiczne procesy i odpowiedzialne pozyskiwanie materiałów"
+    "aboutPage": {
+      "hero": {
+        "title": "DZIEDZICTWO I INNOWACJA",
+        "description": "Od 1999 roku LUXCRAFT wyznacza kierunki w innowacjach materiałów meblowych, łącząc tradycyjne rzemiosło z nowoczesnymi technologiami, aby tworzyć komponenty definiujące luksusowe meblarstwo."
+      },
+      "philosophy": {
+        "title": "NASZA FILOZOFIA",
+        "description": "Wierzymy, że wyjątkowe meble zasługują na wyjątkowe materiały. Każdy tworzony przez nas komponent odzwierciedla nasze zaangażowanie w precyzję, innowacyjność i ponadczasowy design. Łączymy najlepsze materiały z kunsztem wykonania, aby dostarczać powierzchnie, które nie tylko spełniają, ale i przewyższają oczekiwania producentów luksusowych mebli na całym świecie."
+      },
+      "manufacturing": {
+        "title": "DOSKONAŁOŚĆ PRODUKCJI",
+        "description": "Nasze nowoczesne zakłady łączą zaawansowane maszyny CNC z tradycyjnymi technikami rzemieślniczymi. Każda powierzchnia przechodzi rygorystyczną kontrolę jakości, aby mieć pewność, że każdy komponent spełnia nasze najwyższe standardy precyzji, jakości wykończenia i trwałości.",
+        "points": {
+          "precision": {
+            "title": "PRECYZYJNA INŻYNIERIA",
+            "description": "Tolerancje do 0,1 mm we wszystkich wymiarach"
+          },
+          "quality": {
+            "title": "GWARANCJA JAKOŚCI",
+            "description": "Wielostopniowy proces kontroli każdego komponentu"
+          },
+          "sustainability": {
+            "title": "ZRÓWNOWAŻONE PRAKTYKI",
+            "description": "Ekologiczne procesy i odpowiedzialne pozyskiwanie materiałów"
+          }
         }
+      },
+      "global": {
+        "title": "GLOBALNY ZASIĘG",
+        "description": "Z naszej siedziby obsługujemy producentów luksusowych mebli w 40 krajach, dostarczając komponenty spełniające najwyższe międzynarodowe standardy. Nasza globalna sieć gwarantuje stałą jakość i niezawodną dostawę, niezależnie od skali projektu czy lokalizacji.",
+        "stats": {
+          "years": "LAT",
+          "partners": "PARTNERÓW",
+          "countries": "KRAJÓW"
+        }
+      },
+      "team": {
+        "title": "ZESPÓŁ LIDERÓW",
+        "description": "Nasz zespół łączy dekady doświadczenia w luksusowej produkcji z wizją przyszłości materiałów meblowych."
+      },
+      "cta": {
+        "title": "WSPÓŁPRACUJ Z NAMI",
+        "description": "Odkryj, jak nasza wiedza i materiały premium mogą wynieść Twoje projekty meblowe na wyższy poziom.",
+        "button": "ROZPOCZNIJ ROZMOWĘ"
       }
-    },
-    "global": {
-      "title": "GLOBALNY ZASIĘG",
-      "description": "Z naszej siedziby obsługujemy producentów luksusowych mebli w 40 krajach, dostarczając komponenty spełniające najwyższe międzynarodowe standardy. Nasza globalna sieć gwarantuje stałą jakość i niezawodną dostawę, niezależnie od skali projektu czy lokalizacji.",
-      "stats": {
-        "years": "LAT",
-        "partners": "PARTNERÓW",
-        "countries": "KRAJÓW"
-      }
-    },
-    "team": {
-      "title": "ZESPÓŁ LIDERÓW",
-      "description": "Nasz zespół łączy dekady doświadczenia w luksusowej produkcji z wizją przyszłości materiałów meblowych."
-    },
-    "cta": {
-      "title": "WSPÓŁPRACUJ Z NAMI",
-      "description": "Odkryj, jak nasza wiedza i materiały premium mogą wynieść Twoje projekty meblowe na wyższy poziom.",
-      "button": "ROZPOCZNIJ ROZMOWĘ"
     }
   }
 }
