@@ -905,5 +905,97 @@
       "description": "Discover how our expertise and premium materials can elevate your furniture designs.",
       "button": "START A CONVERSATION"
     }
+  },
+  "steelTablesPage": {
+    "hero": {
+      "title": "QLdecor Steel Countertops",
+      "description": "Style, durability and modern design. Solid stainless steel work surfaces that enhance any interior.",
+      "button": "Learn more"
+    },
+    "whySteel": {
+      "title": "Why choose steel countertops?",
+      "points": {
+        "durability": {
+          "title": "Durability",
+          "text": "Resistant to high temperatures, moisture and mechanical damage – ideal for heavy daily use."
+        },
+        "hygiene": {
+          "title": "Hygiene",
+          "text": "Stainless steel is easy to clean and completely food-safe."
+        },
+        "design": {
+          "title": "Design",
+          "text": "Modern and elegant finishes that complement any style of interior."
+        }
+      }
+    },
+    "patterns": {
+      "title": "Available patterns",
+      "details": {
+        "snowflake": {
+          "title": "Snowflake steel",
+          "text": "Matte surface of brushed / satin stainless steel."
+        },
+        "timemark": {
+          "title": "Time mark",
+          "text": "Distinct embossed texture – irregular, fine-grained surface."
+        },
+        "cross": {
+          "title": "Cross",
+          "text": "Regular pattern of intersecting lines with a technical character."
+        },
+        "willow": {
+          "title": "Willow stripe",
+          "text": "Embossed wave pattern gives the surface rhythm and dynamism."
+        },
+        "icecrack": {
+          "title": "Ice crack",
+          "text": "Delicate lines reminiscent of marble veins or cracked ice."
+        },
+        "starrain": {
+          "title": "Star rain",
+          "text": "Repetitive straight-line pattern – modern, technical effect."
+        },
+        "martian": {
+          "title": "Martian rock",
+          "text": "Rough texture inspired by volcanic rock formations."
+        },
+        "longbrush": {
+          "title": "Long brush",
+          "text": "Brushed stainless steel with fine, parallel lines."
+        }
+      }
+    },
+    "showroom": {
+      "title": "Island in our Showroom",
+      "text": "The island combines a stainless steel Ice Crack surface with our furniture line – a perfect example of functionality meeting contemporary design."
+    },
+    "video": {
+      "title": "Video presentation"
+    },
+    "process": {
+      "title": "Our process",
+      "steps": {
+        "consulting": {
+          "title": "Consulting",
+          "text": "We analyze your needs and recommend the best solution."
+        },
+        "materials": {
+          "title": "Materials",
+          "text": "Choose the steel pattern and thickness tailored to your project."
+        },
+        "production": {
+          "title": "Production",
+          "text": "We manufacture and install your countertops with uncompromising quality."
+        }
+      }
+    },
+    "cta": {
+      "title": "Get in touch with us",
+      "description": "Order a custom-made steel countertop. We’ll advise and prepare a quote for you.",
+      "buttons": {
+        "contact": "Contact"
+      }
+    }
   }
 }

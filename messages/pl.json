@@ -906,5 +906,97 @@
       "description": "Odkryj, jak nasza wiedza i materiały premium mogą wynieść Twoje projekty meblowe na wyższy poziom.",
       "button": "ROZPOCZNIJ ROZMOWĘ"
     }
+  },
+  "steelTablesPage": {
+    "hero": {
+      "title": "Blaty stalowe QLdecor",
+      "description": "Styl, trwałość i nowoczesność. Solidne powierzchnie robocze ze stali nierdzewnej, które podkreślają charakter każdej aranżacji.",
+      "button": "Dowiedz się więcej"
+    },
+    "whySteel": {
+      "title": "Dlaczego blaty stalowe?",
+      "points": {
+        "durability": {
+          "title": "Trwałość",
+          "text": "Odporne na wysokie temperatury, wilgoć i uszkodzenia mechaniczne – idealne do intensywnego użytkowania."
+        },
+        "hygiene": {
+          "title": "Higiena",
+          "text": "Stal nierdzewna to materiał łatwy do utrzymania w czystości, bezpieczny w kontakcie z żywnością."
+        },
+        "design": {
+          "title": "Design",
+          "text": "Nowoczesne i eleganckie wykończenia, które wpisują się w każdy styl wnętrza."
+        }
+      }
+    },
+    "patterns": {
+      "title": "Dostępne wzory",
+      "details": {
+        "snowflake": {
+          "title": "Snowflake steel",
+          "text": "Matowa powierzchnia stali nierdzewnej szczotkowanej / satynowanej."
+        },
+        "timemark": {
+          "title": "Time mark",
+          "text": "Wyraźna, tłoczona struktura – nieregularna, drobnoziarnista powierzchnia."
+        },
+        "cross": {
+          "title": "Cross",
+          "text": "Regularny wzór krzyżujących się linii, techniczny charakter."
+        },
+        "willow": {
+          "title": "Willow stripe",
+          "text": "Wypukły wzór fal nadaje płycie dynamikę i estetyczny rytm."
+        },
+        "icecrack": {
+          "title": "Ice crack",
+          "text": "Delikatne linie przypominające żyły marmuru lub spękania lodu."
+        },
+        "starrain": {
+          "title": "Star rain",
+          "text": "Powtarzalny wzór prostych linii – nowoczesny, techniczny efekt."
+        },
+        "martian": {
+          "title": "Martian rock",
+          "text": "Chropowata struktura inspirowana skałami wulkanicznymi."
+        },
+        "longbrush": {
+          "title": "Long brush",
+          "text": "Stal nierdzewna szczotkowana z równymi, delikatnymi liniami."
+        }
+      }
+    },
+    "showroom": {
+      "title": "Wyspa w naszym Showroomie",
+      "text": "Wyspa łączy stalową płytę w strukturze Ice Crack z naszą ofertą mebli. To doskonały przykład połączenia funkcjonalności z nowoczesnym designem."
+    },
+    "video": {
+      "title": "Prezentacja wideo"
+    },
+    "process": {
+      "title": "Proces realizacji",
+      "steps": {
+        "consulting": {
+          "title": "Doradztwo",
+          "text": "Analizujemy Twoje potrzeby i doradzamy najlepsze rozwiązania."
+        },
+        "materials": {
+          "title": "Materiały",
+          "text": "Wybierasz wzór i grubość stali dopasowaną do Twojego projektu."
+        },
+        "production": {
+          "title": "Realizacja",
+          "text": "Wykonujemy i montujemy blaty zgodnie z najwyższymi standardami."
+        }
+      }
+    },
+    "cta": {
+      "title": "Skontaktuj się z nami",
+      "description": "Zamów blat stalowy dopasowany do Twoich potrzeb. Doradzimy i przygotujemy wycenę.",
+      "buttons": {
+        "contact": "Kontakt"
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@ import { Button } from "@/app/[locale]/components/ui/button";
 import NavBar from "@/app/[locale]/components/navbar";
 import { ChevronDown } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { ScrollButton } from "./components/ui/scroll-button";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -39,17 +40,18 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {t("hero.description")}
               </p>
               <div className="flex gap-4">
-                <Button
+                <ScrollButton
+                  targetId="product-grid"
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-black bg-transparent font-light tracking-wide"
                 >
                   {t("hero.discoverMore")}
-                </Button>
-                <Link href="/configurator">
+                </ScrollButton>
+                {/* <Link href="/configurator">
                   <Button className="bg-white text-black hover:bg-gray-100 font-light tracking-wide">
                     {t("hero.configureMaterials")}
                   </Button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -75,13 +77,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Product Grid */}
-      <section className="py-20 bg-white">
+      <section id="product-grid" className="py-20 bg-white">
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
             <div className="group cursor-pointer">
               <div className="relative aspect-square mb-6 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/img/steel/table/stal_9_res.jpeg?height=400&width=400"
                   alt={t("products.steelTables")}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
