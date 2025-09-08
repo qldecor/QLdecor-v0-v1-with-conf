@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   try {
     const response = await resend.emails.send({
       from: "QLdecor <contact@qldecor.com>", // 👈 lepiej z nazwą
-      to: "damianjankowski111@gmail.com",
+      to: "sales@qldecor.com",
       subject: `📩 Nowa wiadomość z formularza QLdecor od ${firstName} ${lastName || ""}`,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
