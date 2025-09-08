@@ -202,7 +202,7 @@ export default function SteelTablesPage() {
           </h2>
           <div className="aspect-video max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden">
             <iframe
-              src="https://www.youtube.com/watch?v=J5fnhaepO3Q"
+              src="https://www.youtube.com/embed/J5fnhaepO3Q"
               title="Stainless steel kitchen table top"
               allowFullScreen
               className="w-full h-full"
