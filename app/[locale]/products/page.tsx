@@ -1,9 +1,126 @@
 import Image from "next/image";
-import {Link} from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import { Button } from "@/app/[locale]/components/ui/button";
 import Navbar from "@/app/[locale]/components/navbar";
 import { useTranslations } from "next-intl";
-import { ScrollButton } from "../components/ui/scroll-button";
+import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  if (locale === "en") {
+    return {
+      title: "QLdecor Products – Steel Tables, Handles, Furniture Boards & Custom Furniture",
+      description:
+        "Explore the full QLdecor collection: exclusive steel tables, designer handles, and premium furniture boards from the MetaLux, WoodSense, and ColorPro series. Luxury materials for modern interiors.",
+      keywords: [
+        "QLdecor",
+        "QLdecor products",
+        "steel tables",
+        "custom furniture",
+        "furniture handles",
+        "aluminum handles",
+        "furniture boards",
+        "MetaLux",
+        "WoodSense",
+        "ColorPro",
+        "luxury furniture",
+        "modern interiors",
+        "furniture accessories"
+      ],
+      alternates: {
+        canonical: "/en/products",
+        languages: {
+          "pl-PL": "/pl/products",
+          "en-US": "/en/products",
+        },
+      },
+      openGraph: {
+        title: "QLdecor Products – Steel Tables, Handles and Furniture Boards",
+        description:
+          "QLdecor offers a complete range of exclusive products: steel tables, custom furniture, aluminum handles, and premium boards from MetaLux, WoodSense, and ColorPro collections.",
+        url: "https://qldecor.shop/en/products",
+        siteName: "QLdecor",
+        images: [
+          {
+            url: "https://qldecor.shop/img/steel/table/stal_9_res.jpeg",
+            width: 1920,
+            height: 1080,
+            alt: "QLdecor Products – steel tables and furniture boards",
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "QLdecor – Steel Tables, Handles and Furniture Boards",
+        description:
+          "Discover QLdecor’s full range: steel tables, aluminum handles, custom furniture, and premium boards from the MetaLux, WoodSense, and ColorPro series.",
+        images: ["https://qldecor.shop/img/steel/table/stal_9_res.jpeg"],
+      },
+    };
+  }
+
+  // domyślnie PL
+  return {
+    title: "Produkty QLdecor – Stoły stalowe, uchwyty, płyty meblowe i meble na wymiar",
+    description:
+      "Poznaj pełną ofertę QLdecor: ekskluzywne stoły stalowe, designerskie uchwyty, a także płyty meblowe z kolekcji MetaLux, WoodSense i ColorPro. Luksusowe materiały dla nowoczesnych wnętrz.",
+    keywords: [
+      "QLdecor",
+      "produkty QLdecor",
+      "stoły stalowe",
+      "meble na wymiar",
+      "uchwyty meblowe",
+      "uchwyty aluminiowe",
+      "płyty meblowe",
+      "płyty MetaLux",
+      "płyty WoodSense",
+      "płyty ColorPro",
+      "akcesoria meblowe",
+      "ekskluzywne meble",
+      "nowoczesne wnętrza"
+    ],
+    alternates: {
+      canonical: "/pl/products",
+      languages: {
+        "pl-PL": "/pl/products",
+        "en-US": "/en/products",
+      },
+    },
+    openGraph: {
+      title: "Produkty QLdecor – stoły, uchwyty i płyty meblowe",
+      description:
+        "QLdecor oferuje pełną gamę ekskluzywnych produktów: stoły stalowe, meble na wymiar, aluminiowe uchwyty i kolekcje płyt meblowych MetaLux, WoodSense oraz ColorPro.",
+      url: "https://qldecor.shop/pl/products",
+      siteName: "QLdecor",
+      images: [
+        {
+          url: "https://qldecor.shop/img/steel/table/stal_9_res.jpeg",
+          width: 1920,
+          height: 1080,
+          alt: "Produkty QLdecor – stoły stalowe i płyty meblowe",
+        },
+      ],
+      locale: "pl_PL",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "QLdecor – stoły stalowe, uchwyty i płyty meblowe",
+      description:
+        "Pełna oferta QLdecor: stoły stalowe, uchwyty aluminiowe, meble na wymiar oraz kolekcje płyt MetaLux, WoodSense i ColorPro.",
+      images: ["https://qldecor.shop/img/steel/table/stal_9_res.jpeg"],
+    },
+  };
+}
+
 
 export default function ProductsPage() {
   const t = useTranslations("productsPage");
@@ -82,6 +199,11 @@ export default function ProductsPage() {
                   </p>
                 </div>
               </div>
+              <Link href="products/steel-tables">
+                <Button variant="outline" className="my-8 font-light tracking-wide bg-transparent">
+                  {t("steelFronts.button")}
+                </Button>
+              </Link>
             </div>
             <div className="relative h-[60vh]">
               <Image
@@ -96,7 +218,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Steel Fronts */}
-      <section className="py-32">
+      {/* <section className="py-32">
         <div className="container mx-auto px-8">
           <div className="relative h-[70vh] mb-16">
             <Image
@@ -118,7 +240,7 @@ export default function ProductsPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Furniture Handles */}
       <section className="py-32 bg-gray-50">

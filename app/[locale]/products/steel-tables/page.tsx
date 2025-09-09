@@ -181,7 +181,7 @@ export default function SteelTablesPage() {
                 src="/img/steel/table/stal-8-scaled.webp"
                 alt="Wyspa stalowa QLdecor"
                 fill
-                className="object-cover rounded-lg shadow-md"
+                className="object-cover"
               />
             </div>
             <div>
