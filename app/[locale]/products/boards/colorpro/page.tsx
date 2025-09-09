@@ -6,11 +6,109 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 
-export const metadata: Metadata = {
-  title: "ColorPro Series - Unlimited Color Furniture Boards | QLdecor",
-  description:
-    "ColorPro furniture boards with unlimited color possibilities and exceptional fade resistance. Bold chromatics and endless customization options.",
-  canonical: "/products/furniture-boards/colorpro",
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  if (locale === "en") {
+    return {
+      title: "ColorPro Series – Unlimited Color Furniture Boards | QLdecor",
+      description:
+        "ColorPro furniture boards with unlimited color possibilities and exceptional fade resistance. Bold chromatics and endless customization options.",
+      keywords: [
+        "QLdecor",
+        "ColorPro boards",
+        "furniture boards",
+        "colored boards",
+        "custom furniture materials",
+        "luxury interiors",
+        "design surfaces"
+      ],
+      alternates: {
+        canonical: "/en/products/boards/colorpro",
+        languages: {
+          "pl-PL": "/pl/products/boards/colorpro",
+          "en-US": "/en/products/boards/colorpro",
+        },
+      },
+      openGraph: {
+        title: "ColorPro Furniture Boards – Unlimited Colors | QLdecor",
+        description:
+          "QLdecor ColorPro boards: bold chromatics, fade-resistant colors and endless customization for premium interiors.",
+        url: "https://qldecor.shop/en/products/boards/colorpro",
+        siteName: "QLdecor",
+        images: [
+          {
+            url: "https://qldecor.shop/img/boards/colorpro/2252.jpg",
+            width: 1200,
+            height: 800,
+            alt: "QLdecor ColorPro Furniture Boards",
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "ColorPro Boards – Unlimited Colors | QLdecor",
+        description:
+          "Discover QLdecor’s ColorPro collection: endless color options and exceptional durability for luxury interiors.",
+        images: ["https://qldecor.shop/img/boards/colorpro/2252.jpg"],
+      },
+    };
+  }
+
+  // 🇵🇱 Domyślnie PL
+  return {
+    title: "Seria ColorPro – Płyty meblowe w nieograniczonej kolorystyce | QLdecor",
+    description:
+      "Płyty meblowe ColorPro z nieograniczoną paletą kolorów i wyjątkową odpornością na blaknięcie. Odważna kolorystyka i pełna personalizacja.",
+    keywords: [
+      "QLdecor",
+      "ColorPro",
+      "płyty meblowe kolorowe",
+      "płyty ColorPro",
+      "materiały meblowe",
+      "nowoczesne wnętrza",
+      "luksusowe meble"
+    ],
+    alternates: {
+      canonical: "/pl/products/boards/colorpro",
+      languages: {
+        "pl-PL": "/pl/products/boards/colorpro",
+        "en-US": "/en/products/boards/colorpro",
+      },
+    },
+    openGraph: {
+      title: "Płyty meblowe ColorPro – nieograniczona paleta barw | QLdecor",
+      description:
+        "QLdecor ColorPro: płyty meblowe w odważnych kolorach, odporne na blaknięcie, stworzone do luksusowych wnętrz.",
+      url: "https://qldecor.shop/pl/products/boards/colorpro",
+      siteName: "QLdecor",
+      images: [
+        {
+          url: "https://qldecor.shop/img/boards/colorpro/2252.jpg",
+          width: 1200,
+          height: 800,
+          alt: "Płyty meblowe ColorPro QLdecor",
+        },
+      ],
+      locale: "pl_PL",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "ColorPro – Płyty meblowe QLdecor",
+      description:
+        "Poznaj serię ColorPro od QLdecor: nieograniczona kolorystyka, pełna personalizacja i odporność na blaknięcie.",
+      images: ["https://qldecor.shop/img/boards/colorpro/2252.jpg"],
+    },
+  };
 };
 
 export default function ColorproPage() {

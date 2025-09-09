@@ -20,8 +20,7 @@ export default function Navbar() {
       setOpen(false);
       setClosing(false);
     }, 200); // time = the same as in CSS animation
-  }
-
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50">

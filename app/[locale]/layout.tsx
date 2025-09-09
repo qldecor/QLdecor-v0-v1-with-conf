@@ -1,12 +1,12 @@
 import type React from "react";
 import type { Metadata } from "next";
-import {notFound} from 'next/navigation';
-import {setRequestLocale} from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { Inter } from "next/font/google";
 import "../globals.css";
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import Script from "next/script";
-import {routing} from '@/i18n/routing';
+import { routing } from '@/i18n/routing';
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -46,15 +46,26 @@ export default async function RootLayout({
     notFound();
   }
 
-    setRequestLocale(locale);
+  setRequestLocale(locale);
 
   return (
     <html lang={locale}>
-      
+
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
           {children}
-          <Script id="chatway" src="https://cdn.chatway.app/widget.js?id=cuLwkn7RRZqW" strategy="afterInteractive" />
+          <Script
+            id="chatway"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+          window.chatwayConfig = {
+            appId: "TWÓJ_APP_ID",
+            lang: "${locale}"
+          };
+        `,
+            }}
+          />
         </NextIntlClientProvider>
       </body>
     </html>

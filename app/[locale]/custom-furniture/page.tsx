@@ -8,40 +8,108 @@ import type { Metadata } from "next";
 import { Carousel } from "@/app/[locale]/components/carousel";
 import { ClipboardList, Hammer, Layers } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
-  description:
-    "QLdecor projektuje i wykonuje meble na wymiar we Wrocławiu i całej Polsce. Tworzymy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia. Nowoczesne rozwiązania, wysoka jakość i indywidualne podejście.",
-  keywords: [
-    "meble na wymiar",
-    "kuchnie na wymiar",
-    "garderoby na wymiar",
-    "łazienki na wymiar",
-    "meble Wrocław",
-    "QLdecor"
-  ],
-  alternates: {
-    canonical: "/custom-furniture"
-  },
-  openGraph: {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  if (locale === "en") {
+    return {
+      title: "Custom Furniture – Kitchens, Living Rooms, Wardrobes & Bathrooms | QLdecor",
+      description:
+        "QLdecor designs and builds custom furniture in Wrocław and across Poland. We create kitchens, living rooms, wardrobes and bathrooms tailored to your lifestyle. Modern solutions, premium quality and an individual approach.",
+      keywords: [
+        "custom furniture",
+        "custom kitchens",
+        "custom wardrobes",
+        "custom bathrooms",
+        "bespoke furniture",
+        "luxury interiors",
+        "QLdecor"
+      ],
+      alternates: {
+        canonical: "/en/custom-furniture",
+        languages: {
+          "pl-PL": "/pl/custom-furniture",
+          "en-US": "/en/custom-furniture",
+        },
+      },
+      openGraph: {
+        title: "Custom Furniture – Kitchens, Wardrobes and Bathrooms | QLdecor",
+        description:
+          "QLdecor creates bespoke furniture: kitchens, living rooms, wardrobes and bathrooms tailored to your lifestyle. Premium quality and modern design.",
+        url: "https://qldecor.shop/en/custom-furniture",
+        siteName: "QLdecor",
+        locale: "en_US",
+        type: "website",
+        images: [
+          {
+            url: "https://qldecor.shop/img/custom-furniture/hero.webp",
+            width: 1200,
+            height: 630,
+            alt: "QLdecor Custom Furniture",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "QLdecor – Custom Furniture",
+        description:
+          "Kitchens, wardrobes, living rooms and bathrooms – bespoke furniture by QLdecor, tailored to your lifestyle.",
+        images: ["https://qldecor.shop/img/custom-furniture/hero.webp"],
+      },
+    };
+  }
+
+  // 🇵🇱 Domyślnie PL
+  return {
     title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
     description:
-      "Projektujemy i wykonujemy nowoczesne meble na wymiar. Kuchnie, salony, garderoby i łazienki – idealnie dopasowane do Twojego stylu życia.",
-    url: "https://qldecor.shop/custom-furniture",
-    siteName: "QLdecor",
-    locale: "pl_PL",
-    type: "website",
-    images: [
-      {
-        url: "https://qldecor.shop/img/custom-furniture/hero.webp",
-        width: 1200,
-        height: 630,
-        alt: "Meble na wymiar QLdecor – kuchnie, salony, garderoby"
-      }
-    ]
-  }
+      "QLdecor projektuje i wykonuje meble na wymiar we Wrocławiu i całej Polsce. Tworzymy kuchnie, salony, garderoby i łazienki dopasowane do Twojego stylu życia. Nowoczesne rozwiązania, wysoka jakość i indywidualne podejście.",
+    keywords: [
+      "meble na wymiar",
+      "kuchnie na wymiar",
+      "garderoby na wymiar",
+      "łazienki na wymiar",
+      "meble Wrocław",
+      "nowoczesne wnętrza",
+      "QLdecor"
+    ],
+    alternates: {
+      canonical: "/pl/custom-furniture",
+      languages: {
+        "pl-PL": "/pl/custom-furniture",
+        "en-US": "/en/custom-furniture",
+      },
+    },
+    openGraph: {
+      title: "Meble na wymiar – kuchnie, salony, garderoby i łazienki | QLdecor",
+      description:
+        "Projektujemy i wykonujemy nowoczesne meble na wymiar. Kuchnie, salony, garderoby i łazienki – idealnie dopasowane do Twojego stylu życia.",
+      url: "https://qldecor.shop/pl/custom-furniture",
+      siteName: "QLdecor",
+      locale: "pl_PL",
+      type: "website",
+      images: [
+        {
+          url: "https://qldecor.shop/img/custom-furniture/hero.webp",
+          width: 1200,
+          height: 630,
+          alt: "Meble na wymiar QLdecor – kuchnie, salony, garderoby",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "QLdecor – Meble na wymiar",
+      description:
+        "Kuchnie, garderoby, salony i łazienki – nowoczesne meble na wymiar QLdecor, tworzone z dbałością o detale.",
+      images: ["https://qldecor.shop/img/custom-furniture/hero.webp"],
+    },
+  };
 };
-
 
 export default function CustomFurniturePage() {
   const t = useTranslations("customFurniturePage");

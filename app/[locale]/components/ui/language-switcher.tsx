@@ -36,11 +36,13 @@ export default function LanguageSwitcher({ mobile = false }: { mobile?: boolean 
           <span className={`transform transition-transform ${open ? "rotate-180" : ""}`}>
             ▼
           </span>
+
         </button>
+
 
         {open && (
           <div className="mt-2 pl-6 space-y-2">
-            {LANGS.map((lang) => (
+            {LANGS.filter((lang) => lang.code !== locale).map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}

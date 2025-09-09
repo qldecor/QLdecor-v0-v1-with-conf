@@ -7,37 +7,107 @@ import { ClipboardList, Hammer, Layers, Shield, Droplets, Sparkles } from "lucid
 import { useTranslations } from "next-intl";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Blaty stalowe – styl, trwałość i nowoczesność | QLdecor",
-  description:
-    "Blaty stalowe QLdecor to synonim solidności, higieny i nowoczesnego designu. Dostępne w wielu strukturach i grubościach, idealne do kuchni i przestrzeni komercyjnych.",
-  keywords: [
-    "blaty stalowe",
-    "blaty kuchenne stalowe",
-    "stainless steel countertops",
-    "wyspa stalowa",
-    "QLdecor"
-  ],
-  alternates: {
-    canonical: "/products/steel-tables"
-  },
-  openGraph: {
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  if (locale === "en") {
+    return {
+      title: "Stainless Steel Countertops – Style, Durability & Modern Design | QLdecor",
+      description:
+        "QLdecor stainless steel countertops are a symbol of durability, hygiene and modern aesthetics. Available in various patterns and thicknesses, ideal for kitchens and commercial interiors.",
+      keywords: [
+        "QLdecor",
+        "steel countertops",
+        "stainless steel kitchen tops",
+        "stainless steel island",
+        "modern kitchen surfaces",
+        "durable countertops"
+      ],
+      alternates: {
+        canonical: "/en/products/steel-tables",
+        languages: {
+          "pl-PL": "/pl/products/steel-tables",
+          "en-US": "/en/products/steel-tables",
+        },
+      },
+      openGraph: {
+        title: "Stainless Steel Countertops – Modern Surfaces by QLdecor",
+        description:
+          "Explore QLdecor’s stainless steel countertops: stylish, hygienic and durable. Perfect for kitchens and commercial projects.",
+        url: "https://qldecor.shop/en/products/steel-tables",
+        siteName: "QLdecor",
+        locale: "en_US",
+        type: "website",
+        images: [
+          {
+            url: "https://qldecor.shop/img/steel-tables/hero.webp",
+            width: 1200,
+            height: 630,
+            alt: "Stainless steel countertops QLdecor",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "QLdecor Stainless Steel Countertops",
+        description:
+          "Durable, hygienic and stylish stainless steel countertops by QLdecor – engineered for modern kitchens and interiors.",
+        images: ["https://qldecor.shop/img/steel-tables/hero.webp"],
+      },
+    };
+  }
+
+  // 🇵🇱 Domyślnie PL
+  return {
     title: "Blaty stalowe – styl, trwałość i nowoczesność | QLdecor",
     description:
-      "Blaty stalowe QLdecor to synonim solidności, higieny i nowoczesnego designu. Zobacz dostępne wzory i realizacje.",
-    url: "https://qldecor.shop/products/steel-tables",
-    siteName: "QLdecor",
-    locale: "pl_PL",
-    type: "website",
-    images: [
-      {
-        url: "https://qldecor.shop/img/steel-tables/hero.webp",
-        width: 1200,
-        height: 630,
-        alt: "Blaty stalowe QLdecor"
-      }
-    ]
-  }
+      "Blaty stalowe QLdecor to synonim solidności, higieny i nowoczesnego designu. Dostępne w wielu strukturach i grubościach, idealne do kuchni i przestrzeni komercyjnych.",
+    keywords: [
+      "QLdecor",
+      "blaty stalowe",
+      "blaty kuchenne stalowe",
+      "wyspa stalowa",
+      "nowoczesne wnętrza",
+      "trwałe blaty"
+    ],
+    alternates: {
+      canonical: "/pl/products/steel-tables",
+      languages: {
+        "pl-PL": "/pl/products/steel-tables",
+        "en-US": "/en/products/steel-tables",
+      },
+    },
+    openGraph: {
+      title: "Blaty stalowe – nowoczesne powierzchnie QLdecor",
+      description:
+        "Blaty stalowe QLdecor łączą trwałość, higienę i nowoczesny wygląd. Sprawdź dostępne wzory i realizacje.",
+      url: "https://qldecor.shop/pl/products/steel-tables",
+      siteName: "QLdecor",
+      locale: "pl_PL",
+      type: "website",
+      images: [
+        {
+          url: "https://qldecor.shop/img/steel-tables/hero.webp",
+          width: 1200,
+          height: 630,
+          alt: "Blaty stalowe QLdecor",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "QLdecor – Blaty stalowe",
+      description:
+        "Blaty stalowe QLdecor – solidność, higiena i design. Idealne do kuchni i przestrzeni komercyjnych.",
+      images: ["https://qldecor.shop/img/steel-tables/hero.webp"],
+    },
+  };
 };
 
 export default function SteelTablesPage() {

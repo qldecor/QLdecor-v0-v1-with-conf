@@ -4,14 +4,113 @@ import { Button } from "@/app/[locale]/components/ui/button";
 import Navbar from "@/app/[locale]/components/navbar";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { ScrollButton } from "../../components/ui/scroll-button";
+import { ScrollButton } from "@/app/[locale]/components/ui/scroll-button";
 
-export const metadata: Metadata = {
-  title: "Furniture Boards - Premium Engineered Surfaces | QLdecor",
-  description:
-    "Discover our premium furniture board collection: MetaLux metallic finishes, WoodSense natural aesthetics, and ColorPro unlimited colors. Engineered for luxury interiors.",
-  canonical: "/products/boards",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  if (locale === "en") {
+    return {
+      title: "Furniture Boards – Premium Engineered Surfaces | QLdecor",
+      description:
+        "Discover our premium furniture board collection: MetaLux metallic finishes, WoodSense natural aesthetics, and ColorPro unlimited colors. Engineered for luxury interiors.",
+      keywords: [
+        "QLdecor",
+        "furniture boards",
+        "MetaLux boards",
+        "WoodSense boards",
+        "ColorPro boards",
+        "engineered furniture materials",
+        "luxury interiors",
+        "modern furniture surfaces"
+      ],
+      alternates: {
+        canonical: "/en/products/boards",
+        languages: {
+          "pl-PL": "/pl/products/boards",
+          "en-US": "/en/products/boards",
+        },
+      },
+      openGraph: {
+        title: "Furniture Boards – MetaLux, WoodSense, ColorPro | QLdecor",
+        description:
+          "Premium furniture surfaces by QLdecor: metallic MetaLux, natural WoodSense and colorful ColorPro boards for luxury interiors.",
+        url: "https://qldecor.shop/en/products/boards",
+        siteName: "QLdecor",
+        images: [
+          {
+            url: "https://qldecor.shop/img/boards/or-2007-2.webp",
+            width: 1200,
+            height: 800,
+            alt: "QLdecor furniture boards – MetaLux, WoodSense, ColorPro",
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Furniture Boards – MetaLux, WoodSense, ColorPro | QLdecor",
+        description:
+          "Explore QLdecor boards collection: MetaLux metallic surfaces, WoodSense natural grain and ColorPro unlimited colors.",
+        images: ["https://qldecor.shop/img/boards/or-2007-2.webp"],
+      },
+    };
+  }
+
+  // 🇵🇱 Domyślnie PL
+  return {
+    title: "Płyty meblowe – MetaLux, WoodSense, ColorPro | QLdecor",
+    description:
+      "Poznaj kolekcję płyt meblowych QLdecor: metaliczne wykończenia MetaLux, naturalna estetyka WoodSense i nieograniczona paleta barw ColorPro. Inżynieryjna jakość do luksusowych wnętrz.",
+    keywords: [
+      "QLdecor",
+      "płyty meblowe",
+      "płyty MetaLux",
+      "płyty WoodSense",
+      "płyty ColorPro",
+      "materiały meblowe",
+      "nowoczesne wnętrza",
+      "luksusowe meble"
+    ],
+    alternates: {
+      canonical: "/pl/products/boards",
+      languages: {
+        "pl-PL": "/pl/products/boards",
+        "en-US": "/en/products/boards",
+      },
+    },
+    openGraph: {
+      title: "Płyty meblowe – MetaLux, WoodSense, ColorPro | QLdecor",
+      description:
+        "Ekskluzywne płyty meblowe QLdecor: metaliczne MetaLux, naturalne WoodSense i kolorowe ColorPro. Rozwiązania premium dla luksusowych wnętrz.",
+      url: "https://qldecor.shop/pl/products/boards",
+      siteName: "QLdecor",
+      images: [
+        {
+          url: "https://qldecor.shop/img/boards/or-2007-2.webp",
+          width: 1200,
+          height: 800,
+          alt: "Płyty meblowe QLdecor – MetaLux, WoodSense, ColorPro",
+        },
+      ],
+      locale: "pl_PL",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Płyty meblowe – MetaLux, WoodSense, ColorPro | QLdecor",
+      description:
+        "QLdecor oferuje ekskluzywne płyty meblowe: MetaLux, WoodSense i ColorPro. Nowoczesne powierzchnie do luksusowych wnętrz.",
+      images: ["https://qldecor.shop/img/boards/or-2007-2.webp"],
+    },
+  };
+}
+
 
 export default function FurnitureBoardsPage() {
   const t = useTranslations("boardsPage");
