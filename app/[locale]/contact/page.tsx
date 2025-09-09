@@ -93,6 +93,9 @@ export default function ContactPage() {
               <Input
                 placeholder={t("form.phone")}
                 value={form.phone}
+                required
+                type="tel"
+                pattern="^\+?\d{9,15}$"
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 className="border-0 border-b border-gray-200 rounded-none px-0 py-4 font-light tracking-wide placeholder:text-gray-400 focus:border-gray-900"
               />

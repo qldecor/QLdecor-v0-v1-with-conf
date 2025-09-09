@@ -7,7 +7,7 @@ export async function POST(req: Request) {
   const { firstName, lastName, email, company, phone, projectType, message } = await req.json();
 
   // 🔎 Walidacja wymaganych pól
-  if (!firstName || !email || !message) {
+  if (!firstName || !email || !message || !phone) {
     return NextResponse.json(
       { success: false, error: "Brak wymaganych pól" },
       { status: 400 }

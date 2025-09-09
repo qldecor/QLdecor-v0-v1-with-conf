@@ -5,6 +5,120 @@ import NavBar from "@/app/[locale]/components/navbar";
 import { ChevronDown } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ScrollButton } from "./components/ui/scroll-button";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  if (locale === "en") {
+    return {
+      title: "QLdecor – Luxury Steel Tables, Furniture, Handles & Premium Boards",
+      description:
+        "QLdecor creates exclusive interiors with luxury steel tables, custom furniture, designer handles, and premium furniture boards: MetaLux, WoodSense, and ColorPro. Timeless design for modern homes and offices.",
+      keywords: [
+        "QLdecor",
+        "luxury furniture",
+        "steel tables",
+        "custom furniture",
+        "furniture handles",
+        "aluminum handles",
+        "furniture boards",
+        "MetaLux boards",
+        "WoodSense boards",
+        "ColorPro boards",
+        "modern interiors",
+        "premium materials"
+      ],
+      alternates: {
+        canonical: "/en",
+        languages: {
+          "pl-PL": "/pl",
+          "en-US": "/en",
+        },
+      },
+      openGraph: {
+        title: "QLdecor – Luxury Steel Tables, Custom Furniture & Premium Boards",
+        description:
+          "Discover QLdecor: exclusive steel tables, custom-made furniture, aluminum handles, and premium boards from MetaLux, WoodSense, and ColorPro.",
+        url: "https://qldecor.shop/en",
+        siteName: "QLdecor",
+        images: [
+          {
+            url: "https://qldecor.shop/img/steel/table/stal_9_res.jpeg",
+            width: 1920,
+            height: 1080,
+            alt: "QLdecor – luxury furniture and premium materials",
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "QLdecor – Luxury Steel Tables & Premium Furniture Boards",
+        description:
+          "Luxury interiors with QLdecor: steel tables, designer handles, custom furniture, and premium boards MetaLux, WoodSense, ColorPro.",
+        images: ["https://qldecor.shop/img/steel/table/stal_9_res.jpeg"],
+      },
+    };
+  }
+
+  // domyślnie PL
+  return {
+    title: "QLdecor – Stoły stalowe, meble, uchwyty i ekskluzywne płyty meblowe",
+    description:
+      "QLdecor tworzy luksusowe wnętrza dzięki stołom stalowym, meblom na wymiar, designerskim uchwytom oraz płytom meblowym MetaLux, WoodSense i ColorPro. Ponadczasowy design do nowoczesnych przestrzeni.",
+    keywords: [
+      "QLdecor",
+      "meble luksusowe",
+      "stoły stalowe",
+      "meble na wymiar",
+      "uchwyty meblowe",
+      "uchwyty aluminiowe",
+      "płyty meblowe",
+      "płyty MetaLux",
+      "płyty WoodSense",
+      "płyty ColorPro",
+      "nowoczesne wnętrza",
+      "materiały premium"
+    ],
+    alternates: {
+      canonical: "/pl",
+      languages: {
+        "pl-PL": "/pl",
+        "en-US": "/en",
+      },
+    },
+    openGraph: {
+      title: "QLdecor – Stoły stalowe, meble i luksusowe płyty meblowe",
+      description:
+        "QLdecor oferuje stoły stalowe, meble na wymiar, aluminiowe uchwyty oraz kolekcje płyt meblowych MetaLux, WoodSense i ColorPro.",
+      url: "https://qldecor.shop/pl",
+      siteName: "QLdecor",
+      images: [
+        {
+          url: "https://qldecor.shop/img/steel/table/stal_9_res.jpeg",
+          width: 1920,
+          height: 1080,
+          alt: "QLdecor – luksusowe stoły, meble i płyty meblowe",
+        },
+      ],
+      locale: "pl_PL",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "QLdecor – Stoły stalowe i luksusowe meble na wymiar",
+      description:
+        "Ekskluzywna oferta QLdecor: stoły stalowe, uchwyty aluminiowe, meble na wymiar oraz kolekcje płyt MetaLux, WoodSense i ColorPro.",
+      images: ["https://qldecor.shop/img/steel/table/stal_9_res.jpeg"],
+    },
+  };
+}
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
