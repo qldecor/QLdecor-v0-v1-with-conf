@@ -7,6 +7,7 @@ import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import Script from "next/script";
 import { routing } from '@/i18n/routing';
+import Footer from "@/app/[locale]/components/footer";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -54,6 +55,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
           {children}
+          <Footer/>
           <Script
             id="chatway"
             strategy="afterInteractive"

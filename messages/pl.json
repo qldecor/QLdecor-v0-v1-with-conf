@@ -1,4 +1,25 @@
 {
+  "footer": {
+    "brand": "QLdecor",
+    "slogan": "Tworzymy doskonałość w materiałach meblowych.",
+    "products": "PRODUKTY",
+    "collections": "KOLEKCJE",
+    "connect": "KONTAKT",
+    "about": "O nas",
+    "copyright": "© 2025 QLdecor. Wszelkie prawa zastrzeżone.",
+    "links": {
+      "metalux": "Seria Metalux",
+      "woodsense": "Seria WoodSense",
+      "colorpro": "Seria ColoPro",
+      "furniture-boards": "Płyty meblowe",
+      "furniture-handles": "Uchwyty meblowe",
+      "steel-fronts": "Fronty stalowe",
+      "steel-tables": "Blaty stalowe",
+      "custom-furniture": "Meble na wymiar",
+      "about": "O nas",
+      "contact": "Kontakt"
+    }
+  },
   "common": {
     "products": "Produkty",
     "collections": "Kolekcje",
@@ -54,27 +75,6 @@
       "title": "RZEMIOSŁO",
       "text": "Każdy komponent powstaje z doskonałej syntezy tradycyjnego rzemiosła i innowacyjnych technologii. Nasi rzemieślnicy wnoszą dekady doświadczenia do każdej powierzchni, zapewniając, że każdy detal spełnia najwyższe standardy luksusowej produkcji.",
       "button": "STWÓRZ MEBLE NA WYMIAR"
-    },
-    "footer": {
-      "brand": "QLdecor",
-      "slogan": "Tworzymy doskonałość w materiałach meblowych.",
-      "products": "PRODUKTY",
-      "collections": "KOLEKCJE",
-      "connect": "KONTAKT",
-      "about": "O nas",
-      "copyright": "© 2025 QLdecor. Wszelkie prawa zastrzeżone.",
-      "links": {
-        "metalux": "Seria Metalux",
-        "woodsense": "Seria WoodSense",
-        "colorpro": "Seria ColoPro",
-        "furniture-boards": "Płyty meblowe",
-        "furniture-handles": "Uchwyty meblowe",
-        "steel-fronts": "Fronty stalowe",
-        "steel-tables": "Blaty stalowe",
-        "custom-furniture": "Meble na wymiar",
-        "about": "O nas",
-        "contact": "Kontakt"
-      }
     }
   },
   "furniturePage": {
