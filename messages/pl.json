@@ -17,7 +17,10 @@
       "steel-tables": "Blaty stalowe",
       "custom-furniture": "Meble na wymiar",
       "about": "O nas",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "privacy": "Polityka prywatności",
+      "terms": "Warunki ",
+      "cookies": "Cookies"
     }
   },
   "common": {
@@ -33,6 +36,19 @@
     "custom-furniture": "Meble na wymiar",
     "see-all": "Odkryj",
     "steel-tables": "Blaty stalowe"
+  },
+  "privacyPolicyPage": {
+    "title": "Polityka prywatności i plików cookies",
+    "intro": "Dbamy o prywatność użytkowników naszej strony. Poniżej znajdziesz informacje dotyczące zasad gromadzenia, przetwarzania i ochrony danych osobowych oraz stosowania plików cookies.",
+    "cookies": {
+      "title": "Pliki cookies",
+      "content1": "Nasza strona internetowa nie wykorzystuje plików cookies w celach marketingowych ani analitycznych. Mogą być stosowane wyłącznie pliki cookies niezbędne do prawidłowego działania serwisu (np. zapamiętanie preferencji językowych lub poprawne wyświetlanie treści).",
+      "content2": "Użytkownik może w każdej chwili zarządzać plikami cookies poprzez ustawienia swojej przeglądarki. Brak akceptacji cookies technicznych może jednak wpłynąć na prawidłowe działanie niektórych funkcji strony."
+    },
+    "rights": {
+      "title": "Twoje prawa",
+      "content": "Masz prawo do uzyskania informacji o przetwarzaniu Twoich danych osobowych, a także prawo do ich sprostowania lub usunięcia zgodnie z obowiązującymi przepisami prawa."
+    }
   },
   "homePage": {
     "hero": {

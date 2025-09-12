@@ -27,34 +27,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm font-light text-gray-600">
               <li>
-                <Link
-                  href="/products/steel-tables"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/steel-tables" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.steel-tables")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/steel-fronts"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/steel-fronts" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.steel-fronts")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/handles"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/handles" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.furniture-handles")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/boards"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/boards" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.furniture-boards")}
                 </Link>
               </li>
@@ -68,26 +56,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm font-light text-gray-600">
               <li>
-                <Link
-                  href="/products/boards/metalux"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/boards/metalux" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.metalux")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/boards/woodsense"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/boards/woodsense" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.woodsense")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/boards/colorpro"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/products/boards/colorpro" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.colorpro")}
                 </Link>
               </li>
@@ -101,26 +80,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm font-light text-gray-600">
               <li>
-                <Link
-                  href="/custom-furniture"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/custom-furniture" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.custom-furniture")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/about" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.about")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-gray-900 transition-colors"
-                >
+                <Link href="/contact" className="hover:text-gray-900 transition-colors">
                   {t("footer.links.contact")}
                 </Link>
               </li>
@@ -129,10 +99,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-100 mt-12 pt-8 text-center">
+        <div className="border-t border-gray-100 mt-12 pt-8 text-center space-y-3">
           <p className="text-gray-600 font-light text-sm">
             {t("footer.copyright")}
           </p>
+          <div className="flex justify-center gap-6 text-sm font-light text-gray-600">
+            <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
+              {t("footer.links.privacy")}
+            </Link>
+            <Link href="/terms" className="hover:text-gray-900 transition-colors">
+              {t("footer.links.terms")}
+            </Link>
+            <Link href="/cookies" className="hover:text-gray-900 transition-colors">
+              {t("footer.links.cookies")}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

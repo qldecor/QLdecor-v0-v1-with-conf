@@ -16,7 +16,10 @@
       "steel-tables": "Steel Tables",
       "custom-furniture": "Custom Furniture",
       "about": "About",
-      "contact": "Contakt"
+      "contact": "Contakt",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of service",
+      "cookies": "Cookies"
     }
   },
   "common": {
@@ -32,6 +35,19 @@
     "custom-furniture": "Custom Furniture",
     "see-all": "SEE ALL",
     "steel-tables": "Steel Tables"
+  },
+  "privacyPolicyPage": {
+    "title": "Privacy Policy and Cookies",
+    "intro": "We respect the privacy of visitors to our website. Below you will find information on how we collect, process, and protect personal data, as well as our use of cookies.",
+    "cookies": {
+      "title": "Cookies",
+      "content1": "Our website does not use cookies for marketing or analytics purposes. Only strictly necessary cookies may be used to ensure the proper functioning of the website (e.g., remembering language preferences or correct content display).",
+      "content2": "Users can manage cookies at any time through their browser settings. However, disabling technical cookies may affect the correct functioning of certain website features."
+    },
+    "rights": {
+      "title": "Your rights",
+      "content": "You have the right to request information about the processing of your personal data, as well as the right to rectify or delete it in accordance with applicable law."
+    }
   },
   "homePage": {
     "hero": {
