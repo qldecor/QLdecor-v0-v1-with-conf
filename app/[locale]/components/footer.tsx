@@ -107,11 +107,8 @@ export default function Footer() {
             <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
               {t("footer.links.privacy")}
             </Link>
-            <Link href="/terms" className="hover:text-gray-900 transition-colors">
+            <Link href="/terms-of-service" className="hover:text-gray-900 transition-colors">
               {t("footer.links.terms")}
-            </Link>
-            <Link href="/cookies" className="hover:text-gray-900 transition-colors">
-              {t("footer.links.cookies")}
             </Link>
           </div>
         </div>

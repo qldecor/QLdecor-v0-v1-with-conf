@@ -19,8 +19,7 @@
       "about": "O nas",
       "contact": "Kontakt",
       "privacy": "Polityka prywatności",
-      "terms": "Warunki ",
-      "cookies": "Cookies"
+      "terms": "Regulamin"
     }
   },
   "common": {
@@ -48,6 +47,30 @@
     "rights": {
       "title": "Twoje prawa",
       "content": "Masz prawo do uzyskania informacji o przetwarzaniu Twoich danych osobowych, a także prawo do ich sprostowania lub usunięcia zgodnie z obowiązującymi przepisami prawa."
+    }
+  },
+  "termsOfServicePage": {
+    "title": "Regulamin korzystania ze strony",
+    "intro": "Niniejszy regulamin określa zasady korzystania ze strony internetowej QLdecor. Korzystając z naszej witryny, akceptujesz poniższe postanowienia.",
+    "use": {
+      "title": "Korzystanie ze strony",
+      "content": "Strona internetowa QLdecor ma charakter informacyjny i prezentacyjny. Użytkownik zobowiązuje się do korzystania z niej zgodnie z obowiązującym prawem, zasadami współżycia społecznego oraz niniejszym regulaminem."
+    },
+    "content": {
+      "title": "Prawa autorskie",
+      "content": "Wszelkie treści, zdjęcia, grafiki, materiały wizualne i tekstowe umieszczone na stronie są chronione prawem autorskim i stanowią własność QLdecor lub podmiotów współpracujących. Kopiowanie, rozpowszechnianie lub wykorzystywanie materiałów bez zgody właściciela jest zabronione."
+    },
+    "presentation": {
+      "title": "Prezentacja produktów",
+      "content": "Zdjęcia i wizualizacje produktów, takich jak uchwyty, wieszaki czy płyty meblowe, mają charakter poglądowy. Rzeczywiste odcienie kolorów, faktury i detale mogą różnić się od prezentowanych na ekranie w zależności od ustawień monitora, rodzaju oświetlenia oraz naturalnych różnic w materiałach."
+    },
+    "liability": {
+      "title": "Odpowiedzialność",
+      "content": "QLdecor dokłada starań, aby informacje prezentowane na stronie były aktualne i rzetelne, jednak nie ponosi odpowiedzialności za ewentualne błędy, braki lub skutki korzystania z treści serwisu. Strona może zawierać odnośniki do stron zewnętrznych, za które QLdecor nie odpowiada."
+    },
+    "final": {
+      "title": "Postanowienia końcowe",
+      "content": "QLdecor zastrzega sobie prawo do wprowadzania zmian w niniejszym regulaminie. Zmieniona wersja obowiązuje od momentu jej opublikowania na stronie. W sprawach nieuregulowanych zastosowanie mają przepisy prawa polskiego."
     }
   },
   "homePage": {

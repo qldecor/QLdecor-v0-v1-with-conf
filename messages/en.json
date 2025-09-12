@@ -18,8 +18,7 @@
       "about": "About",
       "contact": "Contakt",
       "privacy": "Privacy Policy",
-      "terms": "Terms of service",
-      "cookies": "Cookies"
+      "terms": "Terms of Service"
     }
   },
   "common": {
@@ -35,6 +34,30 @@
     "custom-furniture": "Custom Furniture",
     "see-all": "SEE ALL",
     "steel-tables": "Steel Tables"
+  },
+  "termsOfServicePage": {
+    "title": "Website Terms of Service",
+    "intro": "These terms of service set out the rules for using the QLdecor website. By accessing our site, you accept the provisions below.",
+    "use": {
+      "title": "Use of the website",
+      "content": "The QLdecor website is intended for informational and presentation purposes. Users agree to use it in compliance with applicable law, social norms, and these terms."
+    },
+    "content": {
+      "title": "Copyright",
+      "content": "All content, photos, graphics, and textual or visual materials published on the website are protected by copyright and are the property of QLdecor or its partners. Copying, distributing, or using these materials without prior consent is prohibited."
+    },
+    "presentation": {
+      "title": "Product presentation",
+      "content": "Photos and visualizations of products such as handles, hooks, and furniture boards are for illustrative purposes only. Actual colors, textures, and details may differ from what is displayed on screen due to monitor settings, lighting conditions, and natural variations in materials."
+    },
+    "liability": {
+      "title": "Liability",
+      "content": "QLdecor makes every effort to ensure that the information presented on the site is accurate and up-to-date. However, it shall not be held responsible for any errors, omissions, or consequences of using the content. The website may contain links to external sites, for which QLdecor is not responsible."
+    },
+    "final": {
+      "title": "Final provisions",
+      "content": "QLdecor reserves the right to amend these terms at any time. The updated version takes effect from the moment of publication on the website. For matters not regulated herein, Polish law shall apply."
+    }
   },
   "privacyPolicyPage": {
     "title": "Privacy Policy and Cookies",
