@@ -1,13 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import {Link} from '@/i18n/navigation';
-import { Button } from "@/app/[locale]/components/ui/button"
-import { Slider } from "@/app/[locale]/components/ui/slider"
-import { Card } from "@/app/[locale]/components/ui/card"
-import { Badge } from "@/app/[locale]/components/ui/badge"
-import { ArrowLeft, Download, Share2, Save } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import { Link } from '@/i18n/navigation';
+import { Button } from "@/app/[locale]/components/ui/button";
+import { Slider } from "@/app/[locale]/components/ui/slider";
+import { Card } from "@/app/[locale]/components/ui/card";
+import { Badge } from "@/app/[locale]/components/ui/badge";
+import { ArrowLeft, Download, Share2 } from "lucide-react";
 
 interface ConfigState {
   category: "steel-tables" | "steel-fronts" | "furniture-boards" | "furniture-handles"
@@ -23,42 +23,24 @@ interface ConfigState {
   quantity: number
 }
 
-export default function ConfiguratorPage() {
-  const [config, setConfig] = useState<ConfigState>({
-    category: "steel-tables",
-    dimensions: {
-      length: 2000,
-      width: 800,
-      thickness: 20,
-    },
-    finish: "brushed",
-    edge: "straight",
-    quantity: 1,
-  })
+export default function ConfiguratorPage({ initialConfig }: { initialConfig?: ConfigState }) {
+  const [config, setConfig] = useState<ConfigState>(
+    initialConfig || {
+      category: "steel-tables",
+      dimensions: { length: 2000, width: 800, thickness: 20 },
+      finish: "brushed",
+      edge: "straight",
+      quantity: 1,
+    }
+  )
 
-  const [activeStep, setActiveStep] = useState(1)
+  const [activeStep, setActiveStep] = useState(initialConfig ? 4 : 1)
 
   const categories = [
-    {
-      id: "steel-tables",
-      name: "STAINLESS STEEL TABLES",
-      description: "Premium steel surfaces for professional applications",
-    },
-    {
-      id: "steel-fronts",
-      name: "STEEL FURNITURE FRONTS",
-      description: "Industrial aesthetics for contemporary furniture",
-    },
-    {
-      id: "furniture-boards",
-      name: "FURNITURE BOARDS",
-      description: "Three distinctive series for diverse applications",
-    },
-    {
-      id: "furniture-handles",
-      name: "FURNITURE HANDLES",
-      description: "Premium handles in contemporary finishes",
-    },
+    { id: "steel-tables", name: "STAINLESS STEEL TABLES", description: "Premium steel surfaces for professional applications" },
+    { id: "steel-fronts", name: "STEEL FURNITURE FRONTS", description: "Industrial aesthetics for contemporary furniture" },
+    { id: "furniture-boards", name: "FURNITURE BOARDS", description: "Three distinctive series for diverse applications" },
+    { id: "furniture-handles", name: "FURNITURE HANDLES", description: "Premium handles in contemporary finishes" },
   ]
 
   const finishes = {
@@ -116,66 +98,30 @@ export default function ConfiguratorPage() {
       return Math.round(basePrice * finishMultiplier * config.quantity)
     }
 
-    const area = (config.dimensions.length * config.dimensions.width) / 1000000 // m²
+    const area = (config.dimensions.length * config.dimensions.width) / 1000000
     const finishMultiplier = config.finish.includes("mirror") ? 1.3 : config.finish.includes("textured") ? 1.5 : 1.0
     return Math.round(basePrice * area * finishMultiplier * config.quantity)
   }
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [user, setUser] = useState<{ name: string; email: string } | null>(null)
+  // 🔹 Share → zapis do bazy
+  const handleShareConfiguration = async () => {
+    try {
+      const res = await fetch("/api/configurations/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ config }),
+      })
 
-  useEffect(() => {
-    // Check if user is authenticated
-    const userData = localStorage.getItem("user")
-    if (userData) {
-      setUser(JSON.parse(userData))
-      setIsAuthenticated(true)
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || "Failed to share")
+
+      const shareUrl = `${window.location.origin}/configurator/${data.id}`
+      await navigator.clipboard.writeText(shareUrl)
+      alert(`Link copied: ${shareUrl}`)
+    } catch (err) {
+      console.error(err)
+      alert("Error while sharing configuration")
     }
-  }, [])
-
-  const handleSaveConfiguration = async () => {
-    if (!isAuthenticated) {
-      // Redirect to login
-      window.location.href = "/auth/login?redirect=/configurator"
-      return
-    }
-
-    const configData = {
-      id: Date.now().toString(),
-      name: `${config.category} Configuration`,
-      category: categories.find((c) => c.id === config.category)?.name || "",
-      dimensions: `${config.dimensions.length} × ${config.dimensions.width} × ${config.dimensions.thickness}mm`,
-      finish: finishes[config.category]?.find((f) => f.id === config.finish)?.name || "",
-      price: calculatePrice(),
-      createdAt: new Date().toISOString().split("T")[0],
-      lastModified: new Date().toISOString().split("T")[0],
-      isShared: false,
-    }
-
-    // Save to localStorage (in real app, this would be an API call)
-    const savedConfigs = JSON.parse(localStorage.getItem("savedConfigurations") || "[]")
-    savedConfigs.unshift(configData)
-    localStorage.setItem("savedConfigurations", JSON.stringify(savedConfigs))
-
-    alert("Configuration saved successfully!")
-  }
-
-  const handleShareConfiguration = () => {
-    const shareData = {
-      ...config,
-      price: calculatePrice(),
-      createdBy: user?.name || "Anonymous",
-      createdAt: new Date().toISOString().split("T")[0],
-    }
-
-    // Generate share URL (in real app, this would create a database entry)
-    const shareId = btoa(JSON.stringify(shareData))
-      .replace(/[^a-zA-Z0-9]/g, "")
-      .substring(0, 12)
-    const shareUrl = `${window.location.origin}/share/${shareId}`
-
-    navigator.clipboard.writeText(shareUrl)
-    alert("Share link copied to clipboard!")
   }
 
   return (
@@ -195,31 +141,6 @@ export default function ConfiguratorPage() {
                 PRODUCTS
               </Link>
               <div className="flex items-center gap-4">
-                {isAuthenticated ? (
-                  <>
-                    <Link
-                      href="/dashboard"
-                      className="text-sm font-light tracking-wide text-gray-700 hover:text-gray-900"
-                    >
-                      DASHBOARD
-                    </Link>
-                    <Button
-                      onClick={handleSaveConfiguration}
-                      variant="outline"
-                      size="sm"
-                      className="font-light tracking-wide bg-transparent"
-                    >
-                      <Save className="w-4 h-4 mr-2" />
-                      SAVE
-                    </Button>
-                  </>
-                ) : (
-                  <Link href="/auth/login">
-                    <Button variant="outline" size="sm" className="font-light tracking-wide bg-transparent">
-                      SIGN IN TO SAVE
-                    </Button>
-                  </Link>
-                )}
                 <Button
                   onClick={handleShareConfiguration}
                   variant="outline"
