@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: "QLdecor – Meble Premium na Wymiar i Modułowe. Ekskluzywne komponenty meblowe.",
   description:
     "QLdecor łączy innowacyjne materiały z ekskluzywnym designem. Oferujemy meble na wymiar i modułowe produkowane w oparciu o nasze materiały: płyty dekoracyjne MetaLux i WoodSense, blaty stalowe oraz uchwyty meblowe – tworząc rozwiązania do nowoczesnych i luksusowych wnętrz.",
- 
   keywords: [
     "QLdecor",
     "uchwyty meblowe",
