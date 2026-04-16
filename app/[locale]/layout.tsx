@@ -5,16 +5,15 @@ import { setRequestLocale } from 'next-intl/server';
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import Script from "next/script";
 import { routing } from '@/i18n/routing';
 import Footer from "@/app/[locale]/components/footer";
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "QLdecor – Ekskluzywne komponenty meblowe i meble na wymiar",
+  title: "QLdecor – Meble Premium na Wymiar i Modułowe. Ekskluzywne komponenty meblowe.",
   description:
-    "QLdecor łączy innowacyjne materiały z ekskluzywnym designem. Oferujemy aluminiowe uchwyty meblowe, płyty dekoracyjne MetaLux i WoodSense, blaty stalowe oraz meble na wymiar – tworząc rozwiązania do nowoczesnych i luksusowych wnętrz.",
+    "QLdecor łączy innowacyjne materiały z ekskluzywnym designem. Oferujemy meble na wymiar i modułowe produkowane w oparciu o nasze materiały: płyty dekoracyjne MetaLux i WoodSense, blaty stalowe oraz uchwyty meblowe – tworząc rozwiązania do nowoczesnych i luksusowych wnętrz.",
   keywords: [
     "QLdecor",
     "komponenty meblowe",
@@ -42,7 +41,7 @@ export default async function RootLayout({
   params;
 }) {
   const { locale } = await params;
-  // const messages = useMessages();
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -51,23 +50,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
           {children}
           <Footer/>
-          <Script
-            id="chatway"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-          window.chatwayConfig = {
-            appId: "TWÓJ_APP_ID",
-            lang: "${locale}"
-          };
-        `,
-            }}
-          />
         </NextIntlClientProvider>
       </body>
     </html>
